@@ -1,0 +1,64 @@
+package bspkrs.util;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListUtils {
+   public static String getListAsDelimitedString(List list, String delimiter) {
+      String r = "";
+
+      for(Object o : list) {
+         r = r + delimiter + o.toString();
+      }
+
+      return r.replaceFirst(delimiter, "");
+   }
+
+   public static String getListAsUniqueDelimitedString(List list, String delimiter) {
+      String r = "";
+      List seen = new ArrayList();
+
+      for(Object o : list) {
+         if(!seen.contains(o)) {
+            r = r + delimiter + o.toString();
+            seen.add(o);
+         }
+      }
+
+      return r.replaceFirst(delimiter, "");
+   }
+
+   public static boolean doesListAContainAllUniqueListBValues(List listA, List listB) {
+      for(Object o : listB) {
+         if(!listA.contains(o)) {
+            return false;
+         }
+      }
+
+      return true;
+   }
+
+   public static List getDelimitedStringAsBlockIDList(String dList, String delimiter) {
+      List<BlockID> list = new ArrayList();
+
+      for(String format : dList.split(delimiter)) {
+         if(!format.trim().isEmpty()) {
+            list.add(BlockID.parse(format));
+         }
+      }
+
+      return list;
+   }
+
+   public static List getDelimitedStringAsItemIDList(String dList, String delimiter) {
+      List<ItemID> list = new ArrayList();
+
+      for(String format : dList.split(delimiter)) {
+         if(!format.trim().isEmpty()) {
+            list.add(new ItemID(format, ","));
+         }
+      }
+
+      return list;
+   }
+}
