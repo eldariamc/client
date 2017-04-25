@@ -12,7 +12,6 @@ import java.util.Random;
 
 public class BlockOre extends Block
 {
-    private static final String __OBFID = "CL_00000282";
 
     public BlockOre()
     {
@@ -57,7 +56,7 @@ public class BlockOre extends Block
             return 1 + rand.nextInt(2);
         if (this == Blocks.kobalt_ore)
             return 1 + rand.nextInt(3);*/
-        if (this == Blocks.eldarium_ore)
+        if (this == Blocks.eldarium_ore || this == Blocks.xp_ore)
             return 0;
 
         return super.quantityDropped(rand);
@@ -131,6 +130,10 @@ public class BlockOre extends Block
             else if (this == Blocks.eldarium_ore)
             {
                 var8 = MathHelper.getRandomIntegerInRange(p_149690_1_.rand, 3, 7);
+            }
+            else if (this == Blocks.xp_ore)
+            {
+                var8 = MathHelper.getRandomIntegerInRange(p_149690_1_.rand, 7, 12);
             }
 
             this.dropXpOnBlockBreak(p_149690_1_, p_149690_2_, p_149690_3_, p_149690_4_, var8);

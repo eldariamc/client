@@ -443,6 +443,7 @@ public class Block
         blockRegistry.addObject(id++, "cronyxe_block", new BlockCompressed(MapColor.field_151668_h).setHardness(6.0F).setResistance(10.0F).setStepSound(soundTypeMetal).setBlockName("blockCronyxe").setBlockTextureName("cronyxe_block"));
         blockRegistry.addObject(id++, "kobalt_block", new BlockCompressed(MapColor.field_151668_h).setHardness(7.0F).setResistance(10.0F).setStepSound(soundTypeMetal).setBlockName("blockKobalt").setBlockTextureName("kobalt_block"));
         blockRegistry.addObject(id++, "eldarium_block", new BlockCompressed(MapColor.field_151668_h).setHardness(8.0F).setResistance(10.0F).setStepSound(soundTypeMetal).setBlockName("blockEldarium").setBlockTextureName("eldarium_block"));
+        blockRegistry.addObject(id++, "xp_ore", new BlockOre().setHardness(3.0F).setResistance(5.0F).setStepSound(soundTypePiston).setBlockName("oreXp").setBlockTextureName("xp_ore"));
 
         // -----------------------
 
