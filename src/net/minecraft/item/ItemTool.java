@@ -2,17 +2,19 @@ package net.minecraft.item;
 
 import com.google.common.collect.Multimap;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 
 import java.util.Set;
 
 public class ItemTool extends Item
 {
-    private Set field_150914_c;
+    private Set properBlocks;
     protected float efficiencyOnProperMaterial = 4.0F;
 
     /** Damage versus entities. */
@@ -20,12 +22,11 @@ public class ItemTool extends Item
 
     /** The material this tool is made from. */
     protected Item.ToolMaterial toolMaterial;
-    private static final String __OBFID = "CL_00000019";
 
     protected ItemTool(float p_i45333_1_, Item.ToolMaterial p_i45333_2_, Set p_i45333_3_)
     {
         this.toolMaterial = p_i45333_2_;
-        this.field_150914_c = p_i45333_3_;
+        this.properBlocks = p_i45333_3_;
         this.maxStackSize = 1;
         this.setMaxDamage(p_i45333_2_.getMaxUses());
         this.efficiencyOnProperMaterial = p_i45333_2_.getEfficiencyOnProperMaterial();
@@ -35,7 +36,7 @@ public class ItemTool extends Item
 
     public float func_150893_a(ItemStack p_150893_1_, Block p_150893_2_)
     {
-        return this.field_150914_c.contains(p_150893_2_) ? this.efficiencyOnProperMaterial : 1.0F;
+        return this.properBlocks.contains(p_150893_2_) ? this.efficiencyOnProperMaterial : 1.0F;
     }
 
     /**
@@ -103,5 +104,34 @@ public class ItemTool extends Item
         Multimap var1 = super.getItemAttributeModifiers();
         var1.put(SharedMonsterAttributes.attackDamage.getAttributeUnlocalizedName(), new AttributeModifier(field_111210_e, "Tool modifier", (double)this.damageVsEntity, 0));
         return var1;
+    }
+
+    protected boolean canPickaxe(Block block) {
+        if (block == Blocks.obsidian || block == Blocks.obsidian_furnace || block == Blocks.lit_obsidian_furnace)
+            return this.toolMaterial.getHarvestLevel() >= 3;
+        if (block == Blocks.diamond_block || block == Blocks.diamond_ore)
+            return this.toolMaterial.getHarvestLevel() >= 2;
+        if (block == Blocks.emerald_ore || block == Blocks.emerald_block)
+            return this.toolMaterial.getHarvestLevel() >= 2;
+        if (block == Blocks.gold_block || block == Blocks.gold_ore)
+            return this.toolMaterial.getHarvestLevel() >= 2;
+        if (block == Blocks.iron_block || block == Blocks.iron_ore)
+            return this.toolMaterial.getHarvestLevel() >= 1;
+        if (block == Blocks.lapis_block || block == Blocks.lapis_ore)
+            return this.toolMaterial.getHarvestLevel() >= 1;
+        if (block == Blocks.redstone_ore || block == Blocks.lit_redstone_ore)
+            return this.toolMaterial.getHarvestLevel() >= 2;
+        if (block == Blocks.zinc_ore || block == Blocks.cronyxe_ore || block == Blocks.kobalt_ore)
+            return this.toolMaterial.getHarvestLevel() >= 3;
+        if (block == Blocks.eldarium_ore || block == Blocks.gemme_ore)
+            return this.toolMaterial.getHarvestLevel() >= 3;
+        if (block.getMaterial() == Material.rock || block.getMaterial() == Material.brick)
+            return true;
+        if (block.getMaterial() == Material.iron)
+            return true;
+        if (block == Blocks.anvil)
+            return this.toolMaterial.getHarvestLevel() >= 1;
+
+        return false;
     }
 }

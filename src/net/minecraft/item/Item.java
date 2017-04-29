@@ -265,6 +265,11 @@ public class Item
         itemRegistry.addObject(id++, "tomahawk", new ItemTomahawk().setUnlocalizedName("tomahawk").setTextureName("tomahawk"));
         itemRegistry.addObject(id++, "chest_orb", new Item().setMaxDamage(5).setUnlocalizedName("orbChest").setCreativeTab(CreativeTabs.tabMisc).setTextureName("chest_orb").setMaxStackSize(1));
         itemRegistry.addObject(id++, "exploration_boots", new ItemArmor(CRONYXE, CRONYXE.ordinal(), 3).setUnlocalizedName("bootsExploration").setTextureName("cronyxe_boots"));
+        itemRegistry.addObject(id++, "wooden_global_tool", new ItemGlobalTool(ToolMaterial.WOOD).setUnlocalizedName("gtoolWood").setTextureName("wood_global_tool"));
+        itemRegistry.addObject(id++, "stone_global_tool", new ItemGlobalTool(ToolMaterial.STONE).setUnlocalizedName("gtoolStone").setTextureName("stone_global_tool"));
+        itemRegistry.addObject(id++, "iron_global_tool", new ItemGlobalTool(ToolMaterial.IRON).setUnlocalizedName("gtoolIron").setTextureName("iron_global_tool"));
+        itemRegistry.addObject(id++, "golden_global_tool", new ItemGlobalTool(ToolMaterial.GOLD).setUnlocalizedName("gtoolGold").setTextureName("gold_global_tool"));
+        itemRegistry.addObject(id++, "diamond_global_tool", new ItemGlobalTool(ToolMaterial.EMERALD).setUnlocalizedName("gtoolDiamond").setTextureName("diamond_global_tool"));
 
         // -----------------------
 
@@ -899,6 +904,8 @@ public class Item
 		itemRegistry.addObject(id++, itemId, new ItemAxe(material).setUnlocalizedName("axe" + materialName).setTextureName(itemId));
 		itemId = materialId + "_hoe";
 		itemRegistry.addObject(id++, itemId, new ItemHoe(material).setUnlocalizedName("hoe" + materialName).setTextureName(itemId));
+		itemId = materialId + "_global_tool";
+		itemRegistry.addObject(id++, itemId, new ItemGlobalTool(material).setUnlocalizedName("gtool" + materialName).setTextureName(itemId));
 
 		return id;
 	}
