@@ -220,6 +220,7 @@ public class Blocks
     public static final Block kobalt_block = (Block)Block.blockRegistry.getObject("kobalt_block");
     public static final Block eldarium_block = (Block)Block.blockRegistry.getObject("eldarium_block");
     public static final Block xp_ore = (Block)Block.blockRegistry.getObject("xp_ore");
+    public static final Block lucky_ore = (Block)Block.blockRegistry.getObject("lucky_ore");
 
     // -----------------------
 
