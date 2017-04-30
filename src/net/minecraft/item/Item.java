@@ -270,6 +270,7 @@ public class Item
         itemRegistry.addObject(id++, "iron_global_tool", new ItemGlobalTool(ToolMaterial.IRON).setUnlocalizedName("gtoolIron").setTextureName("iron_global_tool"));
         itemRegistry.addObject(id++, "golden_global_tool", new ItemGlobalTool(ToolMaterial.GOLD).setUnlocalizedName("gtoolGold").setTextureName("gold_global_tool"));
         itemRegistry.addObject(id++, "diamond_global_tool", new ItemGlobalTool(ToolMaterial.EMERALD).setUnlocalizedName("gtoolDiamond").setTextureName("diamond_global_tool"));
+        itemRegistry.addObject(id++, "fajita", (new ItemFajita(0, 0.0F, false)).setAlwaysEdible().setUnlocalizedName("fajita").setTextureName("fajita"));
 
         // -----------------------
 
