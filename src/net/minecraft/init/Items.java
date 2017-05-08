@@ -223,6 +223,7 @@ public class Items
     public static final Item tomahawk = (Item)Item.itemRegistry.getObject("tomahawk");
     public static final Item chest_orb = (Item)Item.itemRegistry.getObject("chest_orb");
     public static final Item exploration_boots = (Item)Item.itemRegistry.getObject("exploration_boots");
+    public static final Item peppers = (Item)Item.itemRegistry.getObject("peppers");
 
     // -----------------------
 

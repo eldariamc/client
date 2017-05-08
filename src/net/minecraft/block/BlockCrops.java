@@ -15,7 +15,6 @@ import java.util.Random;
 public class BlockCrops extends BlockBush implements IGrowable
 {
     private IIcon[] field_149867_a;
-    private static final String __OBFID = "CL_00000222";
 
     protected BlockCrops()
     {

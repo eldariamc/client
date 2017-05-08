@@ -270,6 +270,7 @@ public class Item
         itemRegistry.addObject(id++, "iron_global_tool", new ItemGlobalTool(ToolMaterial.IRON).setUnlocalizedName("gtoolIron").setTextureName("iron_global_tool"));
         itemRegistry.addObject(id++, "golden_global_tool", new ItemGlobalTool(ToolMaterial.GOLD).setUnlocalizedName("gtoolGold").setTextureName("gold_global_tool"));
         itemRegistry.addObject(id++, "diamond_global_tool", new ItemGlobalTool(ToolMaterial.EMERALD).setUnlocalizedName("gtoolDiamond").setTextureName("diamond_global_tool"));
+        itemRegistry.addObject(id++, "peppers", new ItemSeedFood(4, 0.6F, Blocks.peppers, Blocks.farmland).setAlwaysEdible().setPotionEffect(12, 300, 0, 1.0F).setUnlocalizedName("peppers").setTextureName("peppers"));
 
         // -----------------------
 

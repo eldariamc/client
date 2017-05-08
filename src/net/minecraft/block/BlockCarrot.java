@@ -8,7 +8,6 @@ import net.minecraft.util.IIcon;
 public class BlockCarrot extends BlockCrops
 {
     private IIcon[] field_149868_a;
-    private static final String __OBFID = "CL_00000212";
 
     /**
      * Gets the block's texture. Args: side, meta
