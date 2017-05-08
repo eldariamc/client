@@ -33,7 +33,7 @@ public class RecipesCrafting
         // --- Crafts Keyrisium ---
 
         cm.addRecipe(new ItemStack(Blocks.obsidian_furnace), "###", "#F#", "###", '#', Blocks.obsidian, 'F', Blocks.furnace);
-        cm.addRecipe(new ItemStack(Blocks.reinforced_cobblestone, 2), "##", "##", '#', Blocks.cobblestone);
+        cm.addRecipe(new ItemStack(Blocks.reinforced_obsidian, 2), "##", "##", '#', Blocks.cobblestone);
         cm.addRecipe(new ItemStack(Items.compacted_slime_ball), "##", "##", '#', Items.slime_ball);
         cm.addRecipe(new ItemStack(Blocks.iron_ladder, 3), "# #", "###", "# #", '#', Items.iron_ingot);
         cm.addRecipe(new ItemStack(Blocks.slime), "###", "#C#", "###", '#', Items.slime_ball, 'C', Items.compacted_slime_ball);

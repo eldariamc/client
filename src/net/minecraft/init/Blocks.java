@@ -198,7 +198,7 @@ public class Blocks
 
     public static final BlockFurnace obsidian_furnace = (BlockFurnace)Block.blockRegistry.getObject("obsidian_furnace");
     public static final BlockFurnace lit_obsidian_furnace = (BlockFurnace)Block.blockRegistry.getObject("lit_obsidian_furnace");
-    public static final Block reinforced_cobblestone = (Block)Block.blockRegistry.getObject("reinforced_cobblestone");
+    public static final Block reinforced_obsidian = (Block)Block.blockRegistry.getObject("reinforced_obsidian");
     public static final BlockWaterPipe water_pipe = (BlockWaterPipe)Block.blockRegistry.getObject("water_pipe");
     public static final Block iron_ladder = (Block)Block.blockRegistry.getObject("iron_ladder");
     public static final Block slime = (Block)Block.blockRegistry.getObject("slime");

@@ -10,7 +10,6 @@ import java.util.Random;
 
 public class BlockObsidian extends Block
 {
-    private static final String __OBFID = "CL_00000279";
 
     public BlockObsidian()
     {
