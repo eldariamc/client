@@ -44,6 +44,8 @@ public class GuiIngameMenu extends GuiScreen
         this.buttonList.add(new GuiButton(12, this.width - 150, this.height / 2 + 11 + var1, 98, 20, I18n.format("Boutique")));
         this.buttonList.add(new GuiButton(13, this.width - 150, this.height / 2 + 33 + var1, 98, 20, I18n.format("Teamspeak")));
         this.buttonList.add(new GuiButton(14, this.width - 150, this.height / 2 + 55 + var1, 98, 20, I18n.format("Wiki")));
+        this.buttonList.add(new GuiRadioSlider(16, this.width / 5 - 102, 45, 0.0F, 100.0F, "§9Radio", 180));
+
         this.buttonList.add(new GuiButton(1, this.width - 150, this.height / 2 + 77 + var1, 98, 20, I18n.format("menu.disconnect")));
     }
 

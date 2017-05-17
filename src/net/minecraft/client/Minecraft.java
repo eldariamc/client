@@ -10,6 +10,7 @@ import com.google.common.util.concurrent.ListenableFutureTask;
 import com.mojang.authlib.minecraft.MinecraftSessionService;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
 import com.sun.istack.internal.Nullable;
+
 import fr.dabsunter.mcp.McpHandler;
 import fr.dabsunter.mcp.Tickable;
 import io.netty.util.concurrent.GenericFutureListener;
@@ -74,7 +75,6 @@ import net.minecraft.stats.IStatStringFormat;
 import net.minecraft.stats.StatFileWriter;
 import net.minecraft.util.*;
 import net.minecraft.util.Timer;
-import net.minecraft.util.Util;
 import net.minecraft.world.EnumDifficulty;
 import net.minecraft.world.WorldProviderEnd;
 import net.minecraft.world.WorldProviderHell;
@@ -83,6 +83,7 @@ import net.minecraft.world.chunk.storage.AnvilSaveConverter;
 import net.minecraft.world.storage.ISaveFormat;
 import net.minecraft.world.storage.ISaveHandler;
 import net.minecraft.world.storage.WorldInfo;
+
 import org.apache.commons.lang3.Validate;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -94,6 +95,9 @@ import org.lwjgl.opengl.*;
 import org.lwjgl.util.glu.GLU;
 
 import javax.imageio.ImageIO;
+
+import javazoom.jl.player.Player;
+
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -203,6 +207,7 @@ public class Minecraft implements IPlayerUsage
      * the usage snooping.
      */
     public static int debugFPS; // Keyrisium - private -> public
+    public static Player radioPlayer;
 
     /**
      * When you place a block, it's set to 6, decremented once per tick, when it's 0, you can place another block.
