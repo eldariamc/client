@@ -17,6 +17,11 @@ public class GuiButton extends Gui
 
     /** The string displayed on this control. */
     public String displayString;
+    public boolean field_146125_m;
+    public int field_146128_h;
+    protected int field_146120_f;
+    public int field_146129_i;
+
     public int id;
     public boolean enabled;
     public boolean visible;

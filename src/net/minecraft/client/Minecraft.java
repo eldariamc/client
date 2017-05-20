@@ -93,6 +93,7 @@ import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.*;
 import org.lwjgl.util.glu.GLU;
+import net.minecraft.util.Util;
 
 import javax.imageio.ImageIO;
 
@@ -207,7 +208,10 @@ public class Minecraft implements IPlayerUsage
      * the usage snooping.
      */
     public static int debugFPS; // Keyrisium - private -> public
+    public static boolean radioEnabled = true;
+
     public static Player radioPlayer;
+	public static String join;
 
     /**
      * When you place a block, it's set to 6, decremented once per tick, when it's 0, you can place another block.

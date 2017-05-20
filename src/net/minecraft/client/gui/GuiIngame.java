@@ -27,6 +27,7 @@ import net.minecraft.scoreboard.Scoreboard;
 import net.minecraft.util.*;
 import net.minecraft.world.EnumSkyBlock;
 import net.minecraft.world.chunk.Chunk;
+
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
 
@@ -306,6 +307,11 @@ public class GuiIngame extends Gui
         int var21;
         int var22;
         int var23;
+        // Eldaria - CPS & Connection
+        ScaledResolution r = new ScaledResolution(this.mc, this.mc.displayWidth, this.mc.displayHeight);
+
+        this.mc.fontRenderer.drawString("§9FPS§7: §a" + Minecraft.join, var6 - 2,  var7-10, 1);
+
 
         if (this.mc.gameSettings.showDebugInfo)  // Eldaria - render F3 debug infos
         {
