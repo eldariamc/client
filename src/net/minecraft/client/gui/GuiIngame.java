@@ -1063,6 +1063,19 @@ public class GuiIngame extends Gui
         this.recordIsPlaying = p_110326_2_;
     }
 
+	/**
+	 * Display a message in ActionBar
+	 *
+	 * @param message - message to display
+	 * @param ticks   - duration of message display
+	 * @param rainbow - render as multicolor (like record message)
+	 */
+	public void setActionBarMessage(String message, int ticks, boolean rainbow) {
+    	recordPlaying = message;
+    	recordPlayingUpFor = ticks;
+    	recordIsPlaying = rainbow;
+	}
+
     public GuiNewChat getChatGUI()
     {
         return this.persistantChatGUI;

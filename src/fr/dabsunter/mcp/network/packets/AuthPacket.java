@@ -3,6 +3,7 @@ package fr.dabsunter.mcp.network.packets;
 import com.google.common.io.ByteArrayDataInput;
 import com.google.common.io.ByteArrayDataOutput;
 import fr.dabsunter.mcp.network.CustomPacket;
+import net.minecraft.client.Minecraft;
 
 import java.util.UUID;
 
@@ -40,5 +41,5 @@ public class AuthPacket extends CustomPacket {
 	}
 
 	@Override
-	public void process() {}
+	public void process(Minecraft mc) {}
 }

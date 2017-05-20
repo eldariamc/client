@@ -3,6 +3,7 @@ package fr.dabsunter.mcp.network;
 import com.google.common.io.ByteArrayDataInput;
 import com.google.common.io.ByteArrayDataOutput;
 import com.google.common.io.ByteStreams;
+import fr.dabsunter.mcp.network.packets.ActionBarPacket;
 import fr.dabsunter.mcp.network.packets.AnnouncePacket;
 import fr.dabsunter.mcp.network.packets.AuthPacket;
 import net.minecraft.client.Minecraft;
@@ -16,7 +17,8 @@ public class CustomPacketHandler {
 	private static final String CHANNEL = "EldariaClient";
 	private static final Class<? extends CustomPacket>[] PACKETS = new Class[]{
 			AuthPacket.class,
-			AnnouncePacket.class
+			AnnouncePacket.class,
+			ActionBarPacket.class
 	};
 
 	public static void handle(S3FPacketCustomPayload payload) {
@@ -26,7 +28,7 @@ public class CustomPacketHandler {
 				ByteArrayDataInput in = ByteStreams.newDataInput(payload.func_149168_d());
 				CustomPacket packet = PACKETS[in.readUnsignedByte()].newInstance();
 				packet.read(in);
-				packet.process();
+				packet.process(Minecraft.getMinecraft());
 			}
 		} catch (InstantiationException | IllegalAccessException e) {
 			e.printStackTrace();
