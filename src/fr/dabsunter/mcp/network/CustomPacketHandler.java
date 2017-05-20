@@ -1,5 +1,6 @@
 package fr.dabsunter.mcp.network;
 
+import com.google.common.base.Charsets;
 import com.google.common.io.ByteArrayDataInput;
 import com.google.common.io.ByteArrayDataOutput;
 import com.google.common.io.ByteStreams;
@@ -20,15 +21,23 @@ public class CustomPacketHandler {
 			AnnouncePacket.class,
 			ActionBarPacket.class
 	};
+	private static Minecraft mc;
+
+	public static void register(Minecraft mc) {
+		CustomPacketHandler.mc = mc;
+
+		mc.getNetHandler().getNetworkManager().scheduleOutboundPacket(
+				new C17PacketCustomPayload("REGISTER", CHANNEL.getBytes(Charsets.UTF_8))
+		);
+	}
 
 	public static void handle(S3FPacketCustomPayload payload) {
 		try {
 			if (payload.func_149169_c().equals(CHANNEL)) {
-				System.out.println("Received packet !");
 				ByteArrayDataInput in = ByteStreams.newDataInput(payload.func_149168_d());
 				CustomPacket packet = PACKETS[in.readUnsignedByte()].newInstance();
 				packet.read(in);
-				packet.process(Minecraft.getMinecraft());
+				packet.process(mc);
 			}
 		} catch (InstantiationException | IllegalAccessException e) {
 			e.printStackTrace();
@@ -39,7 +48,7 @@ public class CustomPacketHandler {
 		ByteArrayDataOutput out = ByteStreams.newDataOutput();
 		out.writeByte(packet.id);
 		packet.write(out);
-		Minecraft.getMinecraft().getNetHandler().getNetworkManager().scheduleOutboundPacket(
+		mc.getNetHandler().getNetworkManager().scheduleOutboundPacket(
 				new C17PacketCustomPayload(CHANNEL, out.toByteArray())
 		);
 	}

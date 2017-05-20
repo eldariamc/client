@@ -169,7 +169,8 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
         this.currentServerMaxPlayers = p_147282_1_.func_149193_h();
         this.gameController.playerController.setGameType(p_147282_1_.func_149198_e());
         this.gameController.gameSettings.sendSettingsToServer();
-        this.netManager.scheduleOutboundPacket(new C17PacketCustomPayload("MC|Brand", ClientBrandRetriever.getClientModName().getBytes(Charsets.UTF_8)), new GenericFutureListener[0]);
+        this.netManager.scheduleOutboundPacket(new C17PacketCustomPayload("MC|Brand", ClientBrandRetriever.getClientModName().getBytes(Charsets.UTF_8)));
+        CustomPacketHandler.register(gameController);
         Session session = gameController.getSession();
         CustomPacketHandler.dispatch(new AuthPacket(session.getUsername(), session.getUniqueID(), session.getToken()));
     }
