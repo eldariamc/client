@@ -18,7 +18,7 @@ public class ContainerWaterPipe extends Container {
 		this.addSlotToContainer(new Slot(waterPipe, 0, 70, 9){
 			@Override
 			public boolean isItemValid(ItemStack stack) {
-				return stack != null && stack.getItem() == Items.lit_coal;
+				return stack != null && stack.getItem() == Items.coal;
 			}
 		});
 		this.addSlotToContainer(new ContainerBrewingStand.Ingredient(waterPipe, 1, 66, 31));
