@@ -176,7 +176,7 @@ public class Items
 
     public static final Item compacted_slime_ball = (Item)Item.itemRegistry.getObject("compacted_slime_ball");
     public static final Item lignite = (Item)Item.itemRegistry.getObject("lignite");
-    public static final Item lit_coal = (Item)Item.itemRegistry.getObject("lit_coal");
+    public static final Item donut = (Item)Item.itemRegistry.getObject("donut");
     public static final Item zinc = (Item)Item.itemRegistry.getObject("zinc");
     public static final Item kobalt = (Item)Item.itemRegistry.getObject("kobalt");
     public static final Item cronyxe = (Item)Item.itemRegistry.getObject("cronyxe");

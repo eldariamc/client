@@ -65,9 +65,8 @@ public class FurnaceRecipes
         this.addSmelting(Blocks.lapis_ore, new ItemStack(Items.dye, 1, 4), 0.2F);
         this.addSmelting(Blocks.quartz_ore, new ItemStack(Items.quartz), 0.2F);
 
-        // --- Cuissons Keyrisium ---
+        // --- Cuissons Eldaria ---
 
-        this.addSmelting(Items.coal, new ItemStack(Items.lit_coal), 0.15F);
         this.addSmelting(Blocks.lignite_ore, new ItemStack(Items.lignite), 0.1F);
         this.addSmelting(Blocks.zinc_ore, new ItemStack(Items.zinc), 1.0F);
         this.addSmelting(Blocks.cronyxe_ore, new ItemStack(Items.cronyxe), 1.0F);
@@ -75,7 +74,7 @@ public class FurnaceRecipes
 		this.addSmelting(Blocks.eldarium_ore, new ItemStack(Items.eldarium), 1.0F);
         this.addSmelting(Blocks.gemme_ore, new ItemStack(Items.gemme), 1.0F);
 
-        // --------------------------
+        // ------------------------
     }
 
     public void addSmelting(Block p_151393_1_, ItemStack p_151393_2_, float p_151393_3_)

@@ -208,7 +208,7 @@ public class TileEntityWaterPipe extends TileEntity implements ISidedInventory {
 	 */
 	@Override
 	public boolean isItemValidForSlot(int slot, ItemStack item) {
-		return slot == 0 ? item.getItem() == Items.lit_coal : item.getItem().isPotionIngredient(item);
+		return slot == 0 ? item.getItem() == Items.coal : item.getItem().isPotionIngredient(item);
 	}
 
 	@Override
@@ -321,6 +321,7 @@ public class TileEntityWaterPipe extends TileEntity implements ISidedInventory {
 
 	public boolean activate(EntityPlayer player) {
 		if (smokeTime > 0) {
+			player.addPotionEffect(new PotionEffect(Potion.confusion.id, 300, 0));
 			if (Potion.potionTypes[potionId].isInstant()) {
 				Potion.potionTypes[potionId].affectEntity(null, player, 1, 1.0);
 			} else {
