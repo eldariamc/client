@@ -8,7 +8,6 @@ public class EntityAIOwnerHurtByTarget extends EntityAITarget
     EntityTameable theDefendingTameable;
     EntityLivingBase theOwnerAttacker;
     private int field_142051_e;
-    private static final String __OBFID = "CL_00001624";
 
     public EntityAIOwnerHurtByTarget(EntityTameable p_i1667_1_)
     {

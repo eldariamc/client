@@ -13,7 +13,6 @@ public class C17PacketCustomPayload extends Packet
     private String field_149562_a;
     private int field_149560_b;
     private byte[] field_149561_c;
-    private static final String __OBFID = "CL_00001356";
 
     public C17PacketCustomPayload() {}
 

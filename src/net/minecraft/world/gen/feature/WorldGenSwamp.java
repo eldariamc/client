@@ -9,7 +9,6 @@ import java.util.Random;
 
 public class WorldGenSwamp extends WorldGenAbstractTree
 {
-    private static final String __OBFID = "CL_00000436";
 
     public WorldGenSwamp()
     {

@@ -15,7 +15,6 @@ public enum EnumEnchantmentType
     fishing_rod,
     breakable,
     bow;
-    private static final String __OBFID = "CL_00000106";
 
     /**
      * Return true if the item passed can be enchanted by a enchantment of this type.

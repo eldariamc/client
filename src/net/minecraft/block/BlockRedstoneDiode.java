@@ -15,7 +15,6 @@ import java.util.Random;
 public abstract class BlockRedstoneDiode extends BlockDirectional
 {
     protected final boolean field_149914_a;
-    private static final String __OBFID = "CL_00000226";
 
     protected BlockRedstoneDiode(boolean p_i45400_1_)
     {

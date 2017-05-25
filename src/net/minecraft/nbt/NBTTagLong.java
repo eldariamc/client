@@ -8,7 +8,6 @@ public class NBTTagLong extends NBTBase.NBTPrimitive
 {
     /** The long value for the tag. */
     private long data;
-    private static final String __OBFID = "CL_00001225";
 
     NBTTagLong() {}
 

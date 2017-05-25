@@ -5,7 +5,6 @@ import net.minecraft.world.storage.SaveFormatComparator;
 public class RealmsLevelSummary implements Comparable
 {
     private SaveFormatComparator levelSummary;
-    private static final String __OBFID = "CL_00001857";
 
     public RealmsLevelSummary(SaveFormatComparator p_i1109_1_)
     {

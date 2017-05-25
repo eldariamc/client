@@ -20,7 +20,6 @@ public class MapGenScatteredFeature extends MapGenStructure
 
     /** the minimum distance between scattered features */
     private int minDistanceBetweenScatteredFeatures;
-    private static final String __OBFID = "CL_00000471";
 
     public MapGenScatteredFeature()
     {
@@ -123,7 +122,6 @@ public class MapGenScatteredFeature extends MapGenStructure
 
     public static class Start extends StructureStart
     {
-        private static final String __OBFID = "CL_00000472";
 
         public Start() {}
 

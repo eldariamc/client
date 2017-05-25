@@ -8,7 +8,6 @@ public class QuadComparator implements Comparator
     private float field_147628_b;
     private float field_147629_c;
     private int[] field_147627_d;
-    private static final String __OBFID = "CL_00000958";
 
     public QuadComparator(int[] p_i45077_1_, float p_i45077_2_, float p_i45077_3_, float p_i45077_4_)
     {

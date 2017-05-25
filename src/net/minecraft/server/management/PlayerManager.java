@@ -54,7 +54,6 @@ public class PlayerManager
 
     /** x, z direction vectors: east, south, west, north */
     private final int[][] xzDirectionsConst = new int[][] {{1, 0}, {0, 1}, { -1, 0}, {0, -1}};
-    private static final String __OBFID = "CL_00001434";
 
     public PlayerManager(WorldServer par1Minecraft)
     {
@@ -465,7 +464,6 @@ public class PlayerManager
         private int flagsYAreasToUpdate;
         private long previousWorldTime;
         public boolean chunkLoaded;
-        private static final String __OBFID = "CL_00001435";
 
         public PlayerInstance(int par2, int par3)
         {

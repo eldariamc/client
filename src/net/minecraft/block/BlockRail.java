@@ -7,7 +7,6 @@ import net.minecraft.world.World;
 public class BlockRail extends BlockRailBase
 {
     private IIcon field_150056_b;
-    private static final String __OBFID = "CL_00000293";
 
     protected BlockRail()
     {

@@ -35,7 +35,6 @@ public class EntityWitch extends EntityMob implements IRangedAttackMob
      * will throw a potion at the target entity.
      */
     private int witchAttackTimer;
-    private static final String __OBFID = "CL_00001701";
 
     public EntityWitch(World p_i1744_1_)
     {

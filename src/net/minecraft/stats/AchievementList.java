@@ -109,7 +109,6 @@ public class AchievementList
     public static Achievement field_150964_J = (new Achievement("achievement.killWither", "killWither", 7, 10, Items.nether_star, field_150963_I)).registerStat();
     public static Achievement field_150965_K = (new Achievement("achievement.fullBeacon", "fullBeacon", 7, 8, Blocks.beacon, field_150964_J)).setSpecial().registerStat();
     public static Achievement field_150961_L = (new Achievement("achievement.exploreAllBiomes", "exploreAllBiomes", 4, 8, Items.diamond_boots, theEnd)).func_150953_b(JsonSerializableSet.class).setSpecial().registerStat();
-    private static final String __OBFID = "CL_00001467";
 
     /**
      * A stub functions called to make the static initializer for this class run.

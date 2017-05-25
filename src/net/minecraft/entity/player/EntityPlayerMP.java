@@ -111,7 +111,6 @@ public class EntityPlayerMP extends EntityPlayer implements ICrafting
      * and XP
      */
     public boolean playerConqueredTheEnd;
-    private static final String __OBFID = "CL_00001440";
 
     public EntityPlayerMP(MinecraftServer p_i45285_1_, WorldServer p_i45285_2_, GameProfile p_i45285_3_, ItemInWorldManager p_i45285_4_)
     {

@@ -6,7 +6,6 @@ import net.minecraft.network.play.client.C0BPacketEntityAction;
 
 public class GuiSleepMP extends GuiChat
 {
-    private static final String __OBFID = "CL_00000697";
 
     /**
      * Adds the buttons (and other controls) to the screen in question.

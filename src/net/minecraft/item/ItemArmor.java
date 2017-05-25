@@ -27,7 +27,6 @@ public class ItemArmor extends Item
     public static final String[] EMPTY_SLOT_NAMES = new String[] {"empty_armor_slot_helmet", "empty_armor_slot_chestplate", "empty_armor_slot_leggings", "empty_armor_slot_boots"};
     private static final IBehaviorDispenseItem dispenserBehavior = new BehaviorDefaultDispenseItem()
     {
-        private static final String __OBFID = "CL_00001767";
         protected ItemStack dispenseStack(IBlockSource p_82487_1_, ItemStack p_82487_2_)
         {
             EnumFacing var3 = BlockDispenser.func_149937_b(p_82487_1_.getBlockMetadata());
@@ -79,7 +78,6 @@ public class ItemArmor extends Item
     private final ItemArmor.ArmorMaterial material;
     private IIcon overlayIcon;
     private IIcon emptySlotIcon;
-    private static final String __OBFID = "CL_00001766";
 
     public ItemArmor(ItemArmor.ArmorMaterial material, int renderIndex, int armorType)
     {
@@ -301,7 +299,6 @@ public class ItemArmor extends Item
         private int[] damageReductionAmountArray;
         private int enchantability;
 
-        private static final String __OBFID = "CL_00001768";
 
         ArmorMaterial(int maxDamageFactor, int[] damageReductionAmount, int enchantability)
         {

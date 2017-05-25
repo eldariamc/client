@@ -8,7 +8,6 @@ public class Frustrum implements ICamera
     private double xPosition;
     private double yPosition;
     private double zPosition;
-    private static final String __OBFID = "CL_00000976";
 
     public void setPosition(double par1, double par3, double par5)
     {

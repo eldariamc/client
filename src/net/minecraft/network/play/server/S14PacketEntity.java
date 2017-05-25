@@ -18,7 +18,6 @@ public class S14PacketEntity extends Packet
     protected byte field_149071_e;
     protected byte field_149068_f;
     protected boolean field_149069_g;
-    private static final String __OBFID = "CL_00001312";
 
     public S14PacketEntity() {}
 
@@ -103,7 +102,6 @@ public class S14PacketEntity extends Packet
 
     public static class S15PacketEntityRelMove extends S14PacketEntity
     {
-        private static final String __OBFID = "CL_00001313";
 
         public S15PacketEntityRelMove() {}
 
@@ -144,7 +142,6 @@ public class S14PacketEntity extends Packet
 
     public static class S16PacketEntityLook extends S14PacketEntity
     {
-        private static final String __OBFID = "CL_00001315";
 
         public S16PacketEntityLook()
         {
@@ -186,7 +183,6 @@ public class S14PacketEntity extends Packet
 
     public static class S17PacketEntityLookMove extends S14PacketEntity
     {
-        private static final String __OBFID = "CL_00001314";
 
         public S17PacketEntityLookMove()
         {

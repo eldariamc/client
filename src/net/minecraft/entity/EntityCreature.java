@@ -36,7 +36,6 @@ public abstract class EntityCreature extends EntityLiving
     private float maximumHomeDistance = -1.0F;
     private EntityAIBase field_110178_bs = new EntityAIMoveTowardsRestriction(this, 1.0D);
     private boolean field_110180_bt;
-    private static final String __OBFID = "CL_00001558";
 
     public EntityCreature(World p_i1602_1_)
     {

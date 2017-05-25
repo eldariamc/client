@@ -30,7 +30,6 @@ public class Profiler
     public long timeTickNano;
     private long startUpdateChunksNano;
     public long timeUpdateChunksNano;
-    private static final String __OBFID = "CL_00001497";
 
     public Profiler()
     {
@@ -240,7 +239,6 @@ public class Profiler
         public double field_76332_a;
         public double field_76330_b;
         public String field_76331_c;
-        private static final String __OBFID = "CL_00001498";
 
         public Result(String par1Str, double par2, double par4)
         {

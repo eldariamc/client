@@ -15,7 +15,6 @@ public class BlockStoneSlab extends BlockSlab
 {
     public static final String[] field_150006_b = new String[] {"stone", "sand", "wood", "cobble", "brick", "smoothStoneBrick", "netherBrick", "quartz"};
     private IIcon field_150007_M;
-    private static final String __OBFID = "CL_00000320";
 
     public BlockStoneSlab(boolean p_i45431_1_)
     {

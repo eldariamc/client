@@ -7,7 +7,6 @@ import net.minecraft.world.World;
 
 public class ItemSnowball extends Item
 {
-    private static final String __OBFID = "CL_00000069";
 
     public ItemSnowball()
     {

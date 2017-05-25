@@ -52,7 +52,6 @@ public class EntityPlayerSP extends AbstractClientPlayer
 
     /** The amount of time an entity has been in a Portal the previous tick */
     public float prevTimeInPortal;
-    private static final String __OBFID = "CL_00000938";
 
     public EntityPlayerSP(Minecraft p_i1238_1_, World p_i1238_2_, Session p_i1238_3_, int p_i1238_4_)
     {

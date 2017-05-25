@@ -42,7 +42,6 @@ public class OldServerPinger
     private static final Splitter field_147230_a = Splitter.on('\u0000').limit(6);
     private static final Logger logger = LogManager.getLogger();
     private final List field_147229_c = Collections.synchronizedList(new ArrayList());
-    private static final String __OBFID = "CL_00000892";
 
     public void func_147224_a(final ServerData p_147224_1_) throws UnknownHostException
     {
@@ -55,7 +54,6 @@ public class OldServerPinger
         var3.setNetHandler(new INetHandlerStatusClient()
         {
             private boolean field_147403_d = false;
-            private static final String __OBFID = "CL_00000893";
             public void handleServerInfo(S00PacketServerInfo p_147397_1_)
             {
                 ServerStatusResponse var2 = p_147397_1_.func_149294_c();
@@ -184,7 +182,6 @@ public class OldServerPinger
         final ServerAddress var2 = ServerAddress.func_78860_a(p_147225_1_.serverIP);
         ((Bootstrap)((Bootstrap)((Bootstrap)(new Bootstrap()).group(NetworkManager.eventLoops)).handler(new ChannelInitializer()
         {
-            private static final String __OBFID = "CL_00000894";
             protected void initChannel(Channel p_initChannel_1_)
             {
                 try
@@ -207,7 +204,6 @@ public class OldServerPinger
 
                 p_initChannel_1_.pipeline().addLast(new ChannelHandler[] {new SimpleChannelInboundHandler()
                     {
-                        private static final String __OBFID = "CL_00000895";
                         public void channelActive(ChannelHandlerContext p_channelActive_1_) throws Exception
                         {
                             super.channelActive(p_channelActive_1_);

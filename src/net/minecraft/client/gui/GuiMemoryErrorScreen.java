@@ -4,7 +4,6 @@ import net.minecraft.client.resources.I18n;
 
 public class GuiMemoryErrorScreen extends GuiScreen
 {
-    private static final String __OBFID = "CL_00000702";
 
     /**
      * Adds the buttons (and other controls) to the screen in question.

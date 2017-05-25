@@ -15,7 +15,6 @@ public class ShapelessRecipes implements IRecipe
 
     /** Is a List of ItemStack that composes the recipe. */
     private final List recipeItems;
-    private static final String __OBFID = "CL_00000094";
 
     public ShapelessRecipes(ItemStack p_i1918_1_, List p_i1918_2_)
     {

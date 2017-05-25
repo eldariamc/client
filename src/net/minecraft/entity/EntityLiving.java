@@ -78,7 +78,6 @@ public abstract class EntityLiving extends EntityLivingBase
     public int randomMobsId = 0;
     public BiomeGenBase spawnBiome = null;
     public BlockPos spawnPosition = null;
-    private static final String __OBFID = "CL_00001550";
 
     public EntityLiving(World par1World)
     {

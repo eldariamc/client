@@ -24,7 +24,6 @@ public class EntityLookHelper
     private double posX;
     private double posY;
     private double posZ;
-    private static final String __OBFID = "CL_00001572";
 
     public EntityLookHelper(EntityLiving p_i1613_1_)
     {

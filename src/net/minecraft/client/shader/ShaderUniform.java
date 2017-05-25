@@ -20,7 +20,6 @@ public class ShaderUniform
     private final String field_148099_g;
     private boolean field_148105_h;
     private final ShaderManager field_148106_i;
-    private static final String __OBFID = "CL_00001046";
 
     public ShaderUniform(String p_i45092_1_, int p_i45092_2_, int p_i45092_3_, ShaderManager p_i45092_4_)
     {

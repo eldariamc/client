@@ -4,7 +4,6 @@ public class SoundEventAccessor implements ISoundEventAccessor
 {
     private final SoundPoolEntry field_148739_a;
     private final int field_148738_b;
-    private static final String __OBFID = "CL_00001153";
 
     SoundEventAccessor(SoundPoolEntry p_i45123_1_, int p_i45123_2_)
     {

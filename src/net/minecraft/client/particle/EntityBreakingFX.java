@@ -7,7 +7,6 @@ import net.minecraft.world.World;
 
 public class EntityBreakingFX extends EntityFX
 {
-    private static final String __OBFID = "CL_00000897";
 
     public EntityBreakingFX(World p_i1195_1_, double p_i1195_2_, double p_i1195_4_, double p_i1195_6_, Item p_i1195_8_)
     {

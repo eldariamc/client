@@ -16,7 +16,6 @@ import java.util.Random;
 public abstract class BlockButton extends Block
 {
     private final boolean field_150047_a;
-    private static final String __OBFID = "CL_00000209";
 
     protected BlockButton(boolean p_i45396_1_)
     {

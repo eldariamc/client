@@ -10,7 +10,6 @@ public class ItemSeedFood extends ItemFood
 
     /** Block ID of the soil this seed food should be planted on. */
     private Block soilId;
-    private static final String __OBFID = "CL_00000060";
 
     public ItemSeedFood(int p_i45351_1_, float p_i45351_2_, Block p_i45351_3_, Block p_i45351_4_)
     {

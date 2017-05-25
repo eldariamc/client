@@ -28,7 +28,6 @@ public class GuiTwitchUserMode extends GuiScreen
     private final List field_152332_r = Lists.newArrayList();
     private final IStream field_152333_s;
     private int field_152334_t;
-    private static final String __OBFID = "CL_00001837";
 
     public GuiTwitchUserMode(IStream p_i1064_1_, ChatUserInfo p_i1064_2_)
     {

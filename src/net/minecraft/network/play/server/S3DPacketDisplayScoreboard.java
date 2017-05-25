@@ -12,7 +12,6 @@ public class S3DPacketDisplayScoreboard extends Packet
 {
     private int field_149374_a;
     private String field_149373_b;
-    private static final String __OBFID = "CL_00001325";
 
     public S3DPacketDisplayScoreboard() {}
 

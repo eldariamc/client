@@ -17,7 +17,6 @@ public class ResourcePackListEntryDefault extends ResourcePackListEntry
     private static final Logger logger = LogManager.getLogger();
     private final IResourcePack field_148320_d;
     private final ResourceLocation field_148321_e;
-    private static final String __OBFID = "CL_00000822";
 
     public ResourcePackListEntryDefault(GuiScreenResourcePacks p_i45052_1_)
     {

@@ -8,7 +8,6 @@ import net.minecraft.world.World;
 
 public class ItemFlintAndSteel extends Item
 {
-    private static final String __OBFID = "CL_00000035";
 
     public ItemFlintAndSteel()
     {

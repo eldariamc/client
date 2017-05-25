@@ -15,7 +15,6 @@ public class InventoryCrafting implements IInventory
      * Class containing the callbacks for the events on_GUIClosed and on_CraftMaxtrixChanged.
      */
     private Container eventHandler;
-    private static final String __OBFID = "CL_00001743";
 
     public InventoryCrafting(Container p_i1807_1_, int p_i1807_2_, int p_i1807_3_)
     {

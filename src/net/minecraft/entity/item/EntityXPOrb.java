@@ -30,7 +30,6 @@ public class EntityXPOrb extends Entity
 
     /** Threshold color for tracking players */
     private int xpTargetColor;
-    private static final String __OBFID = "CL_00001544";
 
     public EntityXPOrb(World p_i1585_1_, double p_i1585_2_, double p_i1585_4_, double p_i1585_6_, int p_i1585_8_)
     {

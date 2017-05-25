@@ -7,7 +7,6 @@ import net.minecraft.world.World;
 
 public abstract class EntityWaterMob extends EntityCreature implements IAnimals
 {
-    private static final String __OBFID = "CL_00001653";
 
     public EntityWaterMob(World p_i1695_1_)
     {

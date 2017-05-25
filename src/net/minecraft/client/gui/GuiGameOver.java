@@ -11,7 +11,6 @@ public class GuiGameOver extends GuiScreen implements GuiYesNoCallback
 {
     private int field_146347_a;
     private boolean field_146346_f = false;
-    private static final String __OBFID = "CL_00000690";
 
     /**
      * Adds the buttons (and other controls) to the screen in question.

@@ -13,7 +13,6 @@ public class S3BPacketScoreboardObjective extends Packet
     private String field_149343_a;
     private String field_149341_b;
     private int field_149342_c;
-    private static final String __OBFID = "CL_00001333";
 
     public S3BPacketScoreboardObjective() {}
 

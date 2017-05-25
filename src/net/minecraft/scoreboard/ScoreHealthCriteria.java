@@ -8,7 +8,6 @@ import java.util.List;
 
 public class ScoreHealthCriteria extends ScoreDummyCriteria
 {
-    private static final String __OBFID = "CL_00000623";
 
     public ScoreHealthCriteria(String p_i2312_1_)
     {

@@ -26,7 +26,6 @@ public class VillageSiege
     private int field_75532_g;
     private int field_75538_h;
     private int field_75539_i;
-    private static final String __OBFID = "CL_00001634";
 
     public VillageSiege(World p_i1676_1_)
     {

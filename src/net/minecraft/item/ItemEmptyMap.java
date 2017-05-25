@@ -8,7 +8,6 @@ import net.minecraft.world.storage.MapData;
 
 public class ItemEmptyMap extends ItemMapBase
 {
-    private static final String __OBFID = "CL_00000024";
 
     protected ItemEmptyMap()
     {

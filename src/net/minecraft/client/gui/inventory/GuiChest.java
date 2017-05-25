@@ -12,7 +12,6 @@ public class GuiChest extends GuiContainer
     private IInventory field_147016_v;
     private IInventory field_147015_w;
     private int field_147018_x;
-    private static final String __OBFID = "CL_00000749";
 
     public GuiChest(IInventory p_i1083_1_, IInventory p_i1083_2_)
     {

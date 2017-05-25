@@ -30,7 +30,6 @@ public class ModelBox
     /** Z vertex coordinate of upper box corner */
     public final float posZ2;
     public String field_78247_g;
-    private static final String __OBFID = "CL_00000872";
 
     public ModelBox(ModelRenderer p_i1171_1_, int p_i1171_2_, int p_i1171_3_, float p_i1171_4_, float p_i1171_5_, float p_i1171_6_, int p_i1171_7_, int p_i1171_8_, int p_i1171_9_, float p_i1171_10_)
     {

@@ -35,7 +35,6 @@ public class ItemFood extends Item
 
     /** probably of the set potion effect occurring */
     private float potionEffectProbability;
-    private static final String __OBFID = "CL_00000036";
 
     public ItemFood(int p_i45339_1_, float p_i45339_2_, boolean p_i45339_3_)
     {

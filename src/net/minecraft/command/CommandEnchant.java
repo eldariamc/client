@@ -10,7 +10,6 @@ import java.util.List;
 
 public class CommandEnchant extends CommandBase
 {
-    private static final String __OBFID = "CL_00000377";
 
     public String getCommandName()
     {

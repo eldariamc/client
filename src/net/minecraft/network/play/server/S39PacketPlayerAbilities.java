@@ -16,7 +16,6 @@ public class S39PacketPlayerAbilities extends Packet
     private boolean field_149115_d;
     private float field_149116_e;
     private float field_149114_f;
-    private static final String __OBFID = "CL_00001317";
 
     public S39PacketPlayerAbilities() {}
 

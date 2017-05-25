@@ -16,7 +16,6 @@ public class S2DPacketOpenWindow extends Packet
     private boolean field_148906_e;
     private int field_148904_f;
     private double furnaceSpeed;
-    private static final String __OBFID = "CL_00001293";
 
     public S2DPacketOpenWindow() {}
 

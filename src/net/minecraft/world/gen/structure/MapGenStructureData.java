@@ -6,7 +6,6 @@ import net.minecraft.world.WorldSavedData;
 public class MapGenStructureData extends WorldSavedData
 {
     private NBTTagCompound field_143044_a = new NBTTagCompound();
-    private static final String __OBFID = "CL_00000510";
 
     public MapGenStructureData(String p_i43001_1_)
     {

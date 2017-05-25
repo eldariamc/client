@@ -12,7 +12,6 @@ import java.util.Random;
 
 public class BlockTripWireHook extends Block
 {
-    private static final String __OBFID = "CL_00000329";
 
     public BlockTripWireHook()
     {

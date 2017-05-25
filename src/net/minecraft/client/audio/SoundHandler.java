@@ -28,7 +28,6 @@ public class SoundHandler implements IResourceManagerReloadListener, IUpdatePlay
     private static final Gson field_147699_c = (new GsonBuilder()).registerTypeAdapter(SoundList.class, new SoundListSerializer()).create();
     private static final ParameterizedType field_147696_d = new ParameterizedType()
     {
-        private static final String __OBFID = "CL_00001148";
         public Type[] getActualTypeArguments()
         {
             return new Type[] {String.class, SoundList.class};
@@ -46,7 +45,6 @@ public class SoundHandler implements IResourceManagerReloadListener, IUpdatePlay
     private final SoundRegistry field_147697_e = new SoundRegistry();
     private final SoundManager field_147694_f;
     private final IResourceManager field_147695_g;
-    private static final String __OBFID = "CL_00001147";
 
     public SoundHandler(IResourceManager p_i45122_1_, GameSettings p_i45122_2_)
     {
@@ -149,7 +147,6 @@ public class SoundHandler implements IResourceManagerReloadListener, IUpdatePlay
                     var9 = new ISoundEventAccessor()
                     {
                         final ResourceLocation field_148726_a = new ResourceLocation(var8, var5.func_148556_a());
-                        private static final String __OBFID = "CL_00001149";
                         public int func_148721_a()
                         {
                             SoundEventAccessorComposite var1 = (SoundEventAccessorComposite)SoundHandler.this.field_147697_e.getObject(this.field_148726_a);
@@ -274,7 +271,6 @@ public class SoundHandler implements IResourceManagerReloadListener, IUpdatePlay
     static final class SwitchType
     {
         static final int[] field_148765_a = new int[SoundList.SoundEntry.Type.values().length];
-        private static final String __OBFID = "CL_00001150";
 
         static
         {

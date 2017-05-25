@@ -16,7 +16,6 @@ public class SimpleTexture extends AbstractTexture
 {
     private static final Logger logger = LogManager.getLogger();
     protected final ResourceLocation textureLocation;
-    private static final String __OBFID = "CL_00001052";
 
     public SimpleTexture(ResourceLocation p_i1275_1_)
     {

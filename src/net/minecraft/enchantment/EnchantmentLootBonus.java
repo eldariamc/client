@@ -2,7 +2,6 @@ package net.minecraft.enchantment;
 
 public class EnchantmentLootBonus extends Enchantment
 {
-    private static final String __OBFID = "CL_00000119";
 
     protected EnchantmentLootBonus(int p_i1934_1_, int p_i1934_2_, EnumEnchantmentType p_i1934_3_)
     {

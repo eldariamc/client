@@ -4,7 +4,6 @@ import net.minecraft.world.biome.BiomeGenBase;
 
 public class GenLayerAddMushroomIsland extends GenLayer
 {
-    private static final String __OBFID = "CL_00000552";
 
     public GenLayerAddMushroomIsland(long p_i2120_1_, GenLayer p_i2120_3_)
     {

@@ -5,7 +5,6 @@ import net.minecraft.init.Blocks;
 
 public class BiomeGenEnd extends BiomeGenBase
 {
-    private static final String __OBFID = "CL_00000187";
 
     public BiomeGenEnd(int p_i1990_1_)
     {

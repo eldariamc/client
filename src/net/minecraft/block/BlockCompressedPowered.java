@@ -6,7 +6,6 @@ import net.minecraft.world.IBlockAccess;
 
 public class BlockCompressedPowered extends BlockCompressed
 {
-    private static final String __OBFID = "CL_00000287";
 
     public BlockCompressedPowered(MapColor p_i45416_1_)
     {

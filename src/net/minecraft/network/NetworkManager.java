@@ -66,7 +66,6 @@ public class NetworkManager extends SimpleChannelInboundHandler
     /** A String indicating why the network has shutdown. */
     private IChatComponent terminationReason;
     private boolean field_152463_r;
-    private static final String __OBFID = "CL_00001240";
 
     public NetworkManager(boolean p_i45147_1_)
     {
@@ -185,7 +184,6 @@ public class NetworkManager extends SimpleChannelInboundHandler
         {
             this.channel.eventLoop().execute(new Runnable()
             {
-                private static final String __OBFID = "CL_00001241";
                 public void run()
                 {
                     if (var3 != var4)
@@ -284,7 +282,6 @@ public class NetworkManager extends SimpleChannelInboundHandler
         final NetworkManager var2 = new NetworkManager(true);
         ((Bootstrap)((Bootstrap)((Bootstrap)(new Bootstrap()).group(eventLoops)).handler(new ChannelInitializer()
         {
-            private static final String __OBFID = "CL_00001242";
             protected void initChannel(Channel p_initChannel_1_)
             {
                 try
@@ -320,7 +317,6 @@ public class NetworkManager extends SimpleChannelInboundHandler
         final NetworkManager var1 = new NetworkManager(true);
         ((Bootstrap)((Bootstrap)((Bootstrap)(new Bootstrap()).group(eventLoops)).handler(new ChannelInitializer()
         {
-            private static final String __OBFID = "CL_00001243";
             protected void initChannel(Channel p_initChannel_1_)
             {
                 p_initChannel_1_.pipeline().addLast("packet_handler", var1);
@@ -380,7 +376,6 @@ public class NetworkManager extends SimpleChannelInboundHandler
     {
         private final Packet field_150774_a;
         private final GenericFutureListener[] field_150773_b;
-        private static final String __OBFID = "CL_00001244";
 
         public InboundHandlerTuplePacketListener(Packet p_i45146_1_, GenericFutureListener ... p_i45146_2_)
         {

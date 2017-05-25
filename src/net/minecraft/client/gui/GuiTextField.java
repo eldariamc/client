@@ -24,7 +24,6 @@ public class GuiTextField extends Gui
     private int field_146222_t = 14737632;
     private int field_146221_u = 7368816;
     private boolean field_146220_v = true;
-    private static final String __OBFID = "CL_00000670";
 
     public GuiTextField(FontRenderer p_i1032_1_, int p_i1032_2_, int p_i1032_3_, int p_i1032_4_, int p_i1032_5_)
     {

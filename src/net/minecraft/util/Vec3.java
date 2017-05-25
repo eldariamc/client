@@ -10,7 +10,6 @@ public class Vec3
 
     /** Z coordinate of Vec3D */
     public double zCoord;
-    private static final String __OBFID = "CL_00000612";
 
     /**
      * Static method for creating a new Vec3D given the three x,y,z values. This is only called from the other static

@@ -27,7 +27,6 @@ public abstract class EntityAnimal extends EntityAgeable implements IAnimals
      */
     private int breeding;
     private EntityPlayer field_146084_br;
-    private static final String __OBFID = "CL_00001638";
 
     public EntityAnimal(World p_i1681_1_)
     {

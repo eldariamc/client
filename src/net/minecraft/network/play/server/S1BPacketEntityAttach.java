@@ -13,7 +13,6 @@ public class S1BPacketEntityAttach extends Packet
     private int field_149408_a;
     private int field_149406_b;
     private int field_149407_c;
-    private static final String __OBFID = "CL_00001327";
 
     public S1BPacketEntityAttach() {}
 

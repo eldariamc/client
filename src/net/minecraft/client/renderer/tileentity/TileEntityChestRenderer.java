@@ -31,7 +31,6 @@ public class TileEntityChestRenderer extends TileEntitySpecialRenderer
     private ModelChest field_147510_h = new ModelChest();
     private ModelChest field_147511_i = new ModelLargeChest();
     private boolean isChristmas;
-    private static final String __OBFID = "CL_00000965";
 
     public TileEntityChestRenderer()
     {

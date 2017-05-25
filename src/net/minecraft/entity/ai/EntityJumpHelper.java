@@ -6,7 +6,6 @@ public class EntityJumpHelper
 {
     private EntityLiving entity;
     private boolean isJumping;
-    private static final String __OBFID = "CL_00001571";
 
     public EntityJumpHelper(EntityLiving p_i1612_1_)
     {

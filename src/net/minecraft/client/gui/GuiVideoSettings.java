@@ -14,7 +14,6 @@ public class GuiVideoSettings extends GuiScreen
     private int lastMouseX = 0;
     private int lastMouseY = 0;
     private long mouseStillTime = 0L;
-    private static final String __OBFID = "CL_00000718";
 
     public GuiVideoSettings(GuiScreen par1GuiScreen, GameSettings par2GameSettings)
     {

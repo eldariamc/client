@@ -25,13 +25,11 @@ import java.util.Random;
 public class Bootstrap
 {
     private static boolean field_151355_a = false;
-    private static final String __OBFID = "CL_00001397";
 
     static void func_151353_a()
     {
         BlockDispenser.dispenseBehaviorRegistry.putObject(Items.arrow, new BehaviorProjectileDispense()
         {
-            private static final String __OBFID = "CL_00001398";
             protected IProjectile getProjectileEntity(World p_82499_1_, IPosition p_82499_2_)
             {
                 EntityArrow var3 = new EntityArrow(p_82499_1_, p_82499_2_.getX(), p_82499_2_.getY(), p_82499_2_.getZ());
@@ -41,7 +39,6 @@ public class Bootstrap
         });
         BlockDispenser.dispenseBehaviorRegistry.putObject(Items.egg, new BehaviorProjectileDispense()
         {
-            private static final String __OBFID = "CL_00001404";
             protected IProjectile getProjectileEntity(World p_82499_1_, IPosition p_82499_2_)
             {
                 return new EntityEgg(p_82499_1_, p_82499_2_.getX(), p_82499_2_.getY(), p_82499_2_.getZ());
@@ -49,7 +46,6 @@ public class Bootstrap
         });
         BlockDispenser.dispenseBehaviorRegistry.putObject(Items.snowball, new BehaviorProjectileDispense()
         {
-            private static final String __OBFID = "CL_00001405";
             protected IProjectile getProjectileEntity(World p_82499_1_, IPosition p_82499_2_)
             {
                 return new EntitySnowball(p_82499_1_, p_82499_2_.getX(), p_82499_2_.getY(), p_82499_2_.getZ());
@@ -57,7 +53,6 @@ public class Bootstrap
         });
         BlockDispenser.dispenseBehaviorRegistry.putObject(Items.experience_bottle, new BehaviorProjectileDispense()
         {
-            private static final String __OBFID = "CL_00001406";
             protected IProjectile getProjectileEntity(World p_82499_1_, IPosition p_82499_2_)
             {
                 return new EntityExpBottle(p_82499_1_, p_82499_2_.getX(), p_82499_2_.getY(), p_82499_2_.getZ());
@@ -74,12 +69,10 @@ public class Bootstrap
         BlockDispenser.dispenseBehaviorRegistry.putObject(Items.potionitem, new IBehaviorDispenseItem()
         {
             private final BehaviorDefaultDispenseItem field_150843_b = new BehaviorDefaultDispenseItem();
-            private static final String __OBFID = "CL_00001407";
             public ItemStack dispense(IBlockSource p_82482_1_, final ItemStack p_82482_2_)
             {
                 return ItemPotion.isSplash(p_82482_2_.getItemDamage()) ? (new BehaviorProjectileDispense()
                 {
-                    private static final String __OBFID = "CL_00001408";
                     protected IProjectile getProjectileEntity(World p_82499_1_, IPosition p_82499_2_)
                     {
                         return new EntityPotion(p_82499_1_, p_82499_2_.getX(), p_82499_2_.getY(), p_82499_2_.getZ(), p_82482_2_.copy());
@@ -97,7 +90,6 @@ public class Bootstrap
         });
         BlockDispenser.dispenseBehaviorRegistry.putObject(Items.spawn_egg, new BehaviorDefaultDispenseItem()
         {
-            private static final String __OBFID = "CL_00001410";
             public ItemStack dispenseStack(IBlockSource p_82487_1_, ItemStack p_82487_2_)
             {
                 EnumFacing var3 = BlockDispenser.func_149937_b(p_82487_1_.getBlockMetadata());
@@ -117,7 +109,6 @@ public class Bootstrap
         });
         BlockDispenser.dispenseBehaviorRegistry.putObject(Items.fireworks, new BehaviorDefaultDispenseItem()
         {
-            private static final String __OBFID = "CL_00001411";
             public ItemStack dispenseStack(IBlockSource p_82487_1_, ItemStack p_82487_2_)
             {
                 EnumFacing var3 = BlockDispenser.func_149937_b(p_82487_1_.getBlockMetadata());
@@ -136,7 +127,6 @@ public class Bootstrap
         });
         BlockDispenser.dispenseBehaviorRegistry.putObject(Items.fire_charge, new BehaviorDefaultDispenseItem()
         {
-            private static final String __OBFID = "CL_00001412";
             public ItemStack dispenseStack(IBlockSource p_82487_1_, ItemStack p_82487_2_)
             {
                 EnumFacing var3 = BlockDispenser.func_149937_b(p_82487_1_.getBlockMetadata());
@@ -161,7 +151,6 @@ public class Bootstrap
         BlockDispenser.dispenseBehaviorRegistry.putObject(Items.boat, new BehaviorDefaultDispenseItem()
         {
             private final BehaviorDefaultDispenseItem field_150842_b = new BehaviorDefaultDispenseItem();
-            private static final String __OBFID = "CL_00001413";
             public ItemStack dispenseStack(IBlockSource p_82487_1_, ItemStack p_82487_2_)
             {
                 EnumFacing var3 = BlockDispenser.func_149937_b(p_82487_1_.getBlockMetadata());
@@ -202,7 +191,6 @@ public class Bootstrap
         BehaviorDefaultDispenseItem var0 = new BehaviorDefaultDispenseItem()
         {
             private final BehaviorDefaultDispenseItem field_150841_b = new BehaviorDefaultDispenseItem();
-            private static final String __OBFID = "CL_00001399";
             public ItemStack dispenseStack(IBlockSource p_82487_1_, ItemStack p_82487_2_)
             {
                 ItemBucket var3 = (ItemBucket)p_82487_2_.getItem();
@@ -228,7 +216,6 @@ public class Bootstrap
         BlockDispenser.dispenseBehaviorRegistry.putObject(Items.bucket, new BehaviorDefaultDispenseItem()
         {
             private final BehaviorDefaultDispenseItem field_150840_b = new BehaviorDefaultDispenseItem();
-            private static final String __OBFID = "CL_00001400";
             public ItemStack dispenseStack(IBlockSource p_82487_1_, ItemStack p_82487_2_)
             {
                 EnumFacing var3 = BlockDispenser.func_149937_b(p_82487_1_.getBlockMetadata());
@@ -272,7 +259,6 @@ public class Bootstrap
         BlockDispenser.dispenseBehaviorRegistry.putObject(Items.flint_and_steel, new BehaviorDefaultDispenseItem()
         {
             private boolean field_150839_b = true;
-            private static final String __OBFID = "CL_00001401";
             protected ItemStack dispenseStack(IBlockSource p_82487_1_, ItemStack p_82487_2_)
             {
                 EnumFacing var3 = BlockDispenser.func_149937_b(p_82487_1_.getBlockMetadata());
@@ -317,7 +303,6 @@ public class Bootstrap
         BlockDispenser.dispenseBehaviorRegistry.putObject(Items.dye, new BehaviorDefaultDispenseItem()
         {
             private boolean field_150838_b = true;
-            private static final String __OBFID = "CL_00001402";
             protected ItemStack dispenseStack(IBlockSource p_82487_1_, ItemStack p_82487_2_)
             {
                 if (p_82487_2_.getItemDamage() == 15)
@@ -361,7 +346,6 @@ public class Bootstrap
         });
         BlockDispenser.dispenseBehaviorRegistry.putObject(Item.getItemFromBlock(Blocks.tnt), new BehaviorDefaultDispenseItem()
         {
-            private static final String __OBFID = "CL_00001403";
             protected ItemStack dispenseStack(IBlockSource p_82487_1_, ItemStack p_82487_2_)
             {
                 EnumFacing var3 = BlockDispenser.func_149937_b(p_82487_1_.getBlockMetadata());
@@ -377,7 +361,6 @@ public class Bootstrap
         });
         BlockDispenser.dispenseBehaviorRegistry.putObject(Item.getItemFromBlock(Blocks.greek_tnt), new BehaviorDefaultDispenseItem()
         {
-            private static final String __OBFID = "CL_00001403";
             protected ItemStack dispenseStack(IBlockSource p_82487_1_, ItemStack p_82487_2_)
             {
                 EnumFacing var3 = BlockDispenser.func_149937_b(p_82487_1_.getBlockMetadata());

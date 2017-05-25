@@ -2,7 +2,6 @@ package net.minecraft.world.gen.layer;
 
 public class GenLayerZoom extends GenLayer
 {
-    private static final String __OBFID = "CL_00000572";
 
     public GenLayerZoom(long p_i2134_1_, GenLayer p_i2134_3_)
     {

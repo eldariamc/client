@@ -12,7 +12,6 @@ public class S38PacketPlayerListItem extends Packet
     private String field_149126_a;
     private boolean field_149124_b;
     private int field_149125_c;
-    private static final String __OBFID = "CL_00001318";
 
     public S38PacketPlayerListItem() {}
 

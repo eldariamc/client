@@ -38,7 +38,6 @@ public class SkinManager implements IResourceManager
     private final File field_152796_d;
     private final MinecraftSessionService sessionService;
     private final LoadingCache field_152798_f;
-    private static final String __OBFID = "CL_00001830";
 
     public SkinManager(TextureManager p_i1044_1_, File p_i1044_2_, MinecraftSessionService p_i1044_3_)
     {
@@ -47,7 +46,6 @@ public class SkinManager implements IResourceManager
         this.sessionService = p_i1044_3_;
         this.field_152798_f = CacheBuilder.newBuilder().expireAfterAccess(15L, TimeUnit.SECONDS).build(new CacheLoader()
         {
-            private static final String __OBFID = "CL_00001829";
             public Map func_152786_a(GameProfile gameProfile)
             {
                 //return Minecraft.getMinecraft().func_152347_ac().getTextures(gameProfile, false);
@@ -102,7 +100,6 @@ public class SkinManager implements IResourceManager
             final ImageBufferDownload var8 = type == Type.SKIN ? new ImageBufferDownload() : null;
             ThreadDownloadImageData var9 = new ThreadDownloadImageData(var7, texture.getUrl(), field_152793_a, new IImageBuffer()
             {
-                private static final String __OBFID = "CL_00001828";
                 public BufferedImage parseUserSkin(BufferedImage p_78432_1_)
                 {
                     if (var8 != null)
@@ -170,7 +167,6 @@ public class SkinManager implements IResourceManager
 
                 Minecraft.getMinecraft().func_152344_a(new Runnable()
                 {
-                    private static final String __OBFID = "CL_00001826";
                     public void run()
                     {
                         if (var1.containsKey(Type.SKIN))

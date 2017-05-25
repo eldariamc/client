@@ -31,7 +31,6 @@ public class EntityAIArrowAttack extends EntityAIBase
     private int maxRangedAttackTime;
     private float field_96562_i;
     private float field_82642_h;
-    private static final String __OBFID = "CL_00001609";
 
     public EntityAIArrowAttack(IRangedAttackMob p_i1649_1_, double p_i1649_2_, int p_i1649_4_, float p_i1649_5_)
     {

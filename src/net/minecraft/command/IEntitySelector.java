@@ -11,7 +11,6 @@ public interface IEntitySelector
 {
     IEntitySelector selectAnything = new IEntitySelector()
     {
-        private static final String __OBFID = "CL_00001541";
         public boolean isEntityApplicable(Entity p_82704_1_)
         {
             return p_82704_1_.isEntityAlive();
@@ -19,7 +18,6 @@ public interface IEntitySelector
     };
     IEntitySelector field_152785_b = new IEntitySelector()
     {
-        private static final String __OBFID = "CL_00001542";
         public boolean isEntityApplicable(Entity p_82704_1_)
         {
             return p_82704_1_.isEntityAlive() && p_82704_1_.riddenByEntity == null && p_82704_1_.ridingEntity == null;
@@ -27,7 +25,6 @@ public interface IEntitySelector
     };
     IEntitySelector selectInventories = new IEntitySelector()
     {
-        private static final String __OBFID = "CL_00001867";
         public boolean isEntityApplicable(Entity p_82704_1_)
         {
             return p_82704_1_ instanceof IInventory && p_82704_1_.isEntityAlive();
@@ -42,7 +39,6 @@ public interface IEntitySelector
     public static class ArmoredMob implements IEntitySelector
     {
         private final ItemStack field_96567_c;
-        private static final String __OBFID = "CL_00001543";
 
         public ArmoredMob(ItemStack p_i1584_1_)
         {

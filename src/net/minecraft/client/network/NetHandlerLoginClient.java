@@ -34,7 +34,6 @@ public class NetHandlerLoginClient implements INetHandlerLoginClient
     private final Minecraft field_147394_b;
     private final GuiScreen field_147395_c;
     private final NetworkManager field_147393_d;
-    private static final String __OBFID = "CL_00000876";
 
     public NetHandlerLoginClient(NetworkManager p_i45059_1_, Minecraft p_i45059_2_, GuiScreen p_i45059_3_)
     {
@@ -82,7 +81,6 @@ public class NetHandlerLoginClient implements INetHandlerLoginClient
 
         this.field_147393_d.scheduleOutboundPacket(new C01PacketEncryptionResponse(var2, var4, p_147389_1_.func_149607_e()), new GenericFutureListener[] {new GenericFutureListener()
             {
-                private static final String __OBFID = "CL_00000877";
                 public void operationComplete(Future p_operationComplete_1_)
                 {
                     NetHandlerLoginClient.this.field_147393_d.enableEncryption(var2);

@@ -22,7 +22,6 @@ public class Locale
     private static final Pattern field_135031_c = Pattern.compile("%(\\d+\\$)?[\\d\\.]*[df]");
     Map field_135032_a = Maps.newHashMap();
     private boolean field_135029_d;
-    private static final String __OBFID = "CL_00001097";
 
     /**
      * par2 is a list of languages. For each language $L and domain $D, attempts to load the resource $D:lang/$L.lang

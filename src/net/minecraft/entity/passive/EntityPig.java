@@ -18,7 +18,6 @@ public class EntityPig extends EntityAnimal
 {
     /** AI task for player control. */
     private final EntityAIControlledByPlayer aiControlledByPlayer;
-    private static final String __OBFID = "CL_00001647";
 
     public EntityPig(World p_i1689_1_)
     {

@@ -8,7 +8,6 @@ import net.minecraft.world.World;
 
 public class EntityMagmaCube extends EntitySlime
 {
-    private static final String __OBFID = "CL_00001691";
 
     public EntityMagmaCube(World p_i1737_1_)
     {

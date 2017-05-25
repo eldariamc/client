@@ -8,7 +8,6 @@ public class RealmsServerAddress
 {
     private final String host;
     private final int port;
-    private static final String __OBFID = "CL_00001864";
 
     protected RealmsServerAddress(String p_i1121_1_, int p_i1121_2_)
     {

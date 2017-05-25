@@ -13,7 +13,6 @@ import java.util.Random;
 
 public class BlockCommandBlock extends BlockContainer
 {
-    private static final String __OBFID = "CL_00000219";
 
     public BlockCommandBlock()
     {

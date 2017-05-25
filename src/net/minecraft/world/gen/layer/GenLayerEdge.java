@@ -3,7 +3,6 @@ package net.minecraft.world.gen.layer;
 public class GenLayerEdge extends GenLayer
 {
     private final GenLayerEdge.Mode field_151627_c;
-    private static final String __OBFID = "CL_00000547";
 
     public GenLayerEdge(long p_i45474_1_, GenLayer p_i45474_3_, GenLayerEdge.Mode p_i45474_4_)
     {
@@ -138,7 +137,6 @@ public class GenLayerEdge extends GenLayer
         SPECIAL("SPECIAL", 2);
 
         private static final GenLayerEdge.Mode[] $VALUES = new GenLayerEdge.Mode[]{COOL_WARM, HEAT_ICE, SPECIAL};
-        private static final String __OBFID = "CL_00000549";
 
         private Mode(String p_i45473_1_, int p_i45473_2_) {}
     }
@@ -146,7 +144,6 @@ public class GenLayerEdge extends GenLayer
     static final class SwitchMode
     {
         static final int[] field_151642_a = new int[GenLayerEdge.Mode.values().length];
-        private static final String __OBFID = "CL_00000548";
 
         static
         {

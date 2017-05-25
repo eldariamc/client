@@ -10,7 +10,6 @@ import java.util.Random;
 
 public class WorldGenMegaJungle extends WorldGenHugeTrees
 {
-    private static final String __OBFID = "CL_00000420";
 
     public WorldGenMegaJungle(boolean p_i45456_1_, int p_i45456_2_, int p_i45456_3_, int p_i45456_4_, int p_i45456_5_)
     {

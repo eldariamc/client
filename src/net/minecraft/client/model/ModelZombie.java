@@ -5,7 +5,6 @@ import net.minecraft.util.MathHelper;
 
 public class ModelZombie extends ModelBiped
 {
-    private static final String __OBFID = "CL_00000869";
 
     public ModelZombie()
     {

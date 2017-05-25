@@ -10,7 +10,6 @@ import net.minecraft.world.World;
 public class ItemFishingRod extends Item
 {
     private IIcon theIcon;
-    private static final String __OBFID = "CL_00000034";
 
     public ItemFishingRod()
     {

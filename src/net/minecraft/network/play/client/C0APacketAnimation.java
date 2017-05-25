@@ -12,7 +12,6 @@ public class C0APacketAnimation extends Packet
 {
     private int field_149424_a;
     private int field_149423_b;
-    private static final String __OBFID = "CL_00001345";
 
     public C0APacketAnimation() {}
 

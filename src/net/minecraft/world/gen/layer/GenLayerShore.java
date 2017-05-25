@@ -6,7 +6,6 @@ import net.minecraft.world.biome.BiomeGenMesa;
 
 public class GenLayerShore extends GenLayer
 {
-    private static final String __OBFID = "CL_00000568";
 
     public GenLayerShore(long p_i2130_1_, GenLayer p_i2130_3_)
     {

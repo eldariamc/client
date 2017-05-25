@@ -6,7 +6,6 @@ import net.minecraft.server.MinecraftServer;
 
 public class CommandStop extends CommandBase
 {
-    private static final String __OBFID = "CL_00001132";
 
     public String getCommandName()
     {

@@ -18,7 +18,6 @@ import java.util.Random;
 
 public class BlockVine extends Block
 {
-    private static final String __OBFID = "CL_00000330";
 
     public BlockVine()
     {

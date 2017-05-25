@@ -21,7 +21,6 @@ public class SaveFormatOld implements ISaveFormat
      * Reference to the File object representing the directory for the world saves
      */
     protected final File savesDirectory;
-    private static final String __OBFID = "CL_00000586";
 
     public SaveFormatOld(File p_i2147_1_)
     {

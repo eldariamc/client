@@ -33,7 +33,6 @@ public class PathPoint
 
     /** Indicates this is the origin */
     public boolean isFirst;
-    private static final String __OBFID = "CL_00000574";
 
     public PathPoint(int p_i2135_1_, int p_i2135_2_, int p_i2135_3_)
     {

@@ -8,7 +8,6 @@ public class EntityAILookAtVillager extends EntityAIBase
     private EntityIronGolem theGolem;
     private EntityVillager theVillager;
     private int lookTime;
-    private static final String __OBFID = "CL_00001602";
 
     public EntityAILookAtVillager(EntityIronGolem p_i1643_1_)
     {

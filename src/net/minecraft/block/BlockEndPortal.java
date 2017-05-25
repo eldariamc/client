@@ -17,7 +17,6 @@ import java.util.Random;
 public class BlockEndPortal extends BlockContainer
 {
     public static boolean field_149948_a;
-    private static final String __OBFID = "CL_00000236";
 
     protected BlockEndPortal(Material p_i45404_1_)
     {

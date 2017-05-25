@@ -13,7 +13,6 @@ public class EntityAIBeg extends EntityAIBase
     private World worldObject;
     private float minPlayerDistance;
     private int field_75384_e;
-    private static final String __OBFID = "CL_00001576";
 
     public EntityAIBeg(EntityWolf p_i1617_1_, float p_i1617_2_)
     {

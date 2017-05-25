@@ -33,7 +33,6 @@ public class GuiMultiplayer extends GuiScreen implements GuiYesNoCallback
     private LanServerDetector.LanServerList field_146799_A;
     private LanServerDetector.ThreadLanServerFind field_146800_B;
     private boolean field_146801_C;
-    private static final String __OBFID = "CL_00000814";
 
     public GuiMultiplayer(GuiScreen p_i1040_1_)
     {

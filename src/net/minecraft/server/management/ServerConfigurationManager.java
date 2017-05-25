@@ -77,7 +77,6 @@ public abstract class ServerConfigurationManager
      * index into playerEntities of player to ping, updated every tick; currently hardcoded to max at 200 players
      */
     private int playerPingIndex;
-    private static final String __OBFID = "CL_00001423";
 
     public ServerConfigurationManager(MinecraftServer p_i1500_1_)
     {

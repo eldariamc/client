@@ -9,7 +9,6 @@ import java.util.Random;
 
 public class BlockClay extends Block
 {
-    private static final String __OBFID = "CL_00000215";
 
     public BlockClay()
     {

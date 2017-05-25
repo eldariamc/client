@@ -15,7 +15,6 @@ public class EntityItemFrame extends EntityHanging
 {
     /** Chance for this item frame's item to drop from the frame. */
     private float itemDropChance = 1.0F;
-    private static final String __OBFID = "CL_00001547";
 
     public EntityItemFrame(World p_i1590_1_)
     {

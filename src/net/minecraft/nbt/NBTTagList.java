@@ -16,7 +16,6 @@ public class NBTTagList extends NBTBase
      * The type byte for the tags in the list - they must all be of the same type.
      */
     private byte tagType = 0;
-    private static final String __OBFID = "CL_00001224";
 
     /**
      * Write the actual data contents of the tag, implemented in NBT extension classes

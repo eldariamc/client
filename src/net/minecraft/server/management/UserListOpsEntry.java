@@ -8,7 +8,6 @@ import java.util.UUID;
 public class UserListOpsEntry extends UserListEntry
 {
     private final int field_152645_a;
-    private static final String __OBFID = "CL_00001878";
 
     public UserListOpsEntry(GameProfile p_i1149_1_, int p_i1149_2_)
     {

@@ -2,7 +2,6 @@ package net.minecraft.item;
 
 public class ItemBook extends Item
 {
-    private static final String __OBFID = "CL_00001775";
 
     /**
      * Checks isDamagable and if it cannot be stacked

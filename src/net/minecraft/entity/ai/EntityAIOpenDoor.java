@@ -6,7 +6,6 @@ public class EntityAIOpenDoor extends EntityAIDoorInteract
 {
     boolean field_75361_i;
     int field_75360_j;
-    private static final String __OBFID = "CL_00001603";
 
     public EntityAIOpenDoor(EntityLiving p_i1644_1_, boolean p_i1644_2_)
     {

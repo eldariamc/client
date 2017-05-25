@@ -13,7 +13,6 @@ public class S19PacketEntityStatus extends Packet
 {
     private int field_149164_a;
     private byte field_149163_b;
-    private static final String __OBFID = "CL_00001299";
 
     public S19PacketEntityStatus() {}
 

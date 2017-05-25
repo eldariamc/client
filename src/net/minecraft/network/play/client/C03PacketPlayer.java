@@ -18,7 +18,6 @@ public class C03PacketPlayer extends Packet
     protected boolean field_149474_g;
     protected boolean field_149480_h;
     protected boolean field_149481_i;
-    private static final String __OBFID = "CL_00001360";
 
     public C03PacketPlayer() {}
 
@@ -105,7 +104,6 @@ public class C03PacketPlayer extends Packet
 
     public static class C04PacketPlayerPosition extends C03PacketPlayer
     {
-        private static final String __OBFID = "CL_00001361";
 
         public C04PacketPlayerPosition()
         {
@@ -148,7 +146,6 @@ public class C03PacketPlayer extends Packet
 
     public static class C05PacketPlayerLook extends C03PacketPlayer
     {
-        private static final String __OBFID = "CL_00001363";
 
         public C05PacketPlayerLook()
         {
@@ -185,7 +182,6 @@ public class C03PacketPlayer extends Packet
 
     public static class C06PacketPlayerPosLook extends C03PacketPlayer
     {
-        private static final String __OBFID = "CL_00001362";
 
         public C06PacketPlayerPosLook()
         {

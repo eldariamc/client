@@ -15,7 +15,6 @@ public class C01PacketEncryptionResponse extends Packet
 {
     private byte[] field_149302_a = new byte[0];
     private byte[] field_149301_b = new byte[0];
-    private static final String __OBFID = "CL_00001380";
 
     public C01PacketEncryptionResponse() {}
 

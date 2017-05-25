@@ -9,7 +9,6 @@ public class GenLayerBiome extends GenLayer
     private BiomeGenBase[] field_151621_d;
     private BiomeGenBase[] field_151622_e;
     private BiomeGenBase[] field_151620_f;
-    private static final String __OBFID = "CL_00000555";
 
     public GenLayerBiome(long p_i2122_1_, GenLayer p_i2122_3_, WorldType p_i2122_4_)
     {

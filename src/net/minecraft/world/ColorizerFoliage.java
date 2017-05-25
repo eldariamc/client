@@ -4,7 +4,6 @@ public class ColorizerFoliage
 {
     /** Color buffer for foliage */
     private static int[] foliageBuffer = new int[65536];
-    private static final String __OBFID = "CL_00000135";
 
     public static void setFoliageBiomeColorizer(int[] p_77467_0_)
     {

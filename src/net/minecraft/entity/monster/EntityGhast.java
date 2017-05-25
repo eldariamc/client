@@ -31,7 +31,6 @@ public class EntityGhast extends EntityFlying implements IMob
 
     /** The explosion radius of spawned fireballs. */
     private int explosionStrength = 1;
-    private static final String __OBFID = "CL_00001689";
 
     public EntityGhast(World p_i1735_1_)
     {

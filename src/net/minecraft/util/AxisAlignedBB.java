@@ -8,7 +8,6 @@ public class AxisAlignedBB
     public double maxX;
     public double maxY;
     public double maxZ;
-    private static final String __OBFID = "CL_00000607";
 
     /**
      * Returns a bounding box with the specified bounds. Args: minX, minY, minZ, maxX, maxY, maxZ

@@ -6,7 +6,6 @@ import java.util.Date;
 
 public class IPBanEntry extends BanEntry
 {
-    private static final String __OBFID = "CL_00001883";
 
     public IPBanEntry(String p_i1158_1_)
     {

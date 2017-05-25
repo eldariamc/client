@@ -19,7 +19,6 @@ public class ShapedRecipes implements IRecipe
     /** Is the ItemStack that you get when craft the recipe. */
     private ItemStack recipeOutput;
     private boolean field_92101_f;
-    private static final String __OBFID = "CL_00000093";
 
     public ShapedRecipes(int p_i1917_1_, int p_i1917_2_, ItemStack[] p_i1917_3_, ItemStack p_i1917_4_)
     {

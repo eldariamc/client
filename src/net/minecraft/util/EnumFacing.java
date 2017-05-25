@@ -20,7 +20,6 @@ public enum EnumFacing
 
     /** List of all values in EnumFacing. Order is D-U-N-S-E-W. */
     private static final EnumFacing[] faceList = new EnumFacing[6];
-    private static final String __OBFID = "CL_00001201";
 
     private EnumFacing(int p_i1367_3_, int p_i1367_4_, int p_i1367_5_, int p_i1367_6_, int p_i1367_7_)
     {

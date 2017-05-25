@@ -4,7 +4,6 @@ import net.minecraft.world.World;
 
 public class EntityAuraFX extends EntityFX
 {
-    private static final String __OBFID = "CL_00000929";
 
     public EntityAuraFX(World p_i1232_1_, double p_i1232_2_, double p_i1232_4_, double p_i1232_6_, double p_i1232_8_, double p_i1232_10_, double p_i1232_12_)
     {

@@ -2,7 +2,6 @@ package net.minecraft.enchantment;
 
 public class EnchantmentArrowInfinite extends Enchantment
 {
-    private static final String __OBFID = "CL_00000100";
 
     public EnchantmentArrowInfinite(int p_i1921_1_, int p_i1921_2_)
     {

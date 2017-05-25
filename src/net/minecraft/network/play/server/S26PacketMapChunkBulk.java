@@ -23,7 +23,6 @@ public class S26PacketMapChunkBulk extends Packet
     private int field_149261_g;
     private boolean field_149267_h;
     private static byte[] field_149268_i = new byte[0];
-    private static final String __OBFID = "CL_00001306";
 
     public S26PacketMapChunkBulk() {}
 

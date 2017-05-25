@@ -29,7 +29,6 @@ public class RenderItemFrame extends Render
     private final RenderBlocks field_147916_f = new RenderBlocks();
     private final Minecraft field_147917_g = Minecraft.getMinecraft();
     private IIcon field_94147_f;
-    private static final String __OBFID = "CL_00001002";
 
     public void updateIcons(IIconRegister p_94143_1_)
     {

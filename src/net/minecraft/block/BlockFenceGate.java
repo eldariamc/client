@@ -12,7 +12,6 @@ import net.minecraft.world.World;
 
 public class BlockFenceGate extends BlockDirectional
 {
-    private static final String __OBFID = "CL_00000243";
 
     public BlockFenceGate()
     {

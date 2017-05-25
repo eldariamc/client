@@ -4,7 +4,6 @@ import com.google.gson.*;
 
 public class JsonUtils
 {
-    private static final String __OBFID = "CL_00001484";
 
     /**
      * Does the given JsonObject contain a string field with the given name?

@@ -10,7 +10,6 @@ import java.util.List;
 
 public class ItemAppleGold extends ItemFood
 {
-    private static final String __OBFID = "CL_00000037";
 
     public ItemAppleGold(int p_i45341_1_, float p_i45341_2_, boolean p_i45341_3_)
     {

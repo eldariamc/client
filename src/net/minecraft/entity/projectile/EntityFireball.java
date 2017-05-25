@@ -23,7 +23,6 @@ public abstract class EntityFireball extends Entity
     public double accelerationX;
     public double accelerationY;
     public double accelerationZ;
-    private static final String __OBFID = "CL_00001717";
 
     public EntityFireball(World p_i1759_1_)
     {

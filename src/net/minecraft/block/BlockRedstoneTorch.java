@@ -12,7 +12,6 @@ public class BlockRedstoneTorch extends BlockTorch
 {
     private boolean field_150113_a;
     private static Map field_150112_b = new HashMap();
-    private static final String __OBFID = "CL_00000298";
 
     private boolean func_150111_a(World p_150111_1_, int p_150111_2_, int p_150111_3_, int p_150111_4_, boolean p_150111_5_)
     {
@@ -236,7 +235,6 @@ public class BlockRedstoneTorch extends BlockTorch
         int field_150845_b;
         int field_150846_c;
         long field_150844_d;
-        private static final String __OBFID = "CL_00000299";
 
         public Toggle(int p_i45422_1_, int p_i45422_2_, int p_i45422_3_, long p_i45422_4_)
         {

@@ -14,7 +14,6 @@ import java.util.Map;
 
 public class CommandHelp extends CommandBase
 {
-    private static final String __OBFID = "CL_00000529";
 
     public String getCommandName()
     {

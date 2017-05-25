@@ -11,7 +11,6 @@ import java.io.IOException;
 public class C14PacketTabComplete extends Packet
 {
     private String field_149420_a;
-    private static final String __OBFID = "CL_00001346";
 
     public C14PacketTabComplete() {}
 

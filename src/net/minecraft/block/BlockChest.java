@@ -29,7 +29,6 @@ public class BlockChest extends BlockContainer
     public final int field_149956_a;
     public final boolean canBeLarge;
     private final int size;
-    private static final String __OBFID = "CL_00000214";
 
     protected BlockChest(int p_i45397_1_)
     {

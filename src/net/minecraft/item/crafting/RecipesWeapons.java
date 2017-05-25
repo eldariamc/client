@@ -9,7 +9,6 @@ public class RecipesWeapons
 {
     private String[][] recipePatterns = new String[][] {{"X", "X", "#"}};
     private Object[][] recipeItems;
-    private static final String __OBFID = "CL_00000097";
 
     public RecipesWeapons()
     {

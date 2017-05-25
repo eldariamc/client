@@ -6,7 +6,6 @@ import net.minecraft.world.World;
 
 public class EntitySuspendFX extends EntityFX
 {
-    private static final String __OBFID = "CL_00000928";
 
     public EntitySuspendFX(World p_i1231_1_, double p_i1231_2_, double p_i1231_4_, double p_i1231_6_, double p_i1231_8_, double p_i1231_10_, double p_i1231_12_)
     {

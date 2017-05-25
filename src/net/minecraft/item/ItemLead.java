@@ -13,7 +13,6 @@ import java.util.List;
 
 public class ItemLead extends Item
 {
-    private static final String __OBFID = "CL_00000045";
 
     public ItemLead()
     {

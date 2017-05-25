@@ -138,7 +138,6 @@ public class BiomeDecorator
 
     /** True if decorator should generate surface lava & water */
     public boolean generateLakes = true;
-    private static final String __OBFID = "CL_00000164";
 
     public void func_150512_a(World p_150512_1_, Random p_150512_2_, BiomeGenBase p_150512_3_, int p_150512_4_, int p_150512_5_)
     {

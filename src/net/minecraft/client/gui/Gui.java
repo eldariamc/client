@@ -12,7 +12,6 @@ public class Gui
     public static final ResourceLocation statIcons = new ResourceLocation("textures/gui/container/stats_icons.png");
     public static final ResourceLocation icons = new ResourceLocation("textures/gui/icons.png");
     protected float zLevel;
-    private static final String __OBFID = "CL_00000662";
 
     protected void drawHorizontalLine(int p_73730_1_, int p_73730_2_, int p_73730_3_, int p_73730_4_)
     {

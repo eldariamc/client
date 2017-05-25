@@ -13,7 +13,6 @@ public class C0CPacketInput extends Packet
     private float field_149622_b;
     private boolean field_149623_c;
     private boolean field_149621_d;
-    private static final String __OBFID = "CL_00001367";
 
     public C0CPacketInput() {}
 

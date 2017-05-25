@@ -13,7 +13,6 @@ import org.lwjgl.opengl.GL12;
 public class RenderFireball extends Render
 {
     private float field_77002_a;
-    private static final String __OBFID = "CL_00000995";
 
     public RenderFireball(float p_i1254_1_)
     {

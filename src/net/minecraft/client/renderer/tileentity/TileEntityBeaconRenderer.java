@@ -11,7 +11,6 @@ import org.lwjgl.opengl.GL11;
 public class TileEntityBeaconRenderer extends TileEntitySpecialRenderer
 {
     private static final ResourceLocation field_147523_b = new ResourceLocation("textures/entity/beacon_beam.png");
-    private static final String __OBFID = "CL_00000962";
 
     public void renderTileEntityAt(TileEntityBeacon p_147500_1_, double p_147500_2_, double p_147500_4_, double p_147500_6_, float p_147500_8_)
     {

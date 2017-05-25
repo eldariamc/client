@@ -6,7 +6,6 @@ import net.minecraft.client.settings.GameSettings;
 public class MovementInputFromOptions extends MovementInput
 {
     private GameSettings gameSettings;
-    private static final String __OBFID = "CL_00000937";
     public boolean sprint = false;
     public boolean sprintToggle = false;
     public boolean sneakToggle = false;

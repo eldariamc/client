@@ -6,7 +6,6 @@ import net.minecraft.item.ItemStack;
 
 public class RecipesCrafting
 {
-    private static final String __OBFID = "CL_00000095";
 
     /**
      * Adds the crafting recipes to the CraftingManager.

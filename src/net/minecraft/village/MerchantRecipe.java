@@ -22,7 +22,6 @@ public class MerchantRecipe
 
     /** Maximum times this trade can be used. */
     private int maxTradeUses;
-    private static final String __OBFID = "CL_00000126";
 
     public MerchantRecipe(NBTTagCompound p_i1940_1_)
     {

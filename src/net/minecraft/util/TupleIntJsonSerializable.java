@@ -4,7 +4,6 @@ public class TupleIntJsonSerializable
 {
     private int integerValue;
     private IJsonSerializable jsonSerializableValue;
-    private static final String __OBFID = "CL_00001478";
 
     /**
      * Gets the integer value stored in this tuple.

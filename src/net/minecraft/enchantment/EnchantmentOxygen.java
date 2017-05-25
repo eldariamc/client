@@ -2,7 +2,6 @@ package net.minecraft.enchantment;
 
 public class EnchantmentOxygen extends Enchantment
 {
-    private static final String __OBFID = "CL_00000120";
 
     public EnchantmentOxygen(int p_i1935_1_, int p_i1935_2_)
     {

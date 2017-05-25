@@ -13,7 +13,6 @@ public class NetworkStatistics
     private static final Marker field_152479_b = MarkerManager.getMarker("NETSTAT_MARKER", NetworkManager.field_152461_c);
     private NetworkStatistics.Tracker field_152480_c = new NetworkStatistics.Tracker();
     private NetworkStatistics.Tracker field_152481_d = new NetworkStatistics.Tracker();
-    private static final String __OBFID = "CL_00001897";
 
     public void func_152469_a(int p_152469_1_, long p_152469_2_)
     {
@@ -79,7 +78,6 @@ public class NetworkStatistics
     {
         private final int field_152482_a;
         private final NetworkStatistics.PacketStatData field_152483_b;
-        private static final String __OBFID = "CL_00001895";
 
         public PacketStat(int p_i1188_1_, NetworkStatistics.PacketStatData p_i1188_2_)
         {
@@ -98,7 +96,6 @@ public class NetworkStatistics
         private final long field_152496_a;
         private final int field_152497_b;
         private final double field_152498_c;
-        private static final String __OBFID = "CL_00001893";
 
         private PacketStatData(long p_i1184_1_, int p_i1184_3_, double p_i1184_4_)
         {
@@ -136,7 +133,6 @@ public class NetworkStatistics
     static class Tracker
     {
         private AtomicReference[] field_152490_a = new AtomicReference[100];
-        private static final String __OBFID = "CL_00001894";
 
         public Tracker()
         {

@@ -12,7 +12,6 @@ public abstract class WorldGenerator
      * this is false, when saplings grow, this is true.
      */
     private final boolean doBlockNotify;
-    private static final String __OBFID = "CL_00000409";
 
     public WorldGenerator()
     {

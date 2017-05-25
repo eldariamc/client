@@ -13,7 +13,6 @@ public class JsonSerializableSet extends ForwardingSet implements IJsonSerializa
 {
     /** The set for this ForwardingSet to forward methods to. */
     private final Set underlyingSet = Sets.newHashSet();
-    private static final String __OBFID = "CL_00001482";
 
     public void func_152753_a(JsonElement p_152753_1_)
     {

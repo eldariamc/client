@@ -10,7 +10,6 @@ import net.minecraft.world.World;
 public class EntityLargeFireball extends EntityFireball
 {
     public int field_92057_e = 1;
-    private static final String __OBFID = "CL_00001719";
 
     public EntityLargeFireball(World p_i1767_1_)
     {

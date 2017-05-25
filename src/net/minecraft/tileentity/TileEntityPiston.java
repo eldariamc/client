@@ -21,7 +21,6 @@ public class TileEntityPiston extends TileEntity
     private float field_145873_m;
     private float field_145870_n;
     private List field_145871_o = new ArrayList();
-    private static final String __OBFID = "CL_00000369";
 
     public TileEntityPiston() {}
 

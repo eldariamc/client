@@ -7,7 +7,6 @@ import net.minecraft.world.World;
 
 public class CommandShowSeed extends CommandBase
 {
-    private static final String __OBFID = "CL_00001053";
 
     /**
      * Returns true if the given command sender is allowed to use this command.

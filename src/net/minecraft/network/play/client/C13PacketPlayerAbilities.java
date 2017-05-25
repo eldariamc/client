@@ -16,7 +16,6 @@ public class C13PacketPlayerAbilities extends Packet
     private boolean field_149496_d;
     private float field_149497_e;
     private float field_149495_f;
-    private static final String __OBFID = "CL_00001364";
 
     public C13PacketPlayerAbilities() {}
 

@@ -7,7 +7,6 @@ import net.minecraft.world.World;
 
 public class ItemExpBottle extends Item
 {
-    private static final String __OBFID = "CL_00000028";
 
     public ItemExpBottle()
     {

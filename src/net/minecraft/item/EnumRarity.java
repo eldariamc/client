@@ -17,7 +17,6 @@ public enum EnumRarity
 
     /** Rarity name. */
     public final String rarityName;
-    private static final String __OBFID = "CL_00000056";
 
     private EnumRarity(EnumChatFormatting p_i45349_3_, String p_i45349_4_)
     {

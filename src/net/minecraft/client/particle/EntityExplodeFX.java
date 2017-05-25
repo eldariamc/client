@@ -4,7 +4,6 @@ import net.minecraft.world.World;
 
 public class EntityExplodeFX extends EntityFX
 {
-    private static final String __OBFID = "CL_00000903";
 
     public EntityExplodeFX(World p_i1205_1_, double p_i1205_2_, double p_i1205_4_, double p_i1205_6_, double p_i1205_8_, double p_i1205_10_, double p_i1205_12_)
     {

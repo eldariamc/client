@@ -7,7 +7,6 @@ import net.minecraft.inventory.Container;
 public class EntityAITradePlayer extends EntityAIBase
 {
     private EntityVillager villager;
-    private static final String __OBFID = "CL_00001617";
 
     public EntityAITradePlayer(EntityVillager p_i1658_1_)
     {

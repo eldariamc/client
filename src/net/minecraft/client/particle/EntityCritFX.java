@@ -6,7 +6,6 @@ import net.minecraft.world.World;
 public class EntityCritFX extends EntityFX
 {
     float initialParticleScale;
-    private static final String __OBFID = "CL_00000900";
 
     public EntityCritFX(World p_i1201_1_, double p_i1201_2_, double p_i1201_4_, double p_i1201_6_, double p_i1201_8_, double p_i1201_10_, double p_i1201_12_)
     {

@@ -4,7 +4,6 @@ import javax.vecmath.Matrix4f;
 
 public class ShaderDefault extends ShaderUniform
 {
-    private static final String __OBFID = "CL_00001039";
 
     public ShaderDefault()
     {

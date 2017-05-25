@@ -4,7 +4,6 @@ public class ColorizerGrass
 {
     /** Color buffer for grass */
     private static int[] grassBuffer = new int[65536];
-    private static final String __OBFID = "CL_00000138";
 
     public static void setGrassBiomeColorizer(int[] p_77479_0_)
     {

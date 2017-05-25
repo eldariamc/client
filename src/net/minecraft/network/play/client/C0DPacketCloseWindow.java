@@ -10,7 +10,6 @@ import java.io.IOException;
 public class C0DPacketCloseWindow extends Packet
 {
     private int field_149556_a;
-    private static final String __OBFID = "CL_00001354";
 
     public C0DPacketCloseWindow() {}
 

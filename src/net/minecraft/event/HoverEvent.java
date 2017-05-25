@@ -9,7 +9,6 @@ public class HoverEvent
 {
     private final HoverEvent.Action action;
     private final IChatComponent value;
-    private static final String __OBFID = "CL_00001264";
 
     public HoverEvent(HoverEvent.Action p_i45158_1_, IChatComponent p_i45158_2_)
     {
@@ -93,7 +92,6 @@ public class HoverEvent
         private final String canonicalName;
 
         private static final HoverEvent.Action[] $VALUES = new HoverEvent.Action[]{SHOW_TEXT, SHOW_ACHIEVEMENT, SHOW_ITEM};
-        private static final String __OBFID = "CL_00001265";
 
         private Action(String p_i45157_1_, int p_i45157_2_, String p_i45157_3_, boolean p_i45157_4_)
         {

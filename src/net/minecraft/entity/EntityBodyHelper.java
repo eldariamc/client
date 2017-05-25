@@ -8,7 +8,6 @@ public class EntityBodyHelper
     private EntityLivingBase theLiving;
     private int field_75666_b;
     private float field_75667_c;
-    private static final String __OBFID = "CL_00001570";
 
     public EntityBodyHelper(EntityLivingBase p_i1611_1_)
     {

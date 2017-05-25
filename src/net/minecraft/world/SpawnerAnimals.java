@@ -23,7 +23,6 @@ public final class SpawnerAnimals
     private Map mapSampleEntitiesByClass = new HashMap();
     private int lastPlayerChunkX = Integer.MAX_VALUE;
     private int lastPlayerChunkZ = Integer.MAX_VALUE;
-    private static final String __OBFID = "CL_00000152";
 
     protected static ChunkPosition func_151350_a(World p_151350_0_, int p_151350_1_, int p_151350_2_)
     {

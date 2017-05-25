@@ -7,7 +7,6 @@ public class EntitySpellParticleFX extends EntityFX
 {
     /** Base spell texture index */
     private int baseSpellTextureIndex = 128;
-    private static final String __OBFID = "CL_00000926";
 
     public EntitySpellParticleFX(World p_i1229_1_, double p_i1229_2_, double p_i1229_4_, double p_i1229_6_, double p_i1229_8_, double p_i1229_10_, double p_i1229_12_)
     {

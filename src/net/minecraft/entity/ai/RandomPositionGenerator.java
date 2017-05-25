@@ -13,7 +13,6 @@ public class RandomPositionGenerator
      * MULTIPLE findTowards and findAway calls, will share this var
      */
     private static Vec3 staticVector = Vec3.createVectorHelper(0.0D, 0.0D, 0.0D);
-    private static final String __OBFID = "CL_00001629";
 
     /**
      * finds a random target within par1(x,z) and par2 (y) blocks

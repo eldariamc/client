@@ -12,7 +12,6 @@ public class Metadata
     private final String field_152812_b;
     private String field_152813_c;
     private Map field_152814_d;
-    private static final String __OBFID = "CL_00001823";
 
     public Metadata(String p_i1029_1_, String p_i1029_2_)
     {

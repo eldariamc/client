@@ -11,7 +11,6 @@ import java.util.Random;
 public class BlockFalling extends Block
 {
     public static boolean field_149832_M;
-    private static final String __OBFID = "CL_00000240";
 
     public BlockFalling()
     {

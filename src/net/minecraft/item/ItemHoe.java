@@ -10,7 +10,6 @@ import net.minecraft.world.World;
 public class ItemHoe extends Item
 {
     protected Item.ToolMaterial theToolMaterial;
-    private static final String __OBFID = "CL_00000039";
 
     public ItemHoe(Item.ToolMaterial p_i45343_1_)
     {

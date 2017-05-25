@@ -12,7 +12,6 @@ public class EntityAIDefendVillage extends EntityAITarget
      * The aggressor of the iron golem's village which is now the golem's attack target.
      */
     EntityLivingBase villageAgressorTarget;
-    private static final String __OBFID = "CL_00001618";
 
     public EntityAIDefendVillage(EntityIronGolem p_i1659_1_)
     {

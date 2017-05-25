@@ -14,7 +14,6 @@ public class IMetadataSerializer
      * Cached Gson instance. Set to null when more sections are registered, and then re-created from the builder.
      */
     private Gson gson;
-    private static final String __OBFID = "CL_00001101";
 
     public IMetadataSerializer()
     {
@@ -76,7 +75,6 @@ public class IMetadataSerializer
     {
         final IMetadataSectionSerializer field_110502_a;
         final Class field_110500_b;
-        private static final String __OBFID = "CL_00001103";
 
         private Registration(IMetadataSectionSerializer p_i1305_2_, Class p_i1305_3_)
         {

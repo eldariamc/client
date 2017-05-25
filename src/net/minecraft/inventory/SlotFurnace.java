@@ -13,7 +13,6 @@ public class SlotFurnace extends Slot
     /** The player that is using the GUI where this slot resides. */
     private EntityPlayer thePlayer;
     private int field_75228_b;
-    private static final String __OBFID = "CL_00001749";
 
     public SlotFurnace(EntityPlayer p_i1813_1_, IInventory p_i1813_2_, int p_i1813_3_, int p_i1813_4_, int p_i1813_5_)
     {

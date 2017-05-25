@@ -10,7 +10,6 @@ import org.lwjgl.opengl.GL11;
 public class RenderCaveSpider extends RenderSpider
 {
     private static final ResourceLocation caveSpiderTextures = new ResourceLocation("textures/entity/spider/cave_spider.png");
-    private static final String __OBFID = "CL_00000982";
 
     public RenderCaveSpider()
     {

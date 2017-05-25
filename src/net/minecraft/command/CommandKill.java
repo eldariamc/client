@@ -6,7 +6,6 @@ import net.minecraft.util.DamageSource;
 
 public class CommandKill extends CommandBase
 {
-    private static final String __OBFID = "CL_00000570";
 
     public String getCommandName()
     {

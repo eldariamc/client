@@ -57,7 +57,6 @@ public class ChunkProviderHell implements IChunkProvider
     double[] noiseData3;
     double[] noiseData4;
     double[] noiseData5;
-    private static final String __OBFID = "CL_00000392";
 
     public ChunkProviderHell(World p_i2005_1_, long p_i2005_2_)
     {

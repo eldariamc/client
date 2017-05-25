@@ -44,7 +44,6 @@ public class EntityClientPlayerMP extends EntityPlayerSP
     /** has the client player's health been set? */
     private boolean hasSetHealth;
     private String field_142022_ce;
-    private static final String __OBFID = "CL_00000887";
 
     public EntityClientPlayerMP(Minecraft p_i45064_1_, World p_i45064_2_, Session p_i45064_3_, NetHandlerPlayClient p_i45064_4_, StatFileWriter p_i45064_5_)
     {

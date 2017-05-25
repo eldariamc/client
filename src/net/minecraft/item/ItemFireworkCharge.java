@@ -13,7 +13,6 @@ import java.util.List;
 public class ItemFireworkCharge extends Item
 {
     private IIcon field_150904_a;
-    private static final String __OBFID = "CL_00000030";
 
     /**
      * Gets an icon index based on an item's damage value and the given render pass

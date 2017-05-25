@@ -20,7 +20,6 @@ import java.util.Random;
 
 public class StructureVillagePieces
 {
-    private static final String __OBFID = "CL_00000516";
 
     public static void func_143016_a()
     {
@@ -266,7 +265,6 @@ public class StructureVillagePieces
 
     public static class Church extends StructureVillagePieces.Village
     {
-        private static final String __OBFID = "CL_00000525";
 
         public Church() {}
 
@@ -385,7 +383,6 @@ public class StructureVillagePieces
         private Block cropTypeB;
         private Block cropTypeC;
         private Block cropTypeD;
-        private static final String __OBFID = "CL_00000518";
 
         public Field1() {}
 
@@ -496,7 +493,6 @@ public class StructureVillagePieces
     {
         private Block cropTypeA;
         private Block cropTypeB;
-        private static final String __OBFID = "CL_00000519";
 
         public Field2() {}
 
@@ -591,7 +587,6 @@ public class StructureVillagePieces
 
     public static class Hall extends StructureVillagePieces.Village
     {
-        private static final String __OBFID = "CL_00000522";
 
         public Hall() {}
 
@@ -713,7 +708,6 @@ public class StructureVillagePieces
 
     public static class House1 extends StructureVillagePieces.Village
     {
-        private static final String __OBFID = "CL_00000517";
 
         public House1() {}
 
@@ -840,7 +834,6 @@ public class StructureVillagePieces
     {
         private static final WeightedRandomChestContent[] villageBlacksmithChestContents = new WeightedRandomChestContent[] {new WeightedRandomChestContent(Items.diamond, 0, 1, 3, 3), new WeightedRandomChestContent(Items.iron_ingot, 0, 1, 5, 10), new WeightedRandomChestContent(Items.gold_ingot, 0, 1, 3, 5), new WeightedRandomChestContent(Items.bread, 0, 1, 3, 15), new WeightedRandomChestContent(Items.apple, 0, 1, 3, 15), new WeightedRandomChestContent(Items.iron_pickaxe, 0, 1, 1, 5), new WeightedRandomChestContent(Items.iron_sword, 0, 1, 1, 5), new WeightedRandomChestContent(Items.iron_chestplate, 0, 1, 1, 5), new WeightedRandomChestContent(Items.iron_helmet, 0, 1, 1, 5), new WeightedRandomChestContent(Items.iron_leggings, 0, 1, 1, 5), new WeightedRandomChestContent(Items.iron_boots, 0, 1, 1, 5), new WeightedRandomChestContent(Item.getItemFromBlock(Blocks.obsidian), 0, 3, 7, 5), new WeightedRandomChestContent(Item.getItemFromBlock(Blocks.sapling), 0, 3, 7, 5), new WeightedRandomChestContent(Items.saddle, 0, 1, 1, 3), new WeightedRandomChestContent(Items.iron_horse_armor, 0, 1, 1, 1), new WeightedRandomChestContent(Items.golden_horse_armor, 0, 1, 1, 1), new WeightedRandomChestContent(Items.diamond_horse_armor, 0, 1, 1, 1)};
         private boolean hasMadeChest;
-        private static final String __OBFID = "CL_00000526";
 
         public House2() {}
 
@@ -963,7 +956,6 @@ public class StructureVillagePieces
 
     public static class House3 extends StructureVillagePieces.Village
     {
-        private static final String __OBFID = "CL_00000530";
 
         public House3() {}
 
@@ -1125,7 +1117,6 @@ public class StructureVillagePieces
     public static class House4Garden extends StructureVillagePieces.Village
     {
         private boolean isRoofAccessible;
-        private static final String __OBFID = "CL_00000523";
 
         public House4Garden() {}
 
@@ -1255,7 +1246,6 @@ public class StructureVillagePieces
     public static class Path extends StructureVillagePieces.Road
     {
         private int averageGroundLevel;
-        private static final String __OBFID = "CL_00000528";
 
         public Path() {}
 
@@ -1391,7 +1381,6 @@ public class StructureVillagePieces
         public final int villagePieceWeight;
         public int villagePiecesSpawned;
         public int villagePiecesLimit;
-        private static final String __OBFID = "CL_00000521";
 
         public PieceWeight(Class p_i2098_1_, int p_i2098_2_, int p_i2098_3_)
         {
@@ -1413,7 +1402,6 @@ public class StructureVillagePieces
 
     public abstract static class Road extends StructureVillagePieces.Village
     {
-        private static final String __OBFID = "CL_00000532";
 
         public Road() {}
 
@@ -1432,7 +1420,6 @@ public class StructureVillagePieces
         public List structureVillageWeightedPieceList;
         public List field_74932_i = new ArrayList();
         public List field_74930_j = new ArrayList();
-        private static final String __OBFID = "CL_00000527";
 
         public Start() {}
 
@@ -1454,7 +1441,6 @@ public class StructureVillagePieces
 
     public static class Torch extends StructureVillagePieces.Village
     {
-        private static final String __OBFID = "CL_00000520";
 
         public Torch() {}
 
@@ -1503,7 +1489,6 @@ public class StructureVillagePieces
         protected int field_143015_k = -1;
         private int villagersSpawned;
         private boolean field_143014_b;
-        private static final String __OBFID = "CL_00000531";
 
         public Village() {}
 
@@ -1720,7 +1705,6 @@ public class StructureVillagePieces
 
     public static class Well extends StructureVillagePieces.Village
     {
-        private static final String __OBFID = "CL_00000533";
 
         public Well() {}
 
@@ -1798,7 +1782,6 @@ public class StructureVillagePieces
     {
         private boolean isTallHouse;
         private int tablePosition;
-        private static final String __OBFID = "CL_00000524";
 
         public WoodHut() {}
 

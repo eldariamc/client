@@ -35,7 +35,6 @@ public class ChunkProviderEnd implements IChunkProvider
     double[] noiseData4;
     double[] noiseData5;
     int[][] field_73203_h = new int[32][32];
-    private static final String __OBFID = "CL_00000397";
 
     public ChunkProviderEnd(World p_i2007_1_, long p_i2007_2_)
     {

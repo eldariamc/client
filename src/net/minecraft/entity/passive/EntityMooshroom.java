@@ -10,7 +10,6 @@ import net.minecraft.world.World;
 
 public class EntityMooshroom extends EntityCow
 {
-    private static final String __OBFID = "CL_00001645";
 
     public EntityMooshroom(World p_i1687_1_)
     {

@@ -4,7 +4,6 @@ import net.minecraft.server.MinecraftServer;
 
 public class CommandSetPlayerTimeout extends CommandBase
 {
-    private static final String __OBFID = "CL_00000999";
 
     public String getCommandName()
     {

@@ -9,7 +9,6 @@ import java.util.Set;
 
 public class FolderResourcePack extends AbstractResourcePack
 {
-    private static final String __OBFID = "CL_00001076";
 
     public FolderResourcePack(File p_i1291_1_)
     {

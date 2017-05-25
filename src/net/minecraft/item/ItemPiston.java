@@ -4,7 +4,6 @@ import net.minecraft.block.Block;
 
 public class ItemPiston extends ItemBlock
 {
-    private static final String __OBFID = "CL_00000054";
 
     public ItemPiston(Block p_i45348_1_)
     {

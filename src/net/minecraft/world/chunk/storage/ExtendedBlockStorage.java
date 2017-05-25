@@ -42,7 +42,6 @@ public class ExtendedBlockStorage
 
     /** The NibbleArray containing a block of Sky-light data. */
     private NibbleArray skylightArray;
-    private static final String __OBFID = "CL_00000375";
 
     public ExtendedBlockStorage(int p_i1997_1_, boolean p_i1997_2_)
     {

@@ -8,7 +8,6 @@ import net.minecraft.world.gen.feature.WorldGenerator;
 public class BiomeEndDecorator extends BiomeDecorator
 {
     protected WorldGenerator spikeGen;
-    private static final String __OBFID = "CL_00000188";
 
     public BiomeEndDecorator()
     {

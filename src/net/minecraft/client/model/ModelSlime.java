@@ -15,7 +15,6 @@ public class ModelSlime extends ModelBase
 
     /** The slime's mouth */
     ModelRenderer slimeMouth;
-    private static final String __OBFID = "CL_00000858";
 
     public ModelSlime(int p_i1157_1_)
     {

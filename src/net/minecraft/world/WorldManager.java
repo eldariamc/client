@@ -17,7 +17,6 @@ public class WorldManager implements IWorldAccess
 
     /** The WorldServer object. */
     private WorldServer theWorldServer;
-    private static final String __OBFID = "CL_00001433";
 
     public WorldManager(MinecraftServer p_i1517_1_, WorldServer p_i1517_2_)
     {

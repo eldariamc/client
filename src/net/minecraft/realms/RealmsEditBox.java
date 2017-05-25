@@ -33,7 +33,6 @@ public class RealmsEditBox
     private int textColor;
     private int textColorUneditable;
     private boolean visible;
-    private static final String __OBFID = "CL_00001858";
 
     public RealmsEditBox(int p_i1111_1_, int p_i1111_2_, int p_i1111_3_, int p_i1111_4_)
     {

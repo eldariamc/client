@@ -19,7 +19,6 @@ public class ContainerPlayer extends Container
     /** Determines if inventory manipulation should be handled. */
     public boolean isLocalWorld;
     private final EntityPlayer thePlayer;
-    private static final String __OBFID = "CL_00001754";
 
     public ContainerPlayer(final InventoryPlayer p_i1819_1_, boolean p_i1819_2_, EntityPlayer p_i1819_3_)
     {
@@ -42,7 +41,6 @@ public class ContainerPlayer extends Container
             final int var44 = var4;
             this.addSlotToContainer(new Slot(p_i1819_1_, p_i1819_1_.getSizeInventory() - 1 - var4, 8, 8 + var4 * 18)
             {
-                private static final String __OBFID = "CL_00001755";
                 public int getSlotStackLimit()
                 {
                     return 1;

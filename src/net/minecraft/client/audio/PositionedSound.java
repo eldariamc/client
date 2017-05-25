@@ -13,7 +13,6 @@ public abstract class PositionedSound implements ISound
     protected boolean field_147659_g = false;
     protected int field_147665_h = 0;
     protected ISound.AttenuationType field_147666_i;
-    private static final String __OBFID = "CL_00001116";
 
     protected PositionedSound(ResourceLocation p_i45103_1_)
     {

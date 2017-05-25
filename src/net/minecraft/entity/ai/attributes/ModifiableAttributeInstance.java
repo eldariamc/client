@@ -17,7 +17,6 @@ public class ModifiableAttributeInstance implements IAttributeInstance
     private double baseValue;
     private boolean needsUpdate = true;
     private double cachedValue;
-    private static final String __OBFID = "CL_00001567";
 
     public ModifiableAttributeInstance(BaseAttributeMap p_i1608_1_, IAttribute p_i1608_2_)
     {

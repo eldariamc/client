@@ -32,7 +32,6 @@ public class GuiStreamUnavailable extends GuiScreen
     private final GuiStreamUnavailable.Reason field_152326_h;
     private final List field_152327_i;
     private final List field_152323_r;
-    private static final String __OBFID = "CL_00001840";
 
     public GuiStreamUnavailable(GuiScreen p_i1070_1_, GuiStreamUnavailable.Reason p_i1070_2_)
     {
@@ -244,7 +243,6 @@ public class GuiStreamUnavailable extends GuiScreen
         private final IChatComponent field_152575_n;
 
         private static final GuiStreamUnavailable.Reason[] $VALUES = new GuiStreamUnavailable.Reason[]{NO_FBO, LIBRARY_ARCH_MISMATCH, LIBRARY_FAILURE, UNSUPPORTED_OS_WINDOWS, UNSUPPORTED_OS_MAC, UNSUPPORTED_OS_OTHER, ACCOUNT_NOT_MIGRATED, ACCOUNT_NOT_BOUND, FAILED_TWITCH_AUTH, FAILED_TWITCH_AUTH_ERROR, INITIALIZATION_FAILURE, UNKNOWN};
-        private static final String __OBFID = "CL_00001838";
 
         private Reason(String p_i1066_1_, int p_i1066_2_, IChatComponent p_i1066_3_)
         {
@@ -275,7 +273,6 @@ public class GuiStreamUnavailable extends GuiScreen
         static final int[] field_152578_b;
 
         static final int[] field_152579_c = new int[IStream.AuthFailureReason.values().length];
-        private static final String __OBFID = "CL_00001839";
 
         static
         {

@@ -13,7 +13,6 @@ public class S1CPacketEntityMetadata extends Packet
 {
     private int field_149379_a;
     private List field_149378_b;
-    private static final String __OBFID = "CL_00001326";
 
     public S1CPacketEntityMetadata() {}
 

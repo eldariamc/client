@@ -9,7 +9,6 @@ public class NBTTagIntArray extends NBTBase
 {
     /** The array of saved integers */
     private int[] intArray;
-    private static final String __OBFID = "CL_00001221";
 
     NBTTagIntArray() {}
 

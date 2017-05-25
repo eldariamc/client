@@ -17,7 +17,6 @@ public class BlockSapling extends BlockBush implements IGrowable
 {
     public static final String[] field_149882_a = new String[] {"oak", "spruce", "birch", "jungle", "acacia", "roofed_oak"};
     private static final IIcon[] field_149881_b = new IIcon[field_149882_a.length];
-    private static final String __OBFID = "CL_00000305";
 
     protected BlockSapling()
     {

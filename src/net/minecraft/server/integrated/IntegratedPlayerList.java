@@ -13,7 +13,6 @@ public class IntegratedPlayerList extends ServerConfigurationManager
      * Holds the NBT data for the host player's save file, so this can be written to level.dat.
      */
     private NBTTagCompound hostPlayerData;
-    private static final String __OBFID = "CL_00001128";
 
     public IntegratedPlayerList(IntegratedServer p_i1314_1_)
     {

@@ -11,7 +11,6 @@ public class RenderBlaze extends RenderLiving
 {
     private static final ResourceLocation blazeTextures = new ResourceLocation("textures/entity/blaze.png");
     private int field_77068_a;
-    private static final String __OBFID = "CL_00000980";
 
     public RenderBlaze()
     {

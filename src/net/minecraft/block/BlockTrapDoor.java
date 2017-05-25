@@ -12,7 +12,6 @@ import net.minecraft.world.World;
 
 public class BlockTrapDoor extends Block
 {
-    private static final String __OBFID = "CL_00000327";
 
     protected BlockTrapDoor(Material p_i45434_1_)
     {

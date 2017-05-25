@@ -18,7 +18,6 @@ public abstract class WorldGenHugeTrees extends WorldGenAbstractTree
     /** Sets the metadata for the leaves used in huge trees */
     protected final int leavesMetadata;
     protected int field_150538_d;
-    private static final String __OBFID = "CL_00000423";
 
     public WorldGenHugeTrees(boolean p_i45458_1_, int p_i45458_2_, int p_i45458_3_, int p_i45458_4_, int p_i45458_5_)
     {

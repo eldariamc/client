@@ -11,7 +11,6 @@ import net.minecraft.world.World;
 public class ItemHangingEntity extends Item
 {
     private final Class hangingEntityClass;
-    private static final String __OBFID = "CL_00000038";
 
     public ItemHangingEntity(Class p_i45342_1_)
     {

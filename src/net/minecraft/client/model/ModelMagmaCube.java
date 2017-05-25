@@ -8,7 +8,6 @@ public class ModelMagmaCube extends ModelBase
 {
     ModelRenderer[] field_78109_a = new ModelRenderer[8];
     ModelRenderer field_78108_b;
-    private static final String __OBFID = "CL_00000842";
 
     public ModelMagmaCube()
     {

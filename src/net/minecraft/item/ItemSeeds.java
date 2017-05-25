@@ -11,7 +11,6 @@ public class ItemSeeds extends Item
 
     /** BlockID of the block the seeds can be planted on. */
     private Block soilBlockID;
-    private static final String __OBFID = "CL_00000061";
 
     public ItemSeeds(Block p_i45352_1_, Block p_i45352_2_)
     {

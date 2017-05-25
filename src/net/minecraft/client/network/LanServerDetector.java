@@ -20,14 +20,12 @@ public class LanServerDetector
 {
     private static final AtomicInteger field_148551_a = new AtomicInteger(0);
     private static final Logger logger = LogManager.getLogger();
-    private static final String __OBFID = "CL_00001133";
 
     public static class LanServer
     {
         private String lanServerMotd;
         private String lanServerIpPort;
         private long timeLastSeen;
-        private static final String __OBFID = "CL_00001134";
 
         public LanServer(String p_i1319_1_, String p_i1319_2_)
         {
@@ -56,7 +54,6 @@ public class LanServerDetector
     {
         private ArrayList listOfLanServers = new ArrayList();
         boolean wasUpdated;
-        private static final String __OBFID = "CL_00001136";
 
         public synchronized boolean getWasUpdated()
         {
@@ -110,7 +107,6 @@ public class LanServerDetector
         private final LanServerDetector.LanServerList localServerList;
         private final InetAddress broadcastAddress;
         private final MulticastSocket socket;
-        private static final String __OBFID = "CL_00001135";
 
         public ThreadLanServerFind(LanServerDetector.LanServerList p_i1320_1_) throws IOException
         {

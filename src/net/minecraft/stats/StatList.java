@@ -92,7 +92,6 @@ public class StatList
 
     /** Tracks the number of times a given block or item has been broken. */
     public static final StatBase[] objectBreakStats = new StatBase[32000];
-    private static final String __OBFID = "CL_00001480";
 
     public static void func_151178_a()
     {

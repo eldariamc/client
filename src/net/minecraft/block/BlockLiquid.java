@@ -16,7 +16,6 @@ import java.util.Random;
 public abstract class BlockLiquid extends Block
 {
     private IIcon[] field_149806_a;
-    private static final String __OBFID = "CL_00000265";
 
     protected BlockLiquid(Material p_i45413_1_)
     {

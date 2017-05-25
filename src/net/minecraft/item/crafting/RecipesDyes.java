@@ -8,7 +8,6 @@ import net.minecraft.item.ItemStack;
 
 public class RecipesDyes
 {
-    private static final String __OBFID = "CL_00000082";
 
     /**
      * Adds the dye recipes to the CraftingManager.

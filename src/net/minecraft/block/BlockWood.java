@@ -13,7 +13,6 @@ public class BlockWood extends Block
 {
     public static final String[] field_150096_a = new String[] {"oak", "spruce", "birch", "jungle", "acacia", "big_oak"};
     private IIcon[] field_150095_b;
-    private static final String __OBFID = "CL_00000335";
 
     public BlockWood()
     {

@@ -57,7 +57,6 @@ public class PathNavigate
      * upwards when underwater
      */
     private boolean canSwim;
-    private static final String __OBFID = "CL_00001627";
 
     public PathNavigate(EntityLiving p_i1671_1_, World p_i1671_2_)
     {

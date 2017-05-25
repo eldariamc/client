@@ -27,7 +27,6 @@ public class EntityPigZombie extends EntityZombie
     /** A random delay until this PigZombie next makes a sound. */
     private int randomSoundDelay;
     private Entity field_110191_bu;
-    private static final String __OBFID = "CL_00001693";
 
     public EntityPigZombie(World p_i1739_1_)
     {

@@ -6,7 +6,6 @@ import net.minecraft.world.World;
 public class EntityHeartFX extends EntityFX
 {
     float particleScaleOverTime;
-    private static final String __OBFID = "CL_00000909";
 
     public EntityHeartFX(World p_i1211_1_, double p_i1211_2_, double p_i1211_4_, double p_i1211_6_, double p_i1211_8_, double p_i1211_10_, double p_i1211_12_)
     {

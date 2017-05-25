@@ -15,7 +15,6 @@ public class RenderWither extends RenderLiving
     private static final ResourceLocation invulnerableWitherTextures = new ResourceLocation("textures/entity/wither/wither_invulnerable.png");
     private static final ResourceLocation witherTextures = new ResourceLocation("textures/entity/wither/wither.png");
     private int field_82419_a;
-    private static final String __OBFID = "CL_00001034";
 
     public RenderWither()
     {

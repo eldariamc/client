@@ -8,7 +8,6 @@ public class MovingSoundMinecart extends MovingSound
 {
     private final EntityMinecart field_147670_k;
     private float field_147669_l = 0.0F;
-    private static final String __OBFID = "CL_00001118";
 
     public MovingSoundMinecart(EntityMinecart p_i45105_1_)
     {

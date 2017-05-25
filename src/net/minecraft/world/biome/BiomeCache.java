@@ -21,7 +21,6 @@ public class BiomeCache
 
     /** The list of cached BiomeCacheBlocks */
     private List cache = new ArrayList();
-    private static final String __OBFID = "CL_00000162";
 
     public BiomeCache(WorldChunkManager p_i1973_1_)
     {
@@ -99,7 +98,6 @@ public class BiomeCache
         public int xPosition;
         public int zPosition;
         public long lastAccessTime;
-        private static final String __OBFID = "CL_00000163";
 
         public Block(int p_i1972_2_, int p_i1972_3_)
         {

@@ -47,7 +47,6 @@ public class DamageSource
     private boolean magicDamage;
     private boolean explosion;
     public String damageType;
-    private static final String __OBFID = "CL_00001521";
 
     public static DamageSource causeMobDamage(EntityLivingBase p_76358_0_)
     {

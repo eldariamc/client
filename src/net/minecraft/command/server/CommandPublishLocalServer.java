@@ -7,7 +7,6 @@ import net.minecraft.world.WorldSettings;
 
 public class CommandPublishLocalServer extends CommandBase
 {
-    private static final String __OBFID = "CL_00000799";
 
     public String getCommandName()
     {

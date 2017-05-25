@@ -24,7 +24,6 @@ public class EntityOcelot extends EntityTameable
      * The tempt AI task for this mob, used to prevent taming while it is fleeing.
      */
     private EntityAITempt aiTempt;
-    private static final String __OBFID = "CL_00001646";
 
     public EntityOcelot(World p_i1688_1_)
     {

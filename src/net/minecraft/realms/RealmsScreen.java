@@ -26,7 +26,6 @@ public class RealmsScreen
     public int width;
     public int height;
     private GuiScreenRealmsProxy proxy = new GuiScreenRealmsProxy(this);
-    private static final String __OBFID = "CL_00001898";
 
     public GuiScreenRealmsProxy getProxy()
     {

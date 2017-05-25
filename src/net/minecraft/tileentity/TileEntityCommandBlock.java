@@ -12,7 +12,6 @@ public class TileEntityCommandBlock extends TileEntity
 {
     private final CommandBlockLogic field_145994_a = new CommandBlockLogic()
     {
-        private static final String __OBFID = "CL_00000348";
         public ChunkCoordinates getPlayerCoordinates()
         {
             return new ChunkCoordinates(TileEntityCommandBlock.this.posX, TileEntityCommandBlock.this.posY, TileEntityCommandBlock.this.posZ);
@@ -41,7 +40,6 @@ public class TileEntityCommandBlock extends TileEntity
             p_145757_1_.writeInt(TileEntityCommandBlock.this.posZ);
         }
     };
-    private static final String __OBFID = "CL_00000347";
 
     public void writeToNBT(NBTTagCompound p_145841_1_)
     {

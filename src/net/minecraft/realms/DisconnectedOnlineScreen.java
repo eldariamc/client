@@ -11,7 +11,6 @@ public class DisconnectedOnlineScreen extends RealmsScreen
     private IChatComponent reason;
     private List lines;
     private final RealmsScreen parent;
-    private static final String __OBFID = "CL_00001912";
 
     public DisconnectedOnlineScreen(RealmsScreen p_i1000_1_, String p_i1000_2_, IChatComponent p_i1000_3_)
     {

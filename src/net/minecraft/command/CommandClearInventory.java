@@ -8,7 +8,6 @@ import java.util.List;
 
 public class CommandClearInventory extends CommandBase
 {
-    private static final String __OBFID = "CL_00000218";
 
     public String getCommandName()
     {

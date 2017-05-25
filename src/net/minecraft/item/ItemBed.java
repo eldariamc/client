@@ -9,7 +9,6 @@ import net.minecraft.world.World;
 
 public class ItemBed extends Item
 {
-    private static final String __OBFID = "CL_00001771";
 
     public ItemBed()
     {

@@ -11,7 +11,6 @@ public class EntityCrit2FX extends EntityFX
     private int currentLife;
     private int maximumLife;
     private String particleName;
-    private static final String __OBFID = "CL_00000899";
 
     public EntityCrit2FX(World p_i1199_1_, Entity p_i1199_2_)
     {

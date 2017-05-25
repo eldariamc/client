@@ -11,7 +11,6 @@ public class GuiStreamIndicator
     private final Minecraft field_152442_b;
     private float field_152443_c = 1.0F;
     private int field_152444_d = 1;
-    private static final String __OBFID = "CL_00001849";
 
     public GuiStreamIndicator(Minecraft p_i1092_1_)
     {

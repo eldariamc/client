@@ -30,7 +30,6 @@ public abstract class GuiSlot
     private boolean field_148165_u;
     protected int field_148160_j;
     private boolean field_148164_v = true;
-    private static final String __OBFID = "CL_00000679";
 
     public GuiSlot(Minecraft p_i1052_1_, int p_i1052_2_, int p_i1052_3_, int p_i1052_4_, int p_i1052_5_, int p_i1052_6_)
     {

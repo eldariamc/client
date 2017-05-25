@@ -11,7 +11,6 @@ public class TileEntityEnderChestRenderer extends TileEntitySpecialRenderer
 {
     private static final ResourceLocation field_147520_b = new ResourceLocation("textures/entity/chest/ender.png");
     private ModelChest field_147521_c = new ModelChest();
-    private static final String __OBFID = "CL_00000967";
 
     public void renderTileEntityAt(TileEntityEnderChest p_147500_1_, double p_147500_2_, double p_147500_4_, double p_147500_6_, float p_147500_8_)
     {

@@ -4,7 +4,6 @@ import net.minecraft.init.Blocks;
 
 public class BiomeGenStoneBeach extends BiomeGenBase
 {
-    private static final String __OBFID = "CL_00000184";
 
     public BiomeGenStoneBeach(int p_i45384_1_)
     {

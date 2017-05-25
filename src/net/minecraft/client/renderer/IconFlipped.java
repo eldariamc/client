@@ -7,7 +7,6 @@ public class IconFlipped implements IIcon
     private final IIcon baseIcon;
     private final boolean flipU;
     private final boolean flipV;
-    private static final String __OBFID = "CL_00001511";
 
     public IconFlipped(IIcon p_i1560_1_, boolean p_i1560_2_, boolean p_i1560_3_)
     {

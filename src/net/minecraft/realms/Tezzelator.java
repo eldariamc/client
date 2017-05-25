@@ -7,7 +7,6 @@ public class Tezzelator
 {
     public static Tessellator t = Tessellator.instance;
     public static final Tezzelator instance = new Tezzelator();
-    private static final String __OBFID = "CL_00001855";
 
     public int end()
     {

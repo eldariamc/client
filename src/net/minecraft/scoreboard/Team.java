@@ -2,7 +2,6 @@ package net.minecraft.scoreboard;
 
 public abstract class Team
 {
-    private static final String __OBFID = "CL_00000621";
 
     /**
      * Same as ==

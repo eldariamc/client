@@ -20,7 +20,6 @@ public abstract class BlockLeaves extends BlockLeavesBase
     int[] field_150128_a;
     protected int field_150127_b;
     protected IIcon[][] field_150129_M = new IIcon[2][];
-    private static final String __OBFID = "CL_00000263";
 
     public BlockLeaves()
     {

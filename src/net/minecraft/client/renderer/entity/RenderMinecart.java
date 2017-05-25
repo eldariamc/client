@@ -19,7 +19,6 @@ public class RenderMinecart extends Render
     /** instance of ModelMinecart for rendering */
     protected ModelBase modelMinecart = new ModelMinecart();
     protected final RenderBlocks field_94145_f;
-    private static final String __OBFID = "CL_00001013";
 
     public RenderMinecart()
     {

@@ -5,7 +5,6 @@ import net.minecraft.world.World;
 
 public abstract class EntityFlying extends EntityLiving
 {
-    private static final String __OBFID = "CL_00001545";
 
     public EntityFlying(World p_i1587_1_)
     {

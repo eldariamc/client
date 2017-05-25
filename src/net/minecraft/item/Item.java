@@ -55,7 +55,6 @@ public class Item
 
     /** The string associated with this Item's Icon. */
     protected String iconString;
-    private static final String __OBFID = "CL_00000041";
 
     public static int getIdFromItem(Item p_150891_0_)
     {
@@ -954,7 +953,6 @@ public class Item
         private final float damageVsEntity;
         private final int enchantability;
 
-        private static final String __OBFID = "CL_00000042";
 
         ToolMaterial(int harvestLevel, int maxUses, float efficiencyOnProperMaterial, float damageVsEntity, int enchantability)
         {

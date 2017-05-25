@@ -21,7 +21,6 @@ public class StructureBoundingBox
 
     /** The second z coordinate of a bounding box. */
     public int maxZ;
-    private static final String __OBFID = "CL_00000442";
 
     public StructureBoundingBox() {}
 

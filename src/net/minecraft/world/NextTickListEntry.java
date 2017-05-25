@@ -23,7 +23,6 @@ public class NextTickListEntry implements Comparable
 
     /** The id of the tick entry */
     private long tickEntryID;
-    private static final String __OBFID = "CL_00000156";
 
     public NextTickListEntry(int p_i45370_1_, int p_i45370_2_, int p_i45370_3_, Block p_i45370_4_)
     {

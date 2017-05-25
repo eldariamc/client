@@ -12,7 +12,6 @@ import java.util.Random;
 
 public class BiomeGenSwamp extends BiomeGenBase
 {
-    private static final String __OBFID = "CL_00000185";
 
     protected BiomeGenSwamp(int p_i1988_1_)
     {

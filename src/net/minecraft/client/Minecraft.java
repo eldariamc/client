@@ -266,7 +266,6 @@ public class Minecraft implements IPlayerUsage
 
     /** Profiler currently displayed in the debug screen pie chart */
     private String debugProfilerName = "root";
-    private static final String __OBFID = "CL_00000631";
 
     public Minecraft(Session p_i1103_1_, int p_i1103_2_, int p_i1103_3_, boolean p_i1103_4_, boolean p_i1103_5_, File p_i1103_6_, File p_i1103_7_, File p_i1103_8_, Proxy p_i1103_9_, String p_i1103_10_, Multimap p_i1103_11_, String p_i1103_12_)
     {
@@ -324,7 +323,6 @@ public class Minecraft implements IPlayerUsage
     {
         Thread var1 = new Thread("Timer hack thread")
         {
-            private static final String __OBFID = "CL_00000632";
             public void run()
             {
                 while (Minecraft.this.running)
@@ -515,7 +513,6 @@ public class Minecraft implements IPlayerUsage
         this.mcResourceManager.registerReloadListener(this.entityRenderer);
         AchievementList.openInventory.setStatStringFormatter(new IStatStringFormat()
         {
-            private static final String __OBFID = "CL_00000639";
             public String formatString(String p_74535_1_)
             {
                 try
@@ -1694,7 +1691,6 @@ public class Minecraft implements IPlayerUsage
                 var3 = var2.makeCategory("Affected screen");
                 var3.addCrashSectionCallable("Screen name", new Callable()
                 {
-                    private static final String __OBFID = "CL_00000640";
                     public String call()
                     {
                         return Minecraft.this.currentScreen.getClass().getCanonicalName();
@@ -1715,7 +1711,6 @@ public class Minecraft implements IPlayerUsage
                     var3 = var2.makeCategory("Affected screen");
                     var3.addCrashSectionCallable("Screen name", new Callable()
                     {
-                        private static final String __OBFID = "CL_00000642";
                         public String call()
                         {
                             return Minecraft.this.currentScreen.getClass().getCanonicalName();
@@ -2488,7 +2483,6 @@ public class Minecraft implements IPlayerUsage
     {
         p_71396_1_.getCategory().addCrashSectionCallable("Launched Version", new Callable()
         {
-            private static final String __OBFID = "CL_00000643";
             public String call()
             {
                 return Minecraft.this.launchedVersion;
@@ -2496,7 +2490,6 @@ public class Minecraft implements IPlayerUsage
         });
         p_71396_1_.getCategory().addCrashSectionCallable("LWJGL", new Callable()
         {
-            private static final String __OBFID = "CL_00000644";
             public String call()
             {
                 return Sys.getVersion();
@@ -2504,7 +2497,6 @@ public class Minecraft implements IPlayerUsage
         });
         p_71396_1_.getCategory().addCrashSectionCallable("OpenGL", new Callable()
         {
-            private static final String __OBFID = "CL_00000645";
             public String call()
             {
                 return GL11.glGetString(GL11.GL_RENDERER) + " GL version " + GL11.glGetString(GL11.GL_VERSION) + ", " + GL11.glGetString(GL11.GL_VENDOR);
@@ -2512,7 +2504,6 @@ public class Minecraft implements IPlayerUsage
         });
         p_71396_1_.getCategory().addCrashSectionCallable("GL Caps", new Callable()
         {
-            private static final String __OBFID = "CL_00000646";
             public String call()
             {
                 return OpenGlHelper.func_153172_c();
@@ -2520,7 +2511,6 @@ public class Minecraft implements IPlayerUsage
         });
         p_71396_1_.getCategory().addCrashSectionCallable("Is Modded", new Callable()
         {
-            private static final String __OBFID = "CL_00000647";
             public String call()
             {
                 String var1 = ClientBrandRetriever.getClientModName();
@@ -2529,7 +2519,6 @@ public class Minecraft implements IPlayerUsage
         });
         p_71396_1_.getCategory().addCrashSectionCallable("Type", new Callable()
         {
-            private static final String __OBFID = "CL_00000633";
             public String call()
             {
                 return "Client (map_client.txt)";
@@ -2537,7 +2526,6 @@ public class Minecraft implements IPlayerUsage
         });
         p_71396_1_.getCategory().addCrashSectionCallable("Resource Packs", new Callable()
         {
-            private static final String __OBFID = "CL_00000634";
             public String call()
             {
                 return Minecraft.this.gameSettings.resourcePacks.toString();
@@ -2545,7 +2533,6 @@ public class Minecraft implements IPlayerUsage
         });
         p_71396_1_.getCategory().addCrashSectionCallable("Current Language", new Callable()
         {
-            private static final String __OBFID = "CL_00000635";
             public String call()
             {
                 return Minecraft.this.mcLanguageManager.getCurrentLanguage().toString();
@@ -2553,7 +2540,6 @@ public class Minecraft implements IPlayerUsage
         });
         p_71396_1_.getCategory().addCrashSectionCallable("Profiler Position", new Callable()
         {
-            private static final String __OBFID = "CL_00000636";
             public String call()
             {
                 return Minecraft.this.mcProfiler.profilingEnabled ? Minecraft.this.mcProfiler.getNameOfLastSection() : "N/A (disabled)";
@@ -2561,7 +2547,6 @@ public class Minecraft implements IPlayerUsage
         });
         p_71396_1_.getCategory().addCrashSectionCallable("Vec3 Pool Size", new Callable()
         {
-            private static final String __OBFID = "CL_00000637";
             public String call()
             {
                 byte var1 = 0;
@@ -2575,7 +2560,6 @@ public class Minecraft implements IPlayerUsage
         });
         p_71396_1_.getCategory().addCrashSectionCallable("Anisotropic Filtering", new Callable()
         {
-            private static final String __OBFID = "CL_00001853";
             public String func_152388_a()
             {
                 return Minecraft.this.gameSettings.anisotropicFiltering == 1 ? "Off (1)" : "On (" + Minecraft.this.gameSettings.anisotropicFiltering + ")";
@@ -2927,7 +2911,6 @@ public class Minecraft implements IPlayerUsage
                         {
                             this.displayGuiScreen(new GuiYesNo(new GuiYesNoCallback()
                             {
-                                private static final String __OBFID = "CL_00001852";
                                 public void confirmClicked(boolean p_73878_1_, int p_73878_2_)
                                 {
                                     if (p_73878_1_)
@@ -3045,7 +3028,6 @@ public class Minecraft implements IPlayerUsage
     static final class SwitchMovingObjectType
     {
         static final int[] field_152390_a = new int[MovingObjectPosition.MovingObjectType.values().length];
-        private static final String __OBFID = "CL_00000638";
 
         static
         {

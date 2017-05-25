@@ -129,7 +129,6 @@ public abstract class World implements IBlockAccess
      * the original block, plus 32 (i.e. value of 31 would mean a -1 offset
      */
     int[] lightUpdateBlockList;
-    private static final String __OBFID = "CL_00000140";
 
     /**
      * Gets the biome for a given set of x/z coordinates
@@ -150,7 +149,6 @@ public abstract class World implements IBlockAccess
                 CrashReportCategory var6 = var5.makeCategory("Coordinates of biome request");
                 var6.addCrashSectionCallable("Location", new Callable()
                 {
-                    private static final String __OBFID = "CL_00000141";
                     public String call()
                     {
                         return CrashReportCategory.getLocationInfo(p_72807_1_, 0, p_72807_2_);
@@ -709,7 +707,6 @@ public abstract class World implements IBlockAccess
 
                 var8.addCrashSectionCallable("Source block type", new Callable()
                 {
-                    private static final String __OBFID = "CL_00000142";
                     public String call()
                     {
                         try
@@ -4034,7 +4031,6 @@ public abstract class World implements IBlockAccess
         var2.addCrashSection("Level name", this.worldInfo == null ? "????" : this.worldInfo.getWorldName());
         var2.addCrashSectionCallable("All players", new Callable()
         {
-            private static final String __OBFID = "CL_00000143";
             public String call()
             {
                 return World.this.playerEntities.size() + " total; " + World.this.playerEntities.toString();
@@ -4042,7 +4038,6 @@ public abstract class World implements IBlockAccess
         });
         var2.addCrashSectionCallable("Chunk stats", new Callable()
         {
-            private static final String __OBFID = "CL_00000144";
             public String call()
             {
                 return World.this.chunkProvider.makeString();

@@ -8,7 +8,6 @@ import net.minecraft.world.gen.ChunkProviderHell;
 
 public class WorldProviderHell extends WorldProvider
 {
-    private static final String __OBFID = "CL_00000387";
 
     /**
      * creates a new world chunk manager for WorldProvider

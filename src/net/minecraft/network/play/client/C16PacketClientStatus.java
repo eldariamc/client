@@ -10,7 +10,6 @@ import java.io.IOException;
 public class C16PacketClientStatus extends Packet
 {
     private C16PacketClientStatus.EnumState field_149437_a;
-    private static final String __OBFID = "CL_00001348";
 
     public C16PacketClientStatus() {}
 
@@ -59,7 +58,6 @@ public class C16PacketClientStatus extends Packet
         private static final C16PacketClientStatus.EnumState[] field_151404_e = new C16PacketClientStatus.EnumState[values().length];
 
         private static final C16PacketClientStatus.EnumState[] $VALUES = new C16PacketClientStatus.EnumState[]{PERFORM_RESPAWN, REQUEST_STATS, OPEN_INVENTORY_ACHIEVEMENT};
-        private static final String __OBFID = "CL_00001349";
 
         private EnumState(String p_i45241_1_, int p_i45241_2_, int p_i45241_3_)
         {

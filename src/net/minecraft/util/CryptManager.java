@@ -10,7 +10,6 @@ import java.security.spec.X509EncodedKeySpec;
 
 public class CryptManager
 {
-    private static final String __OBFID = "CL_00001483";
 
     /**
      * Generate a new shared secret AES key from a secure random source

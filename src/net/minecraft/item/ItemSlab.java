@@ -11,7 +11,6 @@ public class ItemSlab extends ItemBlock
     private final boolean field_150948_b;
     private final BlockSlab field_150949_c;
     private final BlockSlab field_150947_d;
-    private static final String __OBFID = "CL_00000071";
 
     public ItemSlab(Block p_i45355_1_, BlockSlab p_i45355_2_, BlockSlab p_i45355_3_, boolean p_i45355_4_)
     {

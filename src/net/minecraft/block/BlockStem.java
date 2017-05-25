@@ -18,7 +18,6 @@ public class BlockStem extends BlockBush implements IGrowable
 {
     private final Block field_149877_a;
     private IIcon field_149876_b;
-    private static final String __OBFID = "CL_00000316";
 
     protected BlockStem(Block p_i45430_1_)
     {

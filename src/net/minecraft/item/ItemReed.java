@@ -9,7 +9,6 @@ import net.minecraft.world.World;
 public class ItemReed extends Item
 {
     private Block field_150935_a;
-    private static final String __OBFID = "CL_00001773";
 
     public ItemReed(Block p_i45329_1_)
     {

@@ -15,7 +15,6 @@ public abstract class ResourcePackListEntry implements GuiListExtended.IGuiListE
     private static final ResourceLocation field_148316_c = new ResourceLocation("textures/gui/resource_packs.png");
     protected final Minecraft field_148317_a;
     protected final GuiScreenResourcePacks field_148315_b;
-    private static final String __OBFID = "CL_00000821";
 
     public ResourcePackListEntry(GuiScreenResourcePacks p_i45051_1_)
     {

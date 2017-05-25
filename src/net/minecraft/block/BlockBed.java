@@ -24,7 +24,6 @@ public class BlockBed extends BlockDirectional
     private IIcon[] field_149980_b;
     private IIcon[] field_149982_M;
     private IIcon[] field_149983_N;
-    private static final String __OBFID = "CL_00000198";
 
     public BlockBed()
     {

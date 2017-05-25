@@ -11,7 +11,6 @@ import java.util.Random;
 public class WorldGenMegaPineTree extends WorldGenHugeTrees
 {
     private boolean field_150542_e;
-    private static final String __OBFID = "CL_00000421";
 
     public WorldGenMegaPineTree(boolean p_i45457_1_, boolean p_i45457_2_)
     {

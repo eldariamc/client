@@ -7,7 +7,6 @@ import net.minecraft.world.World;
 
 public class EntityExpBottle extends EntityThrowable
 {
-    private static final String __OBFID = "CL_00001726";
 
     public EntityExpBottle(World p_i1785_1_)
     {

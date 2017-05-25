@@ -9,7 +9,6 @@ public class ServersideAttributeMap extends BaseAttributeMap
 {
     private final Set attributeInstanceSet = Sets.newHashSet();
     protected final Map descriptionToAttributeInstanceMap = new LowerStringMap();
-    private static final String __OBFID = "CL_00001569";
 
     public ModifiableAttributeInstance getAttributeInstance(IAttribute p_111151_1_)
     {

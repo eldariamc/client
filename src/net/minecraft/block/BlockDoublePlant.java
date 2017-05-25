@@ -24,7 +24,6 @@ public class BlockDoublePlant extends BlockBush implements IGrowable
     private IIcon[] field_149893_M;
     private IIcon[] field_149894_N;
     public IIcon[] field_149891_b;
-    private static final String __OBFID = "CL_00000231";
 
     public BlockDoublePlant()
     {

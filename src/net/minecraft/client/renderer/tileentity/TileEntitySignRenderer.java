@@ -13,7 +13,6 @@ public class TileEntitySignRenderer extends TileEntitySpecialRenderer
 {
     private static final ResourceLocation field_147513_b = new ResourceLocation("textures/entity/sign.png");
     private final ModelSign field_147514_c = new ModelSign();
-    private static final String __OBFID = "CL_00000970";
 
     public void renderTileEntityAt(TileEntitySign p_147500_1_, double p_147500_2_, double p_147500_4_, double p_147500_6_, float p_147500_8_)
     {

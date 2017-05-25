@@ -13,7 +13,6 @@ public class ItemBucket extends Item
 {
     /** field for checking if the bucket has been filled. */
     private Block isFull;
-    private static final String __OBFID = "CL_00000000";
 
     public ItemBucket(Block p_i45331_1_)
     {

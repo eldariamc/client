@@ -17,7 +17,6 @@ public class ModelSilverfish extends ModelBase
 
     /** The texture positions for the silverfish's model's boxes. */
     private static final int[][] silverfishTexturePositions = new int[][] {{0, 0}, {0, 4}, {0, 9}, {0, 16}, {0, 22}, {11, 0}, {13, 4}};
-    private static final String __OBFID = "CL_00000855";
 
     public ModelSilverfish()
     {

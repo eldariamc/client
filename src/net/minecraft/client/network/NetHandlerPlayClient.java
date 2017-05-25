@@ -130,7 +130,6 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
      * particlespawn offset and velocity
      */
     private Random avRandomizer = new Random();
-    private static final String __OBFID = "CL_00000878";
 
     public NetHandlerPlayClient(Minecraft p_i45061_1_, GuiScreen p_i45061_2_, NetworkManager p_i45061_3_)
     {
@@ -1560,7 +1559,6 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
             {
                 this.gameController.displayGuiScreen(new GuiYesNo(new GuiYesNoCallback()
                 {
-                    private static final String __OBFID = "CL_00000879";
                     public void confirmClicked(boolean p_73878_1_, int p_73878_2_)
                     {
                         NetHandlerPlayClient.this.gameController = Minecraft.getMinecraft();

@@ -9,7 +9,6 @@ public class NBTTagByteArray extends NBTBase
 {
     /** The byte array stored in the tag. */
     private byte[] byteArray;
-    private static final String __OBFID = "CL_00001213";
 
     NBTTagByteArray() {}
 

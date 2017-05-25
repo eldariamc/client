@@ -7,7 +7,6 @@ import net.minecraft.world.World;
 
 public class ItemRedstone extends Item
 {
-    private static final String __OBFID = "CL_00000058";
 
     public ItemRedstone()
     {

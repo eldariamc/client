@@ -20,7 +20,6 @@ import java.util.List;
 
 public class ItemMap extends ItemMapBase
 {
-    private static final String __OBFID = "CL_00000047";
 
     protected ItemMap()
     {

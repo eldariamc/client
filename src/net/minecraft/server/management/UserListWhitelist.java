@@ -8,7 +8,6 @@ import java.util.Iterator;
 
 public class UserListWhitelist extends UserList
 {
-    private static final String __OBFID = "CL_00001871";
 
     public UserListWhitelist(File p_i1132_1_)
     {

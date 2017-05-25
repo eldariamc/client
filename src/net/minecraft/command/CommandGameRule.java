@@ -8,7 +8,6 @@ import java.util.List;
 
 public class CommandGameRule extends CommandBase
 {
-    private static final String __OBFID = "CL_00000475";
 
     public String getCommandName()
     {

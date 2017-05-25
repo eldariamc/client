@@ -27,7 +27,6 @@ public class BlockFurnace extends BlockContainer
     private IIcon field_149935_N;
     private IIcon field_149936_O;
     private double furnaceSpeed = 1.0;
-    private static final String __OBFID = "CL_00000248";
 
     protected BlockFurnace()
     {

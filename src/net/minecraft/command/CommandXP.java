@@ -7,7 +7,6 @@ import java.util.List;
 
 public class CommandXP extends CommandBase
 {
-    private static final String __OBFID = "CL_00000398";
 
     public String getCommandName()
     {

@@ -2,7 +2,6 @@ package net.minecraft.command;
 
 public class NumberInvalidException extends CommandException
 {
-    private static final String __OBFID = "CL_00001188";
 
     public NumberInvalidException()
     {

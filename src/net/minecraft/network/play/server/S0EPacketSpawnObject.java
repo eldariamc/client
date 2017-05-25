@@ -23,7 +23,6 @@ public class S0EPacketSpawnObject extends Packet
     private int field_149019_j;
     private int field_149020_k;
     private float tntPower;
-    private static final String __OBFID = "CL_00001276";
 
     public S0EPacketSpawnObject() {}
 

@@ -35,7 +35,6 @@ public class ServerListEntryNormal implements GuiListExtended.IGuiListEntry
     private String field_148299_g;
     private DynamicTexture field_148305_h;
     private ResourceLocation field_148306_i;
-    private static final String __OBFID = "CL_00000817";
 
     protected ServerListEntryNormal(GuiMultiplayer p_i45048_1_, ServerData p_i45048_2_)
     {
@@ -56,7 +55,6 @@ public class ServerListEntryNormal implements GuiListExtended.IGuiListEntry
             this.field_148301_e.populationInfo = "";
             field_148302_b.submit(new Runnable()
             {
-                private static final String __OBFID = "CL_00000818";
                 public void run()
                 {
                     try

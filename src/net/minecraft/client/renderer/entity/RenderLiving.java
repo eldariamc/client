@@ -10,7 +10,6 @@ import org.lwjgl.opengl.GL11;
 
 public abstract class RenderLiving extends RendererLivingEntity
 {
-    private static final String __OBFID = "CL_00001015";
 
     public RenderLiving(ModelBase p_i1262_1_, float p_i1262_2_)
     {

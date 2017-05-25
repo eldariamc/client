@@ -15,7 +15,6 @@ public class EntityMoveHelper
     /** The speed at which the entity should move */
     private double speed;
     private boolean update;
-    private static final String __OBFID = "CL_00001573";
 
     public EntityMoveHelper(EntityLiving p_i1614_1_)
     {

@@ -16,7 +16,6 @@ public class S23PacketBlockChange extends Packet
     private int field_148886_c;
     private Block field_148883_d;
     private int field_148884_e;
-    private static final String __OBFID = "CL_00001287";
 
     public S23PacketBlockChange() {}
 

@@ -12,7 +12,6 @@ public abstract class BlockLog extends BlockRotatedPillar
 {
     protected IIcon[] field_150167_a;
     protected IIcon[] field_150166_b;
-    private static final String __OBFID = "CL_00000266";
 
     public BlockLog()
     {

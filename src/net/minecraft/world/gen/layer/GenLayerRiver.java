@@ -4,7 +4,6 @@ import net.minecraft.world.biome.BiomeGenBase;
 
 public class GenLayerRiver extends GenLayer
 {
-    private static final String __OBFID = "CL_00000566";
 
     public GenLayerRiver(long p_i2128_1_, GenLayer p_i2128_3_)
     {

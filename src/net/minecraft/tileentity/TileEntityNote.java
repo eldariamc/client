@@ -9,7 +9,6 @@ public class TileEntityNote extends TileEntity
 {
     public byte field_145879_a;
     public boolean field_145880_i;
-    private static final String __OBFID = "CL_00000362";
 
     public void writeToNBT(NBTTagCompound p_145841_1_)
     {

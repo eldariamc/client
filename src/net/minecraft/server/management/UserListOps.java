@@ -8,7 +8,6 @@ import java.util.Iterator;
 
 public class UserListOps extends UserList
 {
-    private static final String __OBFID = "CL_00001879";
 
     public UserListOps(File p_i1152_1_)
     {

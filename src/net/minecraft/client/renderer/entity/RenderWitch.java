@@ -17,7 +17,6 @@ public class RenderWitch extends RenderLiving
 {
     private static final ResourceLocation witchTextures = new ResourceLocation("textures/entity/witch.png");
     private final ModelWitch witchModel;
-    private static final String __OBFID = "CL_00001033";
 
     public RenderWitch()
     {

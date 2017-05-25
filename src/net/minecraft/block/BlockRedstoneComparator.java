@@ -15,7 +15,6 @@ import java.util.Random;
 
 public class BlockRedstoneComparator extends BlockRedstoneDiode implements ITileEntityProvider
 {
-    private static final String __OBFID = "CL_00000220";
 
     public BlockRedstoneComparator(boolean p_i45399_1_)
     {

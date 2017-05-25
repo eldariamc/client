@@ -16,7 +16,6 @@ public class FallbackResourceManager implements IResourceManager
 {
     protected final List resourcePacks = new ArrayList();
     private final IMetadataSerializer frmMetadataSerializer;
-    private static final String __OBFID = "CL_00001074";
 
     public FallbackResourceManager(IMetadataSerializer p_i1289_1_)
     {

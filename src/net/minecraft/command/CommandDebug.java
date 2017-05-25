@@ -16,7 +16,6 @@ public class CommandDebug extends CommandBase
     private static final Logger logger = LogManager.getLogger();
     private long field_147206_b;
     private int field_147207_c;
-    private static final String __OBFID = "CL_00000270";
 
     public String getCommandName()
     {

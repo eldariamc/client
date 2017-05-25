@@ -12,7 +12,6 @@ public class EntityAIFollowParent extends EntityAIBase
     EntityAnimal parentAnimal;
     double field_75347_c;
     private int field_75345_d;
-    private static final String __OBFID = "CL_00001586";
 
     public EntityAIFollowParent(EntityAnimal p_i1626_1_, double p_i1626_2_)
     {

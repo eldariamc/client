@@ -4,7 +4,6 @@ import net.minecraft.util.ResourceLocation;
 
 public class PositionedSoundRecord extends PositionedSound
 {
-    private static final String __OBFID = "CL_00001120";
 
     public static PositionedSoundRecord func_147674_a(ResourceLocation p_147674_0_, float p_147674_1_)
     {

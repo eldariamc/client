@@ -23,7 +23,6 @@ public class MapStorage
      * Map of MapDataBase id String prefixes ('map' etc) to max known unique Short id (the 0 part etc) for that prefix
      */
     private Map idCounts = new HashMap();
-    private static final String __OBFID = "CL_00000604";
 
     public MapStorage(ISaveHandler p_i2162_1_)
     {

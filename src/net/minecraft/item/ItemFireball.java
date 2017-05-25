@@ -8,7 +8,6 @@ import net.minecraft.world.World;
 
 public class ItemFireball extends Item
 {
-    private static final String __OBFID = "CL_00000029";
 
     public ItemFireball()
     {

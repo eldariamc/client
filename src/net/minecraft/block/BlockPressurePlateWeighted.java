@@ -8,7 +8,6 @@ import net.minecraft.world.World;
 public class BlockPressurePlateWeighted extends BlockBasePressurePlate
 {
     private final int field_150068_a;
-    private static final String __OBFID = "CL_00000334";
 
     protected BlockPressurePlateWeighted(String p_i45436_1_, Material p_i45436_2_, int p_i45436_3_)
     {

@@ -22,7 +22,6 @@ public class RenderEnderman extends RenderLiving
     /** The model of the enderman */
     private ModelEnderman endermanModel;
     private Random rnd = new Random();
-    private static final String __OBFID = "CL_00000989";
 
     public RenderEnderman()
     {

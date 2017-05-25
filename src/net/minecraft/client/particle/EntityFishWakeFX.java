@@ -4,7 +4,6 @@ import net.minecraft.world.World;
 
 public class EntityFishWakeFX extends EntityFX
 {
-    private static final String __OBFID = "CL_00000933";
 
     public EntityFishWakeFX(World p_i45073_1_, double p_i45073_2_, double p_i45073_4_, double p_i45073_6_, double p_i45073_8_, double p_i45073_10_, double p_i45073_12_)
     {

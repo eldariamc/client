@@ -7,7 +7,6 @@ import net.minecraft.world.World;
 
 public class RecipesMapCloning implements IRecipe
 {
-    private static final String __OBFID = "CL_00000087";
 
     /**
      * Used to check if a recipe matches current crafting inventory

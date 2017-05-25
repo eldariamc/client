@@ -11,7 +11,6 @@ import java.util.Random;
 
 public class BlockDragonEgg extends Block
 {
-    private static final String __OBFID = "CL_00000232";
 
     public BlockDragonEgg()
     {

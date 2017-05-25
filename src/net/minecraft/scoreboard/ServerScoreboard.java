@@ -15,7 +15,6 @@ public class ServerScoreboard extends Scoreboard
     private final MinecraftServer scoreboardMCServer;
     private final Set field_96553_b = new HashSet();
     private ScoreboardSaveData field_96554_c;
-    private static final String __OBFID = "CL_00001424";
 
     public ServerScoreboard(MinecraftServer p_i1501_1_)
     {

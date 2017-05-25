@@ -13,7 +13,6 @@ public class MusicTicker implements IUpdatePlayerListBox
     private final Minecraft field_147677_b;
     private ISound field_147678_c;
     private int field_147676_d = 100;
-    private static final String __OBFID = "CL_00001138";
 
     public MusicTicker(Minecraft p_i45112_1_)
     {
@@ -64,7 +63,6 @@ public class MusicTicker implements IUpdatePlayerListBox
         private final int field_148643_j;
 
         private static final MusicTicker.MusicType[] $VALUES = new MusicTicker.MusicType[]{MENU, GAME, CREATIVE, CREDITS, NETHER, END_BOSS, END};
-        private static final String __OBFID = "CL_00001139";
 
         private MusicType(String p_i45111_1_, int p_i45111_2_, ResourceLocation p_i45111_3_, int p_i45111_4_, int p_i45111_5_)
         {

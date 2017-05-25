@@ -15,7 +15,6 @@ import java.util.Map.Entry;
 
 public class LanguageMetadataSectionSerializer extends BaseMetadataSectionSerializer
 {
-    private static final String __OBFID = "CL_00001111";
 
     public LanguageMetadataSection deserialize(JsonElement p_deserialize_1_, Type p_deserialize_2_, JsonDeserializationContext p_deserialize_3_)
     {

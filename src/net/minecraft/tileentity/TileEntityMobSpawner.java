@@ -10,7 +10,6 @@ public class TileEntityMobSpawner extends TileEntity
 {
     private final MobSpawnerBaseLogic field_145882_a = new MobSpawnerBaseLogic()
     {
-        private static final String __OBFID = "CL_00000361";
         public void func_98267_a(int p_98267_1_)
         {
             TileEntityMobSpawner.this.worldObj.func_147452_c(TileEntityMobSpawner.this.posX, TileEntityMobSpawner.this.posY, TileEntityMobSpawner.this.posZ, Blocks.mob_spawner, p_98267_1_, 0);
@@ -41,7 +40,6 @@ public class TileEntityMobSpawner extends TileEntity
             }
         }
     };
-    private static final String __OBFID = "CL_00000360";
 
     public void readFromNBT(NBTTagCompound p_145839_1_)
     {

@@ -13,7 +13,6 @@ import net.minecraft.world.World;
 
 public class ItemEnderEye extends Item
 {
-    private static final String __OBFID = "CL_00000026";
 
     public ItemEnderEye()
     {

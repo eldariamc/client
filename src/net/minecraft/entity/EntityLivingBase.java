@@ -165,7 +165,6 @@ public abstract class EntityLivingBase extends Entity
     /** Number of ticks since last jump */
     private int jumpTicks;
     private float field_110151_bq;
-    private static final String __OBFID = "CL_00001549";
 
     public EntityLivingBase(World p_i1594_1_)
     {

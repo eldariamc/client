@@ -14,7 +14,6 @@ public class BiomeGenSnow extends BiomeGenBase
     private boolean field_150615_aC;
     private WorldGenIceSpike field_150616_aD = new WorldGenIceSpike();
     private WorldGenIcePath field_150617_aE = new WorldGenIcePath(4);
-    private static final String __OBFID = "CL_00000174";
 
     public BiomeGenSnow(int p_i45378_1_, boolean p_i45378_2_)
     {

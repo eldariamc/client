@@ -19,7 +19,6 @@ public class RenderVillager extends RenderLiving
 
     /** Model of the villager. */
     protected ModelVillager villagerModel;
-    private static final String __OBFID = "CL_00001032";
 
     public RenderVillager()
     {

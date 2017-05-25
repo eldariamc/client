@@ -42,7 +42,6 @@ public abstract class WorldProvider
 
     /** Array for sunrise/sunset colors (RGBA) */
     private float[] colorsSunriseSunset = new float[4];
-    private static final String __OBFID = "CL_00000386";
 
     /**
      * associate an existing world with a World provider, and setup its lightbrightness table

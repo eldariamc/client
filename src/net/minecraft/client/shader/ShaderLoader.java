@@ -20,7 +20,6 @@ public class ShaderLoader
     private final String field_148059_b;
     private int field_148060_c;
     private int field_148058_d = 0;
-    private static final String __OBFID = "CL_00001043";
 
     private ShaderLoader(ShaderLoader.ShaderType p_i45091_1_, int p_i45091_2_, String p_i45091_3_)
     {
@@ -92,7 +91,6 @@ public class ShaderLoader
         private final Map field_148067_f = Maps.newHashMap();
 
         private static final ShaderLoader.ShaderType[] $VALUES = new ShaderLoader.ShaderType[]{VERTEX, FRAGMENT};
-        private static final String __OBFID = "CL_00001044";
 
         private ShaderType(String p_i45090_1_, int p_i45090_2_, String p_i45090_3_, String p_i45090_4_, int p_i45090_5_)
         {

@@ -10,7 +10,6 @@ public class WeightedRandomFishable extends WeightedRandom.Item
     private final ItemStack field_150711_b;
     private float field_150712_c;
     private boolean field_150710_d;
-    private static final String __OBFID = "CL_00001664";
 
     public WeightedRandomFishable(ItemStack p_i45317_1_, int p_i45317_2_)
     {

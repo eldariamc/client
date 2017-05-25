@@ -6,7 +6,6 @@ import net.minecraft.world.World;
 public class EntitySmokeFX extends EntityFX
 {
     float smokeParticleScale;
-    private static final String __OBFID = "CL_00000924";
 
     public EntitySmokeFX(World p_i1225_1_, double p_i1225_2_, double p_i1225_4_, double p_i1225_6_, double p_i1225_8_, double p_i1225_10_, double p_i1225_12_)
     {

@@ -16,7 +16,6 @@ import java.util.List;
 public class BlockWall extends Block
 {
     public static final String[] field_150092_a = new String[] {"normal", "mossy"};
-    private static final String __OBFID = "CL_00000331";
 
     public BlockWall(Block p_i45435_1_)
     {

@@ -239,5 +239,4 @@ public class Items
     public static final Item record_ward = (Item)Item.itemRegistry.getObject("record_ward");
     public static final Item record_11 = (Item)Item.itemRegistry.getObject("record_11");
     public static final Item record_wait = (Item)Item.itemRegistry.getObject("record_wait");
-    private static final String __OBFID = "CL_00000044";
 }

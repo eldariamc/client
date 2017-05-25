@@ -12,7 +12,6 @@ public class EntityAICreeperSwell extends EntityAIBase
      * The creeper's attack target. This is used for the changing of the creeper's state.
      */
     EntityLivingBase creeperAttackTarget;
-    private static final String __OBFID = "CL_00001614";
 
     public EntityAICreeperSwell(EntityCreeper p_i1655_1_)
     {

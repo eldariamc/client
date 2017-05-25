@@ -54,7 +54,6 @@ public class EntityVillager extends EntityAgeable implements IMerchant, INpc
 
     /** Selling list of Blacksmith items. */
     private static final Map blacksmithSellingList = new HashMap();
-    private static final String __OBFID = "CL_00001707";
 
     public EntityVillager(World p_i1747_1_)
     {

@@ -19,7 +19,6 @@ public enum SoundCategory
     private static final Map field_147169_k = Maps.newHashMap();
     private final String categoryName;
     private final int categoryId;
-    private static final String __OBFID = "CL_00001686";
 
     private SoundCategory(String p_i45126_3_, int p_i45126_4_)
     {

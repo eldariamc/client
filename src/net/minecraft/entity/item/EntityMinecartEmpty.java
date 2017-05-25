@@ -5,7 +5,6 @@ import net.minecraft.world.World;
 
 public class EntityMinecartEmpty extends EntityMinecart
 {
-    private static final String __OBFID = "CL_00001677";
 
     public EntityMinecartEmpty(World p_i1722_1_)
     {

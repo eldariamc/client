@@ -24,7 +24,6 @@ public class LoadingScreenRenderer implements IProgressUpdate
     private boolean field_73724_e;
     private ScaledResolution field_146587_f;
     private Framebuffer field_146588_g;
-    private static final String __OBFID = "CL_00000655";
 
     public LoadingScreenRenderer(Minecraft p_i1017_1_)
     {

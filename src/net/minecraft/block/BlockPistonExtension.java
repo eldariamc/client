@@ -19,7 +19,6 @@ import java.util.Random;
 public class BlockPistonExtension extends Block
 {
     private IIcon field_150088_a;
-    private static final String __OBFID = "CL_00000367";
 
     public BlockPistonExtension()
     {

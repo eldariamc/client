@@ -13,7 +13,6 @@ import java.util.List;
 
 public class BlockLilyPad extends BlockBush
 {
-    private static final String __OBFID = "CL_00000332";
 
     protected BlockLilyPad()
     {

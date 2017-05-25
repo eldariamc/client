@@ -7,7 +7,6 @@ import net.minecraft.world.World;
 
 public class EntityRainFX extends EntityFX
 {
-    private static final String __OBFID = "CL_00000934";
 
     public EntityRainFX(World p_i1235_1_, double p_i1235_2_, double p_i1235_4_, double p_i1235_6_)
     {

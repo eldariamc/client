@@ -9,7 +9,6 @@ import java.util.Random;
 
 public class CommandWeather extends CommandBase
 {
-    private static final String __OBFID = "CL_00001185";
 
     public String getCommandName()
     {

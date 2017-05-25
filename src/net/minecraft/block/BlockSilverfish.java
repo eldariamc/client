@@ -17,7 +17,6 @@ import java.util.Random;
 public class BlockSilverfish extends Block
 {
     public static final String[] field_150198_a = new String[] {"stone", "cobble", "brick", "mossybrick", "crackedbrick", "chiseledbrick"};
-    private static final String __OBFID = "CL_00000271";
 
     public BlockSilverfish()
     {

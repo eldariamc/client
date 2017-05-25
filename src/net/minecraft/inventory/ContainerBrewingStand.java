@@ -14,7 +14,6 @@ public class ContainerBrewingStand extends Container
     /** Instance of Slot. */
     private final Slot theSlot;
     private int brewTime;
-    private static final String __OBFID = "CL_00001737";
 
     public ContainerBrewingStand(InventoryPlayer p_i1805_1_, TileEntityBrewingStand p_i1805_2_)
     {
@@ -158,7 +157,6 @@ public class ContainerBrewingStand extends Container
 
     static class Ingredient extends Slot
     {
-        private static final String __OBFID = "CL_00001738";
 
         public Ingredient(IInventory p_i1803_2_, int p_i1803_3_, int p_i1803_4_, int p_i1803_5_)
         {
@@ -179,7 +177,6 @@ public class ContainerBrewingStand extends Container
     static class Potion extends Slot
     {
         private EntityPlayer player;
-        private static final String __OBFID = "CL_00001740";
 
         public Potion(EntityPlayer p_i1804_1_, IInventory p_i1804_2_, int p_i1804_3_, int p_i1804_4_, int p_i1804_5_)
         {

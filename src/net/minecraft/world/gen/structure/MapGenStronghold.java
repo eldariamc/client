@@ -20,7 +20,6 @@ public class MapGenStronghold extends MapGenStructure
     private ChunkCoordIntPair[] structureCoords;
     private double field_82671_h;
     private int field_82672_i;
-    private static final String __OBFID = "CL_00000481";
 
     public MapGenStronghold()
     {
@@ -159,7 +158,6 @@ public class MapGenStronghold extends MapGenStructure
 
     public static class Start extends StructureStart
     {
-        private static final String __OBFID = "CL_00000482";
 
         public Start() {}
 

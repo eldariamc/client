@@ -36,7 +36,6 @@ public class EntitySquid extends EntityWaterMob
     private float randomMotionVecX;
     private float randomMotionVecY;
     private float randomMotionVecZ;
-    private static final String __OBFID = "CL_00001651";
 
     public EntitySquid(World p_i1693_1_)
     {

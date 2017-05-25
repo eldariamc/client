@@ -69,7 +69,6 @@ public class RenderManager
     public double viewerPosY;
     public double viewerPosZ;
     public static boolean field_85095_o;
-    private static final String __OBFID = "CL_00000991";
 
     private RenderManager()
     {

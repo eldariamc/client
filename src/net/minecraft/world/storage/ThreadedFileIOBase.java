@@ -12,7 +12,6 @@ public class ThreadedFileIOBase implements Runnable
     private volatile long writeQueuedCounter;
     private volatile long savedIOCounter;
     private volatile boolean isThreadWaiting;
-    private static final String __OBFID = "CL_00000605";
 
     private ThreadedFileIOBase()
     {

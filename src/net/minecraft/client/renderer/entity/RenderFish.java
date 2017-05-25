@@ -13,7 +13,6 @@ import org.lwjgl.opengl.GL12;
 public class RenderFish extends Render
 {
     private static final ResourceLocation field_110792_a = new ResourceLocation("textures/particle/particles.png");
-    private static final String __OBFID = "CL_00000996";
 
     /**
      * Actually renders the given argument. This is a synthetic bridge method, always casting down its argument and then

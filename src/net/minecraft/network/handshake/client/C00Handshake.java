@@ -14,7 +14,6 @@ public class C00Handshake extends Packet
     private String field_149598_b;
     private int field_149599_c;
     private EnumConnectionState field_149597_d;
-    private static final String __OBFID = "CL_00001372";
 
     public C00Handshake() {}
 

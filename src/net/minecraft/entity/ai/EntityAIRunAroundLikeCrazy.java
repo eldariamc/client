@@ -12,7 +12,6 @@ public class EntityAIRunAroundLikeCrazy extends EntityAIBase
     private double field_111179_c;
     private double field_111176_d;
     private double field_111177_e;
-    private static final String __OBFID = "CL_00001612";
 
     public EntityAIRunAroundLikeCrazy(EntityHorse p_i1653_1_, double p_i1653_2_)
     {

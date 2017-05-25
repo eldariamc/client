@@ -12,7 +12,6 @@ public class C10PacketCreativeInventoryAction extends Packet
 {
     private int field_149629_a;
     private ItemStack field_149628_b;
-    private static final String __OBFID = "CL_00001369";
 
     public C10PacketCreativeInventoryAction() {}
 

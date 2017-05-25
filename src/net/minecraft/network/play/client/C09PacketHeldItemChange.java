@@ -10,7 +10,6 @@ import java.io.IOException;
 public class C09PacketHeldItemChange extends Packet
 {
     private int field_149615_a;
-    private static final String __OBFID = "CL_00001368";
 
     public C09PacketHeldItemChange() {}
 

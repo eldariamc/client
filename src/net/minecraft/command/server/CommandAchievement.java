@@ -18,7 +18,6 @@ import java.util.List;
 
 public class CommandAchievement extends CommandBase
 {
-    private static final String __OBFID = "CL_00000113";
 
     public String getCommandName()
     {

@@ -8,7 +8,6 @@ public class EntityAIBreakDoor extends EntityAIDoorInteract
 {
     private int breakingTime;
     private int field_75358_j = -1;
-    private static final String __OBFID = "CL_00001577";
 
     public EntityAIBreakDoor(EntityLiving p_i1618_1_)
     {

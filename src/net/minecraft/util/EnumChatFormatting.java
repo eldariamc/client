@@ -56,7 +56,6 @@ public enum EnumChatFormatting
      * subsequent text in this format.
      */
     private final String controlString;
-    private static final String __OBFID = "CL_00000342";
 
     private EnumChatFormatting(char p_i1336_3_)
     {

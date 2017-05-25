@@ -24,7 +24,6 @@ public class CombatTracker
     private boolean field_94552_d;
     private boolean field_94553_e;
     private String field_94551_f;
-    private static final String __OBFID = "CL_00001520";
 
     public CombatTracker(EntityLivingBase p_i1565_1_)
     {

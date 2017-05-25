@@ -9,7 +9,6 @@ import net.minecraft.world.World;
 
 public class ItemSign extends Item
 {
-    private static final String __OBFID = "CL_00000064";
 
     public ItemSign()
     {

@@ -8,7 +8,6 @@ public class ScoreObjective
     /** The ScoreObjectiveCriteria for this objetive */
     private final IScoreObjectiveCriteria objectiveCriteria;
     private String displayName;
-    private static final String __OBFID = "CL_00000614";
 
     public ScoreObjective(Scoreboard p_i2307_1_, String p_i2307_2_, IScoreObjectiveCriteria p_i2307_3_)
     {

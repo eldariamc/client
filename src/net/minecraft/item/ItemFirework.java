@@ -12,7 +12,6 @@ import java.util.List;
 
 public class ItemFirework extends Item
 {
-    private static final String __OBFID = "CL_00000031";
 
     /**
      * Callback for item usage. If the item does something special on right clicking, he will have one of those. Return

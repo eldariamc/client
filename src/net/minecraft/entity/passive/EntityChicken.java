@@ -25,7 +25,6 @@ public class EntityChicken extends EntityAnimal
     /** The time until the next egg is spawned. */
     public int timeUntilNextEgg;
     public boolean field_152118_bv;
-    private static final String __OBFID = "CL_00001639";
 
     public EntityChicken(World p_i1682_1_)
     {

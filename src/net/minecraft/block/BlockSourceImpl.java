@@ -10,7 +10,6 @@ public class BlockSourceImpl implements IBlockSource
     private final int xPos;
     private final int yPos;
     private final int zPos;
-    private static final String __OBFID = "CL_00001194";
 
     public BlockSourceImpl(World p_i1365_1_, int p_i1365_2_, int p_i1365_3_, int p_i1365_4_)
     {

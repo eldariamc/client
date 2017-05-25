@@ -46,7 +46,6 @@ public class Achievement extends StatBase
      * achieve.
      */
     private boolean isSpecial;
-    private static final String __OBFID = "CL_00001466";
 
     public Achievement(String p_i45300_1_, String p_i45300_2_, int p_i45300_3_, int p_i45300_4_, Item p_i45300_5_, Achievement p_i45300_6_)
     {
