@@ -6,6 +6,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemRepairOrb;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
 import net.minecraft.util.IIcon;
@@ -24,7 +25,7 @@ public class ContainerPlayer extends Container
     {
         this.isLocalWorld = p_i1819_2_;
         this.thePlayer = p_i1819_3_;
-        this.addSlotToContainer(new SlotCrafting(p_i1819_1_.player, this.craftMatrix, this.craftResult, 0, 144, 36));
+        this.addSlotToContainer(new SlotCrafting(p_i1819_1_.player, this.craftMatrix, this.craftResult, 0, 154, 28));
         int var4;
         int var5;
 
@@ -32,14 +33,14 @@ public class ContainerPlayer extends Container
         {
             for (var5 = 0; var5 < 2; ++var5)
             {
-                this.addSlotToContainer(new Slot(this.craftMatrix, var5 + var4 * 2, 88 + var5 * 18, 26 + var4 * 18));
+                this.addSlotToContainer(new Slot(this.craftMatrix, var5 + var4 * 2, 98 + var5 * 18, 18 + var4 * 18));
             }
         }
 
         for (var4 = 0; var4 < 4; ++var4)
         {
             final int var44 = var4;
-            this.addSlotToContainer(new Slot(p_i1819_1_, p_i1819_1_.getSizeInventory() - 1 - var4, 8, 8 + var4 * 18)
+            this.addSlotToContainer(new Slot(p_i1819_1_, 36 + (3 - var4), 8, 8 + var4 * 18)
             {
                 public int getSlotStackLimit()
                 {
@@ -68,6 +69,19 @@ public class ContainerPlayer extends Container
         {
             this.addSlotToContainer(new Slot(p_i1819_1_, var4, 8 + var4 * 18, 142));
         }
+
+        // Eldaria - Orbe de réparation
+        this.addSlotToContainer(new Slot(p_i1819_1_, 40, 77, 62)
+        {
+            public int getSlotStackLimit()
+            {
+                return 1;
+            }
+            public boolean isItemValid(ItemStack p_75214_1_)
+            {
+                return p_75214_1_ != null && (p_75214_1_.getItem() instanceof ItemRepairOrb);
+            }
+        });
 
         this.onCraftMatrixChanged(this.craftMatrix);
     }

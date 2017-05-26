@@ -219,6 +219,7 @@ public class Items
     public static final Item eldarium_leggings = (Item)Item.itemRegistry.getObject("eldarium_leggigs");
     public static final Item eldarium_boots = (Item)Item.itemRegistry.getObject("eldarium_boots");
     public static final Item dynamite = (Item)Item.itemRegistry.getObject("dynamite");
+    public static final Item repair_orb = (Item)Item.itemRegistry.getObject("repair_orb");
     public static final Item c4 = (Item)Item.itemRegistry.getObject("c4");
     public static final Item tomahawk = (Item)Item.itemRegistry.getObject("tomahawk");
     public static final Item chest_orb = (Item)Item.itemRegistry.getObject("chest_orb");

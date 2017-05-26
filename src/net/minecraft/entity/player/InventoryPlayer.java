@@ -23,6 +23,9 @@ public class InventoryPlayer implements IInventory
     /** An array of 4 item stacks containing the currently worn armor pieces. */
     public ItemStack[] armorInventory = new ItemStack[4];
 
+    /** Eldaria - Orbe de réparation. */
+    public ItemStack[] orbInventory = new ItemStack[1];
+
     /** The index of the currently held item (0-8). */
     public int currentItem;
 
@@ -208,6 +211,14 @@ public class InventoryPlayer implements IInventory
                 var3 += var5.stackSize;
                 this.armorInventory[var4] = null;
             }
+        }
+
+        // Eldaria - Orbe de réparation
+        var5 = this.orbInventory[0];
+        if (var5 != null && (p_146027_1_ == null || var5.getItem() == p_146027_1_) && (p_146027_2_ <= -1 || var5.getItemDamage() == p_146027_2_))
+        {
+            var3 += var5.stackSize;
+            this.orbInventory[0] = null;
         }
 
         if (this.itemStack != null)
@@ -461,6 +472,13 @@ public class InventoryPlayer implements IInventory
             p_70298_1_ -= this.mainInventory.length;
         }
 
+        // Eldaria - Orbe de réparation
+        if (p_70298_1_ >= this.armorInventory.length)
+        {
+            var3 = this.orbInventory;
+            p_70298_1_ -= this.armorInventory.length;
+        }
+
         if (var3[p_70298_1_] != null)
         {
             ItemStack var4;
@@ -503,6 +521,13 @@ public class InventoryPlayer implements IInventory
             p_70304_1_ -= this.mainInventory.length;
         }
 
+        // Eldaria - Orbe de réparation
+        if (p_70304_1_ >= this.armorInventory.length)
+        {
+            var2 = this.orbInventory;
+            p_70304_1_ -= this.armorInventory.length;
+        }
+
         if (var2[p_70304_1_] != null)
         {
             ItemStack var3 = var2[p_70304_1_];
@@ -526,6 +551,13 @@ public class InventoryPlayer implements IInventory
         {
             p_70299_1_ -= var3.length;
             var3 = this.armorInventory;
+        }
+
+        // Eldaria - Orbe de réparation
+        if (p_70299_1_ >= var3.length)
+        {
+            p_70299_1_ -= var3.length;
+            var3 = this.orbInventory;
         }
 
         var3[p_70299_1_] = p_70299_2_;
@@ -574,6 +606,15 @@ public class InventoryPlayer implements IInventory
             }
         }
 
+        // Eldaria - Orbe de réparation
+        if (this.orbInventory[0] != null)
+        {
+            var3 = new NBTTagCompound();
+            var3.setByte("Slot", (byte)(110));
+            this.orbInventory[0].writeToNBT(var3);
+            p_70442_1_.appendTag(var3);
+        }
+
         return p_70442_1_;
     }
 
@@ -584,6 +625,7 @@ public class InventoryPlayer implements IInventory
     {
         this.mainInventory = new ItemStack[36];
         this.armorInventory = new ItemStack[4];
+        this.orbInventory = new ItemStack[1];
 
         for (int var2 = 0; var2 < p_70443_1_.tagCount(); ++var2)
         {
@@ -597,10 +639,14 @@ public class InventoryPlayer implements IInventory
                 {
                     this.mainInventory[var4] = var5;
                 }
-
-                if (var4 >= 100 && var4 < this.armorInventory.length + 100)
+                else if (var4 >= 100 && var4 < this.armorInventory.length + 100)
                 {
                     this.armorInventory[var4 - 100] = var5;
+                }
+                // Eldaria - Orbe de réparation
+                else if (var4 >= 110 && var4 < this.orbInventory.length + 110)
+                {
+                    this.orbInventory[var4 - 110] = var5;
                 }
             }
         }
@@ -611,7 +657,9 @@ public class InventoryPlayer implements IInventory
      */
     public int getSizeInventory()
     {
-        return this.mainInventory.length + 4;
+        return this.mainInventory.length
+                + this.armorInventory.length
+                + this.orbInventory.length;
     }
 
     /**
@@ -625,6 +673,13 @@ public class InventoryPlayer implements IInventory
         {
             p_70301_1_ -= var2.length;
             var2 = this.armorInventory;
+        }
+
+        // Eldaria - Orbe de réparation
+        if (p_70301_1_ >= var2.length)
+        {
+            p_70301_1_ -= var2.length;
+            var2 = this.orbInventory;
         }
 
         return var2[p_70301_1_];
@@ -744,6 +799,13 @@ public class InventoryPlayer implements IInventory
                 this.armorInventory[var1] = null;
             }
         }
+
+        // Eldaria - Orbe de réparation
+        if (this.orbInventory[0] != null)
+        {
+            this.player.func_146097_a(this.orbInventory[0], true, false);
+            this.orbInventory[0] = null;
+        }
     }
 
     /**
@@ -795,7 +857,8 @@ public class InventoryPlayer implements IInventory
             }
         }
 
-        return false;
+        // Eldaria - Orbe de réparation
+        return this.orbInventory[0] != null && this.orbInventory[0].isItemEqual(p_70431_1_);
     }
 
     public void openInventory() {}
@@ -827,6 +890,14 @@ public class InventoryPlayer implements IInventory
             this.armorInventory[var2] = ItemStack.copyItemStack(p_70455_1_.armorInventory[var2]);
         }
 
+        // Eldaria - Orbe de réparation
+        this.orbInventory[0] = ItemStack.copyItemStack(p_70455_1_.orbInventory[0]);
+
         this.currentItem = p_70455_1_.currentItem;
+    }
+
+    /** Eldaria - Orbe de réparation. */
+    public ItemStack getOrb() {
+        return orbInventory[0];
     }
 }
