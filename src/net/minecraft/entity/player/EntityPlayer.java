@@ -1926,6 +1926,82 @@ public abstract class EntityPlayer extends EntityLivingBase implements ICommandS
                     return Items.bow.getItemIconForUseDuration(0);
                 }
             }
+            if (this.itemInUse != null && p_70620_1_.getItem() == Items.bow_zinc)
+            {
+                int var4 = p_70620_1_.getMaxItemUseDuration() - this.itemInUseCount;
+
+                if (var4 >= 18)
+                {
+                    return Items.bow_zinc.getItemIconForUseDuration(2);
+                }
+
+                if (var4 > 13)
+                {
+                    return Items.bow_zinc.getItemIconForUseDuration(1);
+                }
+
+                if (var4 > 0)
+                {
+                    return Items.bow_zinc.getItemIconForUseDuration(0);
+                }
+            }
+            if (this.itemInUse != null && p_70620_1_.getItem() == Items.bow_cronyxe)
+            {
+                int var4 = p_70620_1_.getMaxItemUseDuration() - this.itemInUseCount;
+
+                if (var4 >= 18)
+                {
+                    return Items.bow_cronyxe.getItemIconForUseDuration(2);
+                }
+
+                if (var4 > 13)
+                {
+                    return Items.bow_cronyxe.getItemIconForUseDuration(1);
+                }
+
+                if (var4 > 0)
+                {
+                    return Items.bow_cronyxe.getItemIconForUseDuration(0);
+                }
+            }
+            if (this.itemInUse != null && p_70620_1_.getItem() == Items.bow_kobalt)
+            {
+                int var4 = p_70620_1_.getMaxItemUseDuration() - this.itemInUseCount;
+
+                if (var4 >= 18)
+                {
+                    return Items.bow_kobalt.getItemIconForUseDuration(2);
+                }
+
+                if (var4 > 13)
+                {
+                    return Items.bow_kobalt.getItemIconForUseDuration(1);
+                }
+
+                if (var4 > 0)
+                {
+                    return Items.bow_kobalt.getItemIconForUseDuration(0);
+                }
+            }
+            if (this.itemInUse != null && p_70620_1_.getItem() == Items.bow_eldarium)
+            {
+                int var4 = p_70620_1_.getMaxItemUseDuration() - this.itemInUseCount;
+
+                if (var4 >= 18)
+                {
+                    return Items.bow_eldarium.getItemIconForUseDuration(2);
+                }
+
+                if (var4 > 13)
+                {
+                    return Items.bow_eldarium.getItemIconForUseDuration(1);
+                }
+
+                if (var4 > 0)
+                {
+                    return Items.bow_eldarium.getItemIconForUseDuration(0);
+                }
+            }
         }
 
         return var3;

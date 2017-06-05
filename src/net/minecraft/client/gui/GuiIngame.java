@@ -310,7 +310,9 @@ public class GuiIngame extends Gui
         // Eldaria - CPS & Connection
         ScaledResolution r = new ScaledResolution(this.mc, this.mc.displayWidth, this.mc.displayHeight);
 
-        this.mc.fontRenderer.drawString("§9FPS§7: §a" + Minecraft.join, var6 - 2,  var7-10, 1);
+        this.mc.fontRenderer.drawString(" " + Minecraft.join, var6 - 2,  var7-10, 1);
+        this.mc.fontRenderer.drawString("§7CPS§c: " + Click.getClicks(), var6 - 360 - this.mc.fontRenderer.getStringWidth("§7CPS§c: " + Click.getClicks()), var7-10, 16777215);
+
 
 
         if (this.mc.gameSettings.showDebugInfo)  // Eldaria - render F3 debug infos

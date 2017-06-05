@@ -392,6 +392,70 @@ public class EntityPlayerSP extends AbstractClientPlayer
 
             var1 *= 1.0F - var4 * 0.15F;
         }
+        if (this.isUsingItem() && this.getItemInUse().getItem() == Items.bow_zinc)
+        {
+            int var3 = this.getItemInUseDuration();
+            float var4 = (float)var3 / 20.0F;
+
+            if (var4 > 1.0F)
+            {
+                var4 = 1.0F;
+            }
+            else
+            {
+                var4 *= var4;
+            }
+
+            var1 *= 1.0F - var4 * 0.15F;
+        }
+        if (this.isUsingItem() && this.getItemInUse().getItem() == Items.bow_cronyxe)
+        {
+            int var3 = this.getItemInUseDuration();
+            float var4 = (float)var3 / 20.0F;
+
+            if (var4 > 1.0F)
+            {
+                var4 = 1.0F;
+            }
+            else
+            {
+                var4 *= var4;
+            }
+
+            var1 *= 1.0F - var4 * 0.15F;
+        }
+        if (this.isUsingItem() && this.getItemInUse().getItem() == Items.bow_kobalt)
+        {
+            int var3 = this.getItemInUseDuration();
+            float var4 = (float)var3 / 20.0F;
+
+            if (var4 > 1.0F)
+            {
+                var4 = 1.0F;
+            }
+            else
+            {
+                var4 *= var4;
+            }
+
+            var1 *= 1.0F - var4 * 0.15F;
+        }
+        if (this.isUsingItem() && this.getItemInUse().getItem() == Items.bow_eldarium)
+        {
+            int var3 = this.getItemInUseDuration();
+            float var4 = (float)var3 / 20.0F;
+
+            if (var4 > 1.0F)
+            {
+                var4 = 1.0F;
+            }
+            else
+            {
+                var4 *= var4;
+            }
+
+            var1 *= 1.0F - var4 * 0.15F;
+        }
 
         return var1;
     }
