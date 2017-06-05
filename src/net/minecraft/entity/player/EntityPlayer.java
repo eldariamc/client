@@ -142,7 +142,6 @@ public abstract class EntityPlayer extends EntityLivingBase implements ICommandS
      * An instance of a fishing rod's hook. If this isn't null, the icon image of the fishing rod is slightly different
      */
     public EntityFishHook fishEntity;
-    private static final String __OBFID = "CL_00001711";
 
     public EntityPlayer(World p_i45324_1_, GameProfile p_i45324_2_)
     {
@@ -2366,7 +2365,6 @@ public abstract class EntityPlayer extends EntityLivingBase implements ICommandS
         private final String resourceKey;
 
         private static final EntityPlayer.EnumChatVisibility[] $VALUES = new EntityPlayer.EnumChatVisibility[]{FULL, SYSTEM, HIDDEN};
-        private static final String __OBFID = "CL_00001714";
 
         private EnumChatVisibility(String p_i45323_1_, int p_i45323_2_, int p_i45323_3_, String p_i45323_4_)
         {
@@ -2411,7 +2409,6 @@ public abstract class EntityPlayer extends EntityLivingBase implements ICommandS
         NOT_SAFE("NOT_SAFE", 5);
 
         private static final EntityPlayer.EnumStatus[] $VALUES = new EntityPlayer.EnumStatus[]{OK, NOT_POSSIBLE_HERE, NOT_POSSIBLE_NOW, TOO_FAR_AWAY, OTHER_PROBLEM, NOT_SAFE};
-        private static final String __OBFID = "CL_00001712";
 
         private EnumStatus(String p_i1751_1_, int p_i1751_2_) {}
     }

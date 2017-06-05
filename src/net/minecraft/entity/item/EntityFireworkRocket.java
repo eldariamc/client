@@ -15,7 +15,6 @@ public class EntityFireworkRocket extends Entity
      * The lifetime of the firework in ticks. When the age reaches the lifetime the firework explodes.
      */
     private int lifetime;
-    private static final String __OBFID = "CL_00001718";
 
     public EntityFireworkRocket(World p_i1762_1_)
     {

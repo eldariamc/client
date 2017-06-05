@@ -57,7 +57,6 @@ public class TextureMap extends AbstractTexture implements ITickableTextureObjec
     private double iconGridSizeV;
     private static final boolean ENABLE_SKIP = Boolean.parseBoolean(System.getProperty("fml.skipFirstTextureLoad", "true"));
     private boolean skipFirst;
-    private static final String __OBFID = "CL_00001058";
 
     public TextureMap(int par1, String par2Str)
     {
@@ -258,7 +257,6 @@ public class TextureMap extends AbstractTexture implements ITickableTextureObjec
                 CrashReportCategory var261 = debugImage1.makeCategory("Sprite being mipmapped");
                 var261.addCrashSectionCallable("Sprite name", new Callable()
                 {
-                    private static final String __OBFID = "CL_00001059";
                     public String call()
                     {
                         return sheetWidth1.getIconName();
@@ -266,7 +264,6 @@ public class TextureMap extends AbstractTexture implements ITickableTextureObjec
                 });
                 var261.addCrashSectionCallable("Sprite size", new Callable()
                 {
-                    private static final String __OBFID = "CL_00001060";
                     public String call()
                     {
                         return sheetWidth1.getIconWidth() + " x " + sheetWidth1.getIconHeight();
@@ -274,7 +271,6 @@ public class TextureMap extends AbstractTexture implements ITickableTextureObjec
                 });
                 var261.addCrashSectionCallable("Sprite frames", new Callable()
                 {
-                    private static final String __OBFID = "CL_00001061";
                     public String call()
                     {
                         return sheetWidth1.getFrameCount() + " frames";

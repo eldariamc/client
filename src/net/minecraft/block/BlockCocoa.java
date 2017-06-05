@@ -19,7 +19,6 @@ import java.util.Random;
 public class BlockCocoa extends BlockDirectional implements IGrowable
 {
     private IIcon[] field_149989_a;
-    private static final String __OBFID = "CL_00000216";
 
     public BlockCocoa()
     {

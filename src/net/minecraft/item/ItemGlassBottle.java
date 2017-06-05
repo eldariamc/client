@@ -11,7 +11,6 @@ import net.minecraft.world.World;
 
 public class ItemGlassBottle extends Item
 {
-    private static final String __OBFID = "CL_00001776";
 
     public ItemGlassBottle()
     {

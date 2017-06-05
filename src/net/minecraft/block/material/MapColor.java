@@ -50,7 +50,6 @@ public class MapColor
 
     /** Holds the index of the color used on map. */
     public final int colorIndex;
-    private static final String __OBFID = "CL_00000544";
 
     private MapColor(int p_i2117_1_, int p_i2117_2_)
     {

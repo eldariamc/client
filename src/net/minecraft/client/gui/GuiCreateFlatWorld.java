@@ -24,7 +24,6 @@ public class GuiCreateFlatWorld extends GuiScreen
     private GuiButton field_146389_t;
     private GuiButton field_146388_u;
     private GuiButton field_146386_v;
-    private static final String __OBFID = "CL_00000687";
 
     public GuiCreateFlatWorld(GuiCreateWorld p_i1029_1_, String p_i1029_2_)
     {
@@ -121,7 +120,6 @@ public class GuiCreateFlatWorld extends GuiScreen
     class Details extends GuiSlot
     {
         public int field_148228_k = -1;
-        private static final String __OBFID = "CL_00000688";
 
         public Details()
         {

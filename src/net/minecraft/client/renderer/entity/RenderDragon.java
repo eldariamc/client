@@ -24,7 +24,6 @@ public class RenderDragon extends RenderLiving
 
     /** An instance of the dragon model in RenderDragon */
     protected ModelDragon modelDragon;
-    private static final String __OBFID = "CL_00000988";
 
     public RenderDragon()
     {

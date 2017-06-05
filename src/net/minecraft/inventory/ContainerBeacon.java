@@ -17,7 +17,6 @@ public class ContainerBeacon extends Container
     private int field_82865_g;
     private int field_82867_h;
     private int field_82868_i;
-    private static final String __OBFID = "CL_00001735";
 
     public ContainerBeacon(InventoryPlayer p_i1802_1_, TileEntityBeacon p_i1802_2_)
     {
@@ -151,7 +150,6 @@ public class ContainerBeacon extends Container
 
     class BeaconSlot extends Slot
     {
-        private static final String __OBFID = "CL_00001736";
 
         public BeaconSlot(IInventory p_i1801_2_, int p_i1801_3_, int p_i1801_4_, int p_i1801_5_)
         {

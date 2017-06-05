@@ -9,7 +9,6 @@ import java.util.Random;
 public class BiomeGenPlains extends BiomeGenBase
 {
     protected boolean field_150628_aC;
-    private static final String __OBFID = "CL_00000180";
 
     protected BiomeGenPlains(int p_i1986_1_)
     {

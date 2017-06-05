@@ -8,7 +8,6 @@ import net.minecraft.world.World;
 
 public class RecipeBookCloning implements IRecipe
 {
-    private static final String __OBFID = "CL_00000081";
 
     /**
      * Used to check if a recipe matches current crafting inventory

@@ -19,7 +19,6 @@ public class EntityEnderEye extends Entity
     private double targetZ;
     private int despawnTimer;
     private boolean shatterOrDrop;
-    private static final String __OBFID = "CL_00001716";
 
     public EntityEnderEye(World p_i1757_1_)
     {

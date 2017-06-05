@@ -16,7 +16,6 @@ import org.lwjgl.opengl.GL11;
 public class RenderFallingBlock extends Render
 {
     private final RenderBlocks field_147920_a = new RenderBlocks();
-    private static final String __OBFID = "CL_00000994";
 
     public RenderFallingBlock()
     {

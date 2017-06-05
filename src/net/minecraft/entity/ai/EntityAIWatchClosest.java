@@ -16,7 +16,6 @@ public class EntityAIWatchClosest extends EntityAIBase
     private int lookTime;
     private float field_75331_e;
     private Class watchedClass;
-    private static final String __OBFID = "CL_00001592";
 
     public EntityAIWatchClosest(EntityLiving p_i1631_1_, Class p_i1631_2_, float p_i1631_3_)
     {

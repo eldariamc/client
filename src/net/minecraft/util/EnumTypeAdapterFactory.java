@@ -14,7 +14,6 @@ import java.util.Locale;
 
 public class EnumTypeAdapterFactory implements TypeAdapterFactory
 {
-    private static final String __OBFID = "CL_00001494";
 
     public TypeAdapter create(Gson p_create_1_, TypeToken p_create_2_)
     {
@@ -38,7 +37,6 @@ public class EnumTypeAdapterFactory implements TypeAdapterFactory
 
             return new TypeAdapter()
             {
-                private static final String __OBFID = "CL_00001495";
                 public void write(JsonWriter p_write_1_, Object p_write_2_) throws IOException
                 {
                     if (p_write_2_ == null)

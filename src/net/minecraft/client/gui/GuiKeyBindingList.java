@@ -20,7 +20,6 @@ public class GuiKeyBindingList extends GuiListExtended
     private final GuiListExtended.IGuiListEntry[] entries;
     private final ArrayList<MacroEntry> macroEntries;
     private int field_148188_n = 0;
-    private static final String __OBFID = "CL_00000732";
 
     public GuiKeyBindingList(GuiControls guiControls, Minecraft mc)
     {
@@ -108,7 +107,6 @@ public class GuiKeyBindingList extends GuiListExtended
         private final String field_148285_b;
         private final int field_148286_c;
         private final GuiButton addButton;
-        private static final String __OBFID = "CL_00000734";
 
         public CategoryEntry(String p_i45028_2_, boolean isMacro)
         {
@@ -150,7 +148,6 @@ public class GuiKeyBindingList extends GuiListExtended
         private final String field_148283_c;
         private final GuiButton field_148280_d;
         private final GuiButton field_148281_e;
-        private static final String __OBFID = "CL_00000735";
 
         private KeyEntry(KeyBinding p_i45029_2_)
         {

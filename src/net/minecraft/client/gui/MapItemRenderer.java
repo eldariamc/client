@@ -18,7 +18,6 @@ public class MapItemRenderer
     private static final ResourceLocation field_148253_a = new ResourceLocation("textures/map/map_icons.png");
     private final TextureManager field_148251_b;
     private final Map field_148252_c = Maps.newHashMap();
-    private static final String __OBFID = "CL_00000663";
 
     public MapItemRenderer(TextureManager p_i45009_1_)
     {
@@ -67,7 +66,6 @@ public class MapItemRenderer
         private final DynamicTexture field_148243_c;
         private final ResourceLocation field_148240_d;
         private final int[] field_148241_e;
-        private static final String __OBFID = "CL_00000665";
 
         private Instance(MapData p_i45007_2_)
         {

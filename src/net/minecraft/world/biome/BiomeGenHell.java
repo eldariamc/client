@@ -6,7 +6,6 @@ import net.minecraft.entity.monster.EntityPigZombie;
 
 public class BiomeGenHell extends BiomeGenBase
 {
-    private static final String __OBFID = "CL_00000173";
 
     public BiomeGenHell(int p_i1981_1_)
     {

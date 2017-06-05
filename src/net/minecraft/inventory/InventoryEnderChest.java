@@ -9,7 +9,6 @@ import net.minecraft.tileentity.TileEntityEnderChest;
 public class InventoryEnderChest extends InventoryBasic
 {
     private TileEntityEnderChest associatedChest;
-    private static final String __OBFID = "CL_00001759";
 
     public InventoryEnderChest()
     {

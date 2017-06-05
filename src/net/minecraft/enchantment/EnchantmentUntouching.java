@@ -5,7 +5,6 @@ import net.minecraft.item.ItemStack;
 
 public class EnchantmentUntouching extends Enchantment
 {
-    private static final String __OBFID = "CL_00000123";
 
     protected EnchantmentUntouching(int p_i1938_1_, int p_i1938_2_)
     {

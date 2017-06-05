@@ -4,7 +4,6 @@ import net.minecraft.world.biome.BiomeGenBase;
 
 public class GenLayerDeepOcean extends GenLayer
 {
-    private static final String __OBFID = "CL_00000546";
 
     public GenLayerDeepOcean(long p_i45472_1_, GenLayer p_i45472_3_)
     {

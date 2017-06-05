@@ -16,7 +16,6 @@ public class FileResourcePack extends AbstractResourcePack implements Closeable
 {
     public static final Splitter entryNameSplitter = Splitter.on('/').omitEmptyStrings().limit(3);
     private ZipFile resourcePackZipFile;
-    private static final String __OBFID = "CL_00001075";
 
     public FileResourcePack(File p_i1290_1_)
     {

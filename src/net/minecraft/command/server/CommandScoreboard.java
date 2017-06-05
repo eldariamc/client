@@ -12,7 +12,6 @@ import java.util.*;
 
 public class CommandScoreboard extends CommandBase
 {
-    private static final String __OBFID = "CL_00000896";
 
     public String getCommandName()
     {

@@ -19,7 +19,6 @@ public class Stitcher
 
     /** Max size (width or height) of a single tile */
     private final int maxTileDimension;
-    private static final String __OBFID = "CL_00001054";
 
     public Stitcher(int p_i45095_1_, int p_i45095_2_, boolean p_i45095_3_, int p_i45095_4_, int p_i45095_5_)
     {
@@ -227,7 +226,6 @@ public class Stitcher
         private final int mipmapLevelHolder;
         private boolean rotated;
         private float scaleFactor = 1.0F;
-        private static final String __OBFID = "CL_00001055";
 
         public Holder(TextureAtlasSprite p_i45094_1_, int p_i45094_2_)
         {
@@ -316,7 +314,6 @@ public class Stitcher
         private final int height;
         private List subSlots;
         private Stitcher.Holder holder;
-        private static final String __OBFID = "CL_00001056";
 
         public Slot(int par1, int par2, int par3, int par4)
         {

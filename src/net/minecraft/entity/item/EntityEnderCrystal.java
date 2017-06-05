@@ -13,7 +13,6 @@ public class EntityEnderCrystal extends Entity
     /** Used to create the rotation animation when rendering the crystal. */
     public int innerRotation;
     public int health;
-    private static final String __OBFID = "CL_00001658";
 
     public EntityEnderCrystal(World p_i1698_1_)
     {

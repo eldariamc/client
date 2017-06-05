@@ -11,7 +11,6 @@ public class RealmsBridge extends RealmsScreen
 {
     private static final Logger LOGGER = LogManager.getLogger();
     private GuiScreen previousScreen;
-    private static final String __OBFID = "CL_00001869";
 
     public void switchToRealms(GuiScreen p_switchToRealms_1_)
     {

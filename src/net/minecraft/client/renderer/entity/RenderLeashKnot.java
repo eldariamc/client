@@ -11,7 +11,6 @@ public class RenderLeashKnot extends Render
 {
     private static final ResourceLocation leashKnotTextures = new ResourceLocation("textures/entity/lead_knot.png");
     private ModelLeashKnot leashKnotModel = new ModelLeashKnot();
-    private static final String __OBFID = "CL_00001010";
 
     /**
      * Actually renders the given argument. This is a synthetic bridge method, always casting down its argument and then

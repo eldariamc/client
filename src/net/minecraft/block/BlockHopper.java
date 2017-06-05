@@ -28,7 +28,6 @@ public class BlockHopper extends BlockContainer
     private IIcon field_149921_b;
     private IIcon field_149923_M;
     private IIcon field_149924_N;
-    private static final String __OBFID = "CL_00000257";
 
     public BlockHopper()
     {

@@ -7,7 +7,6 @@ import net.minecraft.entity.player.EntityPlayer;
 
 public class ItemSaddle extends Item
 {
-    private static final String __OBFID = "CL_00000059";
 
     public ItemSaddle()
     {

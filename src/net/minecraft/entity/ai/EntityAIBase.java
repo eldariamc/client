@@ -7,7 +7,6 @@ public abstract class EntityAIBase
      * zero, the two tasks may run concurrently, if not - they must run exclusively from each other.
      */
     private int mutexBits;
-    private static final String __OBFID = "CL_00001587";
 
     /**
      * Returns whether the EntityAIBase should begin execution.

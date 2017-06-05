@@ -59,7 +59,6 @@ public class PlayerControllerMP
 
     /** Index of the current item held by the player in the inventory hotbar */
     private int currentPlayerItem;
-    private static final String __OBFID = "CL_00000881";
 
     public PlayerControllerMP(Minecraft p_i45062_1_, NetHandlerPlayClient p_i45062_2_)
     {

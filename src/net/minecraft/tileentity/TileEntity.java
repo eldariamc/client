@@ -38,7 +38,6 @@ public class TileEntity
 
     /** the Block type that this TileEntity is contained within */
     public Block blockType;
-    private static final String __OBFID = "CL_00000340";
 
     private static void func_145826_a(Class p_145826_0_, String p_145826_1_)
     {
@@ -236,7 +235,6 @@ public class TileEntity
     {
         p_145828_1_.addCrashSectionCallable("Name", new Callable()
         {
-            private static final String __OBFID = "CL_00000341";
             public String call()
             {
                 return (String)TileEntity.classToNameMap.get(TileEntity.this.getClass()) + " // " + TileEntity.this.getClass().getCanonicalName();
@@ -245,7 +243,6 @@ public class TileEntity
         CrashReportCategory.func_147153_a(p_145828_1_, this.posX, this.posY, this.posZ, this.getBlockType(), this.getBlockMetadata());
         p_145828_1_.addCrashSectionCallable("Actual block type", new Callable()
         {
-            private static final String __OBFID = "CL_00000343";
             public String call()
             {
                 int var1 = Block.getIdFromBlock(TileEntity.this.worldObj.getBlock(TileEntity.this.posX, TileEntity.this.posY, TileEntity.this.posZ));
@@ -262,7 +259,6 @@ public class TileEntity
         });
         p_145828_1_.addCrashSectionCallable("Actual block data value", new Callable()
         {
-            private static final String __OBFID = "CL_00000344";
             public String call()
             {
                 int var1 = TileEntity.this.worldObj.getBlockMetadata(TileEntity.this.posX, TileEntity.this.posY, TileEntity.this.posZ);

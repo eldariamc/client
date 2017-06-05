@@ -15,7 +15,6 @@ public class RenderWitherSkull extends Render
 
     /** The Skeleton's head model. */
     private final ModelSkeletonHead skeletonHeadModel = new ModelSkeletonHead();
-    private static final String __OBFID = "CL_00001035";
 
     private float func_82400_a(float p_82400_1_, float p_82400_2_, float p_82400_3_)
     {

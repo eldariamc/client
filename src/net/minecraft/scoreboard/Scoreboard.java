@@ -15,7 +15,6 @@ public class Scoreboard
 
     /** Map of usernames to ScorePlayerTeam objects. */
     private final Map teamMemberships = new HashMap();
-    private static final String __OBFID = "CL_00000619";
 
     /**
      * Returns a ScoreObjective for the objective name

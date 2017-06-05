@@ -22,8 +22,6 @@ public class GuiWaterPipe extends GuiContainer {
 
 	protected void func_146979_b(int p_146979_1_, int p_146979_2_)
 	{
-		String var3 = this.waterPipe.isInventoryNameLocalized() ? this.waterPipe.getInventoryName() : I18n.format(this.waterPipe.getInventoryName());
-		this.fontRendererObj.drawString(var3, this.defaultX / 2 - this.fontRendererObj.getStringWidth(var3) / 2, 6, 4210752);
 		this.fontRendererObj.drawString(I18n.format("container.inventory"), 8, this.defaultY - 96 + 2, 4210752);
 	}
 

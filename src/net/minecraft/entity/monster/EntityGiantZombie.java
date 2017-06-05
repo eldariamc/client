@@ -5,7 +5,6 @@ import net.minecraft.world.World;
 
 public class EntityGiantZombie extends EntityMob
 {
-    private static final String __OBFID = "CL_00001690";
 
     public EntityGiantZombie(World p_i1736_1_)
     {

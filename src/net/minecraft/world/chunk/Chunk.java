@@ -109,7 +109,6 @@ public class Chunk
      * Contains the current round-robin relight check index, and is implied as the relight check location as well.
      */
     private int queuedLightChecks;
-    private static final String __OBFID = "CL_00000373";
 
     public Chunk(World p_i1995_1_, int p_i1995_2_, int p_i1995_3_)
     {
@@ -593,7 +592,6 @@ public class Chunk
                     CrashReportCategory var8 = var7.makeCategory("Block being got");
                     var8.addCrashSectionCallable("Location", new Callable()
                     {
-                        private static final String __OBFID = "CL_00000374";
                         public String call()
                         {
                             return CrashReportCategory.getLocationInfo(p_150810_1_, p_150810_2_, p_150810_3_);

@@ -10,7 +10,6 @@ import java.util.Random;
 
 public class EnchantmentThorns extends Enchantment
 {
-    private static final String __OBFID = "CL_00000122";
 
     public EnchantmentThorns(int p_i1937_1_, int p_i1937_2_)
     {

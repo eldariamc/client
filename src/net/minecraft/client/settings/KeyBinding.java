@@ -18,7 +18,6 @@ public class KeyBinding implements Comparable
     /** because _303 wanted me to call it that(Caironater) */
     private boolean pressed;
     private int presses;
-    private static final String __OBFID = "CL_00000628";
 
     public static void onTick(int p_74507_0_)
     {

@@ -27,7 +27,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 public class ServerListEntryNormal implements GuiListExtended.IGuiListEntry
 {
     private static final Logger logger = LogManager.getLogger();
-    private static final ThreadPoolExecutor field_148302_b = new ScheduledThreadPoolExecutor(5, (new ThreadFactoryBuilder()).setNameFormat("Server Pinger #%d").setDaemon(true).build());
+    public static final ThreadPoolExecutor POOL_EXECUTOR = new ScheduledThreadPoolExecutor(5, (new ThreadFactoryBuilder()).setNameFormat("Server Pinger #%d").setDaemon(true).build()); // private -> public
     private final GuiMultiplayer field_148303_c;
     private final Minecraft field_148300_d;
     private final ServerData field_148301_e;
@@ -35,7 +35,6 @@ public class ServerListEntryNormal implements GuiListExtended.IGuiListEntry
     private String field_148299_g;
     private DynamicTexture field_148305_h;
     private ResourceLocation field_148306_i;
-    private static final String __OBFID = "CL_00000817";
 
     protected ServerListEntryNormal(GuiMultiplayer p_i45048_1_, ServerData p_i45048_2_)
     {
@@ -54,9 +53,8 @@ public class ServerListEntryNormal implements GuiListExtended.IGuiListEntry
             this.field_148301_e.pingToServer = -2L;
             this.field_148301_e.serverMOTD = "";
             this.field_148301_e.populationInfo = "";
-            field_148302_b.submit(new Runnable()
+            POOL_EXECUTOR.submit(new Runnable()
             {
-                private static final String __OBFID = "CL_00000818";
                 public void run()
                 {
                     try

@@ -37,7 +37,6 @@ public abstract class EntityAITarget extends EntityAIBase
      */
     private int targetSearchDelay;
     private int field_75298_g;
-    private static final String __OBFID = "CL_00001626";
 
     public EntityAITarget(EntityCreature p_i1669_1_, boolean p_i1669_2_)
     {

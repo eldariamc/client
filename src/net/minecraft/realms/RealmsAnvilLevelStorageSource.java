@@ -12,7 +12,6 @@ import java.util.List;
 public class RealmsAnvilLevelStorageSource
 {
     private ISaveFormat levelStorageSource;
-    private static final String __OBFID = "CL_00001856";
 
     public RealmsAnvilLevelStorageSource(ISaveFormat p_i1106_1_)
     {

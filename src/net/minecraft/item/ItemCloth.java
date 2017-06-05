@@ -6,7 +6,6 @@ import net.minecraft.util.IIcon;
 
 public class ItemCloth extends ItemBlock
 {
-    private static final String __OBFID = "CL_00000075";
 
     public ItemCloth(Block p_i45358_1_)
     {

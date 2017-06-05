@@ -17,7 +17,6 @@ public class CraftingManager
 
     /** A list of all the recipes added */
     private List recipes = new ArrayList();
-    private static final String __OBFID = "CL_00000090";
 
     /**
      * Returns the static instance of this class
@@ -157,7 +156,6 @@ public class CraftingManager
         this.addRecipe(new ItemStack(Blocks.hopper), new Object[] {"I I", "ICI", " I ", 'I', Items.iron_ingot, 'C', Blocks.chest});
         Collections.sort(this.recipes, new Comparator()
         {
-            private static final String __OBFID = "CL_00000091";
             public int compare(IRecipe p_compare_1_, IRecipe p_compare_2_)
             {
                 return p_compare_1_ instanceof ShapelessRecipes && p_compare_2_ instanceof ShapedRecipes ? 1 : (p_compare_2_ instanceof ShapelessRecipes && p_compare_1_ instanceof ShapedRecipes ? -1 : (p_compare_2_.getRecipeSize() < p_compare_1_.getRecipeSize() ? -1 : (p_compare_2_.getRecipeSize() > p_compare_1_.getRecipeSize() ? 1 : 0)));

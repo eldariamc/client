@@ -15,7 +15,6 @@ import java.util.List;
 public class ItemMonsterPlacer extends Item
 {
     private IIcon theIcon;
-    private static final String __OBFID = "CL_00000070";
 
     public ItemMonsterPlacer()
     {

@@ -15,7 +15,6 @@ import java.util.List;
 
 public class ItemBoat extends Item
 {
-    private static final String __OBFID = "CL_00001774";
 
     public ItemBoat()
     {

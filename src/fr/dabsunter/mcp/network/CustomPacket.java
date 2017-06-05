@@ -2,6 +2,7 @@ package fr.dabsunter.mcp.network;
 
 import com.google.common.io.ByteArrayDataInput;
 import com.google.common.io.ByteArrayDataOutput;
+import net.minecraft.client.Minecraft;
 
 /**
  * Created by David on 04/04/2017.
@@ -17,6 +18,6 @@ public abstract class CustomPacket {
 
 	public abstract void write(ByteArrayDataOutput out);
 
-	public abstract void process();
+	public abstract void process(Minecraft mc);
 
 }

@@ -20,7 +20,6 @@ public class FoodStats
     /** The player's food timer value. */
     private int foodTimer;
     private int prevFoodLevel = 20;
-    private static final String __OBFID = "CL_00001729";
 
     /**
      * Args: int foodLevel, float foodSaturationModifier

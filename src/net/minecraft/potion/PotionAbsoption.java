@@ -5,7 +5,6 @@ import net.minecraft.entity.ai.attributes.BaseAttributeMap;
 
 public class PotionAbsoption extends Potion
 {
-    private static final String __OBFID = "CL_00001524";
 
     protected PotionAbsoption(int p_i1569_1_, boolean p_i1569_2_, int p_i1569_3_)
     {

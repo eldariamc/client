@@ -9,7 +9,6 @@ import net.minecraft.world.World;
 
 public class ItemLilyPad extends ItemColored
 {
-    private static final String __OBFID = "CL_00000074";
 
     public ItemLilyPad(Block p_i45357_1_)
     {

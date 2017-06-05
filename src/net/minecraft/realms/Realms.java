@@ -10,7 +10,6 @@ import java.util.UUID;
 
 public class Realms
 {
-    private static final String __OBFID = "CL_00001892";
 
     public static boolean isTouchScreen()
     {

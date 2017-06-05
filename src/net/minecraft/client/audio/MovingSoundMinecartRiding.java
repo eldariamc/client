@@ -9,7 +9,6 @@ public class MovingSoundMinecartRiding extends MovingSound
 {
     private final EntityPlayer field_147672_k;
     private final EntityMinecart field_147671_l;
-    private static final String __OBFID = "CL_00001119";
 
     public MovingSoundMinecartRiding(EntityPlayer p_i45106_1_, EntityMinecart p_i45106_2_)
     {

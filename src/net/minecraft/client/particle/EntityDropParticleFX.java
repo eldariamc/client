@@ -12,7 +12,6 @@ public class EntityDropParticleFX extends EntityFX
 
     /** The height of the current bob */
     private int bobTimer;
-    private static final String __OBFID = "CL_00000901";
 
     public EntityDropParticleFX(World p_i1203_1_, double p_i1203_2_, double p_i1203_4_, double p_i1203_6_, Material p_i1203_8_)
     {

@@ -9,7 +9,6 @@ import java.io.File;
 
 public class SaveHandlerMP implements ISaveHandler
 {
-    private static final String __OBFID = "CL_00000602";
 
     /**
      * Loads and returns the world info

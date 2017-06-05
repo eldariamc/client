@@ -28,7 +28,6 @@ public class PlayerSelector
      * This matches things like "rm=4,c=2" and is used for handling named token arguments.
      */
     private static final Pattern keyValueListPattern = Pattern.compile("\\G(\\w+)=([-!]?[\\w-]*)(?:$|,)");
-    private static final String __OBFID = "CL_00000086";
 
     /**
      * Returns the one player that matches the given at-token.  Returns null if more than one player matches.

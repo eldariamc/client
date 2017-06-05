@@ -10,7 +10,6 @@ import java.io.IOException;
 public class S00PacketKeepAlive extends Packet
 {
     private int field_149136_a;
-    private static final String __OBFID = "CL_00001303";
 
     public S00PacketKeepAlive() {}
 

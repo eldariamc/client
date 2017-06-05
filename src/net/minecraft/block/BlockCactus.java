@@ -16,7 +16,6 @@ public class BlockCactus extends Block
 {
     private IIcon field_150041_a;
     private IIcon field_150040_b;
-    private static final String __OBFID = "CL_00000210";
 
     protected BlockCactus()
     {

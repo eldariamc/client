@@ -9,7 +9,6 @@ import net.minecraft.world.storage.MapData;
 
 public class RecipesMapExtending extends ShapedRecipes
 {
-    private static final String __OBFID = "CL_00000088";
 
     public RecipesMapExtending()
     {

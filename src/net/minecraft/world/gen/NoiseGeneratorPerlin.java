@@ -6,7 +6,6 @@ public class NoiseGeneratorPerlin extends NoiseGenerator
 {
     private NoiseGeneratorSimplex[] field_151603_a;
     private int field_151602_b;
-    private static final String __OBFID = "CL_00000536";
 
     public NoiseGeneratorPerlin(Random p_i45470_1_, int p_i45470_2_)
     {

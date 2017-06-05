@@ -26,7 +26,6 @@ public class RealmsServerStatusPinger
 {
     private static final Logger LOGGER = LogManager.getLogger();
     private final List connections = Collections.synchronizedList(new ArrayList());
-    private static final String __OBFID = "CL_00001854";
 
     public void pingServer(final String p_pingServer_1_, final ServerPing p_pingServer_2_) throws IOException
     {
@@ -38,7 +37,6 @@ public class RealmsServerStatusPinger
             var4.setNetHandler(new INetHandlerStatusClient()
             {
                 private boolean field_154345_e = false;
-                private static final String __OBFID = "CL_00001807";
                 public void handleServerInfo(S00PacketServerInfo p_147397_1_)
                 {
                     ServerStatusResponse var2 = p_147397_1_.func_149294_c();

@@ -22,7 +22,6 @@ import java.nio.charset.Charset;
 public class PacketBuffer extends ByteBuf
 {
     private final ByteBuf field_150794_a;
-    private static final String __OBFID = "CL_00001251";
 
     public PacketBuffer(ByteBuf p_i45154_1_)
     {

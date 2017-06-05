@@ -16,7 +16,6 @@ public class ContainerWorkbench extends Container
     private int posX;
     private int posY;
     private int posZ;
-    private static final String __OBFID = "CL_00001744";
 
     public ContainerWorkbench(InventoryPlayer p_i1808_1_, World p_i1808_2_, int p_i1808_3_, int p_i1808_4_, int p_i1808_5_)
     {

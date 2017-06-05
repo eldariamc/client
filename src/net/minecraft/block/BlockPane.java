@@ -21,7 +21,6 @@ public class BlockPane extends Block
     private final boolean field_150099_b;
     private final String field_150101_M;
     private IIcon field_150102_N;
-    private static final String __OBFID = "CL_00000322";
 
     protected BlockPane(String p_i45432_1_, String p_i45432_2_, Material p_i45432_3_, boolean p_i45432_4_)
     {

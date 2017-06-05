@@ -6,7 +6,6 @@ import net.minecraft.world.World;
 
 public abstract class EntityGolem extends EntityCreature implements IAnimals
 {
-    private static final String __OBFID = "CL_00001644";
 
     public EntityGolem(World p_i1686_1_)
     {

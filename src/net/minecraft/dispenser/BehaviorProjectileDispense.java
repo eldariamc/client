@@ -9,7 +9,6 @@ import net.minecraft.world.World;
 
 public abstract class BehaviorProjectileDispense extends BehaviorDefaultDispenseItem
 {
-    private static final String __OBFID = "CL_00001394";
 
     /**
      * Dispense the specified stack, play the dispense sound and spawn particles.

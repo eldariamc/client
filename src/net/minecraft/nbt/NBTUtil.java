@@ -9,7 +9,6 @@ import java.util.UUID;
 
 public final class NBTUtil
 {
-    private static final String __OBFID = "CL_00001901";
 
     public static GameProfile func_152459_a(NBTTagCompound p_152459_0_)
     {

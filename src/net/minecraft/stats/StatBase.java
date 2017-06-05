@@ -24,7 +24,6 @@ public class StatBase
     private static NumberFormat numberFormat = NumberFormat.getIntegerInstance(Locale.US);
     public static IStatType simpleStatType = new IStatType()
     {
-        private static final String __OBFID = "CL_00001473";
         public String format(int p_75843_1_)
         {
             return StatBase.numberFormat.format((long)p_75843_1_);
@@ -33,7 +32,6 @@ public class StatBase
     private static DecimalFormat decimalFormat = new DecimalFormat("########0.00");
     public static IStatType timeStatType = new IStatType()
     {
-        private static final String __OBFID = "CL_00001474";
         public String format(int p_75843_1_)
         {
             double var2 = (double)p_75843_1_ / 20.0D;
@@ -46,7 +44,6 @@ public class StatBase
     };
     public static IStatType distanceStatType = new IStatType()
     {
-        private static final String __OBFID = "CL_00001475";
         public String format(int p_75843_1_)
         {
             double var2 = (double)p_75843_1_ / 100.0D;
@@ -56,13 +53,11 @@ public class StatBase
     };
     public static IStatType field_111202_k = new IStatType()
     {
-        private static final String __OBFID = "CL_00001476";
         public String format(int p_75843_1_)
         {
             return StatBase.decimalFormat.format((double)p_75843_1_ * 0.1D);
         }
     };
-    private static final String __OBFID = "CL_00001472";
 
     public StatBase(String p_i45307_1_, IChatComponent p_i45307_2_, IStatType p_i45307_3_)
     {

@@ -53,7 +53,6 @@ public class GuiScreen extends Gui
     private int eventButton;
     private long lastMouseEvent;
     private int field_146298_h;
-    private static final String __OBFID = "CL_00000710";
 
     public static boolean held = false;
     public static boolean hasChanged = false;

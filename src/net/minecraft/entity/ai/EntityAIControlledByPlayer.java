@@ -28,7 +28,6 @@ public class EntityAIControlledByPlayer extends EntityAIBase
 
     /** Maximum time the entity's speed should be boosted for. */
     private int maxSpeedBoostTime;
-    private static final String __OBFID = "CL_00001580";
 
     public EntityAIControlledByPlayer(EntityLiving p_i1620_1_, float p_i1620_2_)
     {

@@ -10,7 +10,6 @@ public class VillageDoorInfo
     public int lastActivityTimestamp;
     public boolean isDetachedFromVillageFlag;
     private int doorOpeningRestrictionCounter;
-    private static final String __OBFID = "CL_00001630";
 
     public VillageDoorInfo(int p_i1673_1_, int p_i1673_2_, int p_i1673_3_, int p_i1673_4_, int p_i1673_5_, int p_i1673_6_)
     {

@@ -7,7 +7,6 @@ import net.minecraft.entity.player.EntityPlayer;
 
 public class ItemNameTag extends Item
 {
-    private static final String __OBFID = "CL_00000052";
 
     public ItemNameTag()
     {

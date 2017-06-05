@@ -6,7 +6,6 @@ import java.util.Random;
 
 public class RealmsMth
 {
-    private static final String __OBFID = "CL_00001900";
 
     public static float sin(float p_sin_0_)
     {

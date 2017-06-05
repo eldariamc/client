@@ -47,7 +47,6 @@ public class TextureAtlasSprite implements IIcon
     private int uploadedOwnFrameIndex = -1;
     public IntBuffer[] frameBuffers;
     public Mipmaps[] frameMipmaps;
-    private static final String __OBFID = "CL_00001062";
 
     protected TextureAtlasSprite(String par1Str)
     {
@@ -329,7 +328,6 @@ public class TextureAtlasSprite implements IIcon
                     var7.addCrashSection("Frame index", Integer.valueOf(var3));
                     var7.addCrashSectionCallable("Frame sizes", new Callable()
                     {
-                        private static final String __OBFID = "CL_00001063";
                         public String call()
                         {
                             StringBuilder var1 = new StringBuilder();

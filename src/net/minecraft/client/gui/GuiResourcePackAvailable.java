@@ -7,7 +7,6 @@ import java.util.List;
 
 public class GuiResourcePackAvailable extends GuiResourcePackList
 {
-    private static final String __OBFID = "CL_00000824";
 
     public GuiResourcePackAvailable(Minecraft p_i45054_1_, int p_i45054_2_, int p_i45054_3_, List p_i45054_4_)
     {

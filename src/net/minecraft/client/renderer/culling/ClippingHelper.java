@@ -6,7 +6,6 @@ public class ClippingHelper
     public float[] projectionMatrix = new float[16];
     public float[] modelviewMatrix = new float[16];
     public float[] clippingMatrix = new float[16];
-    private static final String __OBFID = "CL_00000977";
 
     /**
      * Returns true if the box is inside all 6 clipping planes, otherwise returns false.

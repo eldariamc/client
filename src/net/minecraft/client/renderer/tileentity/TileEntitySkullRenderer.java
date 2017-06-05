@@ -24,7 +24,6 @@ public class TileEntitySkullRenderer extends TileEntitySpecialRenderer
     public static TileEntitySkullRenderer field_147536_b;
     private ModelSkeletonHead field_147533_g = new ModelSkeletonHead(0, 0, 64, 32);
     private ModelSkeletonHead field_147538_h = new ModelSkeletonHead(0, 0, 64, 64);
-    private static final String __OBFID = "CL_00000971";
 
     public void renderTileEntityAt(TileEntitySkull p_147500_1_, double p_147500_2_, double p_147500_4_, double p_147500_6_, float p_147500_8_)
     {

@@ -29,7 +29,6 @@ public class TextureManager implements ITickable, IResourceManagerReloadListener
     private final List listTickables = Lists.newArrayList();
     private final Map mapTextureCounters = Maps.newHashMap();
     private IResourceManager theResourceManager;
-    private static final String __OBFID = "CL_00001064";
 
     public TextureManager(IResourceManager par1ResourceManager)
     {
@@ -108,7 +107,6 @@ public class TextureManager implements ITickable, IResourceManagerReloadListener
             var6.addCrashSection("Resource location", par1ResourceLocation);
             var6.addCrashSectionCallable("Texture object class", new Callable()
             {
-                private static final String __OBFID = "CL_00001065";
                 public String call()
                 {
                     return par2TextureObject.getClass().getName();

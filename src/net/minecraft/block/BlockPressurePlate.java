@@ -12,7 +12,6 @@ import java.util.List;
 public class BlockPressurePlate extends BlockBasePressurePlate
 {
     private BlockPressurePlate.Sensitivity field_150069_a;
-    private static final String __OBFID = "CL_00000289";
 
     protected BlockPressurePlate(String p_i45418_1_, Material p_i45418_2_, BlockPressurePlate.Sensitivity p_i45418_3_)
     {
@@ -74,7 +73,6 @@ public class BlockPressurePlate extends BlockBasePressurePlate
         players("players", 2);
 
         private static final BlockPressurePlate.Sensitivity[] $VALUES = new BlockPressurePlate.Sensitivity[]{everything, mobs, players};
-        private static final String __OBFID = "CL_00000290";
 
         private Sensitivity(String p_i45417_1_, int p_i45417_2_) {}
     }

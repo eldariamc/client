@@ -14,7 +14,6 @@ public class ModelChicken extends ModelBase
     public ModelRenderer leftWing;
     public ModelRenderer bill;
     public ModelRenderer chin;
-    private static final String __OBFID = "CL_00000835";
 
     public ModelChicken()
     {

@@ -28,7 +28,6 @@ public class MapData extends WorldSavedData
      */
     private Map playersHashMap = new HashMap();
     public Map playersVisibleOnMap = new LinkedHashMap();
-    private static final String __OBFID = "CL_00000577";
 
     public MapData(String p_i2140_1_)
     {
@@ -291,7 +290,6 @@ public class MapData extends WorldSavedData
         public byte centerX;
         public byte centerZ;
         public byte iconRotation;
-        private static final String __OBFID = "CL_00000579";
 
         public MapCoord(byte p_i2139_2_, byte p_i2139_3_, byte p_i2139_4_, byte p_i2139_5_)
         {
@@ -312,7 +310,6 @@ public class MapData extends WorldSavedData
         private byte[] lastPlayerLocationOnMap;
         public int field_82569_d;
         private boolean field_82570_i;
-        private static final String __OBFID = "CL_00000578";
 
         public MapInfo(EntityPlayer p_i2138_2_)
         {

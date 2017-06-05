@@ -52,7 +52,6 @@ public final class ItemStack
 
     /** Item frame this stack is on, or null if not on an item frame. */
     private EntityItemFrame itemFrame;
-    private static final String __OBFID = "CL_00000043";
 
     public ItemStack(Block p_i1876_1_)
     {

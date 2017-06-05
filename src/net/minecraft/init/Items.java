@@ -176,7 +176,7 @@ public class Items
 
     public static final Item compacted_slime_ball = (Item)Item.itemRegistry.getObject("compacted_slime_ball");
     public static final Item lignite = (Item)Item.itemRegistry.getObject("lignite");
-    public static final Item lit_coal = (Item)Item.itemRegistry.getObject("lit_coal");
+    public static final Item donut = (Item)Item.itemRegistry.getObject("donut");
     public static final Item zinc = (Item)Item.itemRegistry.getObject("zinc");
     public static final Item kobalt = (Item)Item.itemRegistry.getObject("kobalt");
     public static final Item cronyxe = (Item)Item.itemRegistry.getObject("cronyxe");
@@ -219,6 +219,7 @@ public class Items
     public static final Item eldarium_leggings = (Item)Item.itemRegistry.getObject("eldarium_leggigs");
     public static final Item eldarium_boots = (Item)Item.itemRegistry.getObject("eldarium_boots");
     public static final Item dynamite = (Item)Item.itemRegistry.getObject("dynamite");
+    public static final Item repair_orb = (Item)Item.itemRegistry.getObject("repair_orb");
     public static final Item c4 = (Item)Item.itemRegistry.getObject("c4");
     public static final Item tomahawk = (Item)Item.itemRegistry.getObject("tomahawk");
     public static final Item chest_orb = (Item)Item.itemRegistry.getObject("chest_orb");
@@ -243,5 +244,4 @@ public class Items
     public static final Item record_ward = (Item)Item.itemRegistry.getObject("record_ward");
     public static final Item record_11 = (Item)Item.itemRegistry.getObject("record_11");
     public static final Item record_wait = (Item)Item.itemRegistry.getObject("record_wait");
-    private static final String __OBFID = "CL_00000044";
 }

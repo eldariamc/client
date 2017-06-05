@@ -9,7 +9,6 @@ import net.minecraft.util.ChatComponentText;
 
 public class CommandNetstat extends CommandBase
 {
-    private static final String __OBFID = "CL_00001904";
 
     public String getCommandName()
     {

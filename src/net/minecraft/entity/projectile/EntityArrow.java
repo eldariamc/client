@@ -41,7 +41,6 @@ public class EntityArrow extends Entity implements IProjectile
 
     /** The amount of knockback an arrow applies when it hits a mob. */
     private int knockbackStrength;
-    private static final String __OBFID = "CL_00001715";
 
     public EntityArrow(World p_i1753_1_)
     {

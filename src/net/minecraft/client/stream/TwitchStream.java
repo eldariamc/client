@@ -52,7 +52,6 @@ public class TwitchStream implements BroadcastController.BroadcastListener, Chat
     private boolean field_152963_o;
     private IStream.AuthFailureReason field_152964_p;
     private static boolean field_152965_q;
-    private static final String __OBFID = "CL_00001812";
 
     public TwitchStream(Minecraft p_i1012_1_, final String p_i1012_2_)
     {
@@ -70,7 +69,6 @@ public class TwitchStream implements BroadcastController.BroadcastListener, Chat
         {
             Thread var3 = new Thread("Twitch authenticator")
             {
-                private static final String __OBFID = "CL_00001811";
                 public void run()
                 {
                     try
@@ -91,7 +89,6 @@ public class TwitchStream implements BroadcastController.BroadcastListener, Chat
                             TwitchStream.this.field_152952_d.func_152994_a(var6);
                             Runtime.getRuntime().addShutdownHook(new Thread("Twitch shutdown hook")
                             {
-                                private static final String __OBFID = "CL_00001810";
                                 public void run()
                                 {
                                     TwitchStream.this.func_152923_i();

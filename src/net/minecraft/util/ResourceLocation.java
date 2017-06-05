@@ -6,7 +6,6 @@ public class ResourceLocation
 {
     private final String resourceDomain;
     private final String resourcePath;
-    private static final String __OBFID = "CL_00001082";
 
     public ResourceLocation(String p_i1292_1_, String p_i1292_2_)
     {

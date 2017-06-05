@@ -9,7 +9,6 @@ public enum EnumDifficulty
     private static final EnumDifficulty[] difficultyEnums = new EnumDifficulty[values().length];
     private final int difficultyId;
     private final String difficultyResourceKey;
-    private static final String __OBFID = "CL_00001510";
 
     private EnumDifficulty(int p_i45312_3_, String p_i45312_4_)
     {

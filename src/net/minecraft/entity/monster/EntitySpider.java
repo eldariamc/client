@@ -17,7 +17,6 @@ import java.util.Random;
 
 public class EntitySpider extends EntityMob
 {
-    private static final String __OBFID = "CL_00001699";
 
     public EntitySpider(World p_i1743_1_)
     {
@@ -243,7 +242,6 @@ public class EntitySpider extends EntityMob
     public static class GroupData implements IEntityLivingData
     {
         public int field_111105_a;
-        private static final String __OBFID = "CL_00001700";
 
         public void func_111104_a(Random p_111104_1_)
         {

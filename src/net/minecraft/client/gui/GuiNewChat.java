@@ -24,7 +24,6 @@ public class GuiNewChat extends Gui
     private final List field_146253_i = new ArrayList();
     private int field_146250_j;
     private boolean field_146251_k;
-    private static final String __OBFID = "CL_00000669";
 
     public GuiNewChat(Minecraft p_i1022_1_)
     {

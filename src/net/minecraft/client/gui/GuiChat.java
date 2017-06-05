@@ -48,7 +48,6 @@ public class GuiChat extends GuiScreen implements GuiYesNoCallback
     private URI field_146411_u;
     protected GuiTextField field_146415_a;
     private String field_146409_v = "";
-    private static final String __OBFID = "CL_00000682";
 
     public GuiChat() {}
 

@@ -12,7 +12,6 @@ public class BlockWorkbench extends Block
 {
     private IIcon field_150035_a;
     private IIcon field_150034_b;
-    private static final String __OBFID = "CL_00000221";
 
     protected BlockWorkbench()
     {

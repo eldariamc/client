@@ -13,7 +13,6 @@ import java.util.ArrayList;
 public class EntityPainting extends EntityHanging
 {
     public EntityPainting.EnumArt art;
-    private static final String __OBFID = "CL_00001556";
 
     public EntityPainting(World p_i1599_1_)
     {
@@ -167,7 +166,6 @@ public class EntityPainting extends EntityHanging
         public final int offsetY;
 
         private static final EntityPainting.EnumArt[] $VALUES = new EntityPainting.EnumArt[]{Kebab, Aztec, Alban, Aztec2, Bomb, Plant, Wasteland, Pool, Courbet, Sea, Sunset, Creebet, Wanderer, Graham, Match, Bust, Stage, Void, SkullAndRoses, Wither, Fighters, Pointer, Pigscene, BurningSkull, Skeleton, DonkeyKong};
-        private static final String __OBFID = "CL_00001557";
 
         private EnumArt(String p_i1598_1_, int p_i1598_2_, String p_i1598_3_, int p_i1598_4_, int p_i1598_5_, int p_i1598_6_, int p_i1598_7_)
         {

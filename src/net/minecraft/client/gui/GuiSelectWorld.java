@@ -36,7 +36,6 @@ public class GuiSelectWorld extends GuiScreen implements GuiYesNoCallback
     private GuiButton field_146641_z;
     private GuiButton field_146630_A;
     private GuiButton field_146631_B;
-    private static final String __OBFID = "CL_00000711";
 
     public GuiSelectWorld(GuiScreen p_i1054_1_)
     {
@@ -233,7 +232,6 @@ public class GuiSelectWorld extends GuiScreen implements GuiYesNoCallback
 
     class List extends GuiSlot
     {
-        private static final String __OBFID = "CL_00000712";
 
         public List()
         {

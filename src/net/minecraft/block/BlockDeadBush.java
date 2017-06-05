@@ -13,7 +13,6 @@ import java.util.Random;
 
 public class BlockDeadBush extends BlockBush
 {
-    private static final String __OBFID = "CL_00000224";
 
     protected BlockDeadBush()
     {

@@ -6,7 +6,6 @@ import net.minecraft.world.World;
 
 public abstract class BlockContainer extends Block implements ITileEntityProvider
 {
-    private static final String __OBFID = "CL_00000193";
 
     protected BlockContainer(Material p_i45386_1_)
     {

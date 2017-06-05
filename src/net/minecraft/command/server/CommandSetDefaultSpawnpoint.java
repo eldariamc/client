@@ -7,7 +7,6 @@ import net.minecraft.util.ChunkCoordinates;
 
 public class CommandSetDefaultSpawnpoint extends CommandBase
 {
-    private static final String __OBFID = "CL_00000973";
 
     public String getCommandName()
     {

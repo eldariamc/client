@@ -12,7 +12,6 @@ public class S1EPacketRemoveEntityEffect extends Packet
 {
     private int field_149079_a;
     private int field_149078_b;
-    private static final String __OBFID = "CL_00001321";
 
     public S1EPacketRemoveEntityEffect() {}
 

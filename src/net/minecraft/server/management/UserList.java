@@ -25,7 +25,6 @@ public class UserList
     private boolean field_152697_e = true;
     private static final ParameterizedType field_152698_f = new ParameterizedType()
     {
-        private static final String __OBFID = "CL_00001875";
         public Type[] getActualTypeArguments()
         {
             return new Type[] {UserListEntry.class};
@@ -39,7 +38,6 @@ public class UserList
             return null;
         }
     };
-    private static final String __OBFID = "CL_00001876";
 
     public UserList(File p_i1144_1_)
     {
@@ -161,7 +159,6 @@ public class UserList
 
     class Serializer implements JsonDeserializer, JsonSerializer
     {
-        private static final String __OBFID = "CL_00001874";
 
         private Serializer() {}
 

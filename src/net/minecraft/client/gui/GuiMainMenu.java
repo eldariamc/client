@@ -226,11 +226,19 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
             this.field_92019_w = this.field_92021_u + 24;
         }
 
-        try {
-            serverPinger.func_147224_a(server);
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
+        ServerListEntryNormal.POOL_EXECUTOR.submit(new Runnable() {
+            public void run() {
+                try {
+                    serverPinger.func_147224_a(server);
+                } catch (UnknownHostException var2) {
+                    server.pingToServer = -1L;
+                    server.serverMOTD = EnumChatFormatting.DARK_RED + "Can\'t resolve hostname";
+                } catch (Exception var3) {
+                    server.pingToServer = -1L;
+                    server.serverMOTD = EnumChatFormatting.DARK_RED + "Can\'t connect to server.";
+                }
+            }
+        });
 
 
         mc.thePlayer = new EntityClientPlayerMP(mc, new FakeWorld(), mc.getSession(), null, null);

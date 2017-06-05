@@ -10,7 +10,6 @@ import net.minecraft.world.World;
 
 public class EntityEnderPearl extends EntityThrowable
 {
-    private static final String __OBFID = "CL_00001725";
 
     public EntityEnderPearl(World p_i1782_1_)
     {

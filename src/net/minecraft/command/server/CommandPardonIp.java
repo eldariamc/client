@@ -11,7 +11,6 @@ import java.util.regex.Matcher;
 
 public class CommandPardonIp extends CommandBase
 {
-    private static final String __OBFID = "CL_00000720";
 
     public String getCommandName()
     {

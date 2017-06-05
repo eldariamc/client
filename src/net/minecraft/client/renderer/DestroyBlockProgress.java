@@ -20,7 +20,6 @@ public class DestroyBlockProgress
      * keeps track of how many ticks this PartiallyDestroyedBlock already exists
      */
     private int createdAtCloudUpdateTick;
-    private static final String __OBFID = "CL_00001427";
 
     public DestroyBlockProgress(int p_i1511_1_, int p_i1511_2_, int p_i1511_3_, int p_i1511_4_)
     {

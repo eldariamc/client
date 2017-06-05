@@ -29,7 +29,6 @@ public class GuiMerchant extends GuiContainer
     private GuiMerchant.MerchantButton field_147042_y;
     private int field_147041_z;
     private String field_147040_A;
-    private static final String __OBFID = "CL_00000762";
 
     public GuiMerchant(InventoryPlayer p_i1096_1_, IMerchant p_i1096_2_, World p_i1096_3_, String p_i1096_4_)
     {
@@ -200,7 +199,6 @@ public class GuiMerchant extends GuiContainer
     static class MerchantButton extends GuiButton
     {
         private final boolean field_146157_o;
-        private static final String __OBFID = "CL_00000763";
 
         public MerchantButton(int p_i1095_1_, int p_i1095_2_, int p_i1095_3_, boolean p_i1095_4_)
         {

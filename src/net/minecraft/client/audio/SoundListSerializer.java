@@ -8,7 +8,6 @@ import java.lang.reflect.Type;
 
 public class SoundListSerializer implements JsonDeserializer
 {
-    private static final String __OBFID = "CL_00001124";
 
     public SoundList deserialize(JsonElement p_deserialize_1_, Type p_deserialize_2_, JsonDeserializationContext p_deserialize_3_)
     {

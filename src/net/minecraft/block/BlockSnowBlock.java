@@ -11,7 +11,6 @@ import java.util.Random;
 
 public class BlockSnowBlock extends Block
 {
-    private static final String __OBFID = "CL_00000308";
 
     protected BlockSnowBlock()
     {

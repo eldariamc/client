@@ -17,7 +17,6 @@ import java.util.*;
 
 public class CommandSpreadPlayers extends CommandBase
 {
-    private static final String __OBFID = "CL_00001080";
 
     public String getCommandName()
     {
@@ -289,7 +288,6 @@ public class CommandSpreadPlayers extends CommandBase
     {
         double field_111101_a;
         double field_111100_b;
-        private static final String __OBFID = "CL_00001105";
 
         Position() {}
 

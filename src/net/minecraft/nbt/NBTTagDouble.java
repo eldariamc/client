@@ -10,7 +10,6 @@ public class NBTTagDouble extends NBTBase.NBTPrimitive
 {
     /** The double value for the tag. */
     private double data;
-    private static final String __OBFID = "CL_00001218";
 
     NBTTagDouble() {}
 

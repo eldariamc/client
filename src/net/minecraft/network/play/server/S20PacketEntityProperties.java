@@ -14,7 +14,6 @@ public class S20PacketEntityProperties extends Packet
 {
     private int field_149445_a;
     private final List field_149444_b = new ArrayList();
-    private static final String __OBFID = "CL_00001341";
 
     public S20PacketEntityProperties() {}
 
@@ -108,7 +107,6 @@ public class S20PacketEntityProperties extends Packet
         private final String field_151412_b;
         private final double field_151413_c;
         private final Collection field_151411_d;
-        private static final String __OBFID = "CL_00001342";
 
         public Snapshot(String p_i45235_2_, double p_i45235_3_, Collection p_i45235_5_)
         {

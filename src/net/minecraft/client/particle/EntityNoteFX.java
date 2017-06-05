@@ -7,7 +7,6 @@ import net.minecraft.world.World;
 public class EntityNoteFX extends EntityFX
 {
     float noteParticleScale;
-    private static final String __OBFID = "CL_00000913";
 
     public EntityNoteFX(World p_i1216_1_, double p_i1216_2_, double p_i1216_4_, double p_i1216_6_, double p_i1216_8_, double p_i1216_10_, double p_i1216_12_)
     {

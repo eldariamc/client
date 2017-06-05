@@ -4,7 +4,6 @@ import net.minecraft.entity.ai.attributes.AttributeModifier;
 
 public class PotionAttackDamage extends Potion
 {
-    private static final String __OBFID = "CL_00001525";
 
     protected PotionAttackDamage(int p_i1570_1_, boolean p_i1570_2_, int p_i1570_3_)
     {

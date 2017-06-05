@@ -15,7 +15,6 @@ import java.util.Random;
 public abstract class BlockSlab extends Block
 {
     protected final boolean field_150004_a;
-    private static final String __OBFID = "CL_00000253";
 
     public BlockSlab(boolean p_i45410_1_, Material p_i45410_2_)
     {

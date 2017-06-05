@@ -12,7 +12,6 @@ public class ObjectIntIdentityMap implements IObjectIntIterable
 {
     private IdentityHashMap field_148749_a = new IdentityHashMap(512);
     private List field_148748_b = Lists.newArrayList();
-    private static final String __OBFID = "CL_00001203";
 
     public void func_148746_a(Object p_148746_1_, int p_148746_2_)
     {

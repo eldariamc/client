@@ -13,7 +13,6 @@ public class Session
     private final String playerID;
     private final String token;
     private final Session.Type field_152429_d;
-    private static final String __OBFID = "CL_00000659";
 
     public Session(String p_i1098_1_, String p_i1098_2_, String p_i1098_3_, String p_i1098_4_)
     {
@@ -73,7 +72,6 @@ public class Session
         private final String field_152426_d;
 
         private static final Session.Type[] $VALUES = new Session.Type[]{LEGACY, MOJANG};
-        private static final String __OBFID = "CL_00001851";
 
         private Type(String p_i1096_1_, int p_i1096_2_, String p_i1096_3_)
         {

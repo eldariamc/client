@@ -14,7 +14,6 @@ public class GuiIngestServers extends GuiScreen
     private final GuiScreen field_152309_a;
     private String field_152310_f;
     private GuiIngestServers.ServerList field_152311_g;
-    private static final String __OBFID = "CL_00001843";
 
     public GuiIngestServers(GuiScreen p_i1077_1_)
     {
@@ -78,7 +77,6 @@ public class GuiIngestServers extends GuiScreen
 
     class ServerList extends GuiSlot
     {
-        private static final String __OBFID = "CL_00001842";
 
         public ServerList()
         {

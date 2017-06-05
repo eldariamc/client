@@ -28,7 +28,6 @@ public class ChatController implements IChatCallbacks
     protected int field_153015_m;
     protected boolean field_153016_n;
     protected boolean field_153017_o;
-    private static final String __OBFID = "CL_00001819";
 
     public void chatStatusCallback(ErrorCode p_chatStatusCallback_1_)
     {
@@ -418,7 +417,6 @@ public class ChatController implements IChatCallbacks
         Disconnected("Disconnected", 4);
 
         private static final ChatController.ChatState[] $VALUES = new ChatController.ChatState[]{Uninitialized, Initialized, Connecting, Connected, Disconnected};
-        private static final String __OBFID = "CL_00001817";
 
         private ChatState(String p_i1021_1_, int p_i1021_2_) {}
     }
@@ -428,7 +426,6 @@ public class ChatController implements IChatCallbacks
         static final int[] field_152982_a;
 
         static final int[] field_152983_b = new int[ChatController.ChatState.values().length];
-        private static final String __OBFID = "CL_00001818";
 
         static
         {

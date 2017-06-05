@@ -32,7 +32,6 @@ public class IntegratedServer extends MinecraftServer
     private boolean isGamePaused;
     private boolean isPublic;
     private ThreadLanServerPing lanServerPing;
-    private static final String __OBFID = "CL_00001129";
 
     public IntegratedServer(Minecraft par1Minecraft, String par2Str, String par3Str, WorldSettings par4WorldSettings)
     {
@@ -248,7 +247,6 @@ public class IntegratedServer extends MinecraftServer
         par1CrashReport = super.addServerInfoToCrashReport(par1CrashReport);
         par1CrashReport.getCategory().addCrashSectionCallable("Type", new Callable()
         {
-            private static final String __OBFID = "CL_00001130";
             public String call()
             {
                 return "Integrated Server (map_client.txt)";
@@ -256,7 +254,6 @@ public class IntegratedServer extends MinecraftServer
         });
         par1CrashReport.getCategory().addCrashSectionCallable("Is Modded", new Callable()
         {
-            private static final String __OBFID = "CL_00001131";
             public String call()
             {
                 String var1 = ClientBrandRetriever.getClientModName();

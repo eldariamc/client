@@ -9,7 +9,6 @@ public class StatCollector
      * StringTranslate singleton instance fails to translate a key.
      */
     private static StringTranslate fallbackTranslator = new StringTranslate();
-    private static final String __OBFID = "CL_00001211";
 
     /**
      * Translates a Stat name

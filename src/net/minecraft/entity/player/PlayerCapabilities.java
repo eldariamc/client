@@ -22,7 +22,6 @@ public class PlayerCapabilities
     public boolean allowEdit = true;
     private float flySpeed = 0.05F;
     private float walkSpeed = 0.1F;
-    private static final String __OBFID = "CL_00001708";
 
     public void writeCapabilitiesToNBT(NBTTagCompound p_75091_1_)
     {

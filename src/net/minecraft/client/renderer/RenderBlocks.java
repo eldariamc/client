@@ -124,7 +124,6 @@ public class RenderBlocks
     public float aoLightValueOpaque = 0.2F;
     public boolean betterSnowEnabled = true;
     private static RenderBlocks instance;
-    private static final String __OBFID = "CL_00000940";
 
     public RenderBlocks(IBlockAccess par1IBlockAccess)
     {

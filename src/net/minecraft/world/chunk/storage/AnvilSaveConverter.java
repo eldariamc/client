@@ -22,7 +22,6 @@ import java.util.*;
 public class AnvilSaveConverter extends SaveFormatOld
 {
     private static final Logger logger = LogManager.getLogger();
-    private static final String __OBFID = "CL_00000582";
 
     public AnvilSaveConverter(File p_i2144_1_)
     {
@@ -277,7 +276,6 @@ public class AnvilSaveConverter extends SaveFormatOld
         File var3 = new File(p_75810_1_, "region");
         File[] var4 = var3.listFiles(new FilenameFilter()
         {
-            private static final String __OBFID = "CL_00000583";
             public boolean accept(File p_accept_1_, String p_accept_2_)
             {
                 return p_accept_2_.endsWith(".mcr");

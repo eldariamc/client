@@ -19,7 +19,6 @@ public class EntityPotion extends EntityThrowable
      * The damage value of the thrown potion that this EntityPotion represents.
      */
     private ItemStack potionDamage;
-    private static final String __OBFID = "CL_00001727";
 
     public EntityPotion(World p_i1788_1_)
     {

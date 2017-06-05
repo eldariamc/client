@@ -17,7 +17,6 @@ public class ContainerEnchantment extends Container
     /** SlotEnchantmentTable object with ItemStack to be enchanted */
     public IInventory tableInventory = new InventoryBasic("Enchant", true, 1)
     {
-        private static final String __OBFID = "CL_00001746";
         public int getInventoryStackLimit()
         {
             return 1;
@@ -41,7 +40,6 @@ public class ContainerEnchantment extends Container
 
     /** 3-member array storing the enchantment levels of each slot */
     public int[] enchantLevels = new int[3];
-    private static final String __OBFID = "CL_00001745";
 
     public ContainerEnchantment(InventoryPlayer p_i1811_1_, World p_i1811_2_, int p_i1811_3_, int p_i1811_4_, int p_i1811_5_)
     {
@@ -51,7 +49,6 @@ public class ContainerEnchantment extends Container
         this.posZ = p_i1811_5_;
         this.addSlotToContainer(new Slot(this.tableInventory, 0, 25, 47)
         {
-            private static final String __OBFID = "CL_00001747";
             public boolean isItemValid(ItemStack p_75214_1_)
             {
                 return true;

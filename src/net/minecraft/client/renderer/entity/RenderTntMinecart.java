@@ -8,7 +8,6 @@ import org.lwjgl.opengl.GL11;
 
 public class RenderTntMinecart extends RenderMinecart
 {
-    private static final String __OBFID = "CL_00001029";
 
     protected void func_147910_a(EntityMinecartTNT p_147910_1_, float p_147910_2_, Block p_147910_3_, int p_147910_4_)
     {

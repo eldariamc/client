@@ -16,7 +16,6 @@ public class TileEntityRendererChestHelper
     private TileEntityChest cronyxe = new TileEntityChest(0, Blocks.cronyxe_chest);
     private TileEntityChest kobalt = new TileEntityChest(0, Blocks.kobalt_chest);
     private TileEntityEnderChest ender = new TileEntityEnderChest();
-    private static final String __OBFID = "CL_00000946";
 
     public void func_147715_a(Block block, int p_147715_2_, float p_147715_3_)
     {

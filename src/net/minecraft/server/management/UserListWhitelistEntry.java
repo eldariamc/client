@@ -7,7 +7,6 @@ import java.util.UUID;
 
 public class UserListWhitelistEntry extends UserListEntry
 {
-    private static final String __OBFID = "CL_00001870";
 
     public UserListWhitelistEntry(GameProfile p_i1129_1_)
     {

@@ -9,7 +9,6 @@ public class ShaderLinkHelper
 {
     private static final Logger logger = LogManager.getLogger();
     private static ShaderLinkHelper staticShaderLinkHelper;
-    private static final String __OBFID = "CL_00001045";
 
     public static void setNewStaticShaderLinkHelper()
     {

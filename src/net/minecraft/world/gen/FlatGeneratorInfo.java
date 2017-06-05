@@ -16,7 +16,6 @@ public class FlatGeneratorInfo
     /** List of world features enabled on this preset. */
     private final Map worldFeatures = new HashMap();
     private int biomeToUse;
-    private static final String __OBFID = "CL_00000440";
 
     /**
      * Return the biome used on this preset.

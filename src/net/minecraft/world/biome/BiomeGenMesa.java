@@ -19,7 +19,6 @@ public class BiomeGenMesa extends BiomeGenBase
     private NoiseGeneratorPerlin field_150625_aG;
     private boolean field_150626_aH;
     private boolean field_150620_aI;
-    private static final String __OBFID = "CL_00000176";
 
     public BiomeGenMesa(int p_i45380_1_, boolean p_i45380_2_, boolean p_i45380_3_)
     {

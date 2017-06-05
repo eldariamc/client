@@ -46,7 +46,6 @@ public class Block
     /** Glass footsteps */
     public static final Block.SoundType soundTypeGlass = new Block.SoundType("stone", 1.0F, 1.0F)
     {
-        private static final String __OBFID = "CL_00000200";
         public String func_150495_a()
         {
             return "dig.glass";
@@ -65,7 +64,6 @@ public class Block
     /** The ladder sound type */
     public static final Block.SoundType soundTypeLadder = new Block.SoundType("ladder", 1.0F, 1.0F)
     {
-        private static final String __OBFID = "CL_00000201";
         public String func_150495_a()
         {
             return "dig.wood";
@@ -75,7 +73,6 @@ public class Block
     /** The anvil sound type */
     public static final Block.SoundType soundTypeAnvil = new Block.SoundType("anvil", 0.3F, 1.0F)
     {
-        private static final String __OBFID = "CL_00000202";
         public String func_150495_a()
         {
             return "dig.stone";
@@ -143,7 +140,6 @@ public class Block
     public float slipperiness;
     private String unlocalizedNameBlock;
     protected IIcon blockIcon;
-    private static final String __OBFID = "CL_00000199";
 
     public static int getIdFromBlock(Block p_149682_0_)
     {
@@ -1378,7 +1374,6 @@ public class Block
         public final String field_150501_a;
         public final float field_150499_b;
         public final float field_150500_c;
-        private static final String __OBFID = "CL_00000203";
 
         public SoundType(String p_i45393_1_, float p_i45393_2_, float p_i45393_3_)
         {

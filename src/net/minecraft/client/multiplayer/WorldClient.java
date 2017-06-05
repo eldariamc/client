@@ -52,7 +52,6 @@ public class WorldClient extends World
     private Set entitySpawnQueue = new HashSet();
     private final Minecraft mc = Minecraft.getMinecraft();
     private final Set previousActiveChunkSet = new HashSet();
-    private static final String __OBFID = "CL_00000882";
 
     public WorldClient(NetHandlerPlayClient p_i45063_1_, WorldSettings p_i45063_2_, int p_i45063_3_, EnumDifficulty p_i45063_4_, Profiler p_i45063_5_)
     {
@@ -403,7 +402,6 @@ public class WorldClient extends World
         CrashReportCategory var2 = super.addWorldInfoToCrashReport(p_72914_1_);
         var2.addCrashSectionCallable("Forced entities", new Callable()
         {
-            private static final String __OBFID = "CL_00000883";
             public String call()
             {
                 return WorldClient.this.entityList.size() + " total; " + WorldClient.this.entityList.toString();
@@ -411,7 +409,6 @@ public class WorldClient extends World
         });
         var2.addCrashSectionCallable("Retry entities", new Callable()
         {
-            private static final String __OBFID = "CL_00000884";
             public String call()
             {
                 return WorldClient.this.entitySpawnQueue.size() + " total; " + WorldClient.this.entitySpawnQueue.toString();
@@ -419,7 +416,6 @@ public class WorldClient extends World
         });
         var2.addCrashSectionCallable("Server brand", new Callable()
         {
-            private static final String __OBFID = "CL_00000885";
             public String call()
             {
                 return WorldClient.this.mc.thePlayer.func_142021_k();
@@ -427,7 +423,6 @@ public class WorldClient extends World
         });
         var2.addCrashSectionCallable("Server type", new Callable()
         {
-            private static final String __OBFID = "CL_00000886";
             public String call()
             {
                 return WorldClient.this.mc.getIntegratedServer() == null ? "Non-integrated multiplayer server" : "Integrated singleplayer server";

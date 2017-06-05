@@ -23,7 +23,6 @@ public class ItemSkull extends Item
     private static final String[] skullTypes = new String[] {"skeleton", "wither", "zombie", "char", "creeper"};
     public static final String[] field_94587_a = new String[] {"skeleton", "wither", "zombie", "steve", "creeper"};
     private IIcon[] field_94586_c;
-    private static final String __OBFID = "CL_00000067";
 
     public ItemSkull()
     {

@@ -14,7 +14,6 @@ import java.util.List;
 
 public class CommandBanPlayer extends CommandBase
 {
-    private static final String __OBFID = "CL_00000165";
 
     public String getCommandName()
     {

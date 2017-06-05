@@ -4,7 +4,6 @@ import net.minecraft.util.IChatComponent;
 
 public class StatBasic extends StatBase
 {
-    private static final String __OBFID = "CL_00001469";
 
     public StatBasic(String p_i45303_1_, IChatComponent p_i45303_2_, IStatType p_i45303_3_)
     {

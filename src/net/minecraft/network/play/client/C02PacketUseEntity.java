@@ -13,7 +13,6 @@ public class C02PacketUseEntity extends Packet
 {
     private int field_149567_a;
     private C02PacketUseEntity.Action field_149566_b;
-    private static final String __OBFID = "CL_00001357";
 
     public C02PacketUseEntity() {}
 
@@ -69,7 +68,6 @@ public class C02PacketUseEntity extends Packet
         private final int field_151418_d;
 
         private static final C02PacketUseEntity.Action[] $VALUES = new C02PacketUseEntity.Action[]{INTERACT, ATTACK};
-        private static final String __OBFID = "CL_00001358";
 
         private Action(String p_i45250_1_, int p_i45250_2_, int p_i45250_3_)
         {

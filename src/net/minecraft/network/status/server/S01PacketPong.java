@@ -10,7 +10,6 @@ import java.io.IOException;
 public class S01PacketPong extends Packet
 {
     private long field_149293_a;
-    private static final String __OBFID = "CL_00001383";
 
     public S01PacketPong() {}
 

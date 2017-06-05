@@ -7,7 +7,6 @@ import net.minecraft.client.gui.GuiButtonRealmsProxy;
 public class RealmsButton
 {
     private GuiButtonRealmsProxy proxy;
-    private static final String __OBFID = "CL_00001890";
 
     public RealmsButton(int p_i1177_1_, int p_i1177_2_, int p_i1177_3_, String p_i1177_4_)
     {

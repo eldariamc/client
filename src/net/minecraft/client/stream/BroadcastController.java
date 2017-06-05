@@ -46,7 +46,6 @@ public class BroadcastController implements IStatCallbacks, IStreamCallbacks
     protected long field_152890_z;
     protected IngestServerTester field_152860_A;
     private ErrorCode field_152864_E;
-    private static final String __OBFID = "CL_00001822";
 
     public void requestAuthTokenCallback(ErrorCode p_requestAuthTokenCallback_1_, AuthToken p_requestAuthTokenCallback_2_)
     {
@@ -1085,7 +1084,6 @@ public class BroadcastController implements IStatCallbacks, IStreamCallbacks
         IngestTesting("IngestTesting", 13);
 
         private static final BroadcastController.BroadcastState[] $VALUES = new BroadcastController.BroadcastState[]{Uninitialized, Initialized, Authenticating, Authenticated, LoggingIn, LoggedIn, FindingIngestServer, ReceivedIngestServers, ReadyToBroadcast, Starting, Broadcasting, Stopping, Paused, IngestTesting};
-        private static final String __OBFID = "CL_00001820";
 
         private BroadcastState(String p_i1025_1_, int p_i1025_2_) {}
     }
@@ -1093,7 +1091,6 @@ public class BroadcastController implements IStatCallbacks, IStreamCallbacks
     static final class SwitchBroadcastState
     {
         static final int[] field_152815_a = new int[BroadcastController.BroadcastState.values().length];
-        private static final String __OBFID = "CL_00001821";
 
         static
         {

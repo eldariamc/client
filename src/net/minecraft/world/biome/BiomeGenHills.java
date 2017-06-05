@@ -18,7 +18,6 @@ public class BiomeGenHills extends BiomeGenBase
     private int field_150636_aF;
     private int field_150637_aG;
     private int field_150638_aH;
-    private static final String __OBFID = "CL_00000168";
 
     protected BiomeGenHills(int p_i45373_1_, boolean p_i45373_2_)
     {

@@ -10,7 +10,6 @@ import java.io.IOException;
 public abstract class Packet
 {
     private static final Logger logger = LogManager.getLogger();
-    private static final String __OBFID = "CL_00001272";
 
     /**
      * Returns a packet instance, given the params: BiMap<int, (Packet) Class> and (int) id

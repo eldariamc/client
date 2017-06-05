@@ -17,7 +17,6 @@ public class BlockStone extends Block
     public static final String[] TYPES = new String[]{"stone", "stone_granite", "stone_granite_smooth", "stone_diorite", "stone_diorite_smooth", "stone_andesite", "stone_andesite_smooth"};
     public static final String[] NAMES = new String[]{"stone", "granite", "graniteSmooth", "diorite", "dioriteSmooth", "andesite", "andesiteSmooth"};
     private IIcon[] icons;
-    private static final String __OBFID = "CL_00000317";
 
     public BlockStone()
     {

@@ -25,7 +25,6 @@ public abstract class AbstractClientPlayer extends EntityPlayer implements SkinM
     private ResourceLocation locationCape;
     private ResourceLocation locationOfCape = null;
     private String nameClear = null;
-    private static final String __OBFID = "CL_00000935";
 
     public AbstractClientPlayer(World p_i45074_1_, GameProfile p_i45074_2_)
     {
@@ -119,7 +118,6 @@ public abstract class AbstractClientPlayer extends EntityPlayer implements SkinM
     static final class SwitchType
     {
         static final int[] field_152630_a = new int[Type.values().length];
-        private static final String __OBFID = "CL_00001832";
 
         static
         {

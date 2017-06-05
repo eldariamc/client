@@ -41,7 +41,6 @@ public class ItemRenderer
 
     /** The index of the currently held item (0-8, or -1 if not yet updated) */
     private int equippedItemSlot = -1;
-    private static final String __OBFID = "CL_00000953";
 
     public ItemRenderer(Minecraft p_i1247_1_)
     {

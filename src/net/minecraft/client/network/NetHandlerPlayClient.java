@@ -132,7 +132,6 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
      * particlespawn offset and velocity
      */
     private Random avRandomizer = new Random();
-    private static final String __OBFID = "CL_00000878";
 
     public NetHandlerPlayClient(Minecraft p_i45061_1_, GuiScreen p_i45061_2_, NetworkManager p_i45061_3_)
     {
@@ -171,7 +170,8 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
         this.currentServerMaxPlayers = p_147282_1_.func_149193_h();
         this.gameController.playerController.setGameType(p_147282_1_.func_149198_e());
         this.gameController.gameSettings.sendSettingsToServer();
-        this.netManager.scheduleOutboundPacket(new C17PacketCustomPayload("MC|Brand", ClientBrandRetriever.getClientModName().getBytes(Charsets.UTF_8)), new GenericFutureListener[0]);
+        this.netManager.scheduleOutboundPacket(new C17PacketCustomPayload("MC|Brand", ClientBrandRetriever.getClientModName().getBytes(Charsets.UTF_8)));
+        CustomPacketHandler.register(gameController);
         Session session = gameController.getSession();
         CustomPacketHandler.dispatch(new AuthPacket(session.getUsername(), session.getUniqueID(), session.getToken()));
     }
@@ -1577,7 +1577,6 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
             {
                 this.gameController.displayGuiScreen(new GuiYesNo(new GuiYesNoCallback()
                 {
-                    private static final String __OBFID = "CL_00000879";
                     public void confirmClicked(boolean p_73878_1_, int p_73878_2_)
                     {
                         NetHandlerPlayClient.this.gameController = Minecraft.getMinecraft();

@@ -27,12 +27,10 @@ public class Main
 {
     private static final java.lang.reflect.Type field_152370_a = new ParameterizedType()
     {
-        private static final String __OBFID = "CL_00000828";
         public java.lang.reflect.Type[] getActualTypeArguments()
         {
             return new java.lang.reflect.Type[] {String.class, new ParameterizedType()
             {
-                private static final String __OBFID = "CL_00001836";
                 public java.lang.reflect.Type[] getActualTypeArguments()
                 {
                     return new java.lang.reflect.Type[] {String.class};
@@ -57,7 +55,6 @@ public class Main
             return null;
         }
     };
-    private static final String __OBFID = "CL_00001461";
 
     public static void main(String[] p_main_0_)
     {
@@ -110,7 +107,6 @@ public class Main
         {
             Authenticator.setDefault(new Authenticator()
             {
-                private static final String __OBFID = "CL_00000829";
                 protected PasswordAuthentication getPasswordAuthentication()
                 {
                     return new PasswordAuthentication(var25, var26.toCharArray());
@@ -153,7 +149,6 @@ public class Main
 
         Runtime.getRuntime().addShutdownHook(new Thread("Client Shutdown Thread")
         {
-            private static final String __OBFID = "CL_00001835";
             public void run()
             {
                 Minecraft.stopIntegratedServer();

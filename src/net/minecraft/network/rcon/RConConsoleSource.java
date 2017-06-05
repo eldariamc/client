@@ -11,7 +11,6 @@ public class RConConsoleSource implements ICommandSender
 {
     public static final RConConsoleSource field_70010_a = new RConConsoleSource();
     private StringBuffer field_70009_b = new StringBuffer();
-    private static final String __OBFID = "CL_00001800";
 
     /**
      * Gets the name of this command sender (usually username, but possibly "Rcon")

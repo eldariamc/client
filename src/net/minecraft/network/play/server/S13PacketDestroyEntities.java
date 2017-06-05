@@ -10,7 +10,6 @@ import java.io.IOException;
 public class S13PacketDestroyEntities extends Packet
 {
     private int[] field_149100_a;
-    private static final String __OBFID = "CL_00001320";
 
     public S13PacketDestroyEntities() {}
 

@@ -10,7 +10,6 @@ import net.minecraft.world.gen.ChunkProviderEnd;
 
 public class WorldProviderEnd extends WorldProvider
 {
-    private static final String __OBFID = "CL_00000389";
 
     /**
      * creates a new world chunk manager for WorldProvider

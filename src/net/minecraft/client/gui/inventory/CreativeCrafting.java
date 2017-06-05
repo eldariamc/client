@@ -10,7 +10,6 @@ import java.util.List;
 public class CreativeCrafting implements ICrafting
 {
     private final Minecraft field_146109_a;
-    private static final String __OBFID = "CL_00000751";
 
     public CreativeCrafting(Minecraft p_i1085_1_)
     {

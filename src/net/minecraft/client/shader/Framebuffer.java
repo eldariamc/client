@@ -19,7 +19,6 @@ public class Framebuffer
     public int depthBuffer;
     public float[] framebufferColor;
     public int framebufferFilter;
-    private static final String __OBFID = "CL_00000959";
 
     public Framebuffer(int p_i45078_1_, int p_i45078_2_, boolean p_i45078_3_)
     {

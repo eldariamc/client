@@ -10,7 +10,6 @@ import java.util.Random;
 public class BiomeGenMutated extends BiomeGenBase
 {
     protected BiomeGenBase field_150611_aD;
-    private static final String __OBFID = "CL_00000178";
 
     public BiomeGenMutated(int p_i45381_1_, BiomeGenBase p_i45381_2_)
     {

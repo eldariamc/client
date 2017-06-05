@@ -17,7 +17,6 @@ public class C15PacketClientSettings extends Packet
     private boolean field_149526_d;
     private EnumDifficulty field_149527_e;
     private boolean field_149525_f;
-    private static final String __OBFID = "CL_00001350";
 
     public C15PacketClientSettings() {}
 

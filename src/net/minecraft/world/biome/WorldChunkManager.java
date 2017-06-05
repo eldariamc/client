@@ -25,7 +25,6 @@ public class WorldChunkManager
 
     /** A list of biomes that the player can spawn in. */
     private List biomesToSpawnIn;
-    private static final String __OBFID = "CL_00000166";
 
     protected WorldChunkManager()
     {

@@ -7,7 +7,6 @@ import java.io.IOException;
 public abstract class NBTBase
 {
     public static final String[] NBTTypes = new String[] {"END", "BYTE", "SHORT", "INT", "LONG", "FLOAT", "DOUBLE", "BYTE[]", "STRING", "LIST", "COMPOUND", "INT[]"};
-    private static final String __OBFID = "CL_00001229";
 
     /**
      * Write the actual data contents of the tag, implemented in NBT extension classes
@@ -98,7 +97,6 @@ public abstract class NBTBase
 
     public abstract static class NBTPrimitive extends NBTBase
     {
-        private static final String __OBFID = "CL_00001230";
 
         public abstract long func_150291_c();
 

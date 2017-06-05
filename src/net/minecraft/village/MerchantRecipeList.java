@@ -10,7 +10,6 @@ import java.util.ArrayList;
 
 public class MerchantRecipeList extends ArrayList
 {
-    private static final String __OBFID = "CL_00000127";
 
     public MerchantRecipeList() {}
 

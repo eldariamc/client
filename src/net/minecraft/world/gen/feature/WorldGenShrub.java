@@ -11,7 +11,6 @@ public class WorldGenShrub extends WorldGenTrees
 {
     private int field_150528_a;
     private int field_150527_b;
-    private static final String __OBFID = "CL_00000411";
 
     public WorldGenShrub(int p_i2015_1_, int p_i2015_2_)
     {

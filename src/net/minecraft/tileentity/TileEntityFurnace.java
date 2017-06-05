@@ -23,7 +23,6 @@ public class TileEntityFurnace extends TileEntity implements ISidedInventory
     public int itemBurnTime;
     public int cookTime;
     private String inventoryName;
-    private static final String __OBFID = "CL_00000357";
 
     public int fuelSpeed = 200;
     public double furnaceSpeed = 1.0;

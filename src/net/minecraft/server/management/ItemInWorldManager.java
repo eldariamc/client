@@ -38,7 +38,6 @@ public class ItemInWorldManager
     private int posZ;
     private int initialBlockDamage;
     private int durabilityRemainingOnBlock;
-    private static final String __OBFID = "CL_00001442";
 
     public ItemInWorldManager(World p_i1524_1_)
     {

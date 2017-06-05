@@ -20,7 +20,6 @@ public abstract class ModelBase
     private Map modelTextureMap = new HashMap();
     public int textureWidth = 64;
     public int textureHeight = 32;
-    private static final String __OBFID = "CL_00000845";
 
     /**
      * Sets the models various rotation angles then renders the model.

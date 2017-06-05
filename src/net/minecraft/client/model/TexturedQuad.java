@@ -8,7 +8,6 @@ public class TexturedQuad
     public PositionTextureVertex[] vertexPositions;
     public int nVertices;
     private boolean invertNormal;
-    private static final String __OBFID = "CL_00000850";
 
     public TexturedQuad(PositionTextureVertex[] p_i1152_1_)
     {

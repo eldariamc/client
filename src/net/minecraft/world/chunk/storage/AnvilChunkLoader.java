@@ -33,7 +33,6 @@ public class AnvilChunkLoader implements IChunkLoader, IThreadedFileIO
 
     /** Save directory for chunks using the Anvil format */
     private final File chunkSaveLocation;
-    private static final String __OBFID = "CL_00000384";
 
     public AnvilChunkLoader(File p_i2003_1_)
     {
@@ -446,7 +445,6 @@ public class AnvilChunkLoader implements IChunkLoader, IThreadedFileIO
     {
         public final ChunkCoordIntPair chunkCoordinate;
         public final NBTTagCompound nbtTags;
-        private static final String __OBFID = "CL_00000385";
 
         public PendingChunk(ChunkCoordIntPair p_i2002_1_, NBTTagCompound p_i2002_2_)
         {

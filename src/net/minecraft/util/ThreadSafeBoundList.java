@@ -11,7 +11,6 @@ public class ThreadSafeBoundList
     private final ReadWriteLock field_152761_c = new ReentrantReadWriteLock();
     private int field_152762_d;
     private int field_152763_e;
-    private static final String __OBFID = "CL_00001868";
 
     public ThreadSafeBoundList(Class p_i1126_1_, int p_i1126_2_)
     {

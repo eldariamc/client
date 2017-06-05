@@ -21,7 +21,6 @@ public class MessageDeserializer extends ByteToMessageDecoder
     private static final Logger logger = LogManager.getLogger();
     private static final Marker field_150799_b = MarkerManager.getMarker("PACKET_RECEIVED", NetworkManager.logMarkerPackets);
     private final NetworkStatistics field_152499_c;
-    private static final String __OBFID = "CL_00001252";
 
     public MessageDeserializer(NetworkStatistics p_i1183_1_)
     {

@@ -18,7 +18,6 @@ import java.util.List;
 
 public class CommandSummon extends CommandBase
 {
-    private static final String __OBFID = "CL_00001158";
 
     public String getCommandName()
     {

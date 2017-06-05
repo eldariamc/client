@@ -19,7 +19,6 @@ public class GuiLanguage extends GuiScreen
     private final LanguageManager field_146454_h;
     private GuiOptionButton field_146455_i;
     private GuiOptionButton field_146452_r;
-    private static final String __OBFID = "CL_00000698";
 
     public GuiLanguage(GuiScreen p_i1043_1_, GameSettings p_i1043_2_, LanguageManager p_i1043_3_)
     {
@@ -93,7 +92,6 @@ public class GuiLanguage extends GuiScreen
     {
         private final java.util.List field_148176_l = Lists.newArrayList();
         private final Map field_148177_m = Maps.newHashMap();
-        private static final String __OBFID = "CL_00000699";
 
         public List()
         {

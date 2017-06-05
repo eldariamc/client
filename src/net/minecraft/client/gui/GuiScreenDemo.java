@@ -13,7 +13,6 @@ public class GuiScreenDemo extends GuiScreen
 {
     private static final Logger logger = LogManager.getLogger();
     private static final ResourceLocation field_146348_f = new ResourceLocation("textures/gui/demo_background.png");
-    private static final String __OBFID = "CL_00000691";
 
     /**
      * Adds the buttons (and other controls) to the screen in question.

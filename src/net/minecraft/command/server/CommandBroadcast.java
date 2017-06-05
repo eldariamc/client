@@ -11,7 +11,6 @@ import java.util.List;
 
 public class CommandBroadcast extends CommandBase
 {
-    private static final String __OBFID = "CL_00000191";
 
     public String getCommandName()
     {

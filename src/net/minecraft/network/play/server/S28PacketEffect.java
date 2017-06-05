@@ -15,7 +15,6 @@ public class S28PacketEffect extends Packet
     private int field_149247_d;
     private int field_149248_e;
     private boolean field_149246_f;
-    private static final String __OBFID = "CL_00001307";
 
     public S28PacketEffect() {}
 

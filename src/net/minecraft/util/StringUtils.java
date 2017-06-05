@@ -5,7 +5,6 @@ import java.util.regex.Pattern;
 public class StringUtils
 {
     private static final Pattern patternControlCode = Pattern.compile("(?i)\\u00A7[0-9A-FK-OR]");
-    private static final String __OBFID = "CL_00001501";
 
     /**
      * Returns the time elapsed for the given number of ticks, in "mm:ss" format.

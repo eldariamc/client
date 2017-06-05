@@ -17,7 +17,6 @@ public class EntityAILookIdle extends EntityAIBase
      * A decrementing tick that stops the entity from being idle once it reaches 0.
      */
     private int idleTime;
-    private static final String __OBFID = "CL_00001607";
 
     public EntityAILookIdle(EntityLiving p_i1647_1_)
     {

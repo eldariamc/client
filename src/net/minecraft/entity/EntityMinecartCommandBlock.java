@@ -16,7 +16,6 @@ public class EntityMinecartCommandBlock extends EntityMinecart
 {
     private final CommandBlockLogic field_145824_a = new CommandBlockLogic()
     {
-        private static final String __OBFID = "CL_00001673";
         public void func_145756_e()
         {
             EntityMinecartCommandBlock.this.getDataWatcher().updateObject(23, this.func_145753_i());
@@ -40,7 +39,6 @@ public class EntityMinecartCommandBlock extends EntityMinecart
         }
     };
     private int field_145823_b = 0;
-    private static final String __OBFID = "CL_00001672";
 
     public EntityMinecartCommandBlock(World p_i45321_1_)
     {

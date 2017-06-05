@@ -28,7 +28,6 @@ public class TextureUtil
     private static int field_147956_f = -1;
     private static float field_152779_g = -1.0F;
     private static final int[] field_147957_g;
-    private static final String __OBFID = "CL_00001067";
 
     public static int glGenTextures()
     {

@@ -11,7 +11,6 @@ public class C11PacketEnchantItem extends Packet
 {
     private int field_149541_a;
     private int field_149540_b;
-    private static final String __OBFID = "CL_00001352";
 
     public C11PacketEnchantItem() {}
 

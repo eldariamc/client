@@ -2,7 +2,6 @@ package net.minecraft.util;
 
 public class Util
 {
-    private static final String __OBFID = "CL_00001633";
 
     public static Util.EnumOS getOSType()
     {
@@ -19,7 +18,6 @@ public class Util
         UNKNOWN("UNKNOWN", 4);
 
         private static final Util.EnumOS[] $VALUES = new Util.EnumOS[]{LINUX, SOLARIS, WINDOWS, OSX, UNKNOWN};
-        private static final String __OBFID = "CL_00001660";
 
         private EnumOS(String p_i1357_1_, int p_i1357_2_) {}
     }

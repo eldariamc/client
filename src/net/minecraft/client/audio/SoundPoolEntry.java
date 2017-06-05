@@ -8,7 +8,6 @@ public class SoundPoolEntry
     private final boolean field_148654_b;
     private double field_148655_c;
     private double field_148653_d;
-    private static final String __OBFID = "CL_00001140";
 
     public SoundPoolEntry(ResourceLocation p_i45113_1_, double p_i45113_2_, double p_i45113_4_, boolean p_i45113_6_)
     {

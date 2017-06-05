@@ -16,7 +16,6 @@ public class BlockHugeMushroom extends Block
     private IIcon[] field_149794_M;
     private IIcon field_149795_N;
     private IIcon field_149796_O;
-    private static final String __OBFID = "CL_00000258";
 
     public BlockHugeMushroom(Material p_i45412_1_, int p_i45412_2_)
     {

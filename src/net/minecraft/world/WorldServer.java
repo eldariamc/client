@@ -71,7 +71,6 @@ public class WorldServer extends World
 
     /** An IntHashMap of entity IDs (integers) to their Entity objects. */
     private IntHashMap entityIdMap;
-    private static final String __OBFID = "CL_00001437";
 
     public WorldServer(MinecraftServer p_i45284_1_, ISaveHandler p_i45284_2_, String p_i45284_3_, int p_i45284_4_, WorldSettings p_i45284_5_, Profiler p_i45284_6_)
     {
@@ -1070,7 +1069,6 @@ public class WorldServer extends World
 
     static class ServerBlockEventList extends ArrayList
     {
-        private static final String __OBFID = "CL_00001439";
 
         private ServerBlockEventList() {}
 

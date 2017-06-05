@@ -14,7 +14,6 @@ public class BlockStainedGlassPane extends BlockPane
 {
     private static final IIcon[] field_150106_a = new IIcon[16];
     private static final IIcon[] field_150105_b = new IIcon[16];
-    private static final String __OBFID = "CL_00000313";
 
     public BlockStainedGlassPane()
     {

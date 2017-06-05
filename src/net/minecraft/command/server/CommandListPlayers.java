@@ -8,7 +8,6 @@ import net.minecraft.util.ChatComponentTranslation;
 
 public class CommandListPlayers extends CommandBase
 {
-    private static final String __OBFID = "CL_00000615";
 
     public String getCommandName()
     {

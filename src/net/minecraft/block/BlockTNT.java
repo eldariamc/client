@@ -20,7 +20,6 @@ public class BlockTNT extends Block
     private IIcon field_150116_a;
     private IIcon field_150115_b;
     private float power;
-    private static final String __OBFID = "CL_00000324";
 
     public BlockTNT(float power)
     {

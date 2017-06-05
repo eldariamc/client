@@ -22,7 +22,6 @@ public class IntHashMap
 
     /** The set of all the keys stored in this MCHash object */
     private Set keySet = new HashSet();
-    private static final String __OBFID = "CL_00001490";
 
     /**
      * Makes the passed in integer suitable for hashing by a number of shifts
@@ -242,7 +241,6 @@ public class IntHashMap
         Object valueEntry;
         IntHashMap.Entry nextEntry;
         final int slotHash;
-        private static final String __OBFID = "CL_00001491";
 
         Entry(int p_i1552_1_, int p_i1552_2_, Object p_i1552_3_, IntHashMap.Entry p_i1552_4_)
         {

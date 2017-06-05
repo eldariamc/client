@@ -15,7 +15,6 @@ import java.util.Random;
 
 public class BlockPistonMoving extends BlockContainer
 {
-    private static final String __OBFID = "CL_00000368";
 
     public BlockPistonMoving()
     {

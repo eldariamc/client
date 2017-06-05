@@ -25,7 +25,6 @@ public class BlockPistonBase extends Block
     private IIcon field_150081_b;
     private IIcon field_150083_M;
     private IIcon field_150084_N;
-    private static final String __OBFID = "CL_00000366";
 
     public BlockPistonBase(boolean p_i45443_1_)
     {

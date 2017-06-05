@@ -10,7 +10,6 @@ public class ModelChest extends ModelBase
 
     /** The chest's knob in the chest model. */
     public ModelRenderer chestKnob;
-    private static final String __OBFID = "CL_00000834";
 
     public ModelChest()
     {

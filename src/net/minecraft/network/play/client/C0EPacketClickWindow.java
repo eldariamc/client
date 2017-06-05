@@ -17,7 +17,6 @@ public class C0EPacketClickWindow extends Packet
     private short field_149550_d;
     private ItemStack field_149551_e;
     private int field_149549_f;
-    private static final String __OBFID = "CL_00001353";
 
     public C0EPacketClickWindow() {}
 

@@ -10,7 +10,6 @@ public class EntityAIOcelotAttack extends EntityAIBase
     EntityLiving theEntity;
     EntityLivingBase theVictim;
     int attackCountdown;
-    private static final String __OBFID = "CL_00001600";
 
     public EntityAIOcelotAttack(EntityLiving p_i1641_1_)
     {

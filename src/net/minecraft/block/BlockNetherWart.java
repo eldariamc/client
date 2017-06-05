@@ -14,7 +14,6 @@ import java.util.Random;
 public class BlockNetherWart extends BlockBush
 {
     private IIcon[] field_149883_a;
-    private static final String __OBFID = "CL_00000274";
 
     protected BlockNetherWart()
     {

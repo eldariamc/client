@@ -10,7 +10,6 @@ import java.util.Random;
 
 public class BlockLadder extends Block
 {
-    private static final String __OBFID = "CL_00000262";
 
     protected BlockLadder()
     {

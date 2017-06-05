@@ -9,7 +9,6 @@ public class ModelWither extends ModelBase
 {
     private ModelRenderer[] field_82905_a;
     private ModelRenderer[] field_82904_b;
-    private static final String __OBFID = "CL_00000867";
 
     public ModelWither()
     {

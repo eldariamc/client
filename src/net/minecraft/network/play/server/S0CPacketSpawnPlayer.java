@@ -29,7 +29,6 @@ public class S0CPacketSpawnPlayer extends Packet
     private int field_148959_h;
     private DataWatcher field_148960_i;
     private List field_148958_j;
-    private static final String __OBFID = "CL_00001281";
 
     public S0CPacketSpawnPlayer() {}
 

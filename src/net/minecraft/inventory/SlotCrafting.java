@@ -18,7 +18,6 @@ public class SlotCrafting extends Slot
      * The number of items that have been crafted so far. Gets passed to ItemStack.onCrafting before being reset.
      */
     private int amountCrafted;
-    private static final String __OBFID = "CL_00001761";
 
     public SlotCrafting(EntityPlayer p_i1823_1_, IInventory p_i1823_2_, IInventory p_i1823_3_, int p_i1823_4_, int p_i1823_5_, int p_i1823_6_)
     {

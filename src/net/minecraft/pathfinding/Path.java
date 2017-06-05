@@ -7,7 +7,6 @@ public class Path
 
     /** The number of points in this path */
     private int count;
-    private static final String __OBFID = "CL_00000573";
 
     /**
      * Adds a point to the path

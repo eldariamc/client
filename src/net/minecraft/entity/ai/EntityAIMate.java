@@ -26,7 +26,6 @@ public class EntityAIMate extends EntityAIBase
 
     /** The speed the creature moves at during mating behavior. */
     double moveSpeed;
-    private static final String __OBFID = "CL_00001578";
 
     public EntityAIMate(EntityAnimal p_i1619_1_, double p_i1619_2_)
     {

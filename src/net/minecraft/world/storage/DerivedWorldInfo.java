@@ -9,7 +9,6 @@ public class DerivedWorldInfo extends WorldInfo
 {
     /** Instance of WorldInfo. */
     private final WorldInfo theWorldInfo;
-    private static final String __OBFID = "CL_00000584";
 
     public DerivedWorldInfo(WorldInfo p_i2145_1_)
     {

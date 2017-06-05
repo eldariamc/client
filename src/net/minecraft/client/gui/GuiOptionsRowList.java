@@ -10,7 +10,6 @@ import java.util.List;
 public class GuiOptionsRowList extends GuiListExtended
 {
     private final List field_148184_k = Lists.newArrayList();
-    private static final String __OBFID = "CL_00000677";
 
     public GuiOptionsRowList(Minecraft p_i45015_1_, int p_i45015_2_, int p_i45015_3_, int p_i45015_4_, int p_i45015_5_, int p_i45015_6_, GameSettings.Options ... p_i45015_7_)
     {
@@ -65,7 +64,6 @@ public class GuiOptionsRowList extends GuiListExtended
         private final Minecraft field_148325_a = Minecraft.getMinecraft();
         private final GuiButton field_148323_b;
         private final GuiButton field_148324_c;
-        private static final String __OBFID = "CL_00000678";
 
         public Row(GuiButton p_i45014_1_, GuiButton p_i45014_2_)
         {

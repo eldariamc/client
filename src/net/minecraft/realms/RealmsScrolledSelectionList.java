@@ -5,7 +5,6 @@ import net.minecraft.client.gui.GuiSlotRealmsProxy;
 public class RealmsScrolledSelectionList
 {
     private final GuiSlotRealmsProxy proxy;
-    private static final String __OBFID = "CL_00001863";
 
     public RealmsScrolledSelectionList(int p_i1119_1_, int p_i1119_2_, int p_i1119_3_, int p_i1119_4_, int p_i1119_5_)
     {

@@ -15,7 +15,6 @@ import java.util.Random;
 
 public class BlockIce extends BlockBreakable
 {
-    private static final String __OBFID = "CL_00000259";
 
     public BlockIce()
     {

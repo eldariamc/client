@@ -7,7 +7,6 @@ import net.minecraft.network.PacketBuffer;
 
 public class MessageSerializer2 extends MessageToByteEncoder
 {
-    private static final String __OBFID = "CL_00001256";
 
     protected void encode(ChannelHandlerContext p_encode_1_, ByteBuf p_encode_2_, ByteBuf p_encode_3_)
     {

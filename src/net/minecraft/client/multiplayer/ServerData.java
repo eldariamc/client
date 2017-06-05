@@ -32,7 +32,6 @@ public class ServerData
     private ServerData.ServerResourceMode field_152587_j;
     private String field_147411_m;
     private boolean field_152588_l;
-    private static final String __OBFID = "CL_00000890";
 
     public ServerData(String p_i1193_1_, String p_i1193_2_)
     {
@@ -147,7 +146,6 @@ public class ServerData
         private final IChatComponent field_152594_d;
 
         private static final ServerData.ServerResourceMode[] $VALUES = new ServerData.ServerResourceMode[]{ENABLED, DISABLED, PROMPT};
-        private static final String __OBFID = "CL_00001833";
 
         private ServerResourceMode(String p_i1053_1_, int p_i1053_2_, String p_i1053_3_)
         {

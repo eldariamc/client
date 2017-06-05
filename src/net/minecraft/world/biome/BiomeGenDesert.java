@@ -8,7 +8,6 @@ import java.util.Random;
 
 public class BiomeGenDesert extends BiomeGenBase
 {
-    private static final String __OBFID = "CL_00000167";
 
     public BiomeGenDesert(int p_i1977_1_)
     {

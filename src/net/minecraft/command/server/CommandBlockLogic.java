@@ -20,7 +20,6 @@ public abstract class CommandBlockLogic implements ICommandSender
     private IChatComponent field_145762_d = null;
     private String field_145763_e = "";
     private String field_145761_f = "@";
-    private static final String __OBFID = "CL_00000128";
 
     public int func_145760_g()
     {

@@ -30,7 +30,6 @@ public abstract class RendererLivingEntity extends Render
 
     /** The model to be used during the render passes. */
     protected ModelBase renderPassModel;
-    private static final String __OBFID = "CL_00001012";
 
     public RendererLivingEntity(ModelBase p_i1261_1_, float p_i1261_2_)
     {

@@ -17,7 +17,6 @@ import org.lwjgl.opengl.GL11;
 public class TileEntityRendererPiston extends TileEntitySpecialRenderer
 {
     private RenderBlocks field_147516_b;
-    private static final String __OBFID = "CL_00000969";
 
     public void renderTileEntityAt(TileEntityPiston p_147500_1_, double p_147500_2_, double p_147500_4_, double p_147500_6_, float p_147500_8_)
     {

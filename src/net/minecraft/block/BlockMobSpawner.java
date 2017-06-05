@@ -10,7 +10,6 @@ import java.util.Random;
 
 public class BlockMobSpawner extends BlockContainer
 {
-    private static final String __OBFID = "CL_00000269";
 
     protected BlockMobSpawner()
     {

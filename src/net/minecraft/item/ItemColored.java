@@ -7,7 +7,6 @@ public class ItemColored extends ItemBlock
 {
     private final Block field_150944_b;
     private String[] field_150945_c;
-    private static final String __OBFID = "CL_00000003";
 
     public ItemColored(Block p_i45332_1_, boolean p_i45332_2_)
     {

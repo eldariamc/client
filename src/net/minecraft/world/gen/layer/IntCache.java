@@ -28,7 +28,6 @@ public class IntCache
      * be re-used again until resetIntCache() is called.
      */
     private static List inUseLargeArrays = new ArrayList();
-    private static final String __OBFID = "CL_00000557";
 
     public static synchronized int[] getIntCache(int p_76445_0_)
     {

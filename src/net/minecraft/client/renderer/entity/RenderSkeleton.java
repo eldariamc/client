@@ -12,7 +12,6 @@ public class RenderSkeleton extends RenderBiped
 {
     private static final ResourceLocation skeletonTextures = new ResourceLocation("textures/entity/skeleton/skeleton.png");
     private static final ResourceLocation witherSkeletonTextures = new ResourceLocation("textures/entity/skeleton/wither_skeleton.png");
-    private static final String __OBFID = "CL_00001023";
 
     public RenderSkeleton()
     {

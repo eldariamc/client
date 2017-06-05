@@ -8,7 +8,6 @@ public class ModelWitch extends ModelVillager
     public boolean field_82900_g;
     private ModelRenderer field_82901_h = (new ModelRenderer(this)).setTextureSize(64, 128);
     private ModelRenderer witchHat;
-    private static final String __OBFID = "CL_00000866";
 
     public ModelWitch(float p_i1166_1_)
     {

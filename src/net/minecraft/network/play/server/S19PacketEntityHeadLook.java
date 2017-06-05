@@ -13,7 +13,6 @@ public class S19PacketEntityHeadLook extends Packet
 {
     private int field_149384_a;
     private byte field_149383_b;
-    private static final String __OBFID = "CL_00001323";
 
     public S19PacketEntityHeadLook() {}
 

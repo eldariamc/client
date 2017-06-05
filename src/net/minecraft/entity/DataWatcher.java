@@ -25,7 +25,6 @@ public class DataWatcher
     /** true if one or more object was changed */
     private boolean objectChanged;
     private ReadWriteLock lock = new ReentrantReadWriteLock();
-    private static final String __OBFID = "CL_00001559";
 
     public DataWatcher(Entity p_i45313_1_)
     {
@@ -405,7 +404,6 @@ public class DataWatcher
         private final int dataValueId;
         private Object watchedObject;
         private boolean watched;
-        private static final String __OBFID = "CL_00001560";
 
         public WatchableObject(int p_i1603_1_, int p_i1603_2_, Object p_i1603_3_)
         {

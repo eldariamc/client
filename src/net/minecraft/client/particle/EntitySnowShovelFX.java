@@ -6,7 +6,6 @@ import net.minecraft.world.World;
 public class EntitySnowShovelFX extends EntityFX
 {
     float snowDigParticleScale;
-    private static final String __OBFID = "CL_00000925";
 
     public EntitySnowShovelFX(World p_i1227_1_, double p_i1227_2_, double p_i1227_4_, double p_i1227_6_, double p_i1227_8_, double p_i1227_10_, double p_i1227_12_)
     {

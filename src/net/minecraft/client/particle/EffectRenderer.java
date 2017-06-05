@@ -31,7 +31,6 @@ public class EffectRenderer
 
     /** RNG. */
     private Random rand = new Random();
-    private static final String __OBFID = "CL_00000915";
 
     public EffectRenderer(World p_i1220_1_, TextureManager p_i1220_2_)
     {
@@ -80,7 +79,6 @@ public class EffectRenderer
                     CrashReportCategory var6 = var5.makeCategory("Particle being ticked");
                     var6.addCrashSectionCallable("Particle", new Callable()
                     {
-                        private static final String __OBFID = "CL_00000916";
                         public String call()
                         {
                             return var3.toString();
@@ -88,7 +86,6 @@ public class EffectRenderer
                     });
                     var6.addCrashSectionCallable("Particle Type", new Callable()
                     {
-                        private static final String __OBFID = "CL_00000917";
                         public String call()
                         {
                             return var1 == 0 ? "MISC_TEXTURE" : (var1 == 1 ? "TERRAIN_TEXTURE" : (var1 == 2 ? "ITEM_TEXTURE" : (var1 == 3 ? "ENTITY_PARTICLE_TEXTURE" : "Unknown - " + var1)));
@@ -163,7 +160,6 @@ public class EffectRenderer
                         CrashReportCategory var14 = var13.makeCategory("Particle being rendered");
                         var14.addCrashSectionCallable("Particle", new Callable()
                         {
-                            private static final String __OBFID = "CL_00000918";
                             public String call()
                             {
                                 return var11.toString();
@@ -171,7 +167,6 @@ public class EffectRenderer
                         });
                         var14.addCrashSectionCallable("Particle Type", new Callable()
                         {
-                            private static final String __OBFID = "CL_00000919";
                             public String call()
                             {
                                 return var8 == 0 ? "MISC_TEXTURE" : (var8 == 1 ? "TERRAIN_TEXTURE" : (var8 == 2 ? "ITEM_TEXTURE" : (var8 == 3 ? "ENTITY_PARTICLE_TEXTURE" : "Unknown - " + var8)));

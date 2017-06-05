@@ -13,7 +13,6 @@ public class C0BPacketEntityAction extends Packet
     private int field_149517_a;
     private int field_149515_b;
     private int field_149516_c;
-    private static final String __OBFID = "CL_00001366";
 
     public C0BPacketEntityAction() {}
 

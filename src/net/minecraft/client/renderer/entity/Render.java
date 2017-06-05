@@ -30,7 +30,6 @@ public abstract class Render
      */
     protected float shadowOpaque = 1.0F;
     private boolean field_147908_f = false;
-    private static final String __OBFID = "CL_00000992";
 
     /**
      * Actually renders the given argument. This is a synthetic bridge method, always casting down its argument and then

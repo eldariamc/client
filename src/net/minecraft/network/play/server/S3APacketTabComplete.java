@@ -11,7 +11,6 @@ import java.io.IOException;
 public class S3APacketTabComplete extends Packet
 {
     private String[] field_149632_a;
-    private static final String __OBFID = "CL_00001288";
 
     public S3APacketTabComplete() {}
 

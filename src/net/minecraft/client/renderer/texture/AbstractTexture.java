@@ -3,7 +3,6 @@ package net.minecraft.client.renderer.texture;
 public abstract class AbstractTexture implements ITextureObject
 {
     protected int glTextureId = -1;
-    private static final String __OBFID = "CL_00001047";
 
     public int getGlTextureId()
     {

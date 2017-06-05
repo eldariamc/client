@@ -8,7 +8,6 @@ import java.util.Random;
 public class WorldGenDoublePlant extends WorldGenerator
 {
     private int field_150549_a;
-    private static final String __OBFID = "CL_00000408";
 
     public void func_150548_a(int p_150548_1_)
     {

@@ -8,7 +8,6 @@ import java.util.Comparator;
 public class PlayerPositionComparator implements Comparator
 {
     private final ChunkCoordinates theChunkCoordinates;
-    private static final String __OBFID = "CL_00001422";
 
     public PlayerPositionComparator(ChunkCoordinates p_i1499_1_)
     {

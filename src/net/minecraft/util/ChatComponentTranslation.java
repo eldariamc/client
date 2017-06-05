@@ -24,7 +24,6 @@ public class ChatComponentTranslation extends ChatComponentStyle
      */
     List children = Lists.newArrayList();
     public static final Pattern stringVariablePattern = Pattern.compile("%(?:(\\d+)\\$)?([A-Za-z%]|$)");
-    private static final String __OBFID = "CL_00001270";
 
     public ChatComponentTranslation(String p_i45160_1_, Object ... p_i45160_2_)
     {

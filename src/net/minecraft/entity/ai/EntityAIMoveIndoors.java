@@ -12,7 +12,6 @@ public class EntityAIMoveIndoors extends EntityAIBase
     private VillageDoorInfo doorInfo;
     private int insidePosX = -1;
     private int insidePosZ = -1;
-    private static final String __OBFID = "CL_00001596";
 
     public EntityAIMoveIndoors(EntityCreature p_i1637_1_)
     {

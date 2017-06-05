@@ -9,7 +9,6 @@ public class EntityAISit extends EntityAIBase
 
     /** If the EntityTameable is sitting. */
     private boolean isSitting;
-    private static final String __OBFID = "CL_00001613";
 
     public EntityAISit(EntityTameable p_i1654_1_)
     {

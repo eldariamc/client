@@ -31,7 +31,6 @@ public class MathHelper
      * this number" calculations.
      */
     private static final int[] multiplyDeBruijnBitPosition;
-    private static final String __OBFID = "CL_00001496";
 
     /**
      * sin looked up in a table

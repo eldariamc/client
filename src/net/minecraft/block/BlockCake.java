@@ -17,7 +17,6 @@ public class BlockCake extends Block
     private IIcon field_150038_a;
     private IIcon field_150037_b;
     private IIcon field_150039_M;
-    private static final String __OBFID = "CL_00000211";
 
     protected BlockCake()
     {

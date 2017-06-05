@@ -12,7 +12,6 @@ import org.lwjgl.opengl.GL12;
 public class RenderPainting extends Render
 {
     private static final ResourceLocation field_110807_a = new ResourceLocation("textures/painting/paintings_kristoffer_zetterstrand.png");
-    private static final String __OBFID = "CL_00001018";
 
     /**
      * Actually renders the given argument. This is a synthetic bridge method, always casting down its argument and then

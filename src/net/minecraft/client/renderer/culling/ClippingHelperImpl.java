@@ -12,7 +12,6 @@ public class ClippingHelperImpl extends ClippingHelper
     private FloatBuffer projectionMatrixBuffer = GLAllocation.createDirectFloatBuffer(16);
     private FloatBuffer modelviewMatrixBuffer = GLAllocation.createDirectFloatBuffer(16);
     private FloatBuffer field_78564_h = GLAllocation.createDirectFloatBuffer(16);
-    private static final String __OBFID = "CL_00000975";
 
     /**
      * Initialises the ClippingHelper object then returns an instance of it.

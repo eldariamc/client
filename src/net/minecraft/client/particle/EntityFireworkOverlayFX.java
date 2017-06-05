@@ -6,7 +6,6 @@ import net.minecraft.world.World;
 
 public class EntityFireworkOverlayFX extends EntityFX
 {
-    private static final String __OBFID = "CL_00000904";
 
     protected EntityFireworkOverlayFX(World p_i1206_1_, double p_i1206_2_, double p_i1206_4_, double p_i1206_6_)
     {

@@ -8,7 +8,6 @@ import net.minecraft.world.World;
 
 public class EntitySnowball extends EntityThrowable
 {
-    private static final String __OBFID = "CL_00001722";
 
     public EntitySnowball(World p_i1773_1_)
     {

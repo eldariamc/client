@@ -9,7 +9,6 @@ import java.util.Random;
 
 public class MapGenCavesHell extends MapGenBase
 {
-    private static final String __OBFID = "CL_00000395";
 
     protected void func_151544_a(long p_151544_1_, int p_151544_3_, int p_151544_4_, Block[] p_151544_5_, double p_151544_6_, double p_151544_8_, double p_151544_10_)
     {

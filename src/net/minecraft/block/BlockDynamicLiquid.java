@@ -11,7 +11,6 @@ public class BlockDynamicLiquid extends BlockLiquid
     int field_149815_a;
     boolean[] field_149814_b = new boolean[4];
     int[] field_149816_M = new int[4];
-    private static final String __OBFID = "CL_00000234";
 
     protected BlockDynamicLiquid(Material p_i45403_1_)
     {

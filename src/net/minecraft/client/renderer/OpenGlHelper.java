@@ -51,7 +51,6 @@ public class OpenGlHelper
     private static String field_153196_B = "";
     public static float lastBrightnessX = 0.0F;
     public static float lastBrightnessY = 0.0F;
-    private static final String __OBFID = "CL_00001179";
 
     /**
      * Initializes the texture constants to be used when rendering lightmap values

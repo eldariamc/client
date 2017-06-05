@@ -10,7 +10,6 @@ public class GuiPlayerInfo
 
     /** Player response time to server in milliseconds */
     public int responseTime;
-    private static final String __OBFID = "CL_00000888";
 
     public GuiPlayerInfo(String p_i1190_1_)
     {

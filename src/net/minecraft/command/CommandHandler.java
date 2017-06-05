@@ -18,7 +18,6 @@ public class CommandHandler implements ICommandManager
 
     /** The set of ICommand objects currently loaded. */
     private final Set commandSet = new HashSet();
-    private static final String __OBFID = "CL_00001765";
 
     public int executeCommand(ICommandSender p_71556_1_, String p_71556_2_)
     {

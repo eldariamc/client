@@ -47,7 +47,6 @@ public class WorldGenBigTree extends WorldGenAbstractTree
 
     /** Contains a list of a points at which to generate groups of leaves. */
     int[][] leafNodes;
-    private static final String __OBFID = "CL_00000400";
 
     public WorldGenBigTree(boolean p_i2008_1_)
     {

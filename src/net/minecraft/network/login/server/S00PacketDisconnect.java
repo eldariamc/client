@@ -11,7 +11,6 @@ import java.io.IOException;
 public class S00PacketDisconnect extends Packet
 {
     private IChatComponent field_149605_a;
-    private static final String __OBFID = "CL_00001377";
 
     public S00PacketDisconnect() {}
 

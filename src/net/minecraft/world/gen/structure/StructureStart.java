@@ -15,7 +15,6 @@ public abstract class StructureStart
     protected StructureBoundingBox boundingBox;
     private int field_143024_c;
     private int field_143023_d;
-    private static final String __OBFID = "CL_00000513";
 
     public StructureStart() {}
 

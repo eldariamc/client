@@ -36,7 +36,6 @@ public abstract class MobSpawnerBaseLogic
 
     /** The range coefficient for spawning entities around. */
     private int spawnRange = 4;
-    private static final String __OBFID = "CL_00000129";
 
     /**
      * Gets the entity name that should be spawned.
@@ -382,7 +381,6 @@ public abstract class MobSpawnerBaseLogic
     {
         public final NBTTagCompound field_98222_b;
         public final String minecartName;
-        private static final String __OBFID = "CL_00000130";
 
         public WeightedRandomMinecart(NBTTagCompound p_i1945_2_)
         {

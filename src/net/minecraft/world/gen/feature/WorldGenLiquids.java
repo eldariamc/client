@@ -10,7 +10,6 @@ import java.util.Random;
 public class WorldGenLiquids extends WorldGenerator
 {
     private Block field_150521_a;
-    private static final String __OBFID = "CL_00000434";
 
     public WorldGenLiquids(Block p_i45465_1_)
     {

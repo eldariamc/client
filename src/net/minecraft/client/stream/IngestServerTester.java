@@ -34,7 +34,6 @@ public class IngestServerTester implements IStatCallbacks, IStreamCallbacks
     protected float field_153065_w;
     protected float field_153066_x;
     protected boolean field_153067_y;
-    private static final String __OBFID = "CL_00001816";
 
     public void func_153042_a(IngestServerTester.IngestTestListener p_153042_1_)
     {
@@ -475,7 +474,6 @@ public class IngestServerTester implements IStatCallbacks, IStreamCallbacks
         Failed("Failed", 7);
 
         private static final IngestServerTester.IngestTestState[] $VALUES = new IngestServerTester.IngestTestState[]{Uninitalized, Starting, ConnectingToServer, TestingServer, DoneTestingServer, Finished, Cancelled, Failed};
-        private static final String __OBFID = "CL_00001814";
 
         private IngestTestState(String p_i1016_1_, int p_i1016_2_) {}
     }
@@ -485,7 +483,6 @@ public class IngestServerTester implements IStatCallbacks, IStreamCallbacks
         static final int[] field_153026_a;
 
         static final int[] field_153027_b = new int[IngestServerTester.IngestTestState.values().length];
-        private static final String __OBFID = "CL_00001815";
 
         static
         {

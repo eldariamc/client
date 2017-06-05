@@ -12,7 +12,6 @@ import net.minecraft.world.World;
 
 public class BlockLever extends Block
 {
-    private static final String __OBFID = "CL_00000264";
 
     protected BlockLever()
     {

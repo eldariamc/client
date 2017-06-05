@@ -16,7 +16,6 @@ public class NpcMerchant implements IMerchant
 
     /** The MerchantRecipeList instance. */
     private MerchantRecipeList recipeList;
-    private static final String __OBFID = "CL_00001705";
 
     public NpcMerchant(EntityPlayer p_i1746_1_)
     {

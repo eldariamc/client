@@ -12,7 +12,6 @@ public class RegionFileCache
 {
     /** A map containing Files as keys and RegionFiles as values */
     private static final Map regionsByFilename = new HashMap();
-    private static final String __OBFID = "CL_00000383";
 
     public static synchronized RegionFile createOrLoadRegionFile(File p_76550_0_, int p_76550_1_, int p_76550_2_)
     {

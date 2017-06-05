@@ -23,7 +23,6 @@ public class BlockStairs extends Block
     private final int field_150151_M;
     private boolean field_150152_N;
     private int field_150153_O;
-    private static final String __OBFID = "CL_00000314";
 
     protected BlockStairs(Block p_i45428_1_, int p_i45428_2_)
     {

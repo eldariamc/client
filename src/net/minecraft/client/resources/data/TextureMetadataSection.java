@@ -8,7 +8,6 @@ public class TextureMetadataSection implements IMetadataSection
     private final boolean textureBlur;
     private final boolean textureClamp;
     private final List field_148536_c;
-    private static final String __OBFID = "CL_00001114";
 
     public TextureMetadataSection(boolean p_i45102_1_, boolean p_i45102_2_, List p_i45102_3_)
     {

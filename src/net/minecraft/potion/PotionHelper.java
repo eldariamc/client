@@ -73,7 +73,6 @@ public class PotionHelper
             "potion.prefix.odorless", "potion.prefix.rank", "potion.prefix.harsh", "potion.prefix.acrid",
             "potion.prefix.gross", "potion.prefix.stinky"};
 
-    private static final String __OBFID = "CL_00000078";
 
     /**
      * Is the bit given set to 1?

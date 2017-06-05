@@ -18,7 +18,6 @@ public class ItemMinecart extends Item
     private static final IBehaviorDispenseItem dispenserMinecartBehavior = new BehaviorDefaultDispenseItem()
     {
         private final BehaviorDefaultDispenseItem behaviourDefaultDispenseItem = new BehaviorDefaultDispenseItem();
-        private static final String __OBFID = "CL_00000050";
         public ItemStack dispenseStack(IBlockSource p_82487_1_, ItemStack p_82487_2_)
         {
             EnumFacing var3 = BlockDispenser.func_149937_b(p_82487_1_.getBlockMetadata());
@@ -63,7 +62,6 @@ public class ItemMinecart extends Item
         }
     };
     public int minecartType;
-    private static final String __OBFID = "CL_00000049";
 
     public ItemMinecart(int p_i45345_1_)
     {

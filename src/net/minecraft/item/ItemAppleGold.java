@@ -10,7 +10,6 @@ import java.util.List;
 
 public class ItemAppleGold extends ItemFood
 {
-    private static final String __OBFID = "CL_00000037";
 
     public ItemAppleGold(int p_i45341_1_, float p_i45341_2_, boolean p_i45341_3_)
     {
@@ -35,19 +34,21 @@ public class ItemAppleGold extends ItemFood
     {
         if (!p_77849_2_.isClient)
         {
-            p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 2400, 0));
-        }
+            int damage = p_77849_1_.getItemDamage();
 
-        if (p_77849_1_.getItemDamage() > 0)
-        {
-            if (!p_77849_2_.isClient)
+            p_77849_3_.addPotionEffect(new PotionEffect(damage == 2 ? Potion.field_76434_w.id : Potion.field_76444_x.id, 2400, damage == 2 ? 2 : 0));
+
+            if (damage > 0)
             {
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.regeneration.id, 600, 4));
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.resistance.id, 6000, 0));
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.fireResistance.id, 6000, 0));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.regeneration.id, damage == 2 ? 160 : 600, damage == 2 ? 1 : 4));
+                if (damage != 2) {
+                    p_77849_3_.addPotionEffect(new PotionEffect(Potion.resistance.id, 6000, 0));
+                    p_77849_3_.addPotionEffect(new PotionEffect(Potion.fireResistance.id, 6000, 0));
+                }
             }
         }
-        else
+
+        if (p_77849_1_.getItemDamage() == 0)
         {
             super.onFoodEaten(p_77849_1_, p_77849_2_, p_77849_3_);
         }
@@ -60,5 +61,6 @@ public class ItemAppleGold extends ItemFood
     {
         p_150895_3_.add(new ItemStack(p_150895_1_, 1, 0));
         p_150895_3_.add(new ItemStack(p_150895_1_, 1, 1));
+        p_150895_3_.add(new ItemStack(p_150895_1_, 1, 2));
     }
 }

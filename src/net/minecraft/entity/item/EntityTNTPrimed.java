@@ -11,7 +11,6 @@ public class EntityTNTPrimed extends Entity
     public int fuse;
     public float power = 1.0F;
     private EntityLivingBase tntPlacedBy;
-    private static final String __OBFID = "CL_00001681";
 
     public EntityTNTPrimed(World p_i1729_1_)
     {

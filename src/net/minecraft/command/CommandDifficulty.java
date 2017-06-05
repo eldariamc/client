@@ -8,7 +8,6 @@ import java.util.List;
 
 public class CommandDifficulty extends CommandBase
 {
-    private static final String __OBFID = "CL_00000422";
 
     public String getCommandName()
     {

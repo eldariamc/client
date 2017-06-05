@@ -10,7 +10,6 @@ import java.util.Random;
 
 public class WorldGenCanopyTree extends WorldGenAbstractTree
 {
-    private static final String __OBFID = "CL_00000430";
 
     public WorldGenCanopyTree(boolean p_i45461_1_)
     {

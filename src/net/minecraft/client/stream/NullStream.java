@@ -7,7 +7,6 @@ import tv.twitch.chat.ChatUserInfo;
 public class NullStream implements IStream
 {
     private final Throwable field_152938_a;
-    private static final String __OBFID = "CL_00001809";
 
     public NullStream(Throwable p_i1006_1_)
     {

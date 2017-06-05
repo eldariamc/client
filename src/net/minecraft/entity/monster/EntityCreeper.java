@@ -29,7 +29,6 @@ public class EntityCreeper extends EntityMob
 
     /** Explosion radius for this creeper. */
     private int explosionRadius = 3;
-    private static final String __OBFID = "CL_00001684";
 
     public EntityCreeper(World p_i1733_1_)
     {

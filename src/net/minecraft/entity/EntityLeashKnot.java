@@ -12,7 +12,6 @@ import java.util.List;
 
 public class EntityLeashKnot extends EntityHanging
 {
-    private static final String __OBFID = "CL_00001548";
 
     public EntityLeashKnot(World p_i1592_1_)
     {

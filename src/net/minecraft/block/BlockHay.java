@@ -7,7 +7,6 @@ import net.minecraft.util.IIcon;
 
 public class BlockHay extends BlockRotatedPillar
 {
-    private static final String __OBFID = "CL_00000256";
 
     public BlockHay()
     {

@@ -9,7 +9,6 @@ import java.util.Map.Entry;
 public class MapGenMineshaft extends MapGenStructure
 {
     private double field_82673_e = 0.004D;
-    private static final String __OBFID = "CL_00000443";
 
     public MapGenMineshaft() {}
 

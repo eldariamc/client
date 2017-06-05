@@ -16,7 +16,6 @@ import net.minecraft.world.World;
 public class BlockJukebox extends BlockContainer
 {
     private IIcon field_149927_a;
-    private static final String __OBFID = "CL_00000260";
 
     protected BlockJukebox()
     {
@@ -136,7 +135,6 @@ public class BlockJukebox extends BlockContainer
     public static class TileEntityJukebox extends TileEntity
     {
         private ItemStack field_145858_a;
-        private static final String __OBFID = "CL_00000261";
 
         public void readFromNBT(NBTTagCompound p_145839_1_)
         {

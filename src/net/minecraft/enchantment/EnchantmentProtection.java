@@ -30,7 +30,6 @@ public class EnchantmentProtection extends Enchantment
      * 4 = projectile and 5 = poison.
      */
     public final int protectionType;
-    private static final String __OBFID = "CL_00000121";
 
     public EnchantmentProtection(int p_i1936_1_, int p_i1936_2_, int p_i1936_3_)
     {

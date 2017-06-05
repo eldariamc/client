@@ -12,7 +12,6 @@ import java.util.Random;
 public class BlockMelon extends Block
 {
     private IIcon field_150201_a;
-    private static final String __OBFID = "CL_00000267";
 
     protected BlockMelon()
     {

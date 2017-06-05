@@ -5,7 +5,6 @@ import net.minecraft.item.ItemStack;
 
 public class EnchantmentDigging extends Enchantment
 {
-    private static final String __OBFID = "CL_00000104";
 
     protected EnchantmentDigging(int p_i1925_1_, int p_i1925_2_)
     {

@@ -8,7 +8,6 @@ public class NBTTagInt extends NBTBase.NBTPrimitive
 {
     /** The integer value for the tag. */
     private int data;
-    private static final String __OBFID = "CL_00001223";
 
     NBTTagInt() {}
 

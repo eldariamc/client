@@ -13,7 +13,6 @@ import java.util.Iterator;
 public abstract class InventoryEffectRenderer extends GuiContainer
 {
     public boolean field_147045_u;
-    private static final String __OBFID = "CL_00000755";
 
     public InventoryEffectRenderer(Container p_i1089_1_)
     {

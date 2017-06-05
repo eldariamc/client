@@ -4,7 +4,6 @@ import net.minecraft.stats.Achievement;
 
 public class MetadataAchievement extends Metadata
 {
-    private static final String __OBFID = "CL_00001824";
 
     public MetadataAchievement(Achievement p_i1032_1_)
     {

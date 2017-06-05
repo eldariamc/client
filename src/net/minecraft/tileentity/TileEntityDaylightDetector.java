@@ -4,7 +4,6 @@ import net.minecraft.block.BlockDaylightDetector;
 
 public class TileEntityDaylightDetector extends TileEntity
 {
-    private static final String __OBFID = "CL_00000350";
 
     public void updateEntity()
     {

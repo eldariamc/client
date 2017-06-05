@@ -7,7 +7,6 @@ import net.minecraft.world.World;
 
 public class ItemWritableBook extends Item
 {
-    private static final String __OBFID = "CL_00000076";
 
     public ItemWritableBook()
     {

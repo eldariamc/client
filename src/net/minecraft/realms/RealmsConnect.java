@@ -20,7 +20,6 @@ public class RealmsConnect
     private final RealmsScreen onlineScreen;
     private volatile boolean aborted = false;
     private NetworkManager connection;
-    private static final String __OBFID = "CL_00001844";
 
     public RealmsConnect(RealmsScreen p_i1079_1_)
     {
@@ -31,7 +30,6 @@ public class RealmsConnect
     {
         (new Thread("Realms-connect-task")
         {
-            private static final String __OBFID = "CL_00001808";
             public void run()
             {
                 InetAddress var1 = null;

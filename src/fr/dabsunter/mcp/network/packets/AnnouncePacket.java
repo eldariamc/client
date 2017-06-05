@@ -46,8 +46,8 @@ public class AnnouncePacket extends CustomPacket {
 	}
 
 	@Override
-	public void process() {
-		GuiIngame ing = Minecraft.getMinecraft().ingameGUI;
+	public void process(Minecraft mc) {
+		GuiIngame ing = mc.ingameGUI;
 		if (ing != null)
 			ing.currentAnnounce = new Announce(this);
 	}

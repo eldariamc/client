@@ -26,7 +26,6 @@ public final class WorldSettings
     /** True if the Bonus Chest is enabled. */
     private boolean bonusChestEnabled;
     private String field_82751_h;
-    private static final String __OBFID = "CL_00000147";
 
     public WorldSettings(long p_i1957_1_, WorldSettings.GameType p_i1957_3_, boolean p_i1957_4_, boolean p_i1957_5_, WorldType p_i1957_6_)
     {
@@ -143,7 +142,6 @@ public final class WorldSettings
         String name;
 
         private static final WorldSettings.GameType[] $VALUES = new WorldSettings.GameType[]{NOT_SET, SURVIVAL, CREATIVE, ADVENTURE};
-        private static final String __OBFID = "CL_00000148";
 
         private GameType(String p_i1956_1_, int p_i1956_2_, int p_i1956_3_, String p_i1956_4_)
         {

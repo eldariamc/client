@@ -60,7 +60,6 @@ public class EntityTrackerEntry
      * Holds references to all the players that are currently receiving position updates for this entity.
      */
     public Set trackingPlayers = new HashSet();
-    private static final String __OBFID = "CL_00001443";
 
     public EntityTrackerEntry(Entity p_i1525_1_, int p_i1525_2_, int p_i1525_3_, boolean p_i1525_4_)
     {

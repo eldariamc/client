@@ -108,7 +108,6 @@ public class WorldRenderer
     public RenderGlobal renderGlobal;
     public static int globalChunkOffsetX = 0;
     public static int globalChunkOffsetZ = 0;
-    private static final String __OBFID = "CL_00000942";
 
     public WorldRenderer(World par1World, List par2List, int par3, int par4, int par5, int par6)
     {

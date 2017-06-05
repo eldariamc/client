@@ -9,7 +9,6 @@ public class TileEntityEnderChest extends TileEntity
     public float field_145975_i;
     public int field_145973_j;
     private int field_145974_k;
-    private static final String __OBFID = "CL_00000355";
 
     public void updateEntity()
     {

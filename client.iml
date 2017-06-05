@@ -8,6 +8,16 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="Minecraft libs" level="project" />
+    <orderEntry type="library" name="Minecraft libs" level="project" />
+    <orderEntry type="module-library">
+      <library name="Minecraft natives">
+        <CLASSES />
+        <JAVADOC />
+        <NATIVE>
+          <root url="file://$MODULE_DIR$/../../files/bin/natives" />
+        </NATIVE>
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

@@ -8,7 +8,6 @@ import java.util.Random;
 
 public class BlockStaticLiquid extends BlockLiquid
 {
-    private static final String __OBFID = "CL_00000315";
 
     protected BlockStaticLiquid(Material p_i45429_1_)
     {

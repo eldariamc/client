@@ -9,7 +9,6 @@ import java.util.TreeMap;
 public class GameRules
 {
     private TreeMap theGameRules = new TreeMap();
-    private static final String __OBFID = "CL_00000136";
 
     public GameRules()
     {
@@ -120,7 +119,6 @@ public class GameRules
         private boolean valueBoolean;
         private int valueInteger;
         private double valueDouble;
-        private static final String __OBFID = "CL_00000137";
 
         public Value(String par1Str)
         {

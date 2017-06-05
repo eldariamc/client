@@ -8,7 +8,6 @@ public class NBTTagString extends NBTBase
 {
     /** The string value for the tag (cannot be empty). */
     private String data;
-    private static final String __OBFID = "CL_00001228";
 
     public NBTTagString()
     {

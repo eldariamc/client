@@ -20,7 +20,6 @@ public class ModelVillager extends ModelBase
     /** The left leg of the VillagerModel */
     public ModelRenderer leftVillagerLeg;
     public ModelRenderer villagerNose;
-    private static final String __OBFID = "CL_00000864";
 
     public ModelVillager(float p_i1163_1_)
     {

@@ -9,7 +9,6 @@ public class RenderDistanceSorter implements Comparator
 {
     int field_152632_a;
     int field_152633_b;
-    private static final String __OBFID = "CL_00000945";
 
     public RenderDistanceSorter(int p_i1051_1_, int p_i1051_2_)
     {

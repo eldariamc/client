@@ -101,7 +101,6 @@ public class FontRenderer implements IResourceManagerReloadListener
     public ResourceLocation locationFontTextureBase;
     public boolean enabled = true;
     public float scaleFactor = 1.0F;
-    private static final String __OBFID = "CL_00000660";
 
     public FontRenderer(GameSettings par1GameSettings, ResourceLocation par2ResourceLocation, TextureManager par3TextureManager, boolean par4)
     {

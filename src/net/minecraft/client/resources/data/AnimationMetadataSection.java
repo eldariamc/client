@@ -13,7 +13,6 @@ public class AnimationMetadataSection implements IMetadataSection
     private final int frameWidth;
     private final int frameHeight;
     private final int frameTime;
-    private static final String __OBFID = "CL_00001106";
 
     public AnimationMetadataSection(List p_i1309_1_, int p_i1309_2_, int p_i1309_3_, int p_i1309_4_)
     {

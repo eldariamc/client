@@ -17,7 +17,6 @@ public class EntityAIOcelotSit extends EntityAIBase
     private int field_151487_f;
     private int field_151488_g;
     private int field_151494_h;
-    private static final String __OBFID = "CL_00001601";
 
     public EntityAIOcelotSit(EntityOcelot p_i45315_1_, double p_i45315_2_)
     {

@@ -19,7 +19,6 @@ public class S01PacketJoinGame extends Packet
     private EnumDifficulty field_149203_e;
     private int field_149200_f;
     private WorldType field_149201_g;
-    private static final String __OBFID = "CL_00001310";
 
     public S01PacketJoinGame() {}
 

@@ -6,7 +6,6 @@ import net.minecraft.world.World;
 
 public abstract class EntityAmbientCreature extends EntityLiving implements IAnimals
 {
-    private static final String __OBFID = "CL_00001636";
 
     public EntityAmbientCreature(World p_i1679_1_)
     {

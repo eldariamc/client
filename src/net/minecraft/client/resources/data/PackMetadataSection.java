@@ -6,7 +6,6 @@ public class PackMetadataSection implements IMetadataSection
 {
     private final IChatComponent packDescription;
     private final int packFormat;
-    private static final String __OBFID = "CL_00001112";
 
     public PackMetadataSection(IChatComponent p_i1034_1_, int p_i1034_2_)
     {

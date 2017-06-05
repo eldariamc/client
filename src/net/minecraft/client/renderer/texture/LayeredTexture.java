@@ -18,7 +18,6 @@ public class LayeredTexture extends AbstractTexture
 {
     private static final Logger logger = LogManager.getLogger();
     public final List layeredTextureNames;
-    private static final String __OBFID = "CL_00001051";
 
     public LayeredTexture(String ... p_i1274_1_)
     {

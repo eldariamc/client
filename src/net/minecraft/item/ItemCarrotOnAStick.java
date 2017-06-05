@@ -8,7 +8,6 @@ import net.minecraft.world.World;
 
 public class ItemCarrotOnAStick extends Item
 {
-    private static final String __OBFID = "CL_00000001";
 
     public ItemCarrotOnAStick()
     {

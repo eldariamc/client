@@ -8,7 +8,6 @@ public class NBTTagByte extends NBTBase.NBTPrimitive
 {
     /** The byte value for the tag. */
     private byte data;
-    private static final String __OBFID = "CL_00001214";
 
     NBTTagByte() {}
 

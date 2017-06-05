@@ -20,7 +20,6 @@ public class BlockDoor extends Block
 {
     private IIcon[] field_150017_a;
     private IIcon[] field_150016_b;
-    private static final String __OBFID = "CL_00000230";
 
     protected BlockDoor(Material p_i45402_1_)
     {

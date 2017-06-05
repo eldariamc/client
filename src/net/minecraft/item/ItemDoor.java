@@ -9,7 +9,6 @@ import net.minecraft.world.World;
 public class ItemDoor extends Item
 {
     private Block block;
-    private static final String __OBFID = "CL_00000020";
 
     public ItemDoor(Block block)
     {

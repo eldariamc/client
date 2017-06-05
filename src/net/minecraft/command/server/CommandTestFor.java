@@ -7,7 +7,6 @@ import net.minecraft.command.WrongUsageException;
 
 public class CommandTestFor extends CommandBase
 {
-    private static final String __OBFID = "CL_00001182";
 
     public String getCommandName()
     {

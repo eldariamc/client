@@ -23,7 +23,6 @@ public class GuiScreenResourcePacks extends GuiScreen
     private List field_146969_h;
     private GuiResourcePackAvailable field_146970_i;
     private GuiResourcePackSelected field_146967_r;
-    private static final String __OBFID = "CL_00000820";
 
     public GuiScreenResourcePacks(GuiScreen p_i45050_1_)
     {

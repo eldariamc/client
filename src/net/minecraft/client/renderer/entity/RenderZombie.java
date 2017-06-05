@@ -22,7 +22,6 @@ public class RenderZombie extends RenderBiped
     protected ModelBiped field_82436_m;
     protected ModelBiped field_82433_n;
     private int field_82431_q = 1;
-    private static final String __OBFID = "CL_00001037";
 
     public RenderZombie()
     {

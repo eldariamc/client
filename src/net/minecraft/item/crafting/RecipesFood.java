@@ -6,7 +6,6 @@ import net.minecraft.item.ItemStack;
 
 public class RecipesFood
 {
-    private static final String __OBFID = "CL_00000084";
 
     /**
      * Adds the food recipes to the CraftingManager.
@@ -14,7 +13,7 @@ public class RecipesFood
     public void addRecipes(CraftingManager cm)
     {
         cm.addShapelessRecipe(new ItemStack(Items.mushroom_stew), new Object[] {Blocks.brown_mushroom, Blocks.red_mushroom, Items.bowl});
-        //cm.addRecipe(new ItemStack(Items.cookie, 8), new Object[] {"#X#", 'X', new ItemStack(Items.dye, 1, 3), '#', Items.wheat});
+        cm.addRecipe(new ItemStack(Items.cookie, 8), new Object[] {"#X#", 'X', new ItemStack(Items.dye, 1, 3), '#', Items.wheat});
         cm.addRecipe(new ItemStack(Blocks.melon_block), new Object[] {"MMM", "MMM", "MMM", 'M', Items.melon});
         cm.addRecipe(new ItemStack(Items.melon_seeds), new Object[] {"M", 'M', Items.melon});
         cm.addRecipe(new ItemStack(Items.pumpkin_seeds, 4), new Object[] {"M", 'M', Blocks.pumpkin});
@@ -25,7 +24,8 @@ public class RecipesFood
 
         // --- Craft Eldaria ---
 
-        cm.addRecipe(new ItemStack(Items.cookie, 6), "SSS", "BBB", 'S', Items.sugar, 'B', Items.bread);
+        cm.addRecipe(new ItemStack(Items.donut, 6), "SSS", "BBB", 'S', Items.sugar, 'B', Items.bread);
+        cm.addRecipe(new ItemStack(Items.golden_apple, 1, 2), "###", "#X#", "###", '#', Items.cronyxe, 'X', Items.apple);
 
         // ---------------------
     }

@@ -12,7 +12,6 @@ import net.minecraft.world.World;
 public class EntityMinecartTNT extends EntityMinecart
 {
     private int minecartTNTFuse = -1;
-    private static final String __OBFID = "CL_00001680";
 
     public EntityMinecartTNT(World p_i1727_1_)
     {

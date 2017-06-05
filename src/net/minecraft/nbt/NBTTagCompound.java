@@ -23,7 +23,6 @@ public class NBTTagCompound extends NBTBase
      * The key-value pairs for the tag. Each key is a UTF string, each value is a tag.
      */
     private Map tagMap = new HashMap();
-    private static final String __OBFID = "CL_00001215";
 
     /**
      * Write the actual data contents of the tag, implemented in NBT extension classes
@@ -413,7 +412,6 @@ public class NBTTagCompound extends NBTBase
         CrashReportCategory var5 = var4.makeCategoryDepth("Corrupt NBT tag", 1);
         var5.addCrashSectionCallable("Tag type found", new Callable()
         {
-            private static final String __OBFID = "CL_00001216";
             public String call()
             {
                 return NBTBase.NBTTypes[((NBTBase)NBTTagCompound.this.tagMap.get(p_82581_1_)).getId()];
@@ -421,7 +419,6 @@ public class NBTTagCompound extends NBTBase
         });
         var5.addCrashSectionCallable("Tag type expected", new Callable()
         {
-            private static final String __OBFID = "CL_00001217";
             public String call()
             {
                 return NBTBase.NBTTypes[p_82581_2_];

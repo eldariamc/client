@@ -34,7 +34,6 @@ public class RenderBiped extends RenderLiving
     /** List of armor texture filenames. */
     private static final String[] bipedArmorFilenamePrefix =
             new String[] {"leather", "chainmail", "iron", "diamond", "gold", "zinc","cronyxe", "kobalt",  "eldarium"};
-    private static final String __OBFID = "CL_00001001";
 
     public RenderBiped(ModelBiped p_i1257_1_, float p_i1257_2_)
     {

@@ -13,7 +13,6 @@ public class NetHandlerHandshakeMemory implements INetHandlerHandshakeServer
 {
     private final MinecraftServer field_147385_a;
     private final NetworkManager field_147384_b;
-    private static final String __OBFID = "CL_00001445";
 
     public NetHandlerHandshakeMemory(MinecraftServer p_i45287_1_, NetworkManager p_i45287_2_)
     {
@@ -66,7 +65,6 @@ public class NetHandlerHandshakeMemory implements INetHandlerHandshakeServer
     static final class SwitchEnumConnectionState
     {
         static final int[] field_151263_a = new int[EnumConnectionState.values().length];
-        private static final String __OBFID = "CL_00001446";
 
         static
         {

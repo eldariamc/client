@@ -8,7 +8,6 @@ import net.minecraft.world.World;
 
 public class EntityEgg extends EntityThrowable
 {
-    private static final String __OBFID = "CL_00001724";
 
     public EntityEgg(World p_i1779_1_)
     {

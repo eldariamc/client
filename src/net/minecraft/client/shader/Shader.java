@@ -21,7 +21,6 @@ public class Shader
     private final List listAuxWidths = Lists.newArrayList();
     private final List listAuxHeights = Lists.newArrayList();
     private Matrix4f projectionMatrix;
-    private static final String __OBFID = "CL_00001042";
 
     public Shader(IResourceManager p_i45089_1_, String p_i45089_2_, Framebuffer p_i45089_3_, Framebuffer p_i45089_4_) throws JsonException
     {

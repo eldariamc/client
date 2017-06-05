@@ -16,7 +16,6 @@ public class SlotMerchantResult extends Slot
 
     /** "Instance" of the Merchant. */
     private final IMerchant theMerchant;
-    private static final String __OBFID = "CL_00001758";
 
     public SlotMerchantResult(EntityPlayer p_i1822_1_, IMerchant p_i1822_2_, InventoryMerchant p_i1822_3_, int p_i1822_4_, int p_i1822_5_, int p_i1822_6_)
     {

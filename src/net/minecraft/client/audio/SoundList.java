@@ -9,7 +9,6 @@ public class SoundList
     private final List field_148577_a = Lists.newArrayList();
     private boolean field_148575_b;
     private SoundCategory field_148576_c;
-    private static final String __OBFID = "CL_00001121";
 
     public List func_148570_a()
     {
@@ -44,7 +43,6 @@ public class SoundList
         private int field_148565_d = 1;
         private SoundList.SoundEntry.Type field_148566_e;
         private boolean field_148564_f;
-        private static final String __OBFID = "CL_00001122";
 
         public SoundEntry()
         {
@@ -119,7 +117,6 @@ public class SoundList
             private final String field_148583_c;
 
             private static final SoundList.SoundEntry.Type[] $VALUES = new SoundList.SoundEntry.Type[]{FILE, SOUND_EVENT};
-            private static final String __OBFID = "CL_00001123";
 
             private Type(String p_i45109_1_, int p_i45109_2_, String p_i45109_3_)
             {

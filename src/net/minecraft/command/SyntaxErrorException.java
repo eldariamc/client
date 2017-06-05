@@ -2,7 +2,6 @@ package net.minecraft.command;
 
 public class SyntaxErrorException extends CommandException
 {
-    private static final String __OBFID = "CL_00001189";
 
     public SyntaxErrorException()
     {

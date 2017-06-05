@@ -10,7 +10,6 @@ import java.util.Stack;
 public class JsonToNBT
 {
     private static final Logger logger = LogManager.getLogger();
-    private static final String __OBFID = "CL_00001232";
 
     public static NBTBase func_150315_a(String p_150315_0_) throws NBTException
     {
@@ -400,7 +399,6 @@ public class JsonToNBT
     abstract static class Any
     {
         protected String field_150490_a;
-        private static final String __OBFID = "CL_00001233";
 
         public abstract NBTBase func_150489_a();
     }
@@ -408,7 +406,6 @@ public class JsonToNBT
     static class Compound extends JsonToNBT.Any
     {
         protected ArrayList field_150491_b = new ArrayList();
-        private static final String __OBFID = "CL_00001234";
 
         public Compound(String p_i45137_1_)
         {
@@ -433,7 +430,6 @@ public class JsonToNBT
     static class List extends JsonToNBT.Any
     {
         protected ArrayList field_150492_b = new ArrayList();
-        private static final String __OBFID = "CL_00001235";
 
         public List(String p_i45138_1_)
         {
@@ -458,7 +454,6 @@ public class JsonToNBT
     static class Primitive extends JsonToNBT.Any
     {
         protected String field_150493_b;
-        private static final String __OBFID = "CL_00001236";
 
         public Primitive(String p_i45139_1_, String p_i45139_2_)
         {

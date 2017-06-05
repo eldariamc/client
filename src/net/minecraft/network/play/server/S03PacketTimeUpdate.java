@@ -11,7 +11,6 @@ public class S03PacketTimeUpdate extends Packet
 {
     private long field_149369_a;
     private long field_149368_b;
-    private static final String __OBFID = "CL_00001337";
 
     public S03PacketTimeUpdate() {}
 

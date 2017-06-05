@@ -13,7 +13,6 @@ public class EntityFireworkStarterFX extends EntityFX
     private final EffectRenderer theEffectRenderer;
     private NBTTagList fireworkExplosions;
     boolean twinkle;
-    private static final String __OBFID = "CL_00000906";
 
     public EntityFireworkStarterFX(World p_i1208_1_, double p_i1208_2_, double p_i1208_4_, double p_i1208_6_, double p_i1208_8_, double p_i1208_10_, double p_i1208_12_, EffectRenderer p_i1208_14_, NBTTagCompound p_i1208_15_)
     {

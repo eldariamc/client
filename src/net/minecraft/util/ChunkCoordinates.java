@@ -9,7 +9,6 @@ public class ChunkCoordinates implements Comparable
 
     /** the z coordinate */
     public int posZ;
-    private static final String __OBFID = "CL_00001555";
 
     public ChunkCoordinates() {}
 

@@ -16,7 +16,6 @@ public class BlockSandStone extends Block
     private IIcon[] field_150158_M;
     private IIcon field_150159_N;
     private IIcon field_150160_O;
-    private static final String __OBFID = "CL_00000304";
 
     public BlockSandStone()
     {

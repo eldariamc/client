@@ -5,7 +5,6 @@ import net.minecraft.network.play.server.S29PacketSoundEffect;
 
 public class CommandPlaySound extends CommandBase
 {
-    private static final String __OBFID = "CL_00000774";
 
     public String getCommandName()
     {

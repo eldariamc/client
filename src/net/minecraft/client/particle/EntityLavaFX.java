@@ -6,7 +6,6 @@ import net.minecraft.world.World;
 public class EntityLavaFX extends EntityFX
 {
     private float lavaParticleScale;
-    private static final String __OBFID = "CL_00000912";
 
     public EntityLavaFX(World p_i1215_1_, double p_i1215_2_, double p_i1215_4_, double p_i1215_6_)
     {

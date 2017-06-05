@@ -8,7 +8,6 @@ public class NBTTagShort extends NBTBase.NBTPrimitive
 {
     /** The short value for the tag. */
     private short data;
-    private static final String __OBFID = "CL_00001227";
 
     public NBTTagShort() {}
 

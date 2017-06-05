@@ -6,7 +6,6 @@ import net.minecraft.util.IIcon;
 public class ItemLeaves extends ItemBlock
 {
     private final BlockLeaves field_150940_b;
-    private static final String __OBFID = "CL_00000046";
 
     public ItemLeaves(BlockLeaves p_i45344_1_)
     {

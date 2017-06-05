@@ -7,7 +7,6 @@ import net.minecraft.world.World;
 public class EntityCloudFX extends EntityFX
 {
     float field_70569_a;
-    private static final String __OBFID = "CL_00000920";
 
     public EntityCloudFX(World p_i1221_1_, double p_i1221_2_, double p_i1221_4_, double p_i1221_6_, double p_i1221_8_, double p_i1221_10_, double p_i1221_12_)
     {

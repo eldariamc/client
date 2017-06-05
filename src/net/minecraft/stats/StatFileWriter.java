@@ -10,7 +10,6 @@ import java.util.Map;
 public class StatFileWriter
 {
     protected final Map field_150875_a = Maps.newConcurrentMap();
-    private static final String __OBFID = "CL_00001481";
 
     /**
      * Returns true if the achievement has been unlocked.

@@ -6,7 +6,6 @@ import java.util.Random;
 
 public class WeightedRandom
 {
-    private static final String __OBFID = "CL_00001503";
 
     /**
      * Returns the total weight of all items in a collection.
@@ -122,7 +121,6 @@ public class WeightedRandom
     public static class Item
     {
         protected int itemWeight;
-        private static final String __OBFID = "CL_00001504";
 
         public Item(int p_i1556_1_)
         {

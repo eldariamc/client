@@ -15,7 +15,6 @@ public class ScoreboardSaveData extends WorldSavedData
     private static final Logger logger = LogManager.getLogger();
     private Scoreboard theScoreboard;
     private NBTTagCompound field_96506_b;
-    private static final String __OBFID = "CL_00000620";
 
     public ScoreboardSaveData()
     {

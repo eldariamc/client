@@ -18,7 +18,6 @@ import java.util.Random;
 public class BlockRailDetector extends BlockRailBase
 {
     private IIcon[] field_150055_b;
-    private static final String __OBFID = "CL_00000225";
 
     public BlockRailDetector()
     {

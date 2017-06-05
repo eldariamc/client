@@ -13,7 +13,6 @@ public class DemoWorldManager extends ItemInWorldManager
     private boolean demoTimeExpired;
     private int field_73104_e;
     private int field_73102_f;
-    private static final String __OBFID = "CL_00001429";
 
     public DemoWorldManager(World p_i1513_1_)
     {

@@ -17,7 +17,6 @@ public class BlockDirt extends Block
     public static final String[] field_150009_a = new String[] {"default", "default", "podzol"};
     private IIcon field_150008_b;
     private IIcon field_150010_M;
-    private static final String __OBFID = "CL_00000228";
 
     protected BlockDirt()
     {

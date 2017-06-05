@@ -10,6 +10,7 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.network.Packet;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
+import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 
 /**
@@ -207,7 +208,7 @@ public class TileEntityWaterPipe extends TileEntity implements ISidedInventory {
 	 */
 	@Override
 	public boolean isItemValidForSlot(int slot, ItemStack item) {
-		return slot == 0 ? item.getItem() == Items.lit_coal : item.getItem().isPotionIngredient(item);
+		return slot == 0 ? item.getItem() == Items.coal : item.getItem().isPotionIngredient(item);
 	}
 
 	@Override
@@ -286,7 +287,7 @@ public class TileEntityWaterPipe extends TileEntity implements ISidedInventory {
 
 	@Override
 	public void updateEntity() {
-		if (!worldObj.isClient && smokeTime == 0 && inventory[0] != null && inventory[0].getItem() == Items.lit_coal
+		if (!worldObj.isClient && smokeTime == 0 && inventory[0] != null && inventory[0].getItem() == Items.coal
 				&& inventory[1] != null) {
 			Item item = inventory[1].getItem();
 			if (item == Items.sugar)
@@ -320,7 +321,12 @@ public class TileEntityWaterPipe extends TileEntity implements ISidedInventory {
 
 	public boolean activate(EntityPlayer player) {
 		if (smokeTime > 0) {
-			player.addPotionEffect(new PotionEffect(potionId, 2400, 1));
+			player.addPotionEffect(new PotionEffect(Potion.confusion.id, 300, 0));
+			if (Potion.potionTypes[potionId].isInstant()) {
+				Potion.potionTypes[potionId].affectEntity(null, player, 1, 1.0);
+			} else {
+				player.addPotionEffect(new PotionEffect(potionId, 9600, 1));
+			}
 			this.worldObj.playSoundAtEntity(player, "random.drink", 5.0F, this.worldObj.rand.nextFloat() * 0.1F + 0.9F);
 			smokeTime--;
 			this.worldObj.markBlockForUpdate(posX, posY, posZ);

@@ -2,7 +2,6 @@ package net.minecraft.world.gen.layer;
 
 public class GenLayerAddSnow extends GenLayer
 {
-    private static final String __OBFID = "CL_00000553";
 
     public GenLayerAddSnow(long p_i2121_1_, GenLayer p_i2121_3_)
     {

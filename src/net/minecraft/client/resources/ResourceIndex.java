@@ -22,7 +22,6 @@ public class ResourceIndex
 {
     private static final Logger field_152783_a = LogManager.getLogger();
     private final Map field_152784_b = Maps.newHashMap();
-    private static final String __OBFID = "CL_00001831";
 
     public ResourceIndex(File p_i1047_1_, String p_i1047_2_)
     {

@@ -8,7 +8,6 @@ import java.util.List;
 
 public class CommandSetSpawnpoint extends CommandBase
 {
-    private static final String __OBFID = "CL_00001026";
 
     public String getCommandName()
     {

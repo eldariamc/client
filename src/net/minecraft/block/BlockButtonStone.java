@@ -5,7 +5,6 @@ import net.minecraft.util.IIcon;
 
 public class BlockButtonStone extends BlockButton
 {
-    private static final String __OBFID = "CL_00000319";
 
     protected BlockButtonStone()
     {

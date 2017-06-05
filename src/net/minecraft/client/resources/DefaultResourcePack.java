@@ -16,7 +16,6 @@ public class DefaultResourcePack implements IResourcePack
 {
     public static final Set defaultResourceDomains = ImmutableSet.of("minecraft", "realms");
     private final Map field_152781_b;
-    private static final String __OBFID = "CL_00001073";
 
     public DefaultResourcePack(Map par1GuiScreen)
     {

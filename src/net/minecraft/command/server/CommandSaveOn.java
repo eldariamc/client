@@ -8,7 +8,6 @@ import net.minecraft.world.WorldServer;
 
 public class CommandSaveOn extends CommandBase
 {
-    private static final String __OBFID = "CL_00000873";
 
     public String getCommandName()
     {

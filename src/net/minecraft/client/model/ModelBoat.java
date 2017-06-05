@@ -5,7 +5,6 @@ import net.minecraft.entity.Entity;
 public class ModelBoat extends ModelBase
 {
     public ModelRenderer[] boatSides = new ModelRenderer[5];
-    private static final String __OBFID = "CL_00000832";
 
     public ModelBoat()
     {

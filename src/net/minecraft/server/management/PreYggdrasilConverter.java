@@ -24,13 +24,11 @@ public class PreYggdrasilConverter
     public static final File field_152729_b = new File("banned-players.txt");
     public static final File field_152730_c = new File("ops.txt");
     public static final File field_152731_d = new File("white-list.txt");
-    private static final String __OBFID = "CL_00001882";
 
     private static void func_152717_a(MinecraftServer p_152717_0_, Collection p_152717_1_, ProfileLookupCallback p_152717_2_)
     {
         String[] var3 = (String[])Iterators.toArray(Iterators.filter(p_152717_1_.iterator(), new Predicate()
         {
-            private static final String __OBFID = "CL_00001881";
             public boolean func_152733_a(String p_152733_1_)
             {
                 return !StringUtils.isNullOrEmpty(p_152733_1_);
@@ -76,7 +74,6 @@ public class PreYggdrasilConverter
                 final ArrayList var3 = Lists.newArrayList();
                 ProfileLookupCallback var4 = new ProfileLookupCallback()
                 {
-                    private static final String __OBFID = "CL_00001880";
                     public void onProfileLookupSucceeded(GameProfile p_onProfileLookupSucceeded_1_)
                     {
                         var1.func_152358_ax().func_152649_a(p_onProfileLookupSucceeded_1_);

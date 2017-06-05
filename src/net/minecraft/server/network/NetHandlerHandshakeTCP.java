@@ -14,7 +14,6 @@ public class NetHandlerHandshakeTCP implements INetHandlerHandshakeServer
 {
     private final MinecraftServer field_147387_a;
     private final NetworkManager field_147386_b;
-    private static final String __OBFID = "CL_00001456";
 
     public NetHandlerHandshakeTCP(MinecraftServer p_i45295_1_, NetworkManager p_i45295_2_)
     {
@@ -90,7 +89,6 @@ public class NetHandlerHandshakeTCP implements INetHandlerHandshakeServer
     static final class SwitchEnumConnectionState
     {
         static final int[] field_151291_a = new int[EnumConnectionState.values().length];
-        private static final String __OBFID = "CL_00001457";
 
         static
         {

@@ -18,7 +18,6 @@ import java.util.List;
 public abstract class CommandBase implements ICommand
 {
     private static IAdminCommand theAdmin;
-    private static final String __OBFID = "CL_00001739";
 
     /**
      * Return the required permission level for this command.

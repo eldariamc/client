@@ -19,7 +19,6 @@ public class GuiSnooper extends GuiScreen
     private String[] field_146607_r;
     private GuiSnooper.List field_146606_s;
     private GuiButton field_146605_t;
-    private static final String __OBFID = "CL_00000714";
 
     public GuiSnooper(GuiScreen p_i1061_1_, GameSettings p_i1061_2_)
     {
@@ -117,7 +116,6 @@ public class GuiSnooper extends GuiScreen
 
     class List extends GuiSlot
     {
-        private static final String __OBFID = "CL_00000715";
 
         public List()
         {
