@@ -9,7 +9,6 @@ import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.ListenableFutureTask;
 import com.mojang.authlib.minecraft.MinecraftSessionService;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
-import com.sun.istack.internal.Nullable;
 import fr.dabsunter.mcp.McpHandler;
 import fr.dabsunter.mcp.Tickable;
 import io.netty.util.concurrent.GenericFutureListener;
@@ -2179,7 +2178,7 @@ public class Minecraft implements IPlayerUsage
     /**
      * unloads the current world first
      */
-    public void loadWorld(@Nullable WorldClient p_71403_1_)
+    public void loadWorld(WorldClient p_71403_1_)
     {
         this.loadWorld(p_71403_1_, "");
     }
@@ -2187,7 +2186,7 @@ public class Minecraft implements IPlayerUsage
     /**
      * par2Str is displayed on the loading screen to the user unloads the current world first
      */
-    public void loadWorld(@Nullable WorldClient p_71353_1_, String p_71353_2_)
+    public void loadWorld(WorldClient p_71353_1_, String p_71353_2_)
     {
         if (p_71353_1_ == null)
         {

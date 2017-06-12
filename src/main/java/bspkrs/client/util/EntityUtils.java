@@ -5,6 +5,7 @@ import bspkrs.util.BSLog;
 import com.mojang.authlib.GameProfile;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityOtherPlayerMP;
+import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.client.renderer.entity.Render;
@@ -68,7 +69,7 @@ public class EntityUtils {
          ent.rotationYawHead = f5;
          GL11.glPopMatrix();
          RenderHelper.disableStandardItemLighting();
-         GL11.glDisable('耺');
+         GlStateManager.disableRescaleNormal();
          OpenGlHelper.setActiveTexture(OpenGlHelper.lightmapTexUnit);
          GL11.glDisable(3553);
          OpenGlHelper.setActiveTexture(OpenGlHelper.defaultTexUnit);
@@ -113,7 +114,7 @@ public class EntityUtils {
          ent.prevRotationYawHead = f5;
          ent.rotationYawHead = f6;
          RenderHelper.disableStandardItemLighting();
-         GL11.glDisable('耺');
+         GlStateManager.disableRescaleNormal();
          OpenGlHelper.setActiveTexture(OpenGlHelper.lightmapTexUnit);
          GL11.glDisable(3553);
          OpenGlHelper.setActiveTexture(OpenGlHelper.defaultTexUnit);
