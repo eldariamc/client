@@ -1,8 +1,5 @@
 package net.minecraft.client.gui;
 
-import java.io.InputStream;
-import java.net.URL;
-
 import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.JavaSoundAudioDevice;
 import javazoom.jl.player.Player;
@@ -13,8 +10,10 @@ import net.kencochrane.raven.event.Event;
 import net.kencochrane.raven.event.EventBuilder;
 import net.kencochrane.raven.event.interfaces.ExceptionInterface;
 import net.minecraft.client.Minecraft;
-
 import org.lwjgl.opengl.GL11;
+
+import java.io.InputStream;
+import java.net.URL;
 
 
  
@@ -22,7 +21,7 @@ import org.lwjgl.opengl.GL11;
  
 public class GuiRadioSlider extends GuiButton
 {
-    private float value;
+    private float value = 1.0F;
     public boolean activated;
     private final float minimum;
     private final float maximum;
@@ -50,7 +49,7 @@ public class GuiRadioSlider extends GuiButton
      */
     protected void mouseDragged(Minecraft mc, int x, int z)
     {
-        if (this.field_146125_m)
+        if (this.visible)
         {
             if (this.activated)
             {
@@ -81,12 +80,12 @@ public class GuiRadioSlider extends GuiButton
  
                 //System.out.println("Old: " + Minecraft.radioPlayer + " New: " + var4);
                 if (JavaSoundAudioDevice.radioVolume != var4) JavaSoundAudioDevice.radioVolume = var4;
-                this.displayString = this.name + " - " + String.valueOf((int) Math.floor(this.value * 100)) + "%";
+                this.displayString = this.name + ": " + String.valueOf((int) Math.floor(this.value * 100)) + "%";
             }
  
             GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-            this.drawTexturedModalRect(this.field_146128_h + (int)(this.value * (float)(this.field_146120_f - 8)), this.field_146129_i, 0, 66, 4, 20);
-            this.drawTexturedModalRect(this.field_146128_h + (int)(this.value * (float)(this.field_146120_f - 8)) + 4, this.field_146129_i, 196, 66, 4, 20);
+            this.drawTexturedModalRect(this.xPosition + (int)(this.value * (float)(this.width - 8)), this.yPosition, 0, 66, 4, 20);
+            this.drawTexturedModalRect(this.xPosition + (int)(this.value * (float)(this.width - 8)) + 4, this.yPosition, 196, 66, 4, 20);
         }
     }
  
@@ -98,7 +97,7 @@ public class GuiRadioSlider extends GuiButton
     {
         if (super.mousePressed(mc, x, z))
         {
-            this.value = (float)(x - (this.field_146128_h + 4)) / (float)(this.field_146120_f - 8);
+            this.value = (float)(x - (this.xPosition + 4)) / (float)(this.width - 8);
  
             if (this.value < 0.0F)
             {

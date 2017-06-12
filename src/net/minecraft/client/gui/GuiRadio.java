@@ -1,19 +1,24 @@
 package net.minecraft.client.gui;
 
-import java.awt.Desktop;
-import java.net.URI;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.EnumChatFormatting;
-
 import org.lwjgl.opengl.GL11;
+
+import java.awt.*;
+import java.net.URI;
  
 
  
 public class GuiRadio extends GuiScreen {
+
+    private final GuiScreen parent;
  
    private int field_146445_a;
    private int field_146444_f;
+
+   public GuiRadio(GuiScreen parent) {
+       this.parent = parent;
+   }
  
    public void initGui() {
       this.field_146445_a = 0;
@@ -37,23 +42,25 @@ public class GuiRadio extends GuiScreen {
  
                GuiRadioSlider.radio = "http://185.52.127.170/fr/30043/mp3_128.mp3?origine=fluxradios";
                if(Minecraft.radioPlayer != null)  Minecraft.radioPlayer.close();
-               this.mc.displayGuiScreen(new GuiIngameMenu());
+               this.mc.displayGuiScreen(parent);
                break;
  
            case 1:
  
                GuiRadioSlider.radio = "http://icecast.skyrock.net/s/natio_mp3_128k";
                if(Minecraft.radioPlayer != null)  Minecraft.radioPlayer.close();
-               this.mc.displayGuiScreen(new GuiIngameMenu());
+               this.mc.displayGuiScreen(parent);
                break;
  
            case 2:
  
                GuiRadioSlider.radio = "http://streaming.radio.funradio.fr/fun-1-48-192";
                if(Minecraft.radioPlayer != null)  Minecraft.radioPlayer.close();
-               this.mc.displayGuiScreen(new GuiIngameMenu());
+               this.mc.displayGuiScreen(parent);
                break;
        }
+
+
    }
  
    public void updateScreen() {

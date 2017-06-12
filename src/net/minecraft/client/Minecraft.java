@@ -10,10 +10,10 @@ import com.google.common.util.concurrent.ListenableFutureTask;
 import com.mojang.authlib.minecraft.MinecraftSessionService;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
 import com.sun.istack.internal.Nullable;
-
 import fr.dabsunter.mcp.McpHandler;
 import fr.dabsunter.mcp.Tickable;
 import io.netty.util.concurrent.GenericFutureListener;
+import javazoom.jl.player.Player;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.audio.MusicTicker;
@@ -75,6 +75,7 @@ import net.minecraft.stats.IStatStringFormat;
 import net.minecraft.stats.StatFileWriter;
 import net.minecraft.util.*;
 import net.minecraft.util.Timer;
+import net.minecraft.util.Util;
 import net.minecraft.world.EnumDifficulty;
 import net.minecraft.world.WorldProviderEnd;
 import net.minecraft.world.WorldProviderHell;
@@ -83,7 +84,6 @@ import net.minecraft.world.chunk.storage.AnvilSaveConverter;
 import net.minecraft.world.storage.ISaveFormat;
 import net.minecraft.world.storage.ISaveHandler;
 import net.minecraft.world.storage.WorldInfo;
-
 import org.apache.commons.lang3.Validate;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -93,12 +93,8 @@ import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.*;
 import org.lwjgl.util.glu.GLU;
-import net.minecraft.util.Util;
 
 import javax.imageio.ImageIO;
-
-import javazoom.jl.player.Player;
-
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
