@@ -51,10 +51,10 @@ public class BiomeDecorator
 
     // --- Generators minerais Keyrisium ---
 
-    protected WorldGenerator vanadiumGen = new WorldGenMinable(Blocks.zinc_ore, 6);
-    protected WorldGenerator obsidianGen = new WorldGenMinable(Blocks.cronyxe_ore, 5);
-    protected WorldGenerator pyriteGen = new WorldGenMinable(Blocks.kobalt_ore, 3);
-	protected WorldGenerator keyrisiumGen = new WorldGenMinable(Blocks.eldarium_ore, 3);
+    protected WorldGenerator zincGen = new WorldGenMinable(Blocks.zinc_ore, 6);
+    protected WorldGenerator cronyxeGen = new WorldGenMinable(Blocks.cronyxe_ore, 5);
+    protected WorldGenerator kobaltGen = new WorldGenMinable(Blocks.kobalt_ore, 3);
+	protected WorldGenerator eldariumGen = new WorldGenMinable(Blocks.eldarium_ore, 3);
     protected WorldGenerator gemmeGen = new WorldGenMinable(Blocks.gemme_ore, 1, Blocks.diamond_ore);
 
     // -------------------------------------
@@ -392,10 +392,10 @@ public class BiomeDecorator
 
         // --- Minerais Keyrisium ---
 
-        this.genStandardOre1(4, this.vanadiumGen, 2, 20);
-        this.genStandardOre1(3, this.obsidianGen, 2, 17);
-        this.genStandardOre1(3, this.pyriteGen, 2, 16);
-		//this.genStandardOre1(1, this.keyrisiumGen, 2, 16);
+        this.genStandardOre1(4, this.zincGen, 2, 20);
+        this.genStandardOre1(3, this.cronyxeGen, 2, 17);
+        this.genStandardOre1(3, this.kobaltGen, 2, 16);
+		//this.genStandardOre1(1, this.eldariumGen, 2, 16);
         this.genStandardOre1(425, this.gemmeGen, 0, 16);
 
         // --------------------------
