@@ -470,13 +470,13 @@ public class InventoryPlayer implements IInventory
         {
             var3 = this.armorInventory;
             p_70298_1_ -= this.mainInventory.length;
-        }
 
-        // Eldaria - Orbe de réparation
-        if (p_70298_1_ >= this.armorInventory.length)
-        {
-            var3 = this.orbInventory;
-            p_70298_1_ -= this.armorInventory.length;
+            // Eldaria - Orbe de réparation
+            if (p_70298_1_ >= this.armorInventory.length)
+            {
+                var3 = this.orbInventory;
+                p_70298_1_ -= this.armorInventory.length;
+            }
         }
 
         if (var3[p_70298_1_] != null)
@@ -519,13 +519,13 @@ public class InventoryPlayer implements IInventory
         {
             var2 = this.armorInventory;
             p_70304_1_ -= this.mainInventory.length;
-        }
 
-        // Eldaria - Orbe de réparation
-        if (p_70304_1_ >= this.armorInventory.length)
-        {
-            var2 = this.orbInventory;
-            p_70304_1_ -= this.armorInventory.length;
+            // Eldaria - Orbe de réparation
+            if (p_70304_1_ >= this.armorInventory.length)
+            {
+                var2 = this.orbInventory;
+                p_70304_1_ -= this.armorInventory.length;
+            }
         }
 
         if (var2[p_70304_1_] != null)
@@ -551,13 +551,13 @@ public class InventoryPlayer implements IInventory
         {
             p_70299_1_ -= var3.length;
             var3 = this.armorInventory;
-        }
 
-        // Eldaria - Orbe de réparation
-        if (p_70299_1_ >= var3.length)
-        {
-            p_70299_1_ -= var3.length;
-            var3 = this.orbInventory;
+            // Eldaria - Orbe de réparation
+            if (p_70299_1_ >= var3.length)
+            {
+                p_70299_1_ -= var3.length;
+                var3 = this.orbInventory;
+            }
         }
 
         var3[p_70299_1_] = p_70299_2_;
@@ -673,13 +673,13 @@ public class InventoryPlayer implements IInventory
         {
             p_70301_1_ -= var2.length;
             var2 = this.armorInventory;
-        }
 
-        // Eldaria - Orbe de réparation
-        if (p_70301_1_ >= var2.length)
-        {
-            p_70301_1_ -= var2.length;
-            var2 = this.orbInventory;
+            // Eldaria - Orbe de réparation
+            if (p_70301_1_ >= var2.length)
+            {
+                p_70301_1_ -= var2.length;
+                var2 = this.orbInventory;
+            }
         }
 
         return var2[p_70301_1_];
