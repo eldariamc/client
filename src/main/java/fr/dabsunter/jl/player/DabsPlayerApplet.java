@@ -22,13 +22,12 @@ public class DabsPlayerApplet extends PlayerApplet {
 
 	@Override
 	protected AudioDevice getAudioDevice() throws JavaLayerException {
-		DabsAudioDevice dev = new DabsAudioDevice();
 		if (needTest) {
-			dev.test();
+			new DabsAudioDevice().test();
 			needTest = false;
 		}
-		audio = dev;
-		return dev;
+		audio = new DabsAudioDevice();
+		return audio;
 	}
 
 	public DabsAudioDevice getLastAudioDevice() {
