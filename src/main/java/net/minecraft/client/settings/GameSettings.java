@@ -184,7 +184,7 @@ public class GameSettings
     public boolean showInventoryAchievementHint;
     public int mipmapLevels;
     public int anisotropicFiltering;
-    private Map mapSoundLevels;
+    private Map<SoundCategory, Float> mapSoundLevels;
     public float field_152400_J;
     public float field_152401_K;
     public float field_152402_L;
@@ -2334,7 +2334,7 @@ public class GameSettings
         }
 
         this.saveOfOptions();
-        MacroCommands.save(); // Keyrisium - Save macro config
+        MacroCommands.save(); // Eldaria - Save macro config
         this.sendSettingsToServer();
     }
 
@@ -2343,10 +2343,10 @@ public class GameSettings
         return this.mapSoundLevels.containsKey(p_151438_1_) ? ((Float)this.mapSoundLevels.get(p_151438_1_)).floatValue() : 1.0F;
     }
 
-    public void setSoundLevel(SoundCategory p_151439_1_, float p_151439_2_)
+    public void setSoundLevel(SoundCategory category, float value)
     {
-        this.mc.getSoundHandler().setSoundLevel(p_151439_1_, p_151439_2_);
-        this.mapSoundLevels.put(p_151439_1_, Float.valueOf(p_151439_2_));
+        this.mc.getSoundHandler().setSoundLevel(category, value);
+        this.mapSoundLevels.put(category, value);
     }
 
     /**

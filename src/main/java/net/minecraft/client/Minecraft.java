@@ -9,10 +9,10 @@ import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.ListenableFutureTask;
 import com.mojang.authlib.minecraft.MinecraftSessionService;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
+import fr.dabsunter.jl.player.DabsPlayerApplet;
 import fr.dabsunter.mcp.McpHandler;
 import fr.dabsunter.mcp.Tickable;
 import io.netty.util.concurrent.GenericFutureListener;
-import javazoom.jl.player.Player;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.audio.MusicTicker;
@@ -202,10 +202,9 @@ public class Minecraft implements IPlayerUsage
      * This is set to fpsCounter every debug screen update, and is shown on the debug screen. It's also sent as part of
      * the usage snooping.
      */
-    public static int debugFPS; // Keyrisium - private -> public
-    public static boolean radioEnabled = true;
+    public static int debugFPS; // Eldaria - private -> public
 
-    public static Player radioPlayer;
+    public static DabsPlayerApplet radioPlayer = new DabsPlayerApplet();
 	public static String join;
 
     /**

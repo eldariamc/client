@@ -1,6 +1,7 @@
 package net.minecraft.client.audio;
 
 import com.google.common.collect.*;
+import fr.dabsunter.jl.player.DabsAudioDevice;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.GameSettings;
 import net.minecraft.entity.player.EntityPlayer;
@@ -112,6 +113,12 @@ public class SoundManager
             if (p_148601_1_ == SoundCategory.MASTER)
             {
                 this.field_148620_e.setMasterVolume(p_148601_2_);
+            }
+            else if (p_148601_1_ == SoundCategory.RADIO)
+            {
+                DabsAudioDevice dev = Minecraft.radioPlayer.getLastAudioDevice();
+                if (dev != null)
+                    dev.setLineGain(p_148601_2_);
             }
             else
             {

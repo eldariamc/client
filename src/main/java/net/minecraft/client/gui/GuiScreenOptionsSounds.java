@@ -47,8 +47,7 @@ public class GuiScreenOptionsSounds extends GuiScreen
         }
 
 
-        this.buttonList.add(new GuiButton(16, this.width / 2 - 155, this.height / 6 - 12 + 24 * 5, 150, 20, "Choisir la Radio"));
-        this.buttonList.add(new GuiRadioSlider(0, this.width / 2 - 155 + 160, this.height / 6 - 12 + 24 * 5, 0.0F, 100.0F, "Radio", 150));
+        this.buttonList.add(new GuiButton(16, this.width / 2 - 155 + 160, this.height / 6 - 12 + 24 * 5, 150, 20, "Choisir la Radio"));
 
         this.buttonList.add(new GuiButton(200, this.width / 2 - 100, this.height / 6 + 168, I18n.format("gui.done")));
     }
@@ -88,18 +87,18 @@ public class GuiScreenOptionsSounds extends GuiScreen
 
     class Button extends GuiButton
     {
-        private final SoundCategory field_146153_r;
-        private final String field_146152_s;
-        public float field_146156_o = 1.0F;
-        public boolean field_146155_p;
+        private final SoundCategory category;
+        private final String name;
+        public float value = 1.0F;
+        public boolean active;
 
         public Button(int p_i45024_2_, int p_i45024_3_, int p_i45024_4_, SoundCategory p_i45024_5_, boolean p_i45024_6_)
         {
             super(p_i45024_2_, p_i45024_3_, p_i45024_4_, p_i45024_6_ ? 310 : 150, 20, "");
-            this.field_146153_r = p_i45024_5_;
-            this.field_146152_s = I18n.format("soundCategory." + p_i45024_5_.getCategoryName(), new Object[0]);
-            this.displayString = this.field_146152_s + ": " + GuiScreenOptionsSounds.this.func_146504_a(p_i45024_5_);
-            this.field_146156_o = GuiScreenOptionsSounds.this.field_146506_g.getSoundLevel(p_i45024_5_);
+            this.category = p_i45024_5_;
+            this.name = I18n.format("soundCategory." + p_i45024_5_.getCategoryName(), new Object[0]);
+            this.displayString = this.name + ": " + GuiScreenOptionsSounds.this.func_146504_a(p_i45024_5_);
+            this.value = GuiScreenOptionsSounds.this.field_146506_g.getSoundLevel(p_i45024_5_);
         }
 
         public int getHoverState(boolean p_146114_1_)
@@ -111,28 +110,28 @@ public class GuiScreenOptionsSounds extends GuiScreen
         {
             if (this.visible)
             {
-                if (this.field_146155_p)
+                if (this.active)
                 {
-                    this.field_146156_o = (float)(p_146119_2_ - (this.xPosition + 4)) / (float)(this.width - 8);
+                    this.value = (float)(p_146119_2_ - (this.xPosition + 4)) / (float)(this.width - 8);
 
-                    if (this.field_146156_o < 0.0F)
+                    if (this.value < 0.0F)
                     {
-                        this.field_146156_o = 0.0F;
+                        this.value = 0.0F;
                     }
 
-                    if (this.field_146156_o > 1.0F)
+                    if (this.value > 1.0F)
                     {
-                        this.field_146156_o = 1.0F;
+                        this.value = 1.0F;
                     }
 
-                    p_146119_1_.gameSettings.setSoundLevel(this.field_146153_r, this.field_146156_o);
+                    p_146119_1_.gameSettings.setSoundLevel(this.category, this.value);
                     p_146119_1_.gameSettings.saveOptions();
-                    this.displayString = this.field_146152_s + ": " + GuiScreenOptionsSounds.this.func_146504_a(this.field_146153_r);
+                    this.displayString = this.name + ": " + GuiScreenOptionsSounds.this.func_146504_a(this.category);
                 }
 
                 GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-                this.drawTexturedModalRect(this.xPosition + (int)(this.field_146156_o * (float)(this.width - 8)), this.yPosition, 0, 66, 4, 20);
-                this.drawTexturedModalRect(this.xPosition + (int)(this.field_146156_o * (float)(this.width - 8)) + 4, this.yPosition, 196, 66, 4, 20);
+                this.drawTexturedModalRect(this.xPosition + (int)(this.value * (float)(this.width - 8)), this.yPosition, 0, 66, 4, 20);
+                this.drawTexturedModalRect(this.xPosition + (int)(this.value * (float)(this.width - 8)) + 4, this.yPosition, 196, 66, 4, 20);
             }
         }
 
@@ -140,22 +139,22 @@ public class GuiScreenOptionsSounds extends GuiScreen
         {
             if (super.mousePressed(p_146116_1_, p_146116_2_, p_146116_3_))
             {
-                this.field_146156_o = (float)(p_146116_2_ - (this.xPosition + 4)) / (float)(this.width - 8);
+                this.value = (float)(p_146116_2_ - (this.xPosition + 4)) / (float)(this.width - 8);
 
-                if (this.field_146156_o < 0.0F)
+                if (this.value < 0.0F)
                 {
-                    this.field_146156_o = 0.0F;
+                    this.value = 0.0F;
                 }
 
-                if (this.field_146156_o > 1.0F)
+                if (this.value > 1.0F)
                 {
-                    this.field_146156_o = 1.0F;
+                    this.value = 1.0F;
                 }
 
-                p_146116_1_.gameSettings.setSoundLevel(this.field_146153_r, this.field_146156_o);
+                p_146116_1_.gameSettings.setSoundLevel(this.category, this.value);
                 p_146116_1_.gameSettings.saveOptions();
-                this.displayString = this.field_146152_s + ": " + GuiScreenOptionsSounds.this.func_146504_a(this.field_146153_r);
-                this.field_146155_p = true;
+                this.displayString = this.name + ": " + GuiScreenOptionsSounds.this.func_146504_a(this.category);
+                this.active = true;
                 return true;
             }
             else
@@ -168,21 +167,21 @@ public class GuiScreenOptionsSounds extends GuiScreen
 
         public void mouseReleased(int p_146118_1_, int p_146118_2_)
         {
-            if (this.field_146155_p)
+            if (this.active)
             {
-                if (this.field_146153_r == SoundCategory.MASTER)
+                if (this.category == SoundCategory.MASTER)
                 {
                     float var10000 = 1.0F;
                 }
                 else
                 {
-                    GuiScreenOptionsSounds.this.field_146506_g.getSoundLevel(this.field_146153_r);
+                    GuiScreenOptionsSounds.this.field_146506_g.getSoundLevel(this.category);
                 }
 
                 GuiScreenOptionsSounds.this.mc.getSoundHandler().playSound(PositionedSoundRecord.func_147674_a(new ResourceLocation("gui.button.press"), 1.0F));
             }
 
-            this.field_146155_p = false;
+            this.active = false;
         }
     }
 }

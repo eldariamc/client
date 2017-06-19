@@ -14,7 +14,8 @@ public enum SoundCategory
     MOBS("hostile", 5),
     ANIMALS("neutral", 6),
     PLAYERS("player", 7),
-    AMBIENT("ambient", 8);
+    AMBIENT("ambient", 8),
+    RADIO("radio", 9);
     private static final Map field_147168_j = Maps.newHashMap();
     private static final Map field_147169_k = Maps.newHashMap();
     private final String categoryName;
