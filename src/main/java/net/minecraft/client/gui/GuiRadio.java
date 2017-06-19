@@ -46,7 +46,7 @@ public class GuiRadio extends GuiScreen {
 
 			  case 1:
  
-					Minecraft.radioPlayer.setFileName("http://185.52.127.170/fr/30043/mp3_128.mp3?origine=fluxradios");
+					Minecraft.radioPlayer.setFileName("http://cdn.nrjaudio.fm/audio1/fr/30001/mp3_128.mp3?origine=fluxradios");
 					Minecraft.radioPlayer.start();
 					this.mc.displayGuiScreen(parent);
 					break;
@@ -57,6 +57,13 @@ public class GuiRadio extends GuiScreen {
 					Minecraft.radioPlayer.start();
 					this.mc.displayGuiScreen(parent);
 					break;
+
+					/*
+					- ajout lucky ore + xp
+					- lucky -> cronyxe/cobalt
+					- xp -> cronyxe/zinc
+					- eldarium 1/chunk
+					 */
 
 			  case 3:
 
