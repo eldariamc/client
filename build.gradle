@@ -9,11 +9,16 @@
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 
-// Apply the application plugin to add support for building an application
-apply plugin: 'application'
+sourceCompatibility = '1.7'
+targetCompatibility = '1.7'
 
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Eldaria Client',
+                'Main-Class': 'net.minecraft.client.main.Main'
+    }
+}
+
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -32,7 +37,4 @@ dependencies {
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
 }
-
-// Define the main class for the application
-mainClassName = 'net.minecraft.client.main.Main'
 
