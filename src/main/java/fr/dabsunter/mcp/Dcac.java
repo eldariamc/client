@@ -1,7 +1,9 @@
 package fr.dabsunter.mcp;
 
+import bspkrs.fml.util.InputEventListener;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiErrorScreen;
+import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Util;
 import org.apache.logging.log4j.LogManager;
@@ -62,17 +64,24 @@ public class Dcac extends BusListener implements Initiable, Tickable {
 	private long startTick = 0;
 	private short countdown = 0;
 
+	private ClickListener clickListener;
+	private long[] clicks = new long[20];
+	private byte cps = 0;
+
 	private volatile boolean cheating = false;
 
 	@Override
 	public void preInit() {
 		this.mc = Minecraft.getMinecraft();
+		McpHandler.registerClientTick(this);
+		McpHandler.registerBusListener(this);
 	}
 
 	@Override
 	public void init() {
-		McpHandler.registerClientTick(this);
-		McpHandler.registerBusListener(this);
+		if (clickListener != null)
+			ClickListener.unRegister(clickListener.getKeyBinding());
+		clickListener = new ClickListener();
 	}
 
 	@Override
@@ -116,13 +125,22 @@ public class Dcac extends BusListener implements Initiable, Tickable {
 				startTick = currentTick;
 			} else if (countdown >= 200) {
 				countdown = -1;
-				currentTick = currentTick - startTick;
-				if (currentTick < 9500) {
-					logger.warn("Your game has reached " + (200000/currentTick) + " tps !");
+				long elapsedTime = currentTick - startTick;
+				if (elapsedTime < 9500L) {
+					logger.warn("Your game has reached " + (200000L/elapsedTime) + " tps !");
 					handleCheat();
 				}
 			}
 			countdown++;
+
+			long previousTime = currentTick - 1000L;
+			byte cps = 0;
+			for (int i = 0; i < clicks.length; i++)
+				if (clicks[i] < previousTime)
+					clicks[i] = 0L;
+				else if (clicks[i] != 0L)
+					cps++;
+			this.cps = cps;
 
 		} else if (cheating){
 			handleCheat();
@@ -156,6 +174,10 @@ public class Dcac extends BusListener implements Initiable, Tickable {
 		return true;
 	}
 
+	public byte getCPS() {
+		return cps;
+	}
+
 	/**
 	 * Flemme de faire une desc mais je suis fière de cette méthode
 	 * C'est le support des étoiles, c'est à moitié regex... fin wala
@@ -164,7 +186,7 @@ public class Dcac extends BusListener implements Initiable, Tickable {
 	 * @param input String to match
 	 * @return
 	 */
-	private static boolean contains(List<String> list, String input) {
+	private static boolean contains(final List<String> list, final String input) {
 		for (String entry : list) {
 			boolean inStar = false;
 			int n = 0;
@@ -207,5 +229,29 @@ public class Dcac extends BusListener implements Initiable, Tickable {
 		this.mc.displayGuiScreen(new GuiErrorScreen("Le cheat, c'est mal",
 				"Nous avons remarqué que votre jeu fonctionnait de manière anormale.",
 				"Veuillez désactiver toute modifications vous apportant un avantage en jeu."));
+	}
+
+	private class ClickListener extends InputEventListener {
+
+		private ClickListener() {
+			super(mc.gameSettings.keyBindAttack, false);
+		}
+
+		@Override
+		public void keyDown(KeyBinding var1, boolean var2) {
+			long currentTime = System.currentTimeMillis();
+			for (int i = 0; i < clicks.length; i++) {
+				if (clicks[i] == 0) {
+					clicks[i] = currentTime;
+					return;
+				}
+			}
+			cheating = true;
+		}
+
+		@Override
+		public void keyUp(KeyBinding var1) {
+
+		}
 	}
 }

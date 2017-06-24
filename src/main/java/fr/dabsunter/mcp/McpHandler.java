@@ -3,6 +3,7 @@ package fr.dabsunter.mcp;
 import bspkrs.armorstatushud.fml.ArmorStatusHUDMod;
 import bspkrs.bspkrscore.fml.bspkrsCoreMod;
 import bspkrs.statuseffecthud.fml.StatusEffectHUDMod;
+import fr.dabsunter.eldaria.Eldaria;
 import fr.dabsunter.eldaria.macrocmd.MacroCommands;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.util.ResourceLocation;
@@ -24,7 +25,7 @@ public class McpHandler {
 			ArmorStatusHUDMod.instance,
 			StatusEffectHUDMod.instance,
 			new MacroCommands(),
-			new Dcac()
+			Eldaria.ANTI_CHEAT
 	};
 	private static final HashSet<Tickable> RENDER_TICK_HANDLERS = new HashSet<>();
 	private static HashSet<Tickable> renderToAdd;

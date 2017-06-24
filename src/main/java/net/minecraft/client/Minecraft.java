@@ -388,6 +388,9 @@ public class Minecraft implements IPlayerUsage
      */
     private void startGame() throws LWJGLException
     {
+        // Eldaria - preInit
+        McpHandler.firePreInit();
+
         this.gameSettings = new GameSettings(this, this.mcDataDir);
 
         if (this.gameSettings.overrideHeight > 0 && this.gameSettings.overrideWidth > 0)
@@ -541,8 +544,6 @@ public class Minecraft implements IPlayerUsage
         GL11.glMatrixMode(GL11.GL_PROJECTION);
         GL11.glLoadIdentity();
         GL11.glMatrixMode(GL11.GL_MODELVIEW);
-        // Keyrisium - preinit
-        McpHandler.firePreInit();
         this.checkGLError("Startup");
         this.renderGlobal = new RenderGlobal(this);
         this.textureMapBlocks = new TextureMap(0, "textures/blocks");
@@ -552,8 +553,10 @@ public class Minecraft implements IPlayerUsage
         this.renderEngine.loadTextureMap(TextureMap.locationItemsTexture, new TextureMap(1, "textures/items"));
         GL11.glViewport(0, 0, this.displayWidth, this.displayHeight);
         this.effectRenderer = new EffectRenderer(this.theWorld, this.renderEngine);
-        // Keyrisium - init
+
+        // Eldaria - init
         McpHandler.fireInit();
+
         this.checkGLError("Post startup");
         this.ingameGUI = new GuiIngame(this);
 
@@ -584,7 +587,8 @@ public class Minecraft implements IPlayerUsage
             this.gameSettings.enableVsync = false;
             this.gameSettings.saveOptions();
         }
-        // Keyrisium - postInit
+
+        // Eldaria - postInit
         McpHandler.firePostInit();
     }
 

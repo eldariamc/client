@@ -1,6 +1,7 @@
 package net.minecraft.client.gui;
 
 import fr.dabsunter.eldaria.Announce;
+import fr.dabsunter.eldaria.Eldaria;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.network.NetHandlerPlayClient;
@@ -27,7 +28,6 @@ import net.minecraft.scoreboard.Scoreboard;
 import net.minecraft.util.*;
 import net.minecraft.world.EnumSkyBlock;
 import net.minecraft.world.chunk.Chunk;
-
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
 
@@ -288,16 +288,16 @@ public class GuiIngame extends Gui
         if (this.mc.isDemo())
         {
             this.mc.mcProfiler.startSection("demo");
-            var35 = "";
+            var35 = "Version de développement";
 
-            if (this.mc.theWorld.getTotalWorldTime() >= 120500L)
+            /*if (this.mc.theWorld.getTotalWorldTime() >= 120500L)
             {
                 var35 = I18n.format("demo.demoExpired", new Object[0]);
             }
             else
             {
                 var35 = I18n.format("demo.remainingTime", new Object[] {StringUtils.ticksToElapsedTime((int)(120500L - this.mc.theWorld.getTotalWorldTime()))});
-            }
+            }*/
 
             var13 = fr.getStringWidth(var35);
             fr.drawStringWithShadow(var35, var6 - var13 - 10, 5, var32);
@@ -308,10 +308,10 @@ public class GuiIngame extends Gui
         int var22;
         int var23;
         // Eldaria - CPS & Connection
-        ScaledResolution r = new ScaledResolution(this.mc, this.mc.displayWidth, this.mc.displayHeight);
 
         this.mc.fontRenderer.drawString(" " + Minecraft.join, var6 - 2,  var7-10, 1);
-        this.mc.fontRenderer.drawString("§7CPS§c: " + Click.getClicks(), var6 - 360 - this.mc.fontRenderer.getStringWidth("§7CPS§c: " + Click.getClicks()), var7-10, 16777215);
+        String cps = "§7CPS: §c" + Eldaria.ANTI_CHEAT.getCPS();
+        this.mc.fontRenderer.drawString(cps, var6/2 - 95 - this.mc.fontRenderer.getStringWidth(cps), var7 - 10, 16777215);
 
 
 

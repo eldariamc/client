@@ -61,8 +61,7 @@ public abstract class InputEventListener extends BusListener {
    public static void unRegister(KeyBinding kb) {
       if(isRegistered(kb)) {
          //FMLCommonHandler.instance().bus().unregister(instances.get(kb));
-         McpHandler.unregisterBusListener(instances.get(kb));
-         instances.remove(kb);
+         McpHandler.unregisterBusListener(instances.remove(kb));
       }
 
    }

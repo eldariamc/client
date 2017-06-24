@@ -58,13 +58,6 @@ public class GuiRadio extends GuiScreen {
 					this.mc.displayGuiScreen(parent);
 					break;
 
-					/*
-					- ajout lucky ore + xp
-					- lucky -> cronyxe/cobalt
-					- xp -> cronyxe/zinc
-					- eldarium 1/chunk
-					 */
-
 			  case 3:
 
 					Minecraft.radioPlayer.setFileName("http://streaming.radio.funradio.fr/fun-1-48-192");
