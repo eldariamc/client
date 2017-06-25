@@ -3,7 +3,6 @@ package net.minecraft.item;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.Sets;
-
 import net.minecraft.block.*;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
@@ -270,7 +269,7 @@ public class Item
         itemRegistry.addObject(id++, "iron_global_tool", new ItemGlobalTool(ToolMaterial.IRON).setUnlocalizedName("gtoolIron").setTextureName("iron_global_tool"));
         itemRegistry.addObject(id++, "golden_global_tool", new ItemGlobalTool(ToolMaterial.GOLD).setUnlocalizedName("gtoolGold").setTextureName("gold_global_tool"));
         itemRegistry.addObject(id++, "diamond_global_tool", new ItemGlobalTool(ToolMaterial.EMERALD).setUnlocalizedName("gtoolDiamond").setTextureName("diamond_global_tool"));
-        itemRegistry.addObject(id++, "peppers", new ItemSeedFood(4, 0.6F, Blocks.peppers, Blocks.farmland).setAlwaysEdible().setPotionEffect(12, 300, 0, 1.0F).setUnlocalizedName("peppers").setTextureName("peppers"));
+        itemRegistry.addObject(id++, "peppers", new ItemSeedFood(4, 0.6F, Blocks.peppers, Blocks.farmland).setAlwaysEdible().setPotionEffect(12, 300, 0, 1.0F).setPotionEffect(PotionHelper.hasteEffect).setUnlocalizedName("peppers").setTextureName("peppers"));
         itemRegistry.addObject(id++, "unclaim_finder", new Item().setUnlocalizedName("unclaimFinder").setCreativeTab(CreativeTabs.tabMisc).setTextureName("unclaim_finder"));
         itemRegistry.addObject(id++, "bow_zinc", (new BowZinc()).setUnlocalizedName("bow_zinc").setTextureName("bow_zinc"));
         itemRegistry.addObject(id++, "bow_cronyxe", (new BowCronyxe()).setUnlocalizedName("bow_cronyxe").setTextureName("bow_cronyxe"));

@@ -56,6 +56,7 @@ public class PotionHelper
     public static final String field_151423_m = "+0-1+2+3+13&4-4";
     public static final String rabbitFootEffect = "+0+1-2+3&4-4+13";
     public static final String featherEffect = "+0+1+2-3&4-4+13";
+    public static final String hasteEffect = "+0+1+2+3&4-4+13";
     private static final HashMap potionRequirements = new HashMap();
 
     /** Potion effect amplifier map */
@@ -631,6 +632,7 @@ public class PotionHelper
         potionRequirements.put(Potion.waterBreathing.getId(), "0 & !1 & 2 & 3 & 2+6"); // 1011
         potionRequirements.put(Potion.jump.getId(), "0 & 1 & !2 & 3 & 3+6");           // 1101
         potionRequirements.put(Potion.featherFalling.getId(), "0 & 1 & 2 & !3");       // 1110
+        potionRequirements.put(Potion.digSpeed.getId(), "0 & 1 & 2 & 3");              // 1111
         potionAmplifiers.put(Potion.moveSpeed.getId(), "5");
         potionAmplifiers.put(Potion.digSpeed.getId(), "5");
         potionAmplifiers.put(Potion.damageBoost.getId(), "5");
@@ -640,6 +642,7 @@ public class PotionHelper
         potionAmplifiers.put(Potion.resistance.getId(), "5");
         potionAmplifiers.put(Potion.poison.getId(), "5");
         potionAmplifiers.put(Potion.jump.getId(), "5");
+        potionAmplifiers.put(Potion.featherFalling.getId(), "5");
         potionAmplifiers.put(Potion.featherFalling.getId(), "5");
     }
 }

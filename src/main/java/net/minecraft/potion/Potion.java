@@ -23,7 +23,7 @@ public class Potion
     public static final Potion field_76423_b = null;
     public static final Potion moveSpeed = (new Potion(1, false, 8171462)).setPotionName("potion.moveSpeed").setIconIndex(0, 0).func_111184_a(SharedMonsterAttributes.movementSpeed, "91AEAA56-376B-4498-935B-2F7F68070635", 0.20000000298023224D, 2);
     public static final Potion moveSlowdown = (new Potion(2, true, 5926017)).setPotionName("potion.moveSlowdown").setIconIndex(1, 0).func_111184_a(SharedMonsterAttributes.movementSpeed, "7107DE5E-7CE8-4030-940E-514C1F160890", -0.15000000596046448D, 2);
-    public static final Potion digSpeed = (new Potion(3, false, 14270531)).setPotionName("potion.digSpeed").setIconIndex(2, 0).setEffectiveness(1.5D);
+    public static final Potion digSpeed = (new Potion(3, false, 16764948)).setPotionName("potion.digSpeed").setIconIndex(2, 0).setEffectiveness(1.5D); // Original color: 14270531
     public static final Potion digSlowdown = (new Potion(4, true, 4866583)).setPotionName("potion.digSlowDown").setIconIndex(3, 0);
     public static final Potion damageBoost = (new PotionAttackDamage(5, false, 9643043)).setPotionName("potion.damageBoost").setIconIndex(4, 0).func_111184_a(SharedMonsterAttributes.attackDamage, "648D7064-6A60-4F59-8ABE-C2C23A6DD7A9", 3.0D, 2);
     public static final Potion heal = (new PotionHealth(6, false, 16262179)).setPotionName("potion.heal");
@@ -64,7 +64,7 @@ public class Potion
     public static final Potion field_76434_w = (new PotionHealthBoost(21, false, 16284963)).setPotionName("potion.healthBoost").setIconIndex(2, 2).func_111184_a(SharedMonsterAttributes.maxHealth, "5D6F0BA2-1186-46AC-B896-C61C5CEE99CC", 4.0D, 0);
     public static final Potion field_76444_x = (new PotionAbsoption(22, false, 2445989)).setPotionName("potion.absorption").setIconIndex(2, 2);
     public static final Potion field_76443_y = (new PotionHealth(23, false, 16262179)).setPotionName("potion.saturation");
-    public static final Potion featherFalling = new Potion(24, false, 7889559).setPotionName("potion.featherFalling").setIconIndex(2, 3);
+    public static final Potion featherFalling = new Potion(24, false, 14073852).setPotionName("potion.featherFalling").setIconIndex(2, 3);
     public static final Potion field_76409_A = null;
     public static final Potion field_76410_B = null;
     public static final Potion field_76411_C = null;
