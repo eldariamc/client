@@ -127,9 +127,9 @@ public class MathHelper
      * Returns the value of the first parameter, clamped to be within the lower and upper limits given by the second and
      * third parameters.
      */
-    public static int clamp_int(int par0, int par1, int par2)
+    public static int clamp_int(int value, int min, int max)
     {
-        return par0 < par1 ? par1 : (par0 > par2 ? par2 : par0);
+        return value < min ? min : (value > max ? max : value);
     }
 
     /**

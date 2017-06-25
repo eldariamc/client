@@ -1,15 +1,19 @@
 package net.minecraft.item;
 
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
 import java.util.List;
 
 public class ItemAppleGold extends ItemFood
 {
+
+    private IIcon cronyxe;
 
     public ItemAppleGold(int p_i45341_1_, float p_i45341_2_, boolean p_i45341_3_)
     {
@@ -36,7 +40,7 @@ public class ItemAppleGold extends ItemFood
         {
             int damage = p_77849_1_.getItemDamage();
 
-            p_77849_3_.addPotionEffect(new PotionEffect(damage == 2 ? Potion.field_76434_w.id : Potion.field_76444_x.id, 2400, damage == 2 ? 2 : 0));
+            p_77849_3_.addPotionEffect(new PotionEffect(damage == 2 ? Potion.field_76434_w.id : Potion.field_76444_x.id, 2400, damage == 2 ? 1 : 0));
 
             if (damage > 0)
             {
@@ -62,5 +66,17 @@ public class ItemAppleGold extends ItemFood
         p_150895_3_.add(new ItemStack(p_150895_1_, 1, 0));
         p_150895_3_.add(new ItemStack(p_150895_1_, 1, 1));
         p_150895_3_.add(new ItemStack(p_150895_1_, 1, 2));
+    }
+
+    @Override
+    public void registerIcons(IIconRegister register) {
+        super.registerIcons(register);
+
+        cronyxe = register.registerIcon("apple_cronyxe");
+    }
+
+    @Override
+    public IIcon getIconFromDamage(int damage) {
+        return damage == 2 ? cronyxe : super.getIconFromDamage(damage);
     }
 }
