@@ -31,7 +31,7 @@ public class FloatingLog {
 		if (alpha > 255)
 			alpha = 255;
 
-		if (alpha > 3) {
+		if (alpha > 8) {
 			int width = renderer.getStringWidth(log);
 			x -= width;
 
@@ -43,7 +43,6 @@ public class FloatingLog {
 			OpenGlHelper.glBlendFunc(770, 771, 1, 0);
 			renderer.drawStringWithShadow(log, x, y, 0xFFFFFF + (alpha << 24));
 			GL11.glDisable(GL11.GL_BLEND);
-			GL11.glDisable(GL11.GL_ALPHA_TEST);
 			GL11.glPopMatrix();
 		}
 	}

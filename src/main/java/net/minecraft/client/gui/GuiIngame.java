@@ -903,16 +903,18 @@ public class GuiIngame extends Gui
             FontRenderer var1 = this.mc.fontRenderer;
             ScaledResolution var2 = new ScaledResolution(this.mc, this.mc.displayWidth, this.mc.displayHeight);
             int var3 = var2.getScaledWidth();
-            short var4 = 182;
-            int var5 = var3 / 2 - var4 / 2;
-            int var6 = (int)(BossStatus.healthScale * (float)(var4 + 1));
             byte var7 = 12;
-            this.drawTexturedModalRect(var5, var7, 0, 74, var4, 5);
-            this.drawTexturedModalRect(var5, var7, 0, 74, var4, 5);
 
-            if (var6 > 0)
-            {
-                this.drawTexturedModalRect(var5, var7, 0, 79, var6, 5);
+            if (BossStatus.healthScale >= 0.0F) { // Eldaria - render health bar only if healthScale >= 0
+                short var4 = 182;
+                int var5 = var3 / 2 - var4 / 2;
+                int var6 = (int) (BossStatus.healthScale * (float) (var4 + 1));
+                this.drawTexturedModalRect(var5, var7, 0, 74, var4, 5);
+                this.drawTexturedModalRect(var5, var7, 0, 74, var4, 5);
+
+                if (var6 > 0) {
+                    this.drawTexturedModalRect(var5, var7, 0, 79, var6, 5);
+                }
             }
 
             String var8 = BossStatus.bossName;
