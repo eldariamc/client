@@ -7,6 +7,7 @@ import com.google.common.io.ByteStreams;
 import fr.dabsunter.mcp.network.packets.ActionBarPacket;
 import fr.dabsunter.mcp.network.packets.AnnouncePacket;
 import fr.dabsunter.mcp.network.packets.AuthPacket;
+import fr.dabsunter.mcp.network.packets.BossBarPacket;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.play.client.C17PacketCustomPayload;
 import net.minecraft.network.play.server.S3FPacketCustomPayload;
@@ -19,7 +20,8 @@ public class CustomPacketHandler {
 	private static final Class<? extends CustomPacket>[] PACKETS = new Class[]{
 			AuthPacket.class,
 			AnnouncePacket.class,
-			ActionBarPacket.class
+			ActionBarPacket.class,
+			BossBarPacket.class
 	};
 	private static Minecraft mc;
 

@@ -205,7 +205,6 @@ public class Minecraft implements IPlayerUsage
     public static int debugFPS; // Eldaria - private -> public
 
     public static DabsPlayerApplet radioPlayer = new DabsPlayerApplet();
-	public static String join;
 
     /**
      * When you place a block, it's set to 6, decremented once per tick, when it's 0, you can place another block.

@@ -14,4 +14,10 @@ public final class BossStatus
         bossName = p_82824_0_.func_145748_c_().getFormattedText();
         hasColorModifier = p_82824_1_;
     }
+
+    public static void setBossStatus(String message, int ticks, float progress) {
+        bossName = message;
+        statusBarTime = ticks;
+        healthScale = progress;
+    }
 }

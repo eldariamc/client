@@ -1,7 +1,7 @@
 package net.minecraft.client.gui;
 
-import fr.dabsunter.eldaria.Announce;
 import fr.dabsunter.eldaria.Eldaria;
+import fr.dabsunter.eldaria.FloatingLog;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.network.NetHandlerPlayClient;
@@ -67,7 +67,10 @@ public class GuiIngame extends Gui
     /** The ItemStack that is currently being highlighted */
     private ItemStack highlightingItemStack;
 
-    public Announce currentAnnounce = null;
+    private String currentAnnounce = "";
+    private int currentAnnounceUpFor;
+
+    private FloatingLog[] floatingLogs = new FloatingLog[10];
 
     public GuiIngame(Minecraft p_i1036_1_)
     {
@@ -82,15 +85,15 @@ public class GuiIngame extends Gui
     public void renderGameOverlay(float p_73830_1_, boolean p_73830_2_, int p_73830_3_, int p_73830_4_)
     {
         ScaledResolution var5 = new ScaledResolution(this.mc, this.mc.displayWidth, this.mc.displayHeight);
-        int var6 = var5.getScaledWidth();
-        int var7 = var5.getScaledHeight();
+        int scaledWidth = var5.getScaledWidth();
+        int scaledHeight = var5.getScaledHeight();
         FontRenderer fr = this.mc.fontRenderer;
         this.mc.entityRenderer.setupOverlayRendering();
         GL11.glEnable(GL11.GL_BLEND);
 
         if (Minecraft.isFancyGraphicsEnabled())
         {
-            this.renderVignette(this.mc.thePlayer.getBrightness(p_73830_1_), var6, var7);
+            this.renderVignette(this.mc.thePlayer.getBrightness(p_73830_1_), scaledWidth, scaledHeight);
         }
         else
         {
@@ -101,7 +104,7 @@ public class GuiIngame extends Gui
 
         if (this.mc.gameSettings.thirdPersonView == 0 && var9 != null && var9.getItem() == Item.getItemFromBlock(Blocks.pumpkin))
         {
-            this.renderPumpkinBlur(var6, var7);
+            this.renderPumpkinBlur(scaledWidth, scaledHeight);
         }
 
         if (!this.mc.thePlayer.isPotionActive(Potion.confusion))
@@ -110,7 +113,7 @@ public class GuiIngame extends Gui
 
             if (var10 > 0.0F)
             {
-                this.func_130015_b(var10, var6, var7);
+                this.func_130015_b(var10, scaledWidth, scaledHeight);
             }
         }
 
@@ -124,22 +127,20 @@ public class GuiIngame extends Gui
             this.mc.getTextureManager().bindTexture(widgetsTexPath);
             InventoryPlayer var31 = this.mc.thePlayer.inventory;
             this.zLevel = -90.0F;
-            this.drawTexturedModalRect(var6 / 2 - 91, var7 - 22, 0, 0, 182, 22);
-            this.drawTexturedModalRect(var6 / 2 - 91 - 1 + var31.currentItem * 20, var7 - 22 - 1, 0, 22, 24, 22);
+            this.drawTexturedModalRect(scaledWidth / 2 - 91, scaledHeight - 22, 0, 0, 182, 22);
+            this.drawTexturedModalRect(scaledWidth / 2 - 91 - 1 + var31.currentItem * 20, scaledHeight - 22 - 1, 0, 22, 24, 22);
             this.mc.getTextureManager().bindTexture(icons);
             GL11.glEnable(GL11.GL_BLEND);
             OpenGlHelper.glBlendFunc(775, 769, 1, 0);
-            this.drawTexturedModalRect(var6 / 2 - 7, var7 / 2 - 7, 0, 0, 16, 16);
+            this.drawTexturedModalRect(scaledWidth / 2 - 7, scaledHeight / 2 - 7, 0, 0, 16, 16);
             OpenGlHelper.glBlendFunc(770, 771, 1, 0);
             this.mc.mcProfiler.startSection("bossHealth");
             this.renderBossHealth();
             this.mc.mcProfiler.endSection();
 
-            this.renderAnnounce(); // Eldaria - Announce
-
             if (this.mc.playerController.shouldDrawHUD())
             {
-                this.func_110327_a(var6, var7);
+                this.func_110327_a(scaledWidth, scaledHeight);
             }
 
             this.mc.mcProfiler.startSection("actionBar");
@@ -148,8 +149,8 @@ public class GuiIngame extends Gui
 
             for (var11 = 0; var11 < 9; ++var11)
             {
-                var12 = var6 / 2 - 90 + var11 * 20 + 2;
-                var13 = var7 - 16 - 3;
+                var12 = scaledWidth / 2 - 90 + var11 * 20 + 2;
+                var13 = scaledHeight - 16 - 3;
                 this.renderInventorySlot(var11, var12, var13, p_73830_1_);
             }
 
@@ -175,7 +176,7 @@ public class GuiIngame extends Gui
             }
 
             var12 = (int)(220.0F * var33) << 24 | 1052704;
-            drawRect(0, 0, var6, var7, var12);
+            drawRect(0, 0, scaledWidth, scaledHeight, var12);
             GL11.glEnable(GL11.GL_ALPHA_TEST);
             GL11.glEnable(GL11.GL_DEPTH_TEST);
             this.mc.mcProfiler.endSection();
@@ -183,7 +184,7 @@ public class GuiIngame extends Gui
 
         var32 = 16777215;
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-        var11 = var6 / 2 - 91;
+        var11 = scaledWidth / 2 - 91;
         int var14;
         int var15;
         int var16;
@@ -198,7 +199,7 @@ public class GuiIngame extends Gui
             var34 = this.mc.thePlayer.getHorseJumpPower();
             var38 = 182;
             var14 = (int)(var34 * (float)(var38 + 1));
-            var15 = var7 - 32 + 3;
+            var15 = scaledHeight - 32 + 3;
             this.drawTexturedModalRect(var11, var15, 0, 84, var38, 5);
 
             if (var14 > 0)
@@ -218,7 +219,7 @@ public class GuiIngame extends Gui
             {
                 var38 = 182;
                 var14 = (int)(this.mc.thePlayer.experience * (float)(var38 + 1));
-                var15 = var7 - 32 + 3;
+                var15 = scaledHeight - 32 + 3;
                 this.drawTexturedModalRect(var11, var15, 0, 64, var38, 5);
 
                 if (var14 > 0)
@@ -235,8 +236,8 @@ public class GuiIngame extends Gui
                 boolean var39 = false;
                 var14 = var39 ? var32 : 8453920;
                 String var43 = "" + this.mc.thePlayer.experienceLevel;
-                var16 = (var6 - fr.getStringWidth(var43)) / 2;
-                var17 = var7 - 31 - 4;
+                var16 = (scaledWidth - fr.getStringWidth(var43)) / 2;
+                var17 = scaledHeight - 31 - 4;
                 boolean var18 = false;
                 fr.drawString(var43, var16 + 1, var17, 0);
                 fr.drawString(var43, var16 - 1, var17, 0);
@@ -256,8 +257,8 @@ public class GuiIngame extends Gui
             if (this.remainingHighlightTicks > 0 && this.highlightingItemStack != null)
             {
                 var35 = this.highlightingItemStack.getDisplayName();
-                var13 = (var6 - fr.getStringWidth(var35)) / 2;
-                var14 = var7 - 59;
+                var13 = (scaledWidth - fr.getStringWidth(var35)) / 2;
+                var14 = scaledHeight - 59;
 
                 if (!this.mc.playerController.shouldDrawHUD())
                 {
@@ -300,18 +301,24 @@ public class GuiIngame extends Gui
             }*/
 
             var13 = fr.getStringWidth(var35);
-            fr.drawStringWithShadow(var35, var6 - var13 - 10, 5, var32);
+            fr.drawStringWithShadow(var35, scaledWidth - var13 - 10, 5, var32);
             this.mc.mcProfiler.endSection();
         }
 
         int var21;
         int var22;
         int var23;
-        // Eldaria - CPS & Connection
 
-        this.mc.fontRenderer.drawString(" " + Minecraft.join, var6 - 2,  var7-10, 1);
+        // Eldaria - Connection
+        for (int i = 0; i < floatingLogs.length; i++) {
+            FloatingLog log = floatingLogs[i];
+            if (log != null)
+                log.draw(fr, scaledWidth, scaledHeight - 27 - i * 9);
+        }
+
+        // Eldaria - CPS
         String cps = "§7CPS: §c" + Eldaria.ANTI_CHEAT.getCPS();
-        this.mc.fontRenderer.drawString(cps, var6/2 - 95 - this.mc.fontRenderer.getStringWidth(cps), var7 - 10, 16777215);
+        fr.drawString(cps, scaledWidth/2 - 95 - fr.getStringWidth(cps), scaledHeight - 25, 16777215);
 
 
 
@@ -333,9 +340,9 @@ public class GuiIngame extends Gui
                 long var44 = Runtime.getRuntime().freeMemory();
                 long var45 = var41 - var44;
                 String var20 = "Used memory: " + var45 * 100L / var36 + "% (" + var45 / 1024L / 1024L + "MB) of " + var36 / 1024L / 1024L + "MB";
-                this.drawString(fr, var20, var6 - fr.getStringWidth(var20) - 2, 2, var21);
+                this.drawString(fr, var20, scaledWidth - fr.getStringWidth(var20) - 2, 2, var21);
                 var20 = "Allocated memory: " + var41 * 100L / var36 + "% (" + var41 / 1024L / 1024L + "MB)";
-                this.drawString(fr, var20, var6 - fr.getStringWidth(var20) - 2, 12, var21);
+                this.drawString(fr, var20, scaledWidth - fr.getStringWidth(var20) - 2, 12, var21);
                 var22 = MathHelper.floor_double(this.mc.thePlayer.posX);
                 var23 = MathHelper.floor_double(this.mc.thePlayer.posY);
                 int var24 = MathHelper.floor_double(this.mc.thePlayer.posZ);
@@ -397,7 +404,7 @@ public class GuiIngame extends Gui
             if (var13 > 8)
             {
                 GL11.glPushMatrix();
-                GL11.glTranslatef((float)(var6 / 2), (float)(var7 - 68), 0.0F);
+                GL11.glTranslatef((float)(scaledWidth / 2), (float)(scaledHeight - 68), 0.0F);
                 GL11.glEnable(GL11.GL_BLEND);
                 OpenGlHelper.glBlendFunc(770, 771, 1, 0);
                 var14 = var32;
@@ -415,18 +422,45 @@ public class GuiIngame extends Gui
             this.mc.mcProfiler.endSection();
         }
 
+        // Eldaria - Announce
+        if (this.currentAnnounceUpFor > 0)
+        {
+            var34 = (float)this.currentAnnounceUpFor - p_73830_1_;
+            var13 = (int)(var34 * 255.0F / 20.0F);
+
+            if (var13 > 255)
+            {
+                var13 = 255;
+            }
+
+            if (var13 > 8)
+            {
+                GL11.glPushMatrix();
+                GL11.glTranslatef((float)(scaledWidth / 2), 68.0F, 0.0F);
+                GL11.glEnable(GL11.GL_BLEND);
+                OpenGlHelper.glBlendFunc(770, 771, 1, 0);
+                var14 = var32;
+
+                fr.drawString(this.currentAnnounce, -fr.getStringWidth(this.currentAnnounce) / 2, -4, var14 + (var13 << 24 & -16777216));
+                GL11.glDisable(GL11.GL_BLEND);
+                GL11.glPopMatrix();
+            }
+
+            this.mc.mcProfiler.endSection();
+        }
+
         ScoreObjective var37 = this.mc.theWorld.getScoreboard().func_96539_a(1);
 
         if (var37 != null)
         {
-            this.func_96136_a(var37, var7, var6, fr);
+            this.func_96136_a(var37, scaledHeight, scaledWidth, fr);
         }
 
         GL11.glEnable(GL11.GL_BLEND);
         OpenGlHelper.glBlendFunc(770, 771, 1, 0);
         GL11.glDisable(GL11.GL_ALPHA_TEST);
         GL11.glPushMatrix();
-        GL11.glTranslatef(0.0F, (float)(var7 - 48), 0.0F);
+        GL11.glTranslatef(0.0F, (float)(scaledHeight - 48), 0.0F);
         this.mc.mcProfiler.startSection("chat");
         this.persistantChatGUI.func_146230_a(this.updateCounter);
         this.mc.mcProfiler.endSection();
@@ -453,7 +487,7 @@ public class GuiIngame extends Gui
                 var46 = 150;
             }
 
-            int var19 = (var6 - var17 * var46) / 2;
+            int var19 = (scaledWidth - var17 * var46) / 2;
             byte var47 = 10;
             drawRect(var19 - 1, var47 - 1, var19 + var46 * var17, var47 + 9 * var16, Integer.MIN_VALUE);
 
@@ -888,19 +922,6 @@ public class GuiIngame extends Gui
         }
     }
 
-    private void renderAnnounce() { // Eldaria - Announce
-        if (currentAnnounce != null) {
-
-            FontRenderer fr = this.mc.fontRenderer;
-            fr.drawStringWithShadow(currentAnnounce.message,
-                    this.mc.displayWidth / 2 - fr.getStringWidth(currentAnnounce.message) / 2,
-                    32, 16777215);
-
-            if (--currentAnnounce.duration <= 0)
-                currentAnnounce = null;
-        }
-    }
-
     private void renderPumpkinBlur(int p_73836_1_, int p_73836_2_)
     {
         GL11.glDisable(GL11.GL_DEPTH_TEST);
@@ -1032,6 +1053,9 @@ public class GuiIngame extends Gui
             --this.recordPlayingUpFor;
         }
 
+        if (currentAnnounceUpFor > 0) // Eldaria - announce bar
+            currentAnnounceUpFor--;
+
         ++this.updateCounter;
         this.field_152127_m.func_152439_a();
 
@@ -1056,6 +1080,12 @@ public class GuiIngame extends Gui
             }
 
             this.highlightingItemStack = var1;
+        }
+
+        for (int i = 0; i < floatingLogs.length; i++) {
+            FloatingLog log = floatingLogs[i];
+            if (log != null && log.update())
+                floatingLogs[i] = null;
         }
     }
 
@@ -1083,6 +1113,26 @@ public class GuiIngame extends Gui
     	recordPlayingUpFor = ticks;
     	recordIsPlaying = rainbow;
 	}
+
+	public void setAnnounceMessage(String message, int ticks) {
+	    currentAnnounce = message;
+	    currentAnnounceUpFor = ticks;
+    }
+
+	public void addFloatingLog(String log) {
+        int index = 0;
+        for (int i = 0; i < floatingLogs.length; i++) {
+            if (floatingLogs[i] != null) {
+                if (floatingLogs[i].getTimeout() < floatingLogs[index].getTimeout())
+                    index = i;
+                continue;
+            }
+            index = i;
+            break;
+        }
+
+        floatingLogs[index] = new FloatingLog(log);
+    }
 
     public GuiNewChat getChatGUI()
     {

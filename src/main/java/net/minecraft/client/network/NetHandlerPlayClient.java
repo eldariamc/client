@@ -2,7 +2,6 @@ package net.minecraft.client.network;
 
 import com.google.common.base.Charsets;
 import com.mojang.authlib.GameProfile;
-
 import fr.dabsunter.mcp.network.CustomPacketHandler;
 import fr.dabsunter.mcp.network.packets.AuthPacket;
 import io.netty.buffer.ByteBuf;
@@ -68,7 +67,6 @@ import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.storage.ISaveHandler;
 import net.minecraft.world.storage.MapData;
 import net.minecraft.world.storage.MapStorage;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -703,23 +701,13 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
      */
     public void handleChat(S02PacketChat p_147251_1_)
     {
-        this.gameController.ingameGUI.getChatGUI().func_146227_a(p_147251_1_.func_148915_c());
- 	   IChatComponent chatComponent = p_147251_1_.func_148915_c();
-
-        if(p_147251_1_.func_148915_c().getUnformattedText().startsWith("[-]")) {
-  	      String[] message = chatComponent.getFormattedText().split(" ", 2);
-          Minecraft.join = message[1];
-
-    		
-    	}
-    	
-    	else if(p_147251_1_.func_148915_c().getUnformattedText().startsWith("[+]")) {
-    	      String[] message = chatComponent.getFormattedText().split(" ", 2);
-              Minecraft.join = message[1];
-
-    		
-}
-        
+        IChatComponent chatComponent = p_147251_1_.func_148915_c();
+        String rawText = chatComponent.getUnformattedText();
+        if(rawText.length() > 3 &&rawText.charAt(0) == '[' && rawText.charAt(2) == ']') {
+            this.gameController.ingameGUI.addFloatingLog(chatComponent.getFormattedText());
+    	} else {
+            this.gameController.ingameGUI.getChatGUI().func_146227_a(chatComponent);
+        }
     }
 
     /**
