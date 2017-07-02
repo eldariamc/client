@@ -240,6 +240,7 @@ public class GuiKeyBindingList extends GuiListExtended
         {
             this.keyBinding = keyBinding;
             this.cmdTextField = new GuiTextField(GuiKeyBindingList.this.mc.fontRenderer, 0, 0, 135, 18);
+            this.cmdTextField.func_146203_f(255);
             this.cmdTextField.setText(command);
             this.keyButton = new GuiButton(0, 0, 0, 75, 18, I18n.format(keyBinding.getKeyDescription()));
             this.removeButton = new GuiButton(0, 0, 0, 50, 18, I18n.format("Remove"));
