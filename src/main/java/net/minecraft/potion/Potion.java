@@ -64,7 +64,7 @@ public class Potion
     public static final Potion field_76434_w = (new PotionHealthBoost(21, false, 16284963)).setPotionName("potion.healthBoost").setIconIndex(2, 2).func_111184_a(SharedMonsterAttributes.maxHealth, "5D6F0BA2-1186-46AC-B896-C61C5CEE99CC", 4.0D, 0);
     public static final Potion field_76444_x = (new PotionAbsoption(22, false, 2445989)).setPotionName("potion.absorption").setIconIndex(2, 2);
     public static final Potion field_76443_y = (new PotionHealth(23, false, 16262179)).setPotionName("potion.saturation");
-    public static final Potion featherFalling = new Potion(24, false, 14073852).setPotionName("potion.featherFalling").setIconIndex(2, 3);
+    public static final Potion featherFalling = new Potion(24, false, 14073852).setPotionName("potion.featherFalling").setIconIndex(3, 2);
     public static final Potion field_76409_A = null;
     public static final Potion field_76410_B = null;
     public static final Potion field_76411_C = null;
