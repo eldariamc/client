@@ -7,7 +7,6 @@ import net.minecraft.client.settings.GameSettings;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.nbt.CompressedStreamTools;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.play.client.C17PacketCustomPayload;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.MovementInputFromOptions;
 
@@ -161,7 +160,8 @@ public class GuiSprint extends GuiScreen {
 					svFlyingBoost = false;
 					connectedServer = new String(var2);
 					if (!connectedServer.startsWith("127.0.0.1") && !connectedServer.equals("localhost")) {
-						mc.thePlayer.sendQueue.addToSendQueue(new C17PacketCustomPayload("BSprint", new byte[]{4}));
+						/* Osef du payload "g 1 mod mdrr"
+						mc.thePlayer.sendQueue.addToSendQueue(new C17PacketCustomPayload("BSprint", new byte[]{4}));*/
 					} else {
 						svRunInAllDirs = true;
 						svFlyingBoost = true;
