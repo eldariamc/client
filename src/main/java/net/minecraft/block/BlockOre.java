@@ -33,14 +33,10 @@ public class BlockOre extends Block
             return Items.quartz;
         if (this == Blocks.lignite_ore)
             return Items.lignite;
-        if (this == Blocks.zinc_ore)
-            return Items.zinc;
-        if (this == Blocks.cronyxe_ore)
-            return Items.cronyxe;
         if (this == Blocks.gemme_ore)
             return Items.gemme;
         if (this == Blocks.eldarium_ore)
-            return Items.eldarium;
+            return Items.eldarium_nugget;
 
         return super.getItemDropped(p_149650_1_, p_149650_2_, p_149650_3_);
     }
@@ -56,7 +52,7 @@ public class BlockOre extends Block
             return 1 + rand.nextInt(2);
         if (this == Blocks.kobalt_ore)
             return 1 + rand.nextInt(3);*/
-        if (this == Blocks.eldarium_ore || this == Blocks.xp_ore)
+        if (this == Blocks.xp_ore)
             return 0;
 
         return super.quantityDropped(rand);
@@ -76,7 +72,7 @@ public class BlockOre extends Block
                 i = 0;
             }
 
-            return (this == Blocks.eldarium_ore ? 1 : this.quantityDropped(rand)) * (i + 1); // Keyrisium - keyrisium ore only drop with fortune
+            return (this == Blocks.eldarium_ore ? 1 : this.quantityDropped(rand)) * (i + 1); // Eldaria - eldarium ore only drop with fortune
         }
         else
         {

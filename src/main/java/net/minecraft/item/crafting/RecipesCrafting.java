@@ -29,7 +29,7 @@ public class RecipesCrafting
         cm.addRecipe(new ItemStack(Blocks.beacon, 1), "GGG", "GSG", "OOO", 'G', Blocks.glass, 'S', Items.nether_star, 'O', Blocks.obsidian);
         cm.addRecipe(new ItemStack(Blocks.nether_brick, 1), "NN", "NN", 'N', Items.netherbrick);
 
-        // --- Crafts Keyrisium ---
+        // --- Crafts Eldaria ---
 
         cm.addRecipe(new ItemStack(Blocks.obsidian_furnace), "###", "#F#", "###", '#', Blocks.obsidian, 'F', Blocks.furnace);
         cm.addRecipe(new ItemStack(Blocks.reinforced_obsidian, 2), "##", "##", '#', Blocks.cobblestone);
@@ -42,7 +42,9 @@ public class RecipesCrafting
         cm.addRecipe(new ItemStack(Blocks.cronyxe_chest), "###", "#C#", "###", '#', Items.cronyxe, 'C', Blocks.chest);
         cm.addRecipe(new ItemStack(Blocks.kobalt_chest), "###", "#C#", "###", '#', Items.kobalt, 'C', Blocks.chest);
         cm.addRecipe(new ItemStack(Items.chest_orb), "CG ", "GKG", " G-", 'C', Items.cronyxe, 'G', Blocks.glass, 'K', Items.kobalt, '-', Items.stick);
+        cm.addRecipe(new ItemStack(Items.eldarium), "###", "###", "###", '#', Items.eldarium_nugget);
+        cm.addRecipe(new ItemStack(Items.eldarium_nugget, 9), "#", '#', Items.eldarium);
 
-        // ------------------------
+        // -----------------------
     }
 }

@@ -275,6 +275,7 @@ public class Item
         itemRegistry.addObject(id++, "bow_cronyxe", (new BowCronyxe()).setUnlocalizedName("bow_cronyxe").setTextureName("bow_cronyxe"));
         itemRegistry.addObject(id++, "bow_kobalt", (new BowKobalt()).setUnlocalizedName("bow_kobalt").setTextureName("bow_kobalt"));
         itemRegistry.addObject(id++, "bow_eldarium", (new BowEldarium()).setUnlocalizedName("bow_eldarium").setTextureName("bow_eldarium"));
+        itemRegistry.addObject(id++, "eldarium_nugget", new Item().setUnlocalizedName("eldariumNugget").setTextureName("eldarium_nugget").setCreativeTab(CreativeTabs.tabMaterials));
 
 
         // -----------------------

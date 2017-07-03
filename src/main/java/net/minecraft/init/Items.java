@@ -229,6 +229,7 @@ public class Items
     public static final BowCronyxe bow_cronyxe = (BowCronyxe)Item.itemRegistry.getObject("bow_cronyxe");
     public static final BowKobalt bow_kobalt = (BowKobalt)Item.itemRegistry.getObject("bow_kobalt");
     public static final BowEldarium bow_eldarium = (BowEldarium)Item.itemRegistry.getObject("bow_eldarium");
+    public static final Item eldarium_nugget = (Item)Item.itemRegistry.getObject("eldarium_nugget");
 
     // -----------------------
 
