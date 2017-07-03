@@ -1,7 +1,5 @@
 package net.minecraft.client.gui;
 
-import bspkrs.armorstatushud.fml.gui.GuiASHConfig;
-import bspkrs.statuseffecthud.fml.gui.GuiSEHConfig;
 import net.minecraft.client.audio.PositionedSoundRecord;
 import net.minecraft.client.audio.SoundCategory;
 import net.minecraft.client.audio.SoundEventAccessorComposite;
@@ -59,8 +57,7 @@ public class GuiOptions extends GuiScreen implements GuiYesNoCallback
             ++var1;
         }
 
-        this.buttonList.add(new GuiButton(666, this.width / 2 - 155, this.height / 6 + 48 - 6, 75, 20, "ArmorHUD")); // Keyrisium - add huds configs buttons
-        this.buttonList.add(new GuiButton(667, this.width / 2 - 80, this.height / 6 + 48 - 6, 75, 20, "EffectHUD"));
+        this.buttonList.add(new GuiButton(666, this.width / 2 - 155, this.height / 6 + 48 - 6, 150, 20, I18n.format("options.eldaria.title")));
 
         this.buttonList.add(new GuiButton(8675309, this.width / 2 + 5, this.height / 6 + 48 - 6, 150, 20, "Super Secret Settings...")
         {
@@ -164,15 +161,7 @@ public class GuiOptions extends GuiScreen implements GuiYesNoCallback
             }
 
             if (p_146284_1_.id == 666) {
-                try {
-                    this.mc.displayGuiScreen(new GuiASHConfig(this));
-                } catch (NoSuchMethodException e) {
-                    e.printStackTrace();
-                }
-            }
-
-            if (p_146284_1_.id == 667) {
-                this.mc.displayGuiScreen(new GuiSEHConfig(this));
+                this.mc.displayGuiScreen(new GuiEldariaOptions(this));
             }
         }
     }

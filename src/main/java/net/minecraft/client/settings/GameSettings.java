@@ -2,6 +2,7 @@ package net.minecraft.client.settings;
 
 import com.google.common.collect.Maps;
 import com.google.gson.Gson;
+import fr.dabsunter.eldaria.EldariaSettings;
 import fr.dabsunter.eldaria.macrocmd.MacroCommands;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.SoundCategory;
@@ -2335,6 +2336,7 @@ public class GameSettings
 
         this.saveOfOptions();
         MacroCommands.save(); // Eldaria - Save macro config
+        EldariaSettings.save();
         this.sendSettingsToServer();
     }
 

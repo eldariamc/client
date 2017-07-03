@@ -39,10 +39,10 @@ public class GuiScreen extends Gui
     public int height;
 
     /** A list of all the buttons in this container. */
-    public List buttonList = new ArrayList();
+    public List<GuiButton> buttonList = new ArrayList<>();
 
     /** A list of all the labels in this container. */
-    protected List labelList = new ArrayList();
+    protected List<GuiLabel> labelList = new ArrayList<>();
     public boolean field_146291_p;
 
     /** The FontRenderer used by GuiScreen */
@@ -72,18 +72,18 @@ public class GuiScreen extends Gui
     /**
      * Draws the screen and all the components in it.
      */
-    public void drawScreen(int p_73863_1_, int p_73863_2_, float p_73863_3_)
+    public void drawScreen(int mouseX, int mouseY, float p_73863_3_)
     {
         int var4;
 
         for (var4 = 0; var4 < this.buttonList.size(); ++var4)
         {
-            ((GuiButton)this.buttonList.get(var4)).drawButton(this.mc, p_73863_1_, p_73863_2_);
+            this.buttonList.get(var4).drawButton(this.mc, mouseX, mouseY);
         }
 
         for (var4 = 0; var4 < this.labelList.size(); ++var4)
         {
-            ((GuiLabel)this.labelList.get(var4)).func_146159_a(this.mc, p_73863_1_, p_73863_2_);
+            this.labelList.get(var4).drawLabel(this.mc, mouseX, mouseY);
         }
     }
 

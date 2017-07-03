@@ -9,6 +9,7 @@ import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.ListenableFutureTask;
 import com.mojang.authlib.minecraft.MinecraftSessionService;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
+import fr.dabsunter.eldaria.EldariaSettings;
 import fr.dabsunter.jl.player.DabsPlayerApplet;
 import fr.dabsunter.mcp.McpHandler;
 import fr.dabsunter.mcp.Tickable;
@@ -391,6 +392,7 @@ public class Minecraft implements IPlayerUsage
         McpHandler.firePreInit();
 
         this.gameSettings = new GameSettings(this, this.mcDataDir);
+        EldariaSettings.load(mcDataDir);
 
         if (this.gameSettings.overrideHeight > 0 && this.gameSettings.overrideWidth > 0)
         {

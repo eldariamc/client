@@ -156,7 +156,7 @@ public class ConfigCategory implements Map<String, Property> {
       return this;
    }
 
-   public List getPropertyOrder() {
+   public List<ConfigProperty> getPropertyOrder() {
       ArrayList<ConfigProperty> list = new ArrayList<>();
       Iterable<String> keys = this.propertyOrder != null?ImmutableList.copyOf(this.propertyOrder):ImmutableList.copyOf(this.properties.keySet());
       for (String key : keys)
