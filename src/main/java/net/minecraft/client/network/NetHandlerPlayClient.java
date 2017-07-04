@@ -3,7 +3,6 @@ package net.minecraft.client.network;
 import com.google.common.base.Charsets;
 import com.mojang.authlib.GameProfile;
 import fr.dabsunter.mcp.network.CustomPacketHandler;
-import fr.dabsunter.mcp.network.packets.AuthPacket;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.util.concurrent.GenericFutureListener;
@@ -170,8 +169,6 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
         this.gameController.gameSettings.sendSettingsToServer();
         this.netManager.scheduleOutboundPacket(new C17PacketCustomPayload("MC|Brand", ClientBrandRetriever.getClientModName().getBytes(Charsets.UTF_8)));
         CustomPacketHandler.register(gameController);
-        Session session = gameController.getSession();
-        CustomPacketHandler.dispatch(new AuthPacket(session.getUsername(), session.getUniqueID(), session.getToken()));
     }
 
     /**
