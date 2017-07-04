@@ -216,7 +216,7 @@ public class Items
     public static final Item cronyxe_boots = (Item)Item.itemRegistry.getObject("cronyxe_boots");
     public static final Item eldarium_helmet = (Item)Item.itemRegistry.getObject("eldarium_helmet");
     public static final Item eldarium_chestplate = (Item)Item.itemRegistry.getObject("eldarium_chestplate");
-    public static final Item eldarium_leggings = (Item)Item.itemRegistry.getObject("eldarium_leggigs");
+    public static final Item eldarium_leggings = (Item)Item.itemRegistry.getObject("eldarium_leggings");
     public static final Item eldarium_boots = (Item)Item.itemRegistry.getObject("eldarium_boots");
     public static final Item dynamite = (Item)Item.itemRegistry.getObject("dynamite");
     public static final Item repair_orb = (Item)Item.itemRegistry.getObject("repair_orb");
