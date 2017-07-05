@@ -38,7 +38,7 @@ public class StringTranslate
     {
         try
         {
-            InputStream var1 = StringTranslate.class.getResourceAsStream("/assets/minecraft/lang/en_US.lang");
+            InputStream var1 = StringTranslate.class.getResourceAsStream("/assets/minecraft/lang/fr_FR.lang");
             Iterator var2 = IOUtils.readLines(var1, Charsets.UTF_8).iterator();
 
             while (var2.hasNext())

@@ -322,7 +322,7 @@ public class GameSettings
         this.noclipRate = 1.0F;
         this.debugCamRate = 1.0F;
         this.fovSetting = 70.0F;
-        this.language = "en_US";
+        this.language = "fr_FR";
         this.forceUnicodeFont = false;
         this.mc = par1Minecraft;
         this.optionsFile = new File(par2File, "options.txt");
@@ -397,7 +397,7 @@ public class GameSettings
         this.noclipRate = 1.0F;
         this.debugCamRate = 1.0F;
         this.fovSetting = 70.0F;
-        this.language = "en_US";
+        this.language = "fr_FR";
         this.forceUnicodeFont = false;
         this.limitFramerate = (int)GameSettings.Options.FRAMERATE_LIMIT.getValueMax();
         this.ofKeyBindZoom = new KeyBinding("Zoom", 29, "key.categories.misc");

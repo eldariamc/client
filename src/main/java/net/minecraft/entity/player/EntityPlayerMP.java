@@ -51,7 +51,7 @@ import java.util.*;
 public class EntityPlayerMP extends EntityPlayer implements ICrafting
 {
     private static final Logger logger = LogManager.getLogger();
-    private String translator = "en_US";
+    private String translator = "fr_FR";
 
     /**
      * The NetServerHandler assigned to this player by the ServerConfigurationManager.

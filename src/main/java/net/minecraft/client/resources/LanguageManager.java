@@ -68,9 +68,9 @@ public class LanguageManager implements IResourceManagerReloadListener
 
     public void onResourceManagerReload(IResourceManager p_110549_1_)
     {
-        ArrayList var2 = Lists.newArrayList(new String[] {"en_US"});
+        ArrayList var2 = Lists.newArrayList(new String[] {"fr_FR"});
 
-        if (!"en_US".equals(this.currentLanguage))
+        if (!"fr_FR".equals(this.currentLanguage))
         {
             var2.add(this.currentLanguage);
         }
@@ -96,7 +96,7 @@ public class LanguageManager implements IResourceManagerReloadListener
 
     public Language getCurrentLanguage()
     {
-        return this.languageMap.containsKey(this.currentLanguage) ? (Language)this.languageMap.get(this.currentLanguage) : (Language)this.languageMap.get("en_US");
+        return this.languageMap.containsKey(this.currentLanguage) ? (Language)this.languageMap.get(this.currentLanguage) : (Language)this.languageMap.get("fr_FR");
     }
 
     public SortedSet getLanguages()
