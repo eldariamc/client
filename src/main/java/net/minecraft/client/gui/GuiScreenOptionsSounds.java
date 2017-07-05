@@ -46,9 +46,6 @@ public class GuiScreenOptionsSounds extends GuiScreen
             }
         }
 
-
-        this.buttonList.add(new GuiButton(16, this.width / 2 - 155 + 160, this.height / 6 - 12 + 24 * 5, 150, 20, "Choisir la Radio"));
-
         this.buttonList.add(new GuiButton(200, this.width / 2 - 100, this.height / 6 + 168, I18n.format("gui.done")));
     }
 
@@ -60,11 +57,6 @@ public class GuiScreenOptionsSounds extends GuiScreen
             {
                 this.mc.gameSettings.saveOptions();
                 this.mc.displayGuiScreen(this.field_146505_f);
-            }
-            else if (p_146284_1_.id == 16)
-            {
-                this.mc.gameSettings.saveOfOptions();
-                this.mc.displayGuiScreen(new GuiRadio(this));
             }
         }
     }

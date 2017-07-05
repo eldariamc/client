@@ -215,7 +215,7 @@ public class EntityPlayerSP extends AbstractClientPlayer
                 }*/
             } else {
                 GuiSprint.updateSettingBehavior(this.mc);
-                boolean lastheld = GuiScreen.held;
+                boolean lastheld = GuiSprint.held;
                 boolean state = ((MovementInputFromOptions)this.movementInput).sprint;
                 boolean doubletap = GuiSprint.allowDoubleTap || GuiSprint.disableModFunctionality;
                 if(!this.capabilities.isFlying && ((MovementInputFromOptions)this.movementInput).sneak) {
@@ -226,8 +226,8 @@ public class EntityPlayerSP extends AbstractClientPlayer
                     this.setSprinting(state);
                 }
 
-                GuiScreen.held = state;
-                if(doubletap && !GuiScreen.held && GuiScreen.stoptime == 0 && this.onGround && !var3 && this.movementInput.moveForward >= var2 && !this.isSprinting() && var4 && !this.isUsingItem() && !this.isPotionActive(Potion.blindness)) {
+                GuiSprint.held = state;
+                if(doubletap && !GuiSprint.held && GuiSprint.stoptime == 0 && this.onGround && !var3 && this.movementInput.moveForward >= var2 && !this.isSprinting() && var4 && !this.isUsingItem() && !this.isPotionActive(Potion.blindness)) {
                     if(this.sprintToggleTimer == 0) {
                         this.sprintToggleTimer = 7;
                     } else {
@@ -237,18 +237,18 @@ public class EntityPlayerSP extends AbstractClientPlayer
                 }
 
                 if(doubletap) {
-                    if(lastheld && !GuiScreen.held) {
-                        GuiScreen.stoptime = 1;
+                    if(lastheld && !GuiSprint.held) {
+                        GuiSprint.stoptime = 1;
                     }
 
-                    if(GuiScreen.stoptime > 0) {
-                        --GuiScreen.stoptime;
+                    if(GuiSprint.stoptime > 0) {
+                        --GuiSprint.stoptime;
                         this.setSprinting(false);
                     }
                 }
 
                 if(GuiSprint.flyingBoost > 0) {
-                    if(state && this.capabilities.isFlying && GuiScreen.canBoostFlying(this.mc)) {
+                    if(state && this.capabilities.isFlying && GuiSprint.canBoostFlying(this.mc)) {
                         this.capabilities.setFlySpeed(0.05F * (float)(1 + GuiSprint.flyingBoost));
                         if(this.movementInput.sneak) {
                             this.motionY -= 0.15D * (double)GuiSprint.flyingBoost;
@@ -268,7 +268,7 @@ public class EntityPlayerSP extends AbstractClientPlayer
                     this.setSprinting(false);
                 }
 
-                if(this.isSprinting() && (this.movementInput.moveForward < var2 || this.isCollidedHorizontally || !var4) && (!GuiScreen.canRunInAllDirs(this.mc) || !GuiSprint.allowAllDirs || Math.abs(this.movementInput.moveForward) <= 1.0E-4F && Math.abs(this.movementInput.moveStrafe) <= 1.0E-4F)) {
+                if(this.isSprinting() && (this.movementInput.moveForward < var2 || this.isCollidedHorizontally || !var4) && (!GuiSprint.canRunInAllDirs(this.mc) || !GuiSprint.allowAllDirs || Math.abs(this.movementInput.moveForward) <= 1.0E-4F && Math.abs(this.movementInput.moveStrafe) <= 1.0E-4F)) {
                     this.setSprinting(false);
                 }
             }

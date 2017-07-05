@@ -1,7 +1,8 @@
 package net.minecraft.client.gui;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.client.resources.I18n;
+import net.minecraft.util.MathHelper;
 import org.lwjgl.opengl.GL11;
  
 public class GuiRadio extends GuiScreen {
@@ -57,15 +58,15 @@ public class GuiRadio extends GuiScreen {
  
 	public void drawScreen(int p_73863_1_, int p_73863_2_, float p_73863_3_) {
 		this.drawDefaultBackground();
-		GL11.glPushMatrix();
-		GL11.glTranslatef((float)(this.width / 2 - 150), 70.0F, 0.0F);
-		GL11.glRotatef(-4.0F, 0.0F, 0.0F, 1.0F);
-		// float var8 = 1.8F - MathHelper.abs(MathHelper.sin((float)(Minecraft.getSystemTime() % 1000L) / 1000.0F * (float)Math.PI * 2.0F) * 0.1F);
-		//var8 = var8 * 90.0F / (float)(this.fontRendererObj.getStringWidth("AllFight !") + 32);
-		// GL11.glScalef(var8, var8, var8);
-		//this.drawString(this.fontRendererObj, "AllFight !", 0, -8, 66116160);
-		GL11.glPopMatrix();
-		this.drawCenteredString(this.fontRendererObj, EnumChatFormatting.BLUE + "Sélection de la Radio", this.width / 2, 10, 34004);
 		super.drawScreen(p_73863_1_, p_73863_2_, p_73863_3_);
+		GL11.glPushMatrix();
+		GL11.glTranslatef((float)(this.width / 2 + 75), (float) (height / 4 + 25), 0.0F);
+		GL11.glRotatef(-4.0F, 0.0F, 0.0F, 1.0F);
+		float var8 = 1.8F - MathHelper.abs(MathHelper.sin((float)(Minecraft.getSystemTime() % 1000L) / 1000.0F * (float)Math.PI * 2.0F) * 0.1F);
+		var8 = var8 * 90.0F / (float)(this.fontRendererObj.getStringWidth("Wesh Alors ?") + 32);
+		GL11.glScalef(var8, var8, var8);
+		this.drawString(this.fontRendererObj, "Wesh Alors ?", 0, -8, 66116160);
+		GL11.glPopMatrix();
+		this.drawCenteredString(this.fontRendererObj, I18n.format("options.eldaria.choseRadio.title"), this.width / 2, 10, 34004);
 	}
 }

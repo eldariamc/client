@@ -1,9 +1,5 @@
 package net.minecraft.client.gui;
 
-import net.minecraft.client.audio.PositionedSoundRecord;
-import net.minecraft.client.audio.SoundCategory;
-import net.minecraft.client.audio.SoundEventAccessorComposite;
-import net.minecraft.client.audio.SoundHandler;
 import net.minecraft.client.gui.stream.GuiStreamOptions;
 import net.minecraft.client.gui.stream.GuiStreamUnavailable;
 import net.minecraft.client.resources.I18n;
@@ -12,7 +8,7 @@ import net.minecraft.client.stream.IStream;
 
 public class GuiOptions extends GuiScreen implements GuiYesNoCallback
 {
-    private static final GameSettings.Options[] field_146440_f = new GameSettings.Options[] {GameSettings.Options.FOV, GameSettings.Options.DIFFICULTY};
+    private static final GameSettings.Options[] field_146440_f = new GameSettings.Options[] {GameSettings.Options.FOV/*, GameSettings.Options.DIFFICULTY*/};
     private final GuiScreen field_146441_g;
     private final GameSettings field_146443_h;
     protected String field_146442_a = "Options";
@@ -57,9 +53,13 @@ public class GuiOptions extends GuiScreen implements GuiYesNoCallback
             ++var1;
         }
 
-        this.buttonList.add(new GuiButton(666, this.width / 2 - 155, this.height / 6 + 48 - 6, 150, 20, I18n.format("options.eldaria.title")));
+        this.buttonList.add(new GuiButton(665, this.width / 2 - 155 + 160, this.height / 6 - 12, 150, 20, I18n.format("options.eldaria.choseRadio")));
 
-        this.buttonList.add(new GuiButton(8675309, this.width / 2 + 5, this.height / 6 + 48 - 6, 150, 20, "Super Secret Settings...")
+        this.buttonList.add(new GuiButton(666, this.width / 2 - 155, this.height / 6 + 48 - 6, 150, 20, I18n.format("options.eldaria.main.title")));
+
+        this.buttonList.add(new GuiButton(667, this.width / 2 + 5, this.height / 6 + 48 - 6, 150, 20, I18n.format("options.eldaria.betterSprint")));
+
+        /*this.buttonList.add(new GuiButton(8675309, this.width / 2 + 5, this.height / 6 + 48 - 6, 150, 20, "Super Secret Settings...")
         {
             public void func_146113_a(SoundHandler p_146113_1_)
             {
@@ -70,14 +70,14 @@ public class GuiOptions extends GuiScreen implements GuiYesNoCallback
                     p_146113_1_.playSound(PositionedSoundRecord.func_147674_a(var2.func_148729_c(), 0.5F));
                 }
             }
-        });
+        });*/
         this.buttonList.add(new GuiButton(106, this.width / 2 - 155, this.height / 6 + 72 - 6, 150, 20, I18n.format("options.sounds", new Object[0])));
         this.buttonList.add(new GuiButton(107, this.width / 2 + 5, this.height / 6 + 72 - 6, 150, 20, I18n.format("options.stream", new Object[0])));
         this.buttonList.add(new GuiButton(101, this.width / 2 - 155, this.height / 6 + 96 - 6, 150, 20, I18n.format("options.video", new Object[0])));
         this.buttonList.add(new GuiButton(100, this.width / 2 + 5, this.height / 6 + 96 - 6, 150, 20, I18n.format("options.controls", new Object[0])));
-        this.buttonList.add(new GuiButton(102, this.width / 2 - 155, this.height / 6 + 120 - 6, 150, 20, I18n.format("options.language", new Object[0])));
-        this.buttonList.add(new GuiButton(103, this.width / 2 + 5, this.height / 6 + 120 - 6, 150, 20, I18n.format("options.multiplayer.title", new Object[0])));
-        this.buttonList.add(new GuiButton(105, this.width / 2 - 155, this.height / 6 + 144 - 6, 150, 20, I18n.format("options.resourcepack", new Object[0])));
+        this.buttonList.add(new GuiButton(102, this.width / 2 - 155, this.height / 6 + 120 - 6, 150, 20, I18n.format("options.main.language", new Object[0])));
+        this.buttonList.add(new GuiButton(103, this.width / 2 + 5, this.height / 6 + 120 - 6, 150, 20, I18n.format("options.multiplayer.main.title", new Object[0])));
+        this.buttonList.add(new GuiButton(105, this.width / 2 - 155, this.height / 6 + 144 - 6, 150, 20, I18n.format("options.main.resourcepack", new Object[0])));
         this.buttonList.add(new GuiButton(104, this.width / 2 + 5, this.height / 6 + 144 - 6, 150, 20, I18n.format("options.snooper.view", new Object[0])));
         this.buttonList.add(new GuiButton(200, this.width / 2 - 100, this.height / 6 + 168, I18n.format("gui.done", new Object[0])));
     }
@@ -160,8 +160,19 @@ public class GuiOptions extends GuiScreen implements GuiYesNoCallback
                 }
             }
 
+            if (p_146284_1_.id == 665) {
+                this.mc.gameSettings.saveOptions();
+                this.mc.displayGuiScreen(new GuiRadio(this));
+            }
+
             if (p_146284_1_.id == 666) {
+                this.mc.gameSettings.saveOptions();
                 this.mc.displayGuiScreen(new GuiEldariaOptions(this));
+            }
+
+            if (p_146284_1_.id == 667) {
+                this.mc.gameSettings.saveOptions();
+                this.mc.displayGuiScreen(new GuiSprint(this));
             }
         }
     }

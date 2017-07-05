@@ -54,21 +54,6 @@ public class GuiScreen extends Gui
     private long lastMouseEvent;
     private int field_146298_h;
 
-    public static boolean held = false;
-    public static boolean hasChanged = false;
-    public static boolean fromBs = false;
-    public static int stoptime = 0;
-    public int prevWidth = 0;
-    public int prevHeight = 0;
-
-    public static boolean canRunInAllDirs(Minecraft mc) {
-        return GuiSprint.disableModFunctionality?false:mc.thePlayer == null && mc.theWorld == null || mc.isSingleplayer() || GuiSprint.svRunInAllDirs;
-    }
-
-    public static boolean canBoostFlying(Minecraft mc) {
-        return GuiSprint.disableModFunctionality?false:mc.thePlayer == null && mc.theWorld == null || mc.isSingleplayer() || mc.thePlayer.capabilities.isCreativeMode || GuiSprint.svFlyingBoost;
-    }
-
     /**
      * Draws the screen and all the components in it.
      */
@@ -288,11 +273,11 @@ public class GuiScreen extends Gui
         this.height = p_146280_3_;
         this.buttonList.clear();
 
-        if(!hasChanged && this.mc != null) {
+        if(!GuiSprint.hasChanged && this.mc != null) {
             GuiSprint.doInitialSetup(this.mc);
             GuiSprint.loadSprint(this.mc);
             KeyBinding.resetKeyBindingArrayAndHash();
-            hasChanged = true;
+            GuiSprint.hasChanged = true;
         }
 
         this.initGui();
@@ -391,15 +376,6 @@ public class GuiScreen extends Gui
     public void drawDefaultBackground()
     {
         this.func_146270_b(0);
-
-        if((this.width != this.prevWidth || this.height != this.prevHeight) && this instanceof GuiControls) {
-            if(!fromBs) {
-                this.buttonList.add(0, new GuiButton(205, this.width / 2 + 5, 42, 150, 20, "Better Sprinting"));
-            }
-
-            this.prevWidth = this.width;
-            this.prevHeight = this.height;
-        }
     }
 
     public void func_146270_b(int p_146270_1_)

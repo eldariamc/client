@@ -27,6 +27,9 @@ public class GuiSprint extends GuiScreen {
 	public static boolean allowAllDirs = false;
 	public static boolean disableModFunctionality = false;
 	public static boolean showedToggleSneakWarning = false;
+	public static boolean held = false;
+	public static boolean hasChanged = false;
+	public static int stoptime = 0;
 	private static boolean isPlayerClassEdited = false;
 	public static boolean svFlyingBoost = false;
 	public static boolean svRunInAllDirs = false;
@@ -38,7 +41,7 @@ public class GuiSprint extends GuiScreen {
 	private GuiButton btnDoubleTap;
 	private GuiButton btnFlyBoost;
 	private GuiButton btnAllDirs;
-	//private GuiButton btnDisableMod; // Keyrisium - mod is always active
+	private GuiButton btnDisableMod; // Eldaria - mod is always active
 	protected KeyBinding[] sprintBindings;
 
 	private static int nbtInt(NBTTagCompound tag, String key, int def) {
@@ -65,7 +68,7 @@ public class GuiSprint extends GuiScreen {
 				flyingBoost = nbtInt(e, "flyBoost", 3);
 				allowDoubleTap = nbtBool(e, "doubleTap", false);
 				allowAllDirs = nbtBool(e, "allDirs", false);
-				//disableModFunctionality = nbtBool(e, "disableMod", false); // Keyrisium - mod is always actice
+				disableModFunctionality = nbtBool(e, "disableMod", false); // Eldaria - mod is always actice
 				showedToggleSneakWarning = nbtBool(e, "showedWarn", false);
 			} catch (Exception var3) {
 				var3.printStackTrace();
@@ -85,7 +88,7 @@ public class GuiSprint extends GuiScreen {
 		tag.setInteger("flyBoost", flyingBoost);
 		tag.setBoolean("doubleTap", allowDoubleTap);
 		tag.setBoolean("allDirs", allowAllDirs);
-		//tag.setBoolean("disableMod", disableModFunctionality); // Keyrisium - mod is always active
+		tag.setBoolean("disableMod", disableModFunctionality); // Eldaria - mod is always active
 		tag.setBoolean("showedWarn", showedToggleSneakWarning);
 		NBTTagCompound fintag = new NBTTagCompound();
 		fintag.setTag("Data", tag);
@@ -177,9 +180,16 @@ public class GuiSprint extends GuiScreen {
 		this.parentScreen = parentScreen;
 	}
 
+	public static boolean canRunInAllDirs(Minecraft mc) {
+		return disableModFunctionality ?false:mc.thePlayer == null && mc.theWorld == null || mc.isSingleplayer() || svRunInAllDirs;
+	}
+
+	public static boolean canBoostFlying(Minecraft mc) {
+		return disableModFunctionality ?false:mc.thePlayer == null && mc.theWorld == null || mc.isSingleplayer() || mc.thePlayer.capabilities.isCreativeMode || svFlyingBoost;
+	}
+
 	public void initGui() {
 		this.buttonList.clear();
-		GuiScreen.fromBs = false;
 		int left = this.getLeftColumnX();
 		int ypos = 0;
 
@@ -201,23 +211,23 @@ public class GuiSprint extends GuiScreen {
 
 		this.btnAllDirs = new GuiButton(198, left + 160, ypos, 70, 20, "");
 		this.buttonList.add(this.btnAllDirs);
-		if (!GuiScreen.canRunInAllDirs(this.mc)) {
+		if (!canRunInAllDirs(this.mc)) {
 			this.btnAllDirs.enabled = false;
 		}
 
 		ypos += 24;
 		this.btnFlyBoost = new GuiButton(197, left, ypos, 70, 20, "");
 		this.buttonList.add(this.btnFlyBoost);
-		if (!GuiScreen.canBoostFlying(this.mc)) {
+		if (!canBoostFlying(this.mc)) {
 			this.btnFlyBoost.enabled = false;
 		}
 
-		/* Keyrisium - mod is always active
+		// Eldaria - mod is always active
 		this.btnDisableMod = new GuiButton(196, left + 160, ypos, 70, 20, "");
 		this.buttonList.add(this.btnDisableMod);
 		if (this.mc.thePlayer != null || this.mc.theWorld != null) {
 			this.btnDisableMod.enabled = false;
-		}*/
+		}
 
 		this.buttonList.add(new GuiButton(200, this.width / 2 - 100, this.height / 6 + 168, this.parentScreen == null ? 98 : 200, 20, I18n.format("gui.done")));
 		if (this.parentScreen == null) {
@@ -229,20 +239,19 @@ public class GuiSprint extends GuiScreen {
 
 	private void updateButtons() {
 		this.btnDoubleTap.displayString = disableModFunctionality ? "Unavailable" : (allowDoubleTap ? "Enabled" : "Disabled");
-		this.btnFlyBoost.displayString = GuiScreen.canBoostFlying(this.mc) ? (flyingBoost == 0 ? "Disabled" : flyingBoost + 1 + "x") : "Unavailable";
-		this.btnAllDirs.displayString = GuiScreen.canRunInAllDirs(this.mc) ? (allowAllDirs ? "Enabled" : "Disabled") : "Unavailable";
-		//this.btnDisableMod.displayString = disableModFunctionality ? "Yes" : "No"; // Keyrisium - mod is always active
+		this.btnFlyBoost.displayString = canBoostFlying(this.mc) ? (flyingBoost == 0 ? "Disabled" : flyingBoost + 1 + "x") : "Unavailable";
+		this.btnAllDirs.displayString = canRunInAllDirs(this.mc) ? (allowAllDirs ? "Enabled" : "Disabled") : "Unavailable";
+		this.btnDisableMod.displayString = disableModFunctionality ? "Yes" : "No"; // Eldaria - mod is always active
 	}
 
 
 	protected void actionPerformed(GuiButton btn) {
 		for (int var2 = 0; var2 < this.sprintBindings.length; ++var2) {
-			((GuiButton) this.buttonList.get(var2)).displayString = this.getKeyCodeString(var2);
+			this.buttonList.get(var2).displayString = this.getKeyCodeString(var2);
 		}
 
 		switch (btn.id) {
 			case 190:
-				GuiScreen.fromBs = true;
 				this.mc.displayGuiScreen(new GuiControls(this, this.mc.gameSettings));
 				break;
 			case 191:
@@ -262,12 +271,12 @@ public class GuiSprint extends GuiScreen {
 				}
 				break;
 			case 197:
-				if (GuiScreen.canBoostFlying(this.mc) && ++flyingBoost == 8) {
+				if (canBoostFlying(this.mc) && ++flyingBoost == 8) {
 					flyingBoost = 0;
 				}
 				break;
 			case 198:
-				if (GuiScreen.canRunInAllDirs(this.mc)) {
+				if (canRunInAllDirs(this.mc)) {
 					allowAllDirs = !allowAllDirs;
 				}
 				break;
@@ -282,7 +291,6 @@ public class GuiSprint extends GuiScreen {
 					this.mc.setIngameFocus();
 				} else {
 					this.mc.displayGuiScreen(this.parentScreen);
-					this.parentScreen.prevWidth = 0;
 				}
 		}
 
@@ -306,7 +314,7 @@ public class GuiSprint extends GuiScreen {
 	private boolean handleInput(int par1) {
 		if (this.buttonId >= 0 && this.buttonId < 180) {
 			this.sprintBindings[this.buttonId].setKeyCode(par1);
-			((GuiButton) this.buttonList.get(this.buttonId)).displayString = this.getKeyCodeString(this.buttonId);
+			this.buttonList.get(this.buttonId).displayString = this.getKeyCodeString(this.buttonId);
 			this.buttonId = -1;
 			KeyBinding.resetKeyBindingArrayAndHash();
 			return true;
@@ -338,11 +346,11 @@ public class GuiSprint extends GuiScreen {
 			}
 
 			if (this.buttonId == a) {
-				((GuiButton) this.buttonList.get(a)).displayString = "§f> §e??? §f<";
+				this.buttonList.get(a).displayString = "§f> §e??? §f<";
 			} else if (i) {
-				((GuiButton) this.buttonList.get(a)).displayString = "§c" + this.getKeyCodeString(a);
+				this.buttonList.get(a).displayString = "§c" + this.getKeyCodeString(a);
 			} else {
-				((GuiButton) this.buttonList.get(a)).displayString = this.getKeyCodeString(a);
+				this.buttonList.get(a).displayString = this.getKeyCodeString(a);
 			}
 
 			this.drawString(this.fontRendererObj, this.sprintBindings[a].getKeyDescription(), left + a % 2 * 160 + 70 + 6, this.height / 6 + 24 * (a >> 1) + 7, -1);
