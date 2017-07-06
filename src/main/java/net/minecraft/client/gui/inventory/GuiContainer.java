@@ -26,7 +26,7 @@ public abstract class GuiContainer extends GuiScreen
     protected static final ResourceLocation field_147001_a = new ResourceLocation("textures/gui/container/inventory.png");
     public int defaultX = 176;
     protected int defaultY = 166;
-    public Container field_147002_h;
+    public Container inventorySlots;
     public int field_147003_i;
     protected int field_147009_r;
     private Slot field_147006_u;
@@ -54,7 +54,7 @@ public abstract class GuiContainer extends GuiScreen
 
     public GuiContainer(Container p_i1072_1_)
     {
-        this.field_147002_h = p_i1072_1_;
+        this.inventorySlots = p_i1072_1_;
         this.field_146995_H = true;
     }
 
@@ -64,7 +64,7 @@ public abstract class GuiContainer extends GuiScreen
     public void initGui()
     {
         super.initGui();
-        this.mc.thePlayer.openContainer = this.field_147002_h;
+        this.mc.thePlayer.openContainer = this.inventorySlots;
         this.field_147003_i = (this.width - this.defaultX) / 2;
         this.field_147009_r = (this.height - this.defaultY) / 2;
     }
@@ -95,9 +95,9 @@ public abstract class GuiContainer extends GuiScreen
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
         int var11;
 
-        for (int var8 = 0; var8 < this.field_147002_h.inventorySlots.size(); ++var8)
+        for (int var8 = 0; var8 < this.inventorySlots.inventorySlots.size(); ++var8)
         {
-            Slot var9 = (Slot)this.field_147002_h.inventorySlots.get(var8);
+            Slot var9 = (Slot)this.inventorySlots.inventorySlots.get(var8);
             this.func_146977_a(var9);
 
             if (this.func_146981_a(var9, p_73863_1_, p_73863_2_) && var9.func_111238_b())
@@ -211,7 +211,7 @@ public abstract class GuiContainer extends GuiScreen
                 return;
             }
 
-            if (Container.func_94527_a(p_146977_1_, var7, true) && this.field_147002_h.canDragIntoSlot(p_146977_1_))
+            if (Container.func_94527_a(p_146977_1_, var7, true) && this.inventorySlots.canDragIntoSlot(p_146977_1_))
             {
                 var4 = var7.copy();
                 var5 = true;
@@ -301,9 +301,9 @@ public abstract class GuiContainer extends GuiScreen
 
     private Slot func_146975_c(int p_146975_1_, int p_146975_2_)
     {
-        for (int var3 = 0; var3 < this.field_147002_h.inventorySlots.size(); ++var3)
+        for (int var3 = 0; var3 < this.inventorySlots.inventorySlots.size(); ++var3)
         {
-            Slot var4 = (Slot)this.field_147002_h.inventorySlots.get(var3);
+            Slot var4 = (Slot)this.inventorySlots.inventorySlots.get(var3);
 
             if (this.func_146981_a(var4, p_146975_1_, p_146975_2_))
             {
@@ -455,7 +455,7 @@ public abstract class GuiContainer extends GuiScreen
                 }
             }
         }
-        else if (this.field_147007_t && var6 != null && var7 != null && var7.stackSize > this.field_147008_s.size() && Container.func_94527_a(var6, var7, true) && var6.isItemValid(var7) && this.field_147002_h.canDragIntoSlot(var6))
+        else if (this.field_147007_t && var6 != null && var7 != null && var7.stackSize > this.field_147008_s.size() && Container.func_94527_a(var6, var7, true) && var6.isItemValid(var7) && this.inventorySlots.canDragIntoSlot(var6))
         {
             this.field_147008_s.add(var6);
             this.func_146980_g();
@@ -483,13 +483,13 @@ public abstract class GuiContainer extends GuiScreen
         Slot var10;
         Iterator var11;
 
-        if (this.field_146993_M && var4 != null && p_146286_3_ == 0 && this.field_147002_h.func_94530_a((ItemStack)null, var4))
+        if (this.field_146993_M && var4 != null && p_146286_3_ == 0 && this.inventorySlots.func_94530_a((ItemStack)null, var4))
         {
             if (isShiftKeyDown())
             {
                 if (var4 != null && var4.inventory != null && this.field_146994_N != null)
                 {
-                    var11 = this.field_147002_h.inventorySlots.iterator();
+                    var11 = this.inventorySlots.inventorySlots.iterator();
 
                     while (var11.hasNext())
                     {
@@ -633,7 +633,7 @@ public abstract class GuiContainer extends GuiScreen
             p_146984_2_ = p_146984_1_.slotNumber;
         }
 
-        this.mc.playerController.windowClick(this.field_147002_h.windowId, p_146984_2_, p_146984_3_, p_146984_4_, this.mc.thePlayer);
+        this.mc.playerController.windowClick(this.inventorySlots.windowId, p_146984_2_, p_146984_3_, p_146984_4_, this.mc.thePlayer);
     }
 
     /**
@@ -685,7 +685,7 @@ public abstract class GuiContainer extends GuiScreen
     {
         if (this.mc.thePlayer != null)
         {
-            this.field_147002_h.onContainerClosed(this.mc.thePlayer);
+            this.inventorySlots.onContainerClosed(this.mc.thePlayer);
         }
     }
 

@@ -50,7 +50,7 @@ public class GuiContainerCreative extends InventoryEffectRenderer
     public GuiContainerCreative(EntityPlayer p_i1088_1_)
     {
         super(new GuiContainerCreative.ContainerCreative(p_i1088_1_));
-        p_i1088_1_.openContainer = this.field_147002_h;
+        p_i1088_1_.openContainer = this.inventorySlots;
         this.field_146291_p = true;
         this.defaultY = 136;
         this.defaultX = 195;
@@ -224,19 +224,19 @@ public class GuiContainerCreative extends InventoryEffectRenderer
                 }
                 else
                 {
-                    this.field_147002_h.slotClick(p_146984_1_ == null ? p_146984_2_ : p_146984_1_.slotNumber, p_146984_3_, p_146984_4_, this.mc.thePlayer);
+                    this.inventorySlots.slotClick(p_146984_1_ == null ? p_146984_2_ : p_146984_1_.slotNumber, p_146984_3_, p_146984_4_, this.mc.thePlayer);
 
                     if (Container.func_94532_c(p_146984_3_) == 2)
                     {
                         for (var10 = 0; var10 < 9; ++var10)
                         {
-                            this.mc.playerController.sendSlotPacket(this.field_147002_h.getSlot(45 + var10).getStack(), 36 + var10);
+                            this.mc.playerController.sendSlotPacket(this.inventorySlots.getSlot(45 + var10).getStack(), 36 + var10);
                         }
                     }
                     else if (p_146984_1_ != null)
                     {
-                        var6 = this.field_147002_h.getSlot(p_146984_1_.slotNumber).getStack();
-                        this.mc.playerController.sendSlotPacket(var6, p_146984_1_.slotNumber - this.field_147002_h.inventorySlots.size() + 9 + 36);
+                        var6 = this.inventorySlots.getSlot(p_146984_1_.slotNumber).getStack();
+                        this.mc.playerController.sendSlotPacket(var6, p_146984_1_.slotNumber - this.inventorySlots.inventorySlots.size() + 9 + 36);
                     }
                 }
             }
@@ -325,7 +325,7 @@ public class GuiContainerCreative extends InventoryEffectRenderer
 
     private void func_147053_i()
     {
-        GuiContainerCreative.ContainerCreative var1 = (GuiContainerCreative.ContainerCreative)this.field_147002_h;
+        GuiContainerCreative.ContainerCreative var1 = (GuiContainerCreative.ContainerCreative)this.inventorySlots;
         var1.field_148330_a.clear();
         Iterator var2 = Item.itemRegistry.iterator();
 
@@ -451,14 +451,14 @@ public class GuiContainerCreative extends InventoryEffectRenderer
 
     private boolean func_147055_p()
     {
-        return field_147058_w != CreativeTabs.tabInventory.getTabIndex() && CreativeTabs.creativeTabArray[field_147058_w].shouldHidePlayerInventory() && ((GuiContainerCreative.ContainerCreative)this.field_147002_h).func_148328_e();
+        return field_147058_w != CreativeTabs.tabInventory.getTabIndex() && CreativeTabs.creativeTabArray[field_147058_w].shouldHidePlayerInventory() && ((GuiContainerCreative.ContainerCreative)this.inventorySlots).func_148328_e();
     }
 
     private void func_147050_b(CreativeTabs p_147050_1_)
     {
         int var2 = field_147058_w;
         field_147058_w = p_147050_1_.getTabIndex();
-        GuiContainerCreative.ContainerCreative var3 = (GuiContainerCreative.ContainerCreative)this.field_147002_h;
+        GuiContainerCreative.ContainerCreative var3 = (GuiContainerCreative.ContainerCreative)this.inventorySlots;
         this.field_147008_s.clear();
         var3.field_148330_a.clear();
         p_147050_1_.displayAllReleventItems(var3.field_148330_a);
@@ -554,7 +554,7 @@ public class GuiContainerCreative extends InventoryEffectRenderer
 
         if (var1 != 0 && this.func_147055_p())
         {
-            int var2 = ((GuiContainerCreative.ContainerCreative)this.field_147002_h).field_148330_a.size() / 9 - 5 + 1;
+            int var2 = ((GuiContainerCreative.ContainerCreative)this.inventorySlots).field_148330_a.size() / 9 - 5 + 1;
 
             if (var1 > 0)
             {
@@ -578,7 +578,7 @@ public class GuiContainerCreative extends InventoryEffectRenderer
                 this.field_147067_x = 1.0F;
             }
 
-            ((GuiContainerCreative.ContainerCreative)this.field_147002_h).func_148329_a(this.field_147067_x);
+            ((GuiContainerCreative.ContainerCreative)this.inventorySlots).func_148329_a(this.field_147067_x);
         }
     }
 
@@ -621,7 +621,7 @@ public class GuiContainerCreative extends InventoryEffectRenderer
                 this.field_147067_x = 1.0F;
             }
 
-            ((GuiContainerCreative.ContainerCreative)this.field_147002_h).func_148329_a(this.field_147067_x);
+            ((GuiContainerCreative.ContainerCreative)this.inventorySlots).func_148329_a(this.field_147067_x);
         }
 
         super.drawScreen(p_73863_1_, p_73863_2_, p_73863_3_);

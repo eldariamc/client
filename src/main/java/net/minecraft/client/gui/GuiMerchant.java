@@ -89,7 +89,7 @@ public class GuiMerchant extends GuiContainer
 
         if (var2)
         {
-            ((ContainerMerchant)this.field_147002_h).setCurrentRecipeIndex(this.field_147041_z);
+            ((ContainerMerchant)this.inventorySlots).setCurrentRecipeIndex(this.field_147041_z);
             ByteBuf var3 = Unpooled.buffer();
 
             try

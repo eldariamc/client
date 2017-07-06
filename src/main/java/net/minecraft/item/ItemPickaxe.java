@@ -14,8 +14,7 @@ public class ItemPickaxe extends ItemTool
             Blocks.iron_block, Blocks.coal_ore, Blocks.gold_block, Blocks.gold_ore, Blocks.diamond_ore,
             Blocks.diamond_block, Blocks.ice, Blocks.netherrack, Blocks.lapis_ore, Blocks.lapis_block,
             Blocks.redstone_ore, Blocks.lit_redstone_ore, Blocks.rail, Blocks.detector_rail, Blocks.golden_rail,
-            Blocks.activator_rail, Blocks.zinc_ore, Blocks.cronyxe_ore, Blocks.kobalt_ore, Blocks.eldarium_ore,
-            Blocks.gemme_ore);
+            Blocks.activator_rail, Blocks.zinc_ore, Blocks.cronyxe_ore, Blocks.kobalt_ore, Blocks.eldarium_ore);
 
     protected ItemPickaxe(Item.ToolMaterial p_i45347_1_)
     {

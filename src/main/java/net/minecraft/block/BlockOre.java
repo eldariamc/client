@@ -33,8 +33,6 @@ public class BlockOre extends Block
             return Items.quartz;
         if (this == Blocks.lignite_ore)
             return Items.lignite;
-        if (this == Blocks.gemme_ore)
-            return Items.gemme;
         if (this == Blocks.eldarium_ore)
             return Items.eldarium_nugget;
 

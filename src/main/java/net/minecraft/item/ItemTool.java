@@ -123,7 +123,7 @@ public class ItemTool extends Item
             return this.toolMaterial.getHarvestLevel() >= 2;
         if (block == Blocks.zinc_ore || block == Blocks.cronyxe_ore || block == Blocks.kobalt_ore)
             return this.toolMaterial.getHarvestLevel() >= 3;
-        if (block == Blocks.eldarium_ore || block == Blocks.gemme_ore)
+        if (block == Blocks.eldarium_ore)
             return this.toolMaterial.getHarvestLevel() >= 3;
         if (block.getMaterial() == Material.rock || block.getMaterial() == Material.brick)
             return true;

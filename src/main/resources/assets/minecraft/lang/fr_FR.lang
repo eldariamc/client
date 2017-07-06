@@ -968,7 +968,8 @@ options.language=§6§l§nLangue
 options.main.language=Langue
 options.languageWarning=Certaines traductions peuvent être inexactes
 options.mipmapLevels=Niveaux de détails 
-options.multiplayer.title=§6Paramètres multijoueur
+options.multiplayer.title=§6§l§nAutres
+options.multiplayer.main.title=Multijoueur
 options.music=Musique 
 options.off=Non
 options.on=Oui
@@ -1006,11 +1007,11 @@ options.showCape=Afficher les capes
 options.snooper=Envoi d'informations 
 options.snooper.desc=Nous voulons collecter des informations à propos de votre machine afin d'améliorer Minecraft. Toutes ces données sont confidentielles et visibles ci-dessous. Nous vous garantissons que ces informations seront utilisées pour votre bien. Si vous ne souhaitez pas contribuer, vous êtes libre de désactiver ce partage.
 options.snooper.title=Récupération d'informations sur la machine
-options.snooper.view=§7Paramètres du détecteur
+options.snooper.view=Paramètres du détecteur
 options.sound=Effets sonores 
 options.sounds=Musique & Sons
 options.sounds.title=§6§l§nMusique & Sons
-options.stream=Options de diffusion...
+options.stream=Streaming
 options.stream.bytesPerPixel=Qualité 
 options.stream.changes=Vous devrez peut-être relancer la diffusion pour que les modifications prennent effet.
 options.stream.chat.enabled=Activer 
@@ -1137,7 +1138,7 @@ resourcePack.available.title=Packs de ressources disponibles
 resourcePack.folderInfo=(Placer les packs de ressources ici)
 resourcePack.openFolder=Ouvrir le dossier des packs
 resourcePack.selected.title=Packs de ressources sélectionnés
-resourcePack.title=Choix des packs de ressources
+resourcePack.title=§6§l§nPacks de ressources
 screenshot.failure=Impossible d'enregistrer la capture d'écran : %s
 screenshot.success=Capture d'écran enregistrée sous le nom de %s
 selectServer.add=Nouveau serveur
@@ -1209,6 +1210,7 @@ soundCategory.neutral=Créatures passives
 soundCategory.player=Joueurs 
 soundCategory.record=Blocs musicaux 
 soundCategory.weather=Météo 
+soundCategory.radio=Radio 
 stat.animalsBred=Animaux engendrés
 stat.blocksButton=Blocs
 stat.boatOneCm=Distance en bateau
@@ -1741,3 +1743,39 @@ options.eldaria.hudPresets=§ePréréglages
 options.eldaria.hudAdvanced=§aOptions avancées
 options.eldaria.hud.effect=§eEffets
 options.eldaria.hud.armor=§eArmures
+options.eldaria.betterSprint=Better Sprinting
+options.eldaria.choseRadio=Choisir une radio
+
+
+item.craftguide_item.name=Guide d'artisanat 
+ 
+craftguide.gui.filter_type.input=Entrée 
+craftguide.gui.filter_type.output=Sortie 
+craftguide.gui.filter_type.machine=Machine 
+
+craftguide.gui.tab_tooltip.recipe_list=Liste des recettes 
+craftguide.gui.tab_tooltip.type_visibility_list=Montrer/cacher les recette par type d'artisanat 
+craftguide.gui.tab_tooltip.options=Options 
+
+craftguide.gui.filter=Filtre
+craftguide.gui.search=Rechercher 
+ 
+craftguide.gui.config.pause=Pause si ouvert (joueur solo seulement) 
+craftguide.gui.config.show_ids=Montrer l'ID de l'élément et les valeurs de dommage 
+craftguide.gui.config.enable_keybind=Activer touches cachées 
+craftguide.gui.config.enable_item_recipe=Activer les recettes CraftGuide (redémmarage requis) 
+craftguide.gui.config.hide_mundane_potions=Cacher les potions inconnue des mauvaises combinations (rechargement des recettes requis) 
+craftguide.gui.config.theme_debugging=Sortie excessive du thème, les information de debug sont dans CraftGuide.log 
+craftguide.gui.config.textinput_clear_on_right_click=Effacer l'enttrée de texte par un clic droit
+
+craftguide.gui.config.reload_recipes.button=Recharger 
+craftguide.gui.config.reload_recipes=Recharger les recettes
+
+craftguide.gui.config.export_displayed_recipes.button=Exporter
+craftguide.gui.config.export_displayed_recipes=Exporter les receetes de CraftGuide 
+
+craftguide.gui.config.export_crafting_recipes.button=Exporter 
+craftguide.gui.config.export_crafting_recipes=Exporter toutes les recettes de l'établis 
+
+craftguide.gui.config.current_theme.button=Thème suivant 
+craftguide.gui.config.current_theme.format_string=Thème courant: %s 

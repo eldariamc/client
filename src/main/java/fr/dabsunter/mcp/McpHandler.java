@@ -7,6 +7,7 @@ import fr.dabsunter.eldaria.Eldaria;
 import fr.dabsunter.eldaria.macrocmd.MacroCommands;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.util.ResourceLocation;
+import uristqwerty.CraftGuide.CraftGuide_MCP;
 
 import java.awt.*;
 import java.io.IOException;
@@ -25,7 +26,8 @@ public class McpHandler {
 			ArmorStatusHUDMod.instance,
 			StatusEffectHUDMod.instance,
 			new MacroCommands(),
-			Eldaria.ANTI_CHEAT
+			Eldaria.ANTI_CHEAT,
+			new CraftGuide_MCP()
 	};
 	private static final HashSet<Tickable> RENDER_TICK_HANDLERS = new HashSet<>();
 	private static HashSet<Tickable> renderToAdd;

@@ -120,7 +120,7 @@ public class WeightedRandom
 
     public static class Item
     {
-        protected int itemWeight;
+        public int itemWeight;
 
         public Item(int p_i1556_1_)
         {

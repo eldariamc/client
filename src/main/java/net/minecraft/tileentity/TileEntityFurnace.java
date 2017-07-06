@@ -316,16 +316,13 @@ public class TileEntityFurnace extends TileEntity implements ISidedInventory
         }
     }
 
-    public int fuelTime(ItemStack itemStack)
-    {
+    public static int getItemBurnTime(ItemStack itemStack) {
         if (itemStack == null)
         {
             return 0;
         }
         else
         {
-            fuelSpeed = 200;
-
             Item item = itemStack.getItem();
 
             if (item instanceof ItemBlock && Block.getBlockFromItem(item) != Blocks.air)
@@ -364,12 +361,21 @@ public class TileEntityFurnace extends TileEntity implements ISidedInventory
                 return 100;
             if (item == Items.blaze_rod)
                 return 2400;
-            if (item == Items.lignite) {
-                fuelSpeed = 50;
+            if (item == Items.lignite)
                 return 1600;
-            }
             return 0;
         }
+    }
+
+    public int fuelTime(ItemStack itemStack)
+    {
+        if (itemStack != null) {
+            if (itemStack.getItem() == Items.lignite)
+                fuelSpeed = 50;
+            else
+                fuelSpeed = 200;
+        }
+        return getItemBurnTime(itemStack);
     }
 
     public boolean isFuel(ItemStack p_145954_0_)
