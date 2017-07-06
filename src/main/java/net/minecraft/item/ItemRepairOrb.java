@@ -11,13 +11,13 @@ public class ItemRepairOrb extends Item {
 	private boolean isFullRepair;
 
 	public ItemRepairOrb(boolean isFullRepair) {
-		this.setMaxStackSize(16);
+		this.setMaxStackSize(1);
 		this.isFullRepair = isFullRepair;
 	}
 
 	@Override
 	public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player) {
-		if (!player.capabilities.isCreativeMode)
+		/*if (!player.capabilities.isCreativeMode)
 			itemStack.stackSize--;
 
 		world.playSoundAtEntity(player, "block.enchantment_table.use", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
@@ -27,7 +27,7 @@ public class ItemRepairOrb extends Item {
 			if (isFullRepair)
 				repair(player.inventory.mainInventory);
 
-		}
+		}*/
 
 		return itemStack;
 	}
