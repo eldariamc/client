@@ -175,7 +175,7 @@ public class Item
         itemRegistry.addObject(354, "cake", (new ItemReed(Blocks.cake)).setMaxStackSize(1).setUnlocalizedName("cake").setCreativeTab(CreativeTabs.tabFood).setTextureName("cake"));
         itemRegistry.addObject(355, "bed", (new ItemBed()).setMaxStackSize(1).setUnlocalizedName("bed").setTextureName("bed"));
         itemRegistry.addObject(356, "repeater", (new ItemReed(Blocks.unpowered_repeater)).setUnlocalizedName("diode").setCreativeTab(CreativeTabs.tabRedstone).setTextureName("repeater"));
-        itemRegistry.addObject(357, "cookie", (new ItemFood(2, 0.1F, false)).setAlwaysEdible().setUnlocalizedName("cookie").setTextureName("cookie")); // Toujours mangeable
+        itemRegistry.addObject(357, "cookie", (new ItemFood(2, 0.1F, false)).setUnlocalizedName("cookie").setTextureName("cookie"));
         itemRegistry.addObject(358, "filled_map", (new ItemMap()).setUnlocalizedName("map").setTextureName("map_filled"));
         itemRegistry.addObject(359, "shears", (new ItemShears()).setUnlocalizedName("shears").setTextureName("shears"));
         itemRegistry.addObject(360, "melon", (new ItemFood(2, 0.3F, false)).setUnlocalizedName("melon").setTextureName("melon"));
@@ -243,7 +243,7 @@ public class Item
 		int id = 500;
         itemRegistry.addObject(id++, "compacted_slime_ball", new Item().setUnlocalizedName("compactedSlimeball").setCreativeTab(CreativeTabs.tabMisc).setTextureName("compacted_slimeball"));
         itemRegistry.addObject(id++, "lignite", new Item().setUnlocalizedName("lignite").setCreativeTab(CreativeTabs.tabMaterials).setTextureName("lignite"));
-        itemRegistry.addObject(id++, "donut", new ItemFood(10, false).setUnlocalizedName("donut").setTextureName("donut"));
+        itemRegistry.addObject(id++, "donut", new ItemFood(10, false).setAlwaysEdible().setPotionEffect(1, 360, 0, 1.0F).setUnlocalizedName("donut").setTextureName("donut"));
         itemRegistry.addObject(id++, "zinc", new Item().setUnlocalizedName("zinc").setCreativeTab(CreativeTabs.tabMaterials).setTextureName("zinc"));
         itemRegistry.addObject(id++, "cronyxe", new Item().setUnlocalizedName("cronyxe").setCreativeTab(CreativeTabs.tabMaterials).setTextureName("cronyxe"));
         itemRegistry.addObject(id++, "kobalt", new Item().setUnlocalizedName("kobalt").setCreativeTab(CreativeTabs.tabMaterials).setTextureName("kobalt"));
@@ -269,7 +269,7 @@ public class Item
         itemRegistry.addObject(id++, "iron_global_tool", new ItemGlobalTool(ToolMaterial.IRON).setUnlocalizedName("gtoolIron").setTextureName("iron_global_tool"));
         itemRegistry.addObject(id++, "golden_global_tool", new ItemGlobalTool(ToolMaterial.GOLD).setUnlocalizedName("gtoolGold").setTextureName("gold_global_tool"));
         itemRegistry.addObject(id++, "diamond_global_tool", new ItemGlobalTool(ToolMaterial.EMERALD).setUnlocalizedName("gtoolDiamond").setTextureName("diamond_global_tool"));
-        itemRegistry.addObject(id++, "peppers", new ItemSeedFood(4, 0.6F, Blocks.peppers, Blocks.farmland).setAlwaysEdible().setPotionEffect(12, 300, 0, 1.0F).setPotionEffect(PotionHelper.hasteEffect).setUnlocalizedName("peppers").setTextureName("peppers"));
+        itemRegistry.addObject(id++, "peppers", new ItemSeedFood(4, 0.6F, Blocks.peppers, Blocks.farmland).setAlwaysEdible().setPotionEffect(12, 360, 0, 1.0F).setPotionEffect(PotionHelper.hasteEffect).setUnlocalizedName("peppers").setTextureName("peppers"));
         itemRegistry.addObject(id++, "unclaim_finder", new Item().setUnlocalizedName("unclaimFinder").setCreativeTab(CreativeTabs.tabMisc).setTextureName("unclaim_finder"));
         itemRegistry.addObject(id++, "bow_zinc", (new BowZinc()).setUnlocalizedName("bow_zinc").setTextureName("bow_zinc"));
         itemRegistry.addObject(id++, "bow_cronyxe", (new BowCronyxe()).setUnlocalizedName("bow_cronyxe").setTextureName("bow_cronyxe"));
