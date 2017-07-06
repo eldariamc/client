@@ -276,6 +276,8 @@ public class Item
         itemRegistry.addObject(id++, "bow_kobalt", (new BowKobalt()).setUnlocalizedName("bow_kobalt").setTextureName("bow_kobalt"));
         itemRegistry.addObject(id++, "bow_eldarium", (new BowEldarium()).setUnlocalizedName("bow_eldarium").setTextureName("bow_eldarium"));
         itemRegistry.addObject(id++, "eldarium_nugget", new Item().setUnlocalizedName("eldariumNugget").setTextureName("eldarium_nugget").setCreativeTab(CreativeTabs.tabMaterials));
+        itemRegistry.addObject(id++, "milk_donut", new ItemFood(10, false).setAlwaysEdible().setUnlocalizedName("donutMilk").setTextureName("milk_donut"));
+        itemRegistry.addObject(id++, "chocolate_donut", new ItemFood(11, false).setAlwaysEdible().setPotionEffect(5, 360, 0, 1.0F).setUnlocalizedName("donutChoc").setTextureName("chocolate_donut"));
 
 
         // -----------------------
