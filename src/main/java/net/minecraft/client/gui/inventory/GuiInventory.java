@@ -12,6 +12,7 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
+import uristqwerty.CraftGuide.CraftGuide_MCP;
 
 public class GuiInventory extends InventoryEffectRenderer
 {
@@ -49,6 +50,9 @@ public class GuiInventory extends InventoryEffectRenderer
         else
         {
             super.initGui();
+
+            this.buttonList.add(new GuiButton(666, field_147003_i + defaultX, field_147009_r, 75, 20,
+                    I18n.format("container.btn.craftGuide")));
         }
     }
 
@@ -124,6 +128,10 @@ public class GuiInventory extends InventoryEffectRenderer
         if (p_146284_1_.id == 1)
         {
             this.mc.displayGuiScreen(new GuiStats(this, this.mc.thePlayer.func_146107_m()));
+        }
+
+        if (p_146284_1_.id == 666) {
+            CraftGuide_MCP.side.openGUI(null);
         }
     }
 }
