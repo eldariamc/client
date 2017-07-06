@@ -248,7 +248,7 @@ public class Item
         itemRegistry.addObject(id++, "cronyxe", new Item().setUnlocalizedName("cronyxe").setCreativeTab(CreativeTabs.tabMaterials).setTextureName("cronyxe"));
         itemRegistry.addObject(id++, "kobalt", new Item().setUnlocalizedName("kobalt").setCreativeTab(CreativeTabs.tabMaterials).setTextureName("kobalt"));
 		itemRegistry.addObject(id++, "eldarium", new Item().setUnlocalizedName("eldarium").setCreativeTab(CreativeTabs.tabMaterials).setTextureName("eldarium"));
-        itemRegistry.addObject(id++, "gemme", new Item().setUnlocalizedName("gemme").setCreativeTab(CreativeTabs.tabMaterials).setTextureName("gemme"));
+		id++; // ID dispo
 		id = registerTools(id, ToolMaterial.ZINC);
 		id = registerArmor(id, ItemArmor.ArmorMaterial.ZINC);
         id = registerTools(id, ToolMaterial.CRONYXE);

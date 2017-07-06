@@ -57,7 +57,6 @@ public class BiomeDecorator
     protected WorldGenerator kobaltGen = new WorldGenMinable(Blocks.kobalt_ore, 4);
     protected WorldGenerator xpGen = new WorldGenMinable(Blocks.xp_ore, 4);
 	protected WorldGenerator eldariumGen = new WorldGenMinable(Blocks.eldarium_ore, 2);
-    protected WorldGenerator gemmeGen = new WorldGenMinable(Blocks.gemme_ore, 1, Blocks.diamond_ore);
 
     // -------------------------------------
 
@@ -400,7 +399,6 @@ public class BiomeDecorator
         this.genStandardOre1(2, this.kobaltGen, 2, 16);
         this.genStandardOre1(4, this.xpGen, 2, 16);
 		this.genStandardOre1(1, this.eldariumGen, 2, 16);
-        this.genStandardOre1(425, this.gemmeGen, 0, 16);
 
         // --------------------------
     }

@@ -181,7 +181,7 @@ public class Items
     public static final Item kobalt = (Item)Item.itemRegistry.getObject("kobalt");
     public static final Item cronyxe = (Item)Item.itemRegistry.getObject("cronyxe");
 	public static final Item eldarium = (Item)Item.itemRegistry.getObject("eldarium");
-    public static final Item gemme = (Item)Item.itemRegistry.getObject("gemme");
+
     public static final Item zinc_sword = (Item)Item.itemRegistry.getObject("zinc_sword");
     public static final Item zinc_pickaxe = (Item)Item.itemRegistry.getObject("zinc_pickaxe");
     public static final Item zinc_shovel = (Item)Item.itemRegistry.getObject("zinc_shovel");

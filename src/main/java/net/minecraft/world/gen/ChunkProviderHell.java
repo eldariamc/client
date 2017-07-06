@@ -501,18 +501,18 @@ public class ChunkProviderHell implements IChunkProvider
             var12.generate(this.worldObj, this.hellRNG, var9, var10, var11);
         }
 
-        // --- Lignite Keyrisium ---
+        // --- Lignite Eldaria ---
 
-        WorldGenMinable ligniteGen = new WorldGenMinable(Blocks.lignite_ore, 16, Blocks.netherrack);
+        /*WorldGenMinable ligniteGen = new WorldGenMinable(Blocks.lignite_ore, 16, Blocks.netherrack);
 
         for (int i = 0; i < 20; i++) {
             int x = var4 = this.hellRNG.nextInt(16);
             int y = this.hellRNG.nextInt(98) + 20;
             int z = var5 + this.hellRNG.nextInt(16);
             ligniteGen.generate(this.worldObj, this.hellRNG, x, y, z);
-        }
+        }*/
 
-        // -------------------------
+        // ------------------------
 
         for (var8 = 0; var8 < 16; ++var8)
         {
