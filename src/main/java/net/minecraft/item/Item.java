@@ -257,8 +257,8 @@ public class Item
 		id = registerArmor(id, ItemArmor.ArmorMaterial.KOBALT);
 		id = registerTools(id, ToolMaterial.ELDARIUM);
 		id = registerArmor(id, ItemArmor.ArmorMaterial.ELDARIUM);
-        itemRegistry.addObject(id++, "repair_orb", new ItemRepairOrb(false).setUnlocalizedName("orbRepair").setCreativeTab(CreativeTabs.tabMisc).setTextureName("repair_orb"));
-        itemRegistry.addObject(id++, "divine_orb", new ItemRepairOrb(true).setUnlocalizedName("orbDivine").setCreativeTab(CreativeTabs.tabMisc).setTextureName("repair_orb"));
+        itemRegistry.addObject(id++, "repair_orb", new ItemRepairOrb(false).setMaxDamage(900).setUnlocalizedName("orbRepair").setCreativeTab(CreativeTabs.tabMisc).setTextureName("repair_orb"));
+        itemRegistry.addObject(id++, "divine_orb", new ItemRepairOrb(true).setMaxDamage(1200).setUnlocalizedName("orbDivine").setCreativeTab(CreativeTabs.tabMisc).setTextureName("repair_orb"));
         itemRegistry.addObject(id++, "dynamite", new ItemDynamite().setUnlocalizedName("dynamite").setTextureName("dynamite"));
         itemRegistry.addObject(id++, "c4", new ItemC4().setUnlocalizedName("c4").setTextureName("c4"));
         itemRegistry.addObject(id++, "tomahawk", new ItemTomahawk().setUnlocalizedName("tomahawk").setTextureName("tomahawk"));
