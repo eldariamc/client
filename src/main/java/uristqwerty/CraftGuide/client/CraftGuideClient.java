@@ -1,5 +1,8 @@
 package uristqwerty.CraftGuide.client;
 
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.IResource;
+import net.minecraft.util.ResourceLocation;
 import uristqwerty.CraftGuide.CraftGuide;
 import uristqwerty.CraftGuide.CraftGuideLog;
 import uristqwerty.CraftGuide.CraftGuideSide;
@@ -73,7 +76,7 @@ public abstract class CraftGuideClient implements CraftGuideSide
 				try
 				{
 					FileWriter writer = new FileWriter(file);
-					writer.write("base_texpack");
+					writer.write("theme_base");
 					writer.close();
 				}
 				catch(IOException e)
@@ -97,7 +100,7 @@ public abstract class CraftGuideClient implements CraftGuideSide
 			}
 		}
 
-		return "base_texpack";
+		return "theme_base";
 	}
 
 	@Override
@@ -136,7 +139,10 @@ public abstract class CraftGuideClient implements CraftGuideSide
 
 		try
 		{
-			InputStream stream = this.getClass().getResourceAsStream("/CraftGuideResources.zip");
+			//InputStream stream = this.getClass().getResourceAsStream("/CraftGuideResources.zip");
+			IResource resource = Minecraft.getMinecraft().getResourceManager().getResource(
+					new ResourceLocation("craftguide", "CraftGuideResources.zip"));
+			InputStream stream = resource == null ? null : resource.getInputStream();
 
 			if(stream != null)
 			{
