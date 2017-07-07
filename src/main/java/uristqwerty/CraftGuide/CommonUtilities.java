@@ -321,7 +321,7 @@ public class CommonUtilities
 		}
 	}
 
-	static Field itemDamageField = null;
+	/*static Field itemDamageField = null;
 
 	static
 	{
@@ -333,7 +333,7 @@ public class CommonUtilities
 		{
 			e.printStackTrace();
 		}
-	}
+	}*/
 
 	public static int getItemDamage(ItemStack stack)
 	{
@@ -343,20 +343,14 @@ public class CommonUtilities
 		}
 		else
 		{
-			if(itemDamageField != null)
+
+			try
 			{
-				try
-				{
-					return itemDamageField.getInt(stack);
-				}
-				catch(IllegalArgumentException e)
-				{
-					e.printStackTrace();
-				}
-				catch(IllegalAccessException e)
-				{
-					e.printStackTrace();
-				}
+				return stack.getItemDamage();
+			}
+			catch(IllegalArgumentException e)
+			{
+				e.printStackTrace();
 			}
 
 			return 0;

@@ -1,7 +1,6 @@
 package uristqwerty.CraftGuide.api;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
+import uristqwerty.CraftGuide.ReflectionAPI;
 
 /**
  * Uses reflection to register itself with CraftGuide when created.
@@ -25,27 +24,14 @@ public class CraftGuideAPIObject
 	{
 		try
 		{
-			Class c = Class.forName("uristqwerty.CraftGuide.ReflectionAPI");
+			/*Class c = Class.forName("uristqwerty.CraftGuide.ReflectionAPI");
 			
 			Method m = c.getMethod("registerAPIObject", Object.class);
-			m.invoke(null, this);
-		}
-		catch(ClassNotFoundException e)
+			m.invoke(null, this);*/
+			ReflectionAPI.registerAPIObject(this);
+		} catch(SecurityException e)
 		{
-		}
-		catch(NoSuchMethodException e)
-		{
-		}
-		catch(SecurityException e)
-		{
-		}
-		catch(InvocationTargetException e)
-		{
-		}
-		catch(IllegalAccessException e)
-		{
-		}
-		catch(IllegalArgumentException e)
+		} catch(IllegalArgumentException e)
 		{
 		}
 	}

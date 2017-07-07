@@ -4,7 +4,7 @@ import fr.dabsunter.mcp.Initiable;
 import fr.dabsunter.mcp.McpHandler;
 import fr.dabsunter.mcp.Tickable;
 import net.minecraft.client.Minecraft;
-import uristqwerty.CraftGuide.client.fml.CraftGuideClient_MCP;
+import uristqwerty.CraftGuide.client.mcp.CraftGuideClient_MCP;
 
 import java.io.File;
 

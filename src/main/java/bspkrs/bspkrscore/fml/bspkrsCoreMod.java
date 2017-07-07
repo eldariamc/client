@@ -15,7 +15,7 @@ import java.util.List;
    name = "bspkrsCore",
    version = "6.16",
    useMetadata = true,
-   guiFactory = "bspkrs.bspkrscore.fml.gui.ModGuiFactoryHandler"
+   guiFactory = "bspkrs.bspkrscore.mcp.gui.ModGuiFactoryHandler"
 )*/
 public class bspkrsCoreMod implements Initiable {
    private final boolean allowUpdateCheckDefault = true;

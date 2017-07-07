@@ -36,7 +36,7 @@ public class CrashReporter
                 return;
             }
 
-            if (cause.getClass().getName().contains(".fml.client.SplashProgress"))
+            if (cause.getClass().getName().contains(".mcp.client.SplashProgress"))
             {
                 return;
             }

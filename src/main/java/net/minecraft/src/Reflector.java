@@ -66,12 +66,12 @@ public class Reflector
     public static ReflectorMethod ForgeHooksClient_setWorldRendererRB = new ReflectorMethod(ForgeHooksClient, "setWorldRendererRB");
     public static ReflectorMethod ForgeHooksClient_onPreRenderWorld = new ReflectorMethod(ForgeHooksClient, "onPreRenderWorld");
     public static ReflectorMethod ForgeHooksClient_onPostRenderWorld = new ReflectorMethod(ForgeHooksClient, "onPostRenderWorld");
-    public static ReflectorClass FMLCommonHandler = new ReflectorClass("cpw.mods.fml.common.FMLCommonHandler");
+    public static ReflectorClass FMLCommonHandler = new ReflectorClass("cpw.mods.mcp.common.FMLCommonHandler");
     public static ReflectorMethod FMLCommonHandler_instance = new ReflectorMethod(FMLCommonHandler, "instance");
     public static ReflectorMethod FMLCommonHandler_handleServerStarting = new ReflectorMethod(FMLCommonHandler, "handleServerStarting");
     public static ReflectorMethod FMLCommonHandler_handleServerAboutToStart = new ReflectorMethod(FMLCommonHandler, "handleServerAboutToStart");
     public static ReflectorMethod FMLCommonHandler_enhanceCrashReport = new ReflectorMethod(FMLCommonHandler, "enhanceCrashReport");
-    public static ReflectorClass FMLClientHandler = new ReflectorClass("cpw.mods.fml.client.FMLClientHandler");
+    public static ReflectorClass FMLClientHandler = new ReflectorClass("cpw.mods.mcp.client.FMLClientHandler");
     public static ReflectorMethod FMLClientHandler_instance = new ReflectorMethod(FMLClientHandler, "instance");
     public static ReflectorMethod FMLClientHandler_isLoading = new ReflectorMethod(FMLClientHandler, "isLoading");
     public static ReflectorMethod FMLClientHandler_trackBrokenTexture = new ReflectorMethod(FMLClientHandler, "trackBrokenTexture");
@@ -104,9 +104,9 @@ public class Reflector
     public static ReflectorField EntityViewRenderEvent_FogDensity_density = new ReflectorField(EntityViewRenderEvent_FogDensity, "density");
     public static ReflectorClass EntityViewRenderEvent_RenderFogEvent = new ReflectorClass("net.minecraftforge.client.event.EntityViewRenderEvent$RenderFogEvent");
     public static ReflectorConstructor EntityViewRenderEvent_RenderFogEvent_Constructor = new ReflectorConstructor(EntityViewRenderEvent_RenderFogEvent, new Class[] {EntityRenderer.class, EntityLivingBase.class, Block.class, Double.TYPE, Integer.TYPE, Float.TYPE});
-    public static ReflectorClass EventBus = new ReflectorClass("cpw.mods.fml.common.eventhandler.EventBus");
+    public static ReflectorClass EventBus = new ReflectorClass("cpw.mods.mcp.common.eventhandler.EventBus");
     public static ReflectorMethod EventBus_post = new ReflectorMethod(EventBus, "post");
-    public static ReflectorClass Event_Result = new ReflectorClass("cpw.mods.fml.common.eventhandler.Event$Result");
+    public static ReflectorClass Event_Result = new ReflectorClass("cpw.mods.mcp.common.eventhandler.Event$Result");
     public static ReflectorField Event_Result_DENY = new ReflectorField(Event_Result, "DENY");
     public static ReflectorField Event_Result_ALLOW = new ReflectorField(Event_Result, "ALLOW");
     public static ReflectorField Event_Result_DEFAULT = new ReflectorField(Event_Result, "DEFAULT");
@@ -139,7 +139,7 @@ public class Reflector
     public static ReflectorMethod ForgeItemRecord_getRecordResource = new ReflectorMethod(ForgeItemRecord, "getRecordResource", new Class[] {String.class});
     public static ReflectorClass Launch = new ReflectorClass("net.minecraft.launchwrapper.Launch");
     public static ReflectorField Launch_blackboard = new ReflectorField(Launch, "blackboard");
-    public static ReflectorClass SplashScreen = new ReflectorClass("cpw.mods.fml.client.SplashProgress");
+    public static ReflectorClass SplashScreen = new ReflectorClass("cpw.mods.mcp.client.SplashProgress");
     public static ReflectorClass OptiFineClassTransformer = new ReflectorClass("optifine.OptiFineClassTransformer");
     public static ReflectorField OptiFineClassTransformer_instance = new ReflectorField(OptiFineClassTransformer, "instance");
     public static ReflectorMethod OptiFineClassTransformer_getOptiFineResource = new ReflectorMethod(OptiFineClassTransformer, "getOptiFineResource");

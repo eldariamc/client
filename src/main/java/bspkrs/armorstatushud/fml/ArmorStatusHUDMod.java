@@ -10,7 +10,7 @@ import fr.dabsunter.mcp.Initiable;
    version = "1.28",
    dependencies = "required-after:bspkrsCore@[6.15,)",
    useMetadata = true,
-   guiFactory = "bspkrs.armorstatushud.fml.gui.ModGuiFactoryHandler"
+   guiFactory = "bspkrs.armorstatushud.mcp.gui.ModGuiFactoryHandler"
 )*/
 public class ArmorStatusHUDMod implements Initiable {
    protected ModVersionChecker versionChecker;

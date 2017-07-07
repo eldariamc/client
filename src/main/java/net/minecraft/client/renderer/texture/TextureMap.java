@@ -55,7 +55,7 @@ public class TextureMap extends AbstractTexture implements ITickableTextureObjec
     private int iconGridCountY;
     private double iconGridSizeU;
     private double iconGridSizeV;
-    private static final boolean ENABLE_SKIP = Boolean.parseBoolean(System.getProperty("fml.skipFirstTextureLoad", "true"));
+    private static final boolean ENABLE_SKIP = Boolean.parseBoolean(System.getProperty("mcp.skipFirstTextureLoad", "true"));
     private boolean skipFirst;
 
     public TextureMap(int par1, String par2Str)

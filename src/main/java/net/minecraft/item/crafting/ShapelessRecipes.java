@@ -14,7 +14,7 @@ public class ShapelessRecipes implements IRecipe
     private final ItemStack recipeOutput;
 
     /** Is a List of ItemStack that composes the recipe. */
-    private final List recipeItems;
+    public final List recipeItems; // Eldaria - private -> public
 
     public ShapelessRecipes(ItemStack p_i1918_1_, List p_i1918_2_)
     {

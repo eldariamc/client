@@ -1,4 +1,4 @@
-package uristqwerty.CraftGuide.client.fml;
+package uristqwerty.CraftGuide.client.mcp;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
@@ -11,7 +11,6 @@ import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
-import uristqwerty.CraftGuide.CommonUtilities;
 import uristqwerty.CraftGuide.CraftGuide;
 import uristqwerty.CraftGuide.CraftGuideLog;
 import uristqwerty.CraftGuide.GuiCraftGuide;
@@ -47,8 +46,8 @@ public class CraftGuideClient_MCP extends CraftGuideClient
 					{
 						int x = Mouse.getX() * screen.width / mc.displayWidth;
 						int y = screen.height - (Mouse.getY() * screen.height / mc.displayHeight) - 1;
-						int left = (Integer)CommonUtilities.getPrivateValue(GuiContainer.class, (GuiContainer)screen, "field_147003_i", "i", "guiLeft");
-						int top = (Integer)CommonUtilities.getPrivateValue(GuiContainer.class, (GuiContainer)screen, "field_147009_r", "r", "guiTop");
+						int left = ((GuiContainer)screen).field_147003_i;
+						int top = ((GuiContainer)screen).field_147009_r;
 						openRecipe((GuiContainer)screen, x - left, y - top);
 					}
 					catch(IllegalArgumentException e)
@@ -56,14 +55,6 @@ public class CraftGuideClient_MCP extends CraftGuideClient
 						CraftGuideLog.log(e, "Exception while trying to identify if there is an item at the current cursor position.", true);
 					}
 					catch(SecurityException e)
-					{
-						CraftGuideLog.log(e, "Exception while trying to identify if there is an item at the current cursor position.", true);
-					}
-					catch(NoSuchFieldException e)
-					{
-						CraftGuideLog.log(e, "Exception while trying to identify if there is an item at the current cursor position.", true);
-					}
-					catch(IllegalAccessException e)
 					{
 						CraftGuideLog.log(e, "Exception while trying to identify if there is an item at the current cursor position.", true);
 					}
@@ -116,7 +107,7 @@ public class CraftGuideClient_MCP extends CraftGuideClient
 
 		try
 		{
-			if((Boolean)CommonUtilities.getPrivateValue(Tessellator.class, Tessellator.instance, "field_78415_z", "isDrawing", "x"))
+			if(Tessellator.instance.isDrawing)
 			{
 				Tessellator.instance.draw();
 			}
@@ -127,16 +118,6 @@ public class CraftGuideClient_MCP extends CraftGuideClient
 			failed = true;
 		}
 		catch(IllegalArgumentException e)
-		{
-			CraftGuideLog.log(e, "", true);
-			failed = true;
-		}
-		catch(NoSuchFieldException e)
-		{
-			CraftGuideLog.log(e, "", true);
-			failed = true;
-		}
-		catch(IllegalAccessException e)
 		{
 			CraftGuideLog.log(e, "", true);
 			failed = true;

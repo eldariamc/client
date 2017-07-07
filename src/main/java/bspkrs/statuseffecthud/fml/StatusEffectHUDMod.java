@@ -10,7 +10,7 @@ import fr.dabsunter.mcp.Initiable;
    version = "1.27",
    dependencies = "required-after:bspkrsCore@[6.15,)",
    useMetadata = true,
-   guiFactory = "bspkrs.statuseffecthud.fml.gui.ModGuiFactoryHandler"
+   guiFactory = "bspkrs.statuseffecthud.mcp.gui.ModGuiFactoryHandler"
 )*/
 public class StatusEffectHUDMod implements Initiable {
    protected ModVersionChecker versionChecker;

@@ -28,7 +28,7 @@ public abstract class GuiContainer extends GuiScreen
     protected int defaultY = 166;
     public Container inventorySlots;
     public int field_147003_i;
-    protected int field_147009_r;
+    public int field_147009_r;
     private Slot field_147006_u;
     private Slot field_147005_v;
     private boolean field_147004_w;

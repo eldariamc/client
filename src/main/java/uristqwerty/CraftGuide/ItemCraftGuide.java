@@ -25,7 +25,7 @@ public class ItemCraftGuide extends Item
 	{
 		try
 		{
-			Class registry = Class.forName("cpw.mods.fml.common.registry.GameRegistry");
+			Class registry = Class.forName("cpw.mods.mcp.common.registry.GameRegistry");
 			Method registerItem = registry.getMethod("registerItem", Item.class, String.class, String.class);
 			registerItem.invoke(null, this, "craftguide_item", "craftguide");
 		}

@@ -2,6 +2,9 @@ package uristqwerty.CraftGuide;
 
 import org.lwjgl.input.Keyboard;
 import uristqwerty.CraftGuide.api.ItemSlot;
+import uristqwerty.CraftGuide.recipes.BrewingRecipes;
+import uristqwerty.CraftGuide.recipes.DefaultRecipeProvider;
+import uristqwerty.CraftGuide.recipes.GrassSeedDrops;
 import uristqwerty.gui_craftguide.theme.ThemeManager;
 
 import java.io.*;
@@ -59,30 +62,18 @@ public class CraftGuide
 
 	public void init()
 	{
-		try
-		{
-			Class.forName("uristqwerty.CraftGuide.recipes.DefaultRecipeProvider").newInstance();
-			Class.forName("uristqwerty.CraftGuide.recipes.BrewingRecipes").newInstance();
-			Class.forName("uristqwerty.CraftGuide.recipes.GrassSeedDrops").newInstance();
-		}
-		catch(InstantiationException e)
-		{
-			CraftGuideLog.log(e);
-		}
-		catch(IllegalAccessException e)
-		{
-			CraftGuideLog.log(e);
-		}
-		catch(ClassNotFoundException e)
-		{
-			CraftGuideLog.log(e);
-		}
+		/*Class.forName("uristqwerty.CraftGuide.recipes.DefaultRecipeProvider").newInstance();
+		Class.forName("uristqwerty.CraftGuide.recipes.BrewingRecipes").newInstance();
+		Class.forName("uristqwerty.CraftGuide.recipes.GrassSeedDrops").newInstance();*/
+		new DefaultRecipeProvider();
+		new BrewingRecipes();
+		new GrassSeedDrops();
 
-		loadModRecipes("BTW", "uristqwerty.CraftGuide.recipes.BTWRecipes");
+		/*loadModRecipes("BTW", "uristqwerty.CraftGuide.recipes.BTWRecipes");
 		addIC2Recipes();
 		loadModRecipes("gregtech", "uristqwerty.CraftGuide.recipes.GregTechRecipes");
 		loadModRecipes("extendedWorkbench", "uristqwerty.CraftGuide.recipes.ExtendedWorkbench");
-		loadModRecipes("BuildCraft|Factory", "uristqwerty.CraftGuide.recipes.BuildCraftRecipes");
+		loadModRecipes("BuildCraft|Factory", "uristqwerty.CraftGuide.recipes.BuildCraftRecipes");*/
 
 		side.initNetworkChannels();
 	}

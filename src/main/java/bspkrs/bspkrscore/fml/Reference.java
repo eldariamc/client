@@ -10,9 +10,9 @@ public class Reference {
    public static final String NAME = "bspkrsCore";
    public static final String MC_VERSION;
    public static final String MINECRAFT = "minecraft";
-   public static final String PROXY_COMMON = "bspkrs.bspkrscore.fml.CommonProxy";
-   public static final String PROXY_CLIENT = "bspkrs.bspkrscore.fml.ClientProxy";
-   public static final String GUI_FACTORY = "bspkrs.bspkrscore.fml.gui.ModGuiFactoryHandler";
+   public static final String PROXY_COMMON = "bspkrs.bspkrscore.mcp.CommonProxy";
+   public static final String PROXY_CLIENT = "bspkrs.bspkrscore.mcp.ClientProxy";
+   public static final String GUI_FACTORY = "bspkrs.bspkrscore.mcp.gui.ModGuiFactoryHandler";
    public static final Logger LOGGER = Logger.getLogger("bspkrsCore");
    public static Configuration config;
 
