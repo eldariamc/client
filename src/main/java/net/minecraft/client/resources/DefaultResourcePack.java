@@ -14,7 +14,7 @@ import java.util.Set;
 
 public class DefaultResourcePack implements IResourcePack
 {
-    public static final Set defaultResourceDomains = ImmutableSet.of("minecraft", "realms");
+    public static final Set defaultResourceDomains = ImmutableSet.of("minecraft", "realms", "craftguide");
     private final Map field_152781_b;
 
     public DefaultResourcePack(Map par1GuiScreen)
