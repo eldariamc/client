@@ -9,6 +9,8 @@
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 
+compileJava.options.encoding = 'UTF-8'
+
 sourceCompatibility = '1.7'
 targetCompatibility = '1.7'
 
