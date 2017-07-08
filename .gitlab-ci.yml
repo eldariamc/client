@@ -1,0 +1,55 @@
+image: java:8-jdk
+
+stages:
+  - build
+  - obfuscate
+  - test
+  - deploy
+
+before_script:
+#  - echo `pwd` # debug
+#  - echo "$CI_BUILD_NAME, $CI_BUILD_REF_NAME $CI_BUILD_STAGE" # debug
+  - export GRADLE_USER_HOME=`pwd`/.gradle
+  - apt-get update -qq && apt-get install -y -qq unzip
+
+cache:
+  paths:
+    - .gradle/wrapper
+    - .gradle/caches
+
+build:
+  stage: build
+  script:
+    - chmod +x ./gradlew
+    - ./gradlew jar
+  artifacts:
+    paths:
+      - build/libs/client.jar
+    expire_in: 1 hour
+  only:
+    - master
+    
+obfuscate: 
+    stage: obfuscate
+    script:
+        - wget https://freefr.dl.sourceforge.net/project/proguard/proguard/5.3/proguard5.3.3.zip -O temp.zip; unzip temp.zip; rm temp.zip
+        - ls -l
+        - java -jar proguard5.3.3/lib/proguard.jar @client-config.pro
+    artifacts:
+      paths:
+        - build/libs/eldaria.jar
+      expire_in: 1 hour
+        
+test:
+  stage: test
+  script:
+    - chmod +x ./gradlew
+    - ./gradlew check
+
+deploy:
+  stage: deploy
+  script:
+    - ./deploy
+
+after_script:
+  - echo "End CI"
