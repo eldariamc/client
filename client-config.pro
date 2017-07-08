@@ -6,7 +6,6 @@
 -libraryjars <java.home>/lib/jce.jar
 -libraryjars <java.home>/lib/jsse.jar
 -libraryjars <java.home>/lib/management-agent.jar
--libraryjars <java.home>/lib/plugin.jar
 -libraryjars <java.home>/lib/resources.jar
 -libraryjars lib/authlib-1.5.21.jar
 -libraryjars lib/codecjorbis-20101023.jar
