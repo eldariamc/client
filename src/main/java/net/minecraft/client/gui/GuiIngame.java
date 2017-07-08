@@ -370,7 +370,7 @@ public class GuiIngame extends Gui
                 int locZ = MathHelper.floor_double(this.mc.thePlayer.posZ);
                 int fps = Minecraft.debugFPS;
 
-                fr.drawStringWithShadow("§c§l§nEldaria§f§l v1§r (MC 1.7.10)", 2, 2, var32);
+                fr.drawStringWithShadow("§c§l§nEldaria§f§l v2§r (MC 1.7.10)", 2, 2, var32);
                 fr.drawStringWithShadow("X: §e" + locX + "§r, Y: §e" + locY + "§r, Z: §e" + locZ, 2 , 17, var32);
                 fr.drawStringWithShadow("Chunk X: §e" + (locX >> 4) + "§r, Z: §e" + (locZ >> 4), 2, 27, var32);
                 fr.drawStringWithShadow("Facing: §e" + Direction.directions[MathHelper.floor_double((this.mc.thePlayer.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3], 2, 37, var32);
