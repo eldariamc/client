@@ -37,7 +37,7 @@ obfuscate:
     artifacts:
       paths:
         - build/libs/eldaria.jar
-    expire_in: 1 hour
+      expire_in: 1 hour
         
 test:
   stage: test
