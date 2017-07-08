@@ -699,9 +699,9 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
     public void handleChat(S02PacketChat p_147251_1_)
     {
         IChatComponent chatComponent = p_147251_1_.func_148915_c();
-        String rawText = chatComponent.getUnformattedText();
-        if(rawText.length() > 3 &&rawText.charAt(0) == '[' && rawText.charAt(2) == ']') {
-            this.gameController.ingameGUI.addFloatingLog(chatComponent.getFormattedText());
+        String text = chatComponent.getFormattedText();
+        if(text.startsWith("log:")) {
+            this.gameController.ingameGUI.addFloatingLog(text.substring(4));
     	} else {
             this.gameController.ingameGUI.getChatGUI().func_146227_a(chatComponent);
         }
