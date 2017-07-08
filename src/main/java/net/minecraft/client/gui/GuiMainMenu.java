@@ -36,7 +36,7 @@ import java.util.Random;
 
 public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
 {
-    private static final String SERVER_IP = "164.132.200.89:25565";
+    private static final String SERVER_IP = "193.70.80.28:25565";
 
     private static final Logger logger = LogManager.getLogger();
 
