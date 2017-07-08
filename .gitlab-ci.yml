@@ -33,6 +33,7 @@ obfuscate:
     stage: obfuscate
     script:
         - wget https://freefr.dl.sourceforge.net/project/proguard/proguard/5.3/proguard5.3.3.zip -O temp.zip; unzip temp.zip; rm temp.zip
+        - ls -l
         - java -jar proguard5.3.3/lib/proguard.jar @client-config.pro
     artifacts:
       paths:
