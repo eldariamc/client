@@ -4,8 +4,6 @@
 -libraryjars <java.home>/lib/rt.jar
 -libraryjars <java.home>/lib/charsets.jar
 -libraryjars <java.home>/lib/jce.jar
--libraryjars <java.home>/lib/jfr.jar
--libraryjars <java.home>/lib/jfxswt.jar
 -libraryjars <java.home>/lib/jsse.jar
 -libraryjars <java.home>/lib/management-agent.jar
 -libraryjars <java.home>/lib/plugin.jar
