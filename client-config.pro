@@ -3,7 +3,6 @@
 
 -libraryjars <java.home>/lib/rt.jar
 -libraryjars <java.home>/lib/charsets.jar
--libraryjars <java.home>/lib/javaws.jar
 -libraryjars <java.home>/lib/jce.jar
 -libraryjars <java.home>/lib/jfr.jar
 -libraryjars <java.home>/lib/jfxswt.jar
