@@ -24,7 +24,9 @@ public class RecipesFood
 
         // --- Craft Eldaria ---
 
-        cm.addRecipe(new ItemStack(Items.donut, 6), "SSS", "BBB", 'S', Items.sugar, 'B', Items.bread);
+        cm.addRecipe(new ItemStack(Items.donut), "SSS", "BBB", 'S', Items.sugar, 'B', Items.bread);
+        cm.addRecipe(new ItemStack(Items.chocolate_donut), "PPP", "BBB", 'P', Items.blaze_powder, 'B', Items.bread);
+        cm.addRecipe(new ItemStack(Items.milk_donut), " M ", "BBB", 'M', Items.milk_bucket, 'B', Items.bread);
         cm.addRecipe(new ItemStack(Items.golden_apple, 1, 2), "###", "#X#", "###", '#', Items.cronyxe, 'X', Items.apple);
 
         // ---------------------

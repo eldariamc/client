@@ -7,7 +7,13 @@ import net.minecraft.item.ItemStack;
 
 public class RecipesTools
 {
-    private String[][] recipePatterns = new String[][] {{"XXX", " # ", " # "}, {"X", "#", "#"}, {"XX", "X#", " #"}, {"XX", " #", " #"}};
+    private String[][] recipePatterns = new String[][] {
+            {"XXX", " # ", " # "},
+            {"X", "#", "#"},
+            {"XX", "X#", " #"},
+            {"XX", " #", " #"},
+            {"XXX", "X#X", " # "}
+};
     private Object[][] recipeItems;
 
     public RecipesTools()
@@ -17,7 +23,8 @@ public class RecipesTools
             {Items.wooden_pickaxe, Items.stone_pickaxe, Items.iron_pickaxe, Items.diamond_pickaxe, Items.golden_pickaxe, Items.zinc_pickaxe, Items.cronyxe_pickaxe, Items.kobalt_pickaxe, Items.eldarium_pickaxe},
             {Items.wooden_shovel , Items.stone_shovel , Items.iron_shovel , Items.diamond_shovel , Items.golden_shovel , Items.zinc_shovel, Items.cronyxe_shovel, Items.kobalt_shovel, Items.eldarium_shovel},
             {Items.wooden_axe    , Items.stone_axe    , Items.iron_axe    , Items.diamond_axe    , Items.golden_axe    , Items.zinc_axe, Items.cronyxe_axe, Items.kobalt_axe, Items.eldarium_axe},
-            {Items.wooden_hoe    , Items.stone_hoe    , Items.iron_hoe    , Items.diamond_hoe    , Items.golden_hoe    , Items.zinc_hoe, Items.cronyxe_hoe, Items.kobalt_hoe, Items.eldarium_hoe}
+            {Items.wooden_hoe    , Items.stone_hoe    , Items.iron_hoe    , Items.diamond_hoe    , Items.golden_hoe    , Items.zinc_hoe, Items.cronyxe_hoe, Items.kobalt_hoe, Items.eldarium_hoe},
+            {null                , null               , null              , null                 , null                , Items.zinc_global_tool, Items.cronyxe_global_tool, Items.kobalt_global_tool, Items.eldarium_global_tool}
         };
     }
 
@@ -33,7 +40,8 @@ public class RecipesTools
             for (int j = 0; j < this.recipeItems.length - 1; ++j)
             {
                 Item result = (Item)this.recipeItems[j + 1][i];
-                cm.addRecipe(new ItemStack(result), this.recipePatterns[j], '#', Items.stick, 'X', material);
+                if (this.recipePatterns[j] != null)
+                    cm.addRecipe(new ItemStack(result), this.recipePatterns[j], '#', Items.stick, 'X', material);
             }
         }
 

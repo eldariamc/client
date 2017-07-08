@@ -230,6 +230,17 @@ public class Items
     public static final BowKobalt bow_kobalt = (BowKobalt)Item.itemRegistry.getObject("bow_kobalt");
     public static final BowEldarium bow_eldarium = (BowEldarium)Item.itemRegistry.getObject("bow_eldarium");
     public static final Item eldarium_nugget = (Item)Item.itemRegistry.getObject("eldarium_nugget");
+    public static final Item wooden_global_tool = (Item)Item.itemRegistry.getObject("wooden_global_tool");
+    public static final Item iron_global_tool = (Item)Item.itemRegistry.getObject("iron_global_tool");
+    public static final Item stone_global_tool = (Item)Item.itemRegistry.getObject("stone_global_tool");
+    public static final Item golden_global_tool = (Item)Item.itemRegistry.getObject("golden_global_tool");
+    public static final Item diamond_global_tool = (Item)Item.itemRegistry.getObject("diamond_global_tool");
+    public static final Item zinc_global_tool = (Item)Item.itemRegistry.getObject("zinc_global_tool");
+    public static final Item cronyxe_global_tool = (Item)Item.itemRegistry.getObject("cronyxe_global_tool");
+    public static final Item kobalt_global_tool = (Item)Item.itemRegistry.getObject("kobalt_global_tool");
+    public static final Item eldarium_global_tool = (Item)Item.itemRegistry.getObject("eldarium_global_tool");
+    public static final Item chocolate_donut = (Item)Item.itemRegistry.getObject("chocolate_donut");
+    public static final Item milk_donut = (Item)Item.itemRegistry.getObject("milk_donut");
 
     // -----------------------
 

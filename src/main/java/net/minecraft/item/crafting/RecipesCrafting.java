@@ -43,6 +43,8 @@ public class RecipesCrafting
         cm.addRecipe(new ItemStack(Items.chest_orb), "CG ", "GKG", " G-", 'C', Items.cronyxe, 'G', Blocks.glass, 'K', Items.kobalt, '-', Items.stick);
         cm.addRecipe(new ItemStack(Items.eldarium), "###", "###", "###", '#', Items.eldarium_nugget);
         cm.addRecipe(new ItemStack(Items.eldarium_nugget, 9), "#", '#', Items.eldarium);
+        cm.addRecipe(new ItemStack(Items.golden_apple, 1, 2), "###", "#A#", "###", '#', Items.kobalt, 'A', Items.apple);
+        cm.addRecipe(new ItemStack(Items.chest_orb), "###", "#E#", "###", '#', Items.ender_pearl, 'E', Items.eldarium);
 
         // -----------------------
     }
