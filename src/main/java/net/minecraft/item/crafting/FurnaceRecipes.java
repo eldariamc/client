@@ -70,7 +70,7 @@ public class FurnaceRecipes
         this.addSmelting(Blocks.zinc_ore, new ItemStack(Items.zinc), 1.0F);
         this.addSmelting(Blocks.cronyxe_ore, new ItemStack(Items.cronyxe), 1.0F);
         this.addSmelting(Blocks.kobalt_ore, new ItemStack(Items.kobalt), 1.0F);
-		this.addSmelting(Blocks.eldarium_ore, new ItemStack(Items.eldarium), 1.0F);
+		this.addSmelting(Blocks.eldarium_ore, new ItemStack(Items.eldarium_nugget), 1.0F);
 
         // ------------------------
     }
