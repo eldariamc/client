@@ -35,8 +35,8 @@ obfuscate:
         - wget https://freefr.dl.sourceforge.net/project/proguard/proguard/5.3/proguard5.3.3.zip -O temp.zip; unzip temp.zip; rm temp.zip
         - java -jar proguard/lib/proguard.jar @client-config.pro
     artifacts:
-    paths:
-      - build/libs/eldaria.jar
+      paths:
+        - build/libs/eldaria.jar
     expire_in: 1 hour
         
 test:
