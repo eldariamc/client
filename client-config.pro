@@ -1,17 +1,12 @@
 -injars build/libs/client.jar
 -outjars build/libs/eldaria.jar
 
--libraryjars /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar
--libraryjars /usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar
--libraryjars /usr/lib/jvm/java-8-oracle/jre/lib/deploy.jar
--libraryjars /usr/lib/jvm/java-8-oracle/jre/lib/javaws.jar
--libraryjars /usr/lib/jvm/java-8-oracle/jre/lib/jce.jar
--libraryjars /usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar
--libraryjars /usr/lib/jvm/java-8-oracle/jre/lib/jfxswt.jar
--libraryjars /usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar
--libraryjars /usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar
--libraryjars /usr/lib/jvm/java-8-oracle/jre/lib/plugin.jar
--libraryjars /usr/lib/jvm/java-8-oracle/jre/lib/resources.jar
+-libraryjars <java.home>/lib/rt.jar
+-libraryjars <java.home>/lib/charsets.jar
+-libraryjars <java.home>/lib/jce.jar
+-libraryjars <java.home>/lib/jsse.jar
+-libraryjars <java.home>/lib/management-agent.jar
+-libraryjars <java.home>/lib/resources.jar
 -libraryjars lib/authlib-1.5.21.jar
 -libraryjars lib/codecjorbis-20101023.jar
 -libraryjars lib/codecwav-20101023.jar
