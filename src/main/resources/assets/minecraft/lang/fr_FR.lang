@@ -1680,7 +1680,7 @@ item.leggingsEldarium.name=Jambières en Eldarium
 item.bootsEldarium.name=Bottes en Eldarium
 item.dynamite.name=§6Dynamite
 item.bootsExploration.name=§6Bottes d'exploration
-tile.waterPipe.name=§3Cicha
+tile.waterPipe.name=Chicha
 tile.oreXp.name=Minerais d'XP
 tile.oreLuck.name=Minerais aléatoire
 item.litCoal.name=§7Charbon brulé
@@ -1712,6 +1712,8 @@ enable=Activé
 item.unclaimFinder.name=Chercheur de coffre
 item.peppers.name=Piment
 item.donut.name=Donut
+item.donutMilk.name=Donut à la vanille
+item.donutChoc.name=Donut à la fraise
 alignMode=Alignement
 listMode=Disposition
 enableItemName=Activer le nom
@@ -1745,7 +1747,15 @@ options.eldaria.hud.effect=§eEffets
 options.eldaria.hud.armor=§eArmures
 options.eldaria.betterSprint=Better Sprinting
 options.eldaria.choseRadio=Choisir une radio
-
+tile.mysteryBox.name=Boîte mystère
+tile.barrier.name=Barrière Invisible
+item.compactedSlimeball.name=Slimeball Compacte
+item.zinc.name=Lingot de Zinc
+item.cronyxe.name=Gemme de Cronyxe
+item.kobalt.name=Cristal de Kobalt
+item.eldarium.name=Pierre d'Eldarium
+item.eldariumNugget.name=Fragment d'Eldarium
+container.btn.craftGuide=Wiki
 
 item.craftguide_item.name=Guide d'artisanat 
  

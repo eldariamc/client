@@ -294,7 +294,7 @@ public class Item
         itemRegistry.addObject(2265, "record_ward", (new ItemRecord("ward")).setUnlocalizedName("record").setTextureName("record_ward"));
         itemRegistry.addObject(2266, "record_11", (new ItemRecord("11")).setUnlocalizedName("record").setTextureName("record_11"));
         itemRegistry.addObject(2267, "record_wait", (new ItemRecord("wait")).setUnlocalizedName("record").setTextureName("record_wait"));
-        HashSet exceptions = Sets.newHashSet(Blocks.air, Blocks.brewing_stand, Blocks.bed, Blocks.nether_wart,
+        HashSet<Block> exceptions = Sets.newHashSet(Blocks.air, Blocks.brewing_stand, Blocks.bed, Blocks.nether_wart,
                 Blocks.cauldron, Blocks.flower_pot, Blocks.wheat, Blocks.reeds, Blocks.cake, Blocks.skull,
                 Blocks.piston_head, Blocks.piston_extension, Blocks.lit_redstone_ore, Blocks.powered_repeater,
                 Blocks.pumpkin_stem, Blocks.standing_sign, Blocks.powered_comparator, Blocks.tripwire,
@@ -753,7 +753,12 @@ public class Item
     /**
      * allows items to addSmelting custom lines of information to the mouseover description
      */
-    public void addInformation(ItemStack p_77624_1_, EntityPlayer p_77624_2_, List p_77624_3_, boolean p_77624_4_) {}
+    public void addInformation(ItemStack stack, EntityPlayer player, List lores, boolean p_77624_4_) {
+        // Eldaria - Possibilitée d'ajouter des lore sur chaque item depuis le fichier lang
+        String langKey = getUnlocalizedName(stack) + ".lore";
+        if (StatCollector.canTranslate(langKey))
+            lores.addAll(Arrays.asList(StatCollector.translateToLocal(langKey).split("\\|\\|")));
+    }
 
     public String getItemStackDisplayName(ItemStack p_77653_1_)
     {
