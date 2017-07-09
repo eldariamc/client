@@ -418,7 +418,7 @@ public class Block
         Block obsidianFurnace = (new BlockFurnace()).setFurnaceSpeed(2.0).setHardness(50.0F).setResistance(2000.0F).setStepSound(soundTypePiston).setBlockName("obsidianFurnace").setCreativeTab(CreativeTabs.tabDecorations).setBlockTextureName("obsidian_furnace");
         blockRegistry.addObject(id++, "obsidian_furnace", obsidianFurnace);
         blockRegistry.addObject(id++, "lit_obsidian_furnace", new BlockFurnace(obsidianFurnace).setFurnaceSpeed(2.0).setHardness(50.0F).setResistance(2000.0F).setStepSound(soundTypePiston).setLightLevel(0.875F).setBlockName("obsidianFurnace").setBlockTextureName("obsidian_furnace"));
-        blockRegistry.addObject(id++, "reinforced_obsidian", new Block(Material.brick).setHardness(100.0F).setResistance(4000.0F).setStepSound(soundTypePiston).setBlockName("reinforcedObsidian")/*.setCreativeTab(CreativeTabs.tabBlock)*/.setBlockTextureName("reinforced_obsidian"));
+        blockRegistry.addObject(id++, "reinforced_obsidian", new Block(Material.brick).setHardness(100.0F).setResistance(4000.0F).setStepSound(soundTypePiston).setBlockName("reinforcedObsidian").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName("reinforced_obsidian"));
         blockRegistry.addObject(id++, "water_pipe", new BlockWaterPipe().setHardness(0.5F).setLightLevel(0.125F).setBlockName("waterPipe").setCreativeTab(CreativeTabs.tabBrewing).setBlockTextureName("water_pipe"));
         blockRegistry.addObject(id++, "iron_ladder", (new BlockLadder()).setHardness(5.0F).setResistance(10.0F).setStepSound(soundTypeMetal).setBlockName("ironLadder").setBlockTextureName("iron_ladder"));
         blockRegistry.addObject(id++, "slime", new BlockSlime().setBlockName("slime").setStepSound(soundTypeSlime));

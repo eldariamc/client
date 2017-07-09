@@ -194,7 +194,7 @@ public class Blocks
     public static final Block acacia_door = (Block)Block.blockRegistry.getObject("acacia_door");
     public static final Block dark_oak_door = (Block)Block.blockRegistry.getObject("dark_oak_door");
 
-    // --- Blocs Keyrisium ---
+    // --- Blocs Eldaria ---
 
     public static final BlockFurnace obsidian_furnace = (BlockFurnace)Block.blockRegistry.getObject("obsidian_furnace");
     public static final BlockFurnace lit_obsidian_furnace = (BlockFurnace)Block.blockRegistry.getObject("lit_obsidian_furnace");

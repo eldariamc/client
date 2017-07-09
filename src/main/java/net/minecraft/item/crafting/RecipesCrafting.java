@@ -32,10 +32,11 @@ public class RecipesCrafting
         // --- Crafts Eldaria ---
 
         cm.addRecipe(new ItemStack(Blocks.obsidian_furnace), "###", "#F#", "###", '#', Blocks.obsidian, 'F', Blocks.furnace);
+        cm.addRecipe(new ItemStack(Blocks.reinforced_obsidian), "OEO", "EOE", "OEO", 'O', Blocks.obsidian, 'E', Items.eldarium);
         cm.addRecipe(new ItemStack(Items.compacted_slime_ball), "##", "##", '#', Items.slime_ball);
         cm.addRecipe(new ItemStack(Blocks.iron_ladder, 3), "# #", "###", "# #", '#', Items.iron_ingot);
         cm.addRecipe(new ItemStack(Blocks.slime), "###", "#C#", "###", '#', Items.slime_ball, 'C', Items.compacted_slime_ball);
-        cm.addRecipe(new ItemStack(Blocks.obsand), "##", "G#", '#', Blocks.obsidian, 'G', Blocks.gravel);
+        //cm.addRecipe(new ItemStack(Blocks.obsand), "##", "G#", '#', Blocks.obsidian, 'G', Blocks.gravel);
         cm.addRecipe(new ItemStack(Blocks.water_pipe), "P ", "G ", "BG", 'P', Items.paper, 'G', Blocks.glass_pane, 'B', Items.brewing_stand);
         cm.addRecipe(new ItemStack(Blocks.zinc_chest), "###", "#C#", "###", '#', Items.zinc, 'C', Blocks.chest);
         cm.addRecipe(new ItemStack(Blocks.cronyxe_chest), "###", "#C#", "###", '#', Items.cronyxe, 'C', Blocks.chest);
