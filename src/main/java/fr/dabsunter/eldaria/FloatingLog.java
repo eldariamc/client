@@ -11,7 +11,7 @@ import org.lwjgl.opengl.GL11;
 public class FloatingLog {
 
 	private final String log;
-	private int timeout = 30;
+	private int timeout = 60;
 
 	public FloatingLog(String log) {
 		this.log = log;
