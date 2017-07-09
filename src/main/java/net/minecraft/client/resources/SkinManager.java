@@ -5,6 +5,7 @@ import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
 import com.google.common.collect.Maps;
 import com.mojang.authlib.GameProfile;
+import com.mojang.authlib.minecraft.InsecureTextureException;
 import com.mojang.authlib.minecraft.MinecraftProfileTexture;
 import com.mojang.authlib.minecraft.MinecraftProfileTexture.Type;
 import com.mojang.authlib.minecraft.MinecraftSessionService;
@@ -19,8 +20,6 @@ import net.minecraft.util.ResourceLocation;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -48,8 +47,8 @@ public class SkinManager implements IResourceManager
         {
             public Map func_152786_a(GameProfile gameProfile)
             {
-                //return Minecraft.getMinecraft().func_152347_ac().getTextures(gameProfile, false);
-                final HashMap map = Maps.newHashMap();
+                return Minecraft.getMinecraft().func_152347_ac().getTextures(gameProfile, false);
+                /*final HashMap map = Maps.newHashMap();
 
                 map.put(Type.SKIN, new MinecraftProfileTexture("http://eldaria.fr/skins/" + gameProfile.getName() + ".png", null));
 
@@ -67,7 +66,7 @@ public class SkinManager implements IResourceManager
 
                 System.out.println("load properties:");
                 System.out.println(map);
-                return map;
+                return map;*/
             }
             public Object load(Object p_load_1_)
             {
@@ -78,7 +77,7 @@ public class SkinManager implements IResourceManager
 
     public ResourceLocation applyTexture(MinecraftProfileTexture p_152792_1_, Type p_152792_2_)
     {
-        return this.applyTexture(p_152792_1_, p_152792_2_, (SkinManager.SkinAvailableCallback)null);
+        return this.applyTexture(p_152792_1_, p_152792_2_, null);
     }
 
     public ResourceLocation applyTexture(MinecraftProfileTexture texture, final Type type, final SkinManager.SkinAvailableCallback callback)
@@ -137,7 +136,7 @@ public class SkinManager implements IResourceManager
             {
                 final HashMap var1 = Maps.newHashMap();
 
-                /*try
+                try
                 {
                     var1.putAll(SkinManager.this.sessionService.getTextures(gameProfile, p_152790_3_));
                 }
@@ -149,9 +148,9 @@ public class SkinManager implements IResourceManager
                 if (var1.isEmpty() && gameProfile.getId().equals(Minecraft.getMinecraft().getSession().func_148256_e().getId()))
                 {
                     var1.putAll(SkinManager.this.sessionService.getTextures(SkinManager.this.sessionService.fillProfileProperties(gameProfile, false), false));
-                }*/
+                }
 
-                var1.put(Type.SKIN, new MinecraftProfileTexture("http://eldaria.fr/skins/" + gameProfile.getName() + ".png", null));
+                /*var1.put(Type.SKIN, new MinecraftProfileTexture("http://eldaria.fr/skins/" + gameProfile.getName() + ".png", null));
 
                 try {
                     URL url = new URL("http://eldaria.fr/skins/" + gameProfile.getName() + "_cape.png");
@@ -163,7 +162,7 @@ public class SkinManager implements IResourceManager
                 } catch (IOException ex) {
                     System.err.println("Error while checking " + gameProfile.getName() + " cape");
                     ex.printStackTrace();
-                }
+                }*/
 
                 Minecraft.getMinecraft().func_152344_a(new Runnable()
                 {
