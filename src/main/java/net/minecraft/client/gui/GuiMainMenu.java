@@ -586,7 +586,7 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
         this.drawString(this.fontRendererObj, motd, (this.width/*-100*/)/2 - (this.fontRendererObj.getStringWidth(motd)/2), h, -1);
 
 
-        String var9 = "Eldaria v1";
+        String var9 = "Eldaria v2";
 
         if (this.mc.isDemo())
         {
