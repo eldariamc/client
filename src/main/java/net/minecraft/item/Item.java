@@ -243,7 +243,7 @@ public class Item
 		int id = 500;
         itemRegistry.addObject(id++, "compacted_slime_ball", new Item().setUnlocalizedName("compactedSlimeball").setCreativeTab(CreativeTabs.tabMisc).setTextureName("compacted_slimeball"));
         itemRegistry.addObject(id++, "lignite", new Item().setUnlocalizedName("lignite").setCreativeTab(CreativeTabs.tabMaterials).setTextureName("lignite"));
-        itemRegistry.addObject(id++, "donut", new ItemFood(10, false).setAlwaysEdible().setPotionEffect(1, 360, 0, 1.0F).setUnlocalizedName("donut").setTextureName("donut"));
+        itemRegistry.addObject(id++, "donut", new ItemFood(10, false).setAlwaysEdible().setPotionEffect(1, 360, 1, 1.0F).setUnlocalizedName("donut").setTextureName("donut"));
         itemRegistry.addObject(id++, "zinc", new Item().setUnlocalizedName("zinc").setCreativeTab(CreativeTabs.tabMaterials).setTextureName("zinc"));
         itemRegistry.addObject(id++, "cronyxe", new Item().setUnlocalizedName("cronyxe").setCreativeTab(CreativeTabs.tabMaterials).setTextureName("cronyxe"));
         itemRegistry.addObject(id++, "kobalt", new Item().setUnlocalizedName("kobalt").setCreativeTab(CreativeTabs.tabMaterials).setTextureName("kobalt"));
