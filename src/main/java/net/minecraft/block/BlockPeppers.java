@@ -8,13 +8,13 @@ import net.minecraft.item.Item;
  */
 public class BlockPeppers extends BlockCrops {
 
-	protected Item func_149866_i()
+	protected Item getSeeds()
 	{
-		return Items.peppers;
+		return Items.pepper;
 	}
 
-	protected Item func_149865_P()
+	protected Item getProduct()
 	{
-		return Items.peppers;
+		return Items.pepper;
 	}
 }

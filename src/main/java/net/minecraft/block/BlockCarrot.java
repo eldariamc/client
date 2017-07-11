@@ -29,12 +29,12 @@ public class BlockCarrot extends BlockCrops
         }
     }
 
-    protected Item func_149866_i()
+    protected Item getSeeds()
     {
         return Items.carrot;
     }
 
-    protected Item func_149865_P()
+    protected Item getProduct()
     {
         return Items.carrot;
     }

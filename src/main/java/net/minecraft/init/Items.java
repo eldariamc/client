@@ -224,7 +224,7 @@ public class Items
     public static final Item tomahawk = (Item)Item.itemRegistry.getObject("tomahawk");
     public static final Item chest_orb = (Item)Item.itemRegistry.getObject("chest_orb");
     public static final Item exploration_boots = (Item)Item.itemRegistry.getObject("exploration_boots");
-    public static final Item peppers = (Item)Item.itemRegistry.getObject("peppers");
+    public static final Item pepper = (Item)Item.itemRegistry.getObject("pepper");
     public static final BowZinc bow_zinc = (BowZinc)Item.itemRegistry.getObject("bow_zinc");
     public static final BowCronyxe bow_cronyxe = (BowCronyxe)Item.itemRegistry.getObject("bow_cronyxe");
     public static final BowKobalt bow_kobalt = (BowKobalt)Item.itemRegistry.getObject("bow_kobalt");
