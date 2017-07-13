@@ -173,11 +173,7 @@ public class BlockCrops extends BlockBush implements IGrowable
 
     public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_)
     {
-        Item p = getProduct();
-        Item s = getSeeds();
-        Item result = p_149650_1_ == 7 ? p : s;
-        System.out.println("drop " + result);
-        return result;
+        return p_149650_1_ == 7 ? this.getProduct() : this.getSeeds();
     }
 
     /**
