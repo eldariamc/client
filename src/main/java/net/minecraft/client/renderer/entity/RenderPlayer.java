@@ -315,43 +315,7 @@ public class RenderPlayer extends RendererLivingEntity
                 GL11.glRotatef(45.0F, 0.0F, 1.0F, 0.0F);
                 GL11.glScalef(-var7, -var7, var7);
             }
-            else if (var24.getItem() == Items.bow)
-            {
-                var7 = 0.625F;
-                GL11.glTranslatef(0.0F, 0.125F, 0.3125F);
-                GL11.glRotatef(-20.0F, 0.0F, 1.0F, 0.0F);
-                GL11.glScalef(var7, -var7, var7);
-                GL11.glRotatef(-100.0F, 1.0F, 0.0F, 0.0F);
-                GL11.glRotatef(45.0F, 0.0F, 1.0F, 0.0F);
-            }
-            else if (var24.getItem() == Items.bow_zinc)
-            {
-                var7 = 0.625F;
-                GL11.glTranslatef(0.0F, 0.125F, 0.3125F);
-                GL11.glRotatef(-20.0F, 0.0F, 1.0F, 0.0F);
-                GL11.glScalef(var7, -var7, var7);
-                GL11.glRotatef(-100.0F, 1.0F, 0.0F, 0.0F);
-                GL11.glRotatef(45.0F, 0.0F, 1.0F, 0.0F);
-            }
-            else if (var24.getItem() == Items.bow_cronyxe)
-            {
-                var7 = 0.625F;
-                GL11.glTranslatef(0.0F, 0.125F, 0.3125F);
-                GL11.glRotatef(-20.0F, 0.0F, 1.0F, 0.0F);
-                GL11.glScalef(var7, -var7, var7);
-                GL11.glRotatef(-100.0F, 1.0F, 0.0F, 0.0F);
-                GL11.glRotatef(45.0F, 0.0F, 1.0F, 0.0F);
-            }
-            else if (var24.getItem() == Items.bow_kobalt)
-            {
-                var7 = 0.625F;
-                GL11.glTranslatef(0.0F, 0.125F, 0.3125F);
-                GL11.glRotatef(-20.0F, 0.0F, 1.0F, 0.0F);
-                GL11.glScalef(var7, -var7, var7);
-                GL11.glRotatef(-100.0F, 1.0F, 0.0F, 0.0F);
-                GL11.glRotatef(45.0F, 0.0F, 1.0F, 0.0F);
-            }
-            else if (var24.getItem() == Items.bow_eldarium)
+            else if (var24.getItem() instanceof ItemBow)
             {
                 var7 = 0.625F;
                 GL11.glTranslatef(0.0F, 0.125F, 0.3125F);

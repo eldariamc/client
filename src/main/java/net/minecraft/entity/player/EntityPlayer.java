@@ -30,6 +30,7 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.InventoryEnderChest;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
@@ -1906,99 +1907,24 @@ public abstract class EntityPlayer extends EntityLivingBase implements ICommandS
                 return p_70620_1_.getItem().getIconFromDamageForRenderPass(p_70620_1_.getItemDamage(), p_70620_2_);
             }
 
-            if (this.itemInUse != null && p_70620_1_.getItem() == Items.bow)
+            if (this.itemInUse != null && p_70620_1_.getItem() instanceof ItemBow)
             {
+                ItemBow bow = (ItemBow) p_70620_1_.getItem();
                 int var4 = p_70620_1_.getMaxItemUseDuration() - this.itemInUseCount;
 
                 if (var4 >= 18)
                 {
-                    return Items.bow.getItemIconForUseDuration(2);
+                    return bow.getItemIconForUseDuration(2);
                 }
 
                 if (var4 > 13)
                 {
-                    return Items.bow.getItemIconForUseDuration(1);
+                    return bow.getItemIconForUseDuration(1);
                 }
 
                 if (var4 > 0)
                 {
-                    return Items.bow.getItemIconForUseDuration(0);
-                }
-            }
-            if (this.itemInUse != null && p_70620_1_.getItem() == Items.bow_zinc)
-            {
-                int var4 = p_70620_1_.getMaxItemUseDuration() - this.itemInUseCount;
-
-                if (var4 >= 18)
-                {
-                    return Items.bow_zinc.getItemIconForUseDuration(2);
-                }
-
-                if (var4 > 13)
-                {
-                    return Items.bow_zinc.getItemIconForUseDuration(1);
-                }
-
-                if (var4 > 0)
-                {
-                    return Items.bow_zinc.getItemIconForUseDuration(0);
-                }
-            }
-            if (this.itemInUse != null && p_70620_1_.getItem() == Items.bow_cronyxe)
-            {
-                int var4 = p_70620_1_.getMaxItemUseDuration() - this.itemInUseCount;
-
-                if (var4 >= 18)
-                {
-                    return Items.bow_cronyxe.getItemIconForUseDuration(2);
-                }
-
-                if (var4 > 13)
-                {
-                    return Items.bow_cronyxe.getItemIconForUseDuration(1);
-                }
-
-                if (var4 > 0)
-                {
-                    return Items.bow_cronyxe.getItemIconForUseDuration(0);
-                }
-            }
-            if (this.itemInUse != null && p_70620_1_.getItem() == Items.bow_kobalt)
-            {
-                int var4 = p_70620_1_.getMaxItemUseDuration() - this.itemInUseCount;
-
-                if (var4 >= 18)
-                {
-                    return Items.bow_kobalt.getItemIconForUseDuration(2);
-                }
-
-                if (var4 > 13)
-                {
-                    return Items.bow_kobalt.getItemIconForUseDuration(1);
-                }
-
-                if (var4 > 0)
-                {
-                    return Items.bow_kobalt.getItemIconForUseDuration(0);
-                }
-            }
-            if (this.itemInUse != null && p_70620_1_.getItem() == Items.bow_eldarium)
-            {
-                int var4 = p_70620_1_.getMaxItemUseDuration() - this.itemInUseCount;
-
-                if (var4 >= 18)
-                {
-                    return Items.bow_eldarium.getItemIconForUseDuration(2);
-                }
-
-                if (var4 > 13)
-                {
-                    return Items.bow_eldarium.getItemIconForUseDuration(1);
-                }
-
-                if (var4 > 0)
-                {
-                    return Items.bow_eldarium.getItemIconForUseDuration(0);
+                    return bow.getItemIconForUseDuration(0);
                 }
             }
         }

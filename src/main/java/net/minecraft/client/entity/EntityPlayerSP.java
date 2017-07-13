@@ -16,6 +16,7 @@ import net.minecraft.entity.passive.EntityHorse;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.tileentity.*;
@@ -375,71 +376,7 @@ public class EntityPlayerSP extends AbstractClientPlayer
             var1 = 1.0F;
         }
 
-        if (this.isUsingItem() && this.getItemInUse().getItem() == Items.bow)
-        {
-            int var3 = this.getItemInUseDuration();
-            float var4 = (float)var3 / 20.0F;
-
-            if (var4 > 1.0F)
-            {
-                var4 = 1.0F;
-            }
-            else
-            {
-                var4 *= var4;
-            }
-
-            var1 *= 1.0F - var4 * 0.15F;
-        }
-        if (this.isUsingItem() && this.getItemInUse().getItem() == Items.bow_zinc)
-        {
-            int var3 = this.getItemInUseDuration();
-            float var4 = (float)var3 / 20.0F;
-
-            if (var4 > 1.0F)
-            {
-                var4 = 1.0F;
-            }
-            else
-            {
-                var4 *= var4;
-            }
-
-            var1 *= 1.0F - var4 * 0.15F;
-        }
-        if (this.isUsingItem() && this.getItemInUse().getItem() == Items.bow_cronyxe)
-        {
-            int var3 = this.getItemInUseDuration();
-            float var4 = (float)var3 / 20.0F;
-
-            if (var4 > 1.0F)
-            {
-                var4 = 1.0F;
-            }
-            else
-            {
-                var4 *= var4;
-            }
-
-            var1 *= 1.0F - var4 * 0.15F;
-        }
-        if (this.isUsingItem() && this.getItemInUse().getItem() == Items.bow_kobalt)
-        {
-            int var3 = this.getItemInUseDuration();
-            float var4 = (float)var3 / 20.0F;
-
-            if (var4 > 1.0F)
-            {
-                var4 = 1.0F;
-            }
-            else
-            {
-                var4 *= var4;
-            }
-
-            var1 *= 1.0F - var4 * 0.15F;
-        }
-        if (this.isUsingItem() && this.getItemInUse().getItem() == Items.bow_eldarium)
+        if (this.isUsingItem() && this.getItemInUse().getItem() instanceof ItemBow)
         {
             int var3 = this.getItemInUseDuration();
             float var4 = (float)var3 / 20.0F;

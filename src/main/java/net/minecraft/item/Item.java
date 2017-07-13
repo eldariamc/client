@@ -271,10 +271,10 @@ public class Item
         itemRegistry.addObject(id++, "diamond_global_tool", new ItemGlobalTool(ToolMaterial.EMERALD).setUnlocalizedName("gtoolDiamond").setTextureName("diamond_global_tool"));
         itemRegistry.addObject(id++, "pepper", new ItemSeedFood(4, 0.6F, Blocks.peppers, Blocks.farmland).setAlwaysEdible().setPotionEffect(12, 360, 0, 1.0F).setPotionEffect(PotionHelper.hasteEffect).setUnlocalizedName("peppers").setTextureName("peppers"));
         itemRegistry.addObject(id++, "unclaim_finder", new Item().setUnlocalizedName("unclaimFinder").setCreativeTab(CreativeTabs.tabMisc).setTextureName("unclaim_finder"));
-        itemRegistry.addObject(id++, "bow_zinc", (new BowZinc()).setUnlocalizedName("bow_zinc").setTextureName("bow_zinc"));
-        itemRegistry.addObject(id++, "bow_cronyxe", (new BowCronyxe()).setUnlocalizedName("bow_cronyxe").setTextureName("bow_cronyxe"));
-        itemRegistry.addObject(id++, "bow_kobalt", (new BowKobalt()).setUnlocalizedName("bow_kobalt").setTextureName("bow_kobalt"));
-        itemRegistry.addObject(id++, "bow_eldarium", (new BowEldarium()).setUnlocalizedName("bow_eldarium").setTextureName("bow_eldarium"));
+        itemRegistry.addObject(id++, "zinc_bow", new ItemBowCustom().setArrowDamage(7.0).setMaxDamage(784).setUnlocalizedName("bowZinc").setTextureName("bow_zinc"));
+        itemRegistry.addObject(id++, "cronyxe_bow", new ItemBowCustom().setArrowDamage(8.0).setMaxDamage(884).setUnlocalizedName("bowCronyxe").setTextureName("bow_cronyxe"));
+        itemRegistry.addObject(id++, "kobalt_bow", new ItemBowCustom().setArrowDamage(9.0).setMaxDamage(984).setUnlocalizedName("bow_kobalt").setTextureName("bow_kobalt"));
+        itemRegistry.addObject(id++, "eldarium_bow", new ItemBowCustom().setArrowDamage(10.0).setMaxDamage(1084).setUnlocalizedName("bowEldarium").setTextureName("bow_eldarium"));
         itemRegistry.addObject(id++, "eldarium_nugget", new Item().setUnlocalizedName("eldariumNugget").setTextureName("eldarium_nugget").setCreativeTab(CreativeTabs.tabMaterials));
         itemRegistry.addObject(id++, "milk_donut", new ItemFood(10, false).setAlwaysEdible().setUnlocalizedName("donutMilk").setTextureName("milk_donut"));
         itemRegistry.addObject(id++, "chocolate_donut", new ItemFood(11, false).setAlwaysEdible().setPotionEffect(5, 360, 0, 1.0F).setUnlocalizedName("donutChoc").setTextureName("chocolate_donut"));

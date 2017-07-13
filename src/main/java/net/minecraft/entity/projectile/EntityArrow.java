@@ -557,6 +557,10 @@ public class EntityArrow extends Entity implements IProjectile
         this.knockbackStrength = p_70240_1_;
     }
 
+    public int getKnockbackStrength() {
+        return this.knockbackStrength;
+    }
+
     /**
      * If returns false, the item will not inflict any damage against entities.
      */

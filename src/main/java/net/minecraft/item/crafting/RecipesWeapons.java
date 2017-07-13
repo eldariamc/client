@@ -21,7 +21,7 @@ public class RecipesWeapons
     /**
      * Adds the weapon recipes to the CraftingManager.
      */
-    public void addRecipes(CraftingManager p_77583_1_)
+    public void addRecipes(CraftingManager cm)
     {
         for (int var2 = 0; var2 < this.recipeItems[0].length; ++var2)
         {
@@ -30,11 +30,20 @@ public class RecipesWeapons
             for (int var4 = 0; var4 < this.recipeItems.length - 1; ++var4)
             {
                 Item var5 = (Item)this.recipeItems[var4 + 1][var2];
-                p_77583_1_.addRecipe(new ItemStack(var5), this.recipePatterns[var4], '#', Items.stick, 'X', var3);
+                cm.addRecipe(new ItemStack(var5), this.recipePatterns[var4], '#', Items.stick, 'X', var3);
             }
         }
 
-        p_77583_1_.addRecipe(new ItemStack(Items.bow, 1), " #X", "# X", " #X", 'X', Items.string, '#', Items.stick);
-        p_77583_1_.addRecipe(new ItemStack(Items.arrow, 4), "X", "#", "Y", 'Y', Items.feather, 'X', Items.flint, '#', Items.stick);
+        cm.addRecipe(new ItemStack(Items.bow, 1), " #X", "# X", " #X", 'X', Items.string, '#', Items.stick);
+        cm.addRecipe(new ItemStack(Items.arrow, 4), "X", "#", "Y", 'Y', Items.feather, 'X', Items.flint, '#', Items.stick);
+
+        // --- Arcs Eldaria ---
+
+        cm.addRecipe(new ItemStack(Items.zinc_bow), " #X", "# X", " #X", 'X', Items.string, '#', Items.zinc);
+        cm.addRecipe(new ItemStack(Items.cronyxe_bow), " #X", "# X", " #X", 'X', Items.string, '#', Items.cronyxe);
+        cm.addRecipe(new ItemStack(Items.kobalt_bow), " #X", "# X", " #X", 'X', Items.string, '#', Items.kobalt);
+        cm.addRecipe(new ItemStack(Items.eldarium_bow), " #X", "# X", " #X", 'X', Items.string, '#', Items.eldarium);
+
+        // --------------------
     }
 }

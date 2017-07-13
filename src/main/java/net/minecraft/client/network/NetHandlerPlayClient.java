@@ -199,8 +199,6 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
         else if (p_147235_1_.func_148993_l() == 60)
         {
             var8 = new EntityArrow(this.clientWorldController, var2, var4, var6);
-            System.out.println("= 60");
-
         }
         else if (p_147235_1_.func_148993_l() == 61)
         {

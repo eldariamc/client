@@ -225,10 +225,10 @@ public class Items
     public static final Item chest_orb = (Item)Item.itemRegistry.getObject("chest_orb");
     public static final Item exploration_boots = (Item)Item.itemRegistry.getObject("exploration_boots");
     public static final Item pepper = (Item)Item.itemRegistry.getObject("pepper");
-    public static final BowZinc bow_zinc = (BowZinc)Item.itemRegistry.getObject("bow_zinc");
-    public static final BowCronyxe bow_cronyxe = (BowCronyxe)Item.itemRegistry.getObject("bow_cronyxe");
-    public static final BowKobalt bow_kobalt = (BowKobalt)Item.itemRegistry.getObject("bow_kobalt");
-    public static final BowEldarium bow_eldarium = (BowEldarium)Item.itemRegistry.getObject("bow_eldarium");
+    public static final Item zinc_bow = (Item) Item.itemRegistry.getObject("zinc_bow");
+    public static final Item cronyxe_bow = (Item) Item.itemRegistry.getObject("cronyxe_bow");
+    public static final Item kobalt_bow = (Item) Item.itemRegistry.getObject("kobalt_bow");
+    public static final Item eldarium_bow = (Item) Item.itemRegistry.getObject("eldarium_bow");
     public static final Item eldarium_nugget = (Item)Item.itemRegistry.getObject("eldarium_nugget");
     public static final Item wooden_global_tool = (Item)Item.itemRegistry.getObject("wooden_global_tool");
     public static final Item iron_global_tool = (Item)Item.itemRegistry.getObject("iron_global_tool");
