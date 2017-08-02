@@ -55,4 +55,5 @@ Historique
 | **Dabsunter**   | *Administrateur*      | Lead dev client/serveur                          |
 | **Uneo7**       | *SysAdmin*            | Ainsi que *WebMaster* durant la v2               |
 | **LordApo**     | *Web Host* (v1)       | Avait commencé à travailler sur le site de la v2 |
+
 Il s'agit ici des principales personalités ayant contribué à la réalisation du projet, bien sûr une fois le serveur ouvert, toute une équipe de modération était également présente, ainsi que quelques développeurs de plugins et Community Managers.
