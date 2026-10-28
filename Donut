@@ -1,0 +1,104 @@
+package com.example.menutest;
+
+import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.gui.widget.ButtonWidget;
+import net.minecraft.text.Text;
+
+public class MenuTestScreen extends Screen {
+
+    public MenuTestScreen() {
+        super(Text.literal("Menu Test Mod"));
+    }
+
+    @Override
+    protected void init() {
+        int x = this.width / 2 - 100;
+        int y = this.height / 2 - 80;
+
+        addButton(x, y, "Storage ESP (Demo)");
+        addButton(x, y + 25, "X-Ray (Demo)");
+        addButton(x, y + 50, "Auto Totem (Demo)");
+        addButton(x, y + 75, "Item ESP (Demo)");
+        addButton(x, y + 100, "HUD (Demo)");
+        addButton(x, y + 125, "Anti-Cheat (Demo)");
+    }
+
+    private void addButton(int x, int y, String name) {
+        this.addDrawableChild(
+            ButtonWidget.builder(
+                Text.literal(name),
+                button -> {
+                    button.setMessage(
+                        Text.literal(name + " [ON]")
+                    );
+                }
+            )
+            .dimensions(x, y, 200, 20)
+            .build()
+        );
+    }
+
+    @Override
+    public void render(
+        DrawContext context,
+        int mouseX,
+        int mouseY,
+        float delta
+    ) {
+        this.renderBackground(context, mouseX, mouseY, delta);
+        context.drawCenteredTextWithShadow(
+            this.textRenderer,
+            "Menu Test Mod",
+            this.width / 2,
+            this.height / 2 - 105,
+            0xFFFFFF
+        );
+
+        super.render(context, mouseX, mouseY, delta);
+    }
+
+    @Override
+    public boolean shouldPause() {
+        return false;
+    }
+}package com.example.menutest;
+
+import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1
+    .ClientTickEvents;
+import net.fabricmc.fabric.api.client.keybinding.v1
+    .KeyBindingHelper;
+import net.minecraft.client.option.KeyBinding;
+import net.minecraft.client.util.InputUtil;
+import org.lwjgl.glfw.GLFW;
+
+public class MenuTestModClient
+        implements ClientModInitializer {
+
+    private static KeyBinding openMenu;
+
+    @Override
+    public void onInitializeClient() {
+        openMenu = KeyBindingHelper.registerKeyBinding(
+            new KeyBinding(
+                "key.menutest.open",
+                InputUtil.Type.KEYSYM,
+                GLFW.GLFW_KEY_RIGHT_SHIFT,
+                "category.menutest"
+            )
+        );
+
+        ClientTickEvents.END_CLIENT_TICK.register(client -> {
+            while (openMenu.wasPressed()) {
+                if (client.currentScreen == null) {
+                    client.setScreen(new MenuTestScreen());
+                } else if (
+                    client.currentScreen instanceof MenuTestScreen
+                ) {
+                    client.setScreen(null);
+                }
+            }
+        });
+    }
+}
